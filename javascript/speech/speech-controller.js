@@ -2,7 +2,7 @@
     "use strict";
     var app = angular.module('speech-module');
 
-    app.controller("m0ResourceEditController", ['$scope', 'ajax-service', 'widget-service', 'session-service', 'speech-service', function ($scope, ajax, widget, session, speech){
+    app.controller("giuggioSpeechController", ['$scope', 'ajax-service', 'widget-service', 'session-service', 'speech-service', function ($scope, ajax, widget, session, speech){
 
         $scope.target_text = "";
 
@@ -29,5 +29,13 @@
             speech.startTTS($scope.target_text);
         };
 
+        $scope.send = function() {
+            ajax.send($scope.target_text,
+                    function(data) {
+                        console.log(data);
+                    }, function(error) {
+                        console.log(error);
+                    });
+        }
     }]);
 })();

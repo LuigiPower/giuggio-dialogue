@@ -49,15 +49,15 @@
             speechSynthesis.speak(context.TTS);
         };
 
-        ASR.onstart = function() {
+        this.ASR.onstart = function() {
             context.recognizing = true;
             context.asr_listener.onstart();
         };
-        ASR.onend = function() {
+        this.ASR.onend = function() {
             context.recognizing = false;
             context.asr_listener.onend();
         };
-        ASR.onresult = function(ev) {
+        this.ASR.onresult = function(ev) {
             context.asr_listener.onresult(ev);
         };
 

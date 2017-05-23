@@ -46,7 +46,7 @@
         }];
     });
 
-    app.service('ajax-service', ['$http', 'utility-service', 'session-service', 'authentication-service', function($http, utility, session, auth){
+    app.service('ajax-service', ['$http', 'utility-service', 'session-service', function($http, utility, session){
         var context = this;
 
         this.defaultHeader = {'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8'};
@@ -54,49 +54,10 @@
         this.POST = "POST";
 
         /**
-         * Actions for Hercules web service
-         */
-        this.send_notice = "send_notice";
-        this.login = "login";
-        this.get_client_settings = "get_client_settings";
-        this.get_customer_list = "get_customer_list";
-        this.get_customer_vista = "get_customer_vista";
-        this.get_widget_list = "get_widget_list";
-        this.get_manufacturer_log = "get_manufacturer_log";
-        this.get_documentation = "get_documentation";
-        this.get_notification_list = "get_notification_list";
-        this.get_customer_production_line_list = "get_customer_production_line_list";
-        this.get_zeus_resource = "get_zeus_resource";
-
-        this.confirm_notification = "confirm_notification";
-
-        this.get_production_line_var_list = "get_production_line_var_list";
-        this.update_production_line_var = "update_production_line_var";
-        this.delete_production_line_var = "delete_production_line_var";
-        this.create_production_line_var = "create_production_line_var";
-
-        this.get_user_list = "get_user_list";
-        this.create_user = "create_user";
-        this.update_user = "update_user";
-        this.delete_user = "delete_user";
-
-        this.create_widget = "create_widget";
-        this.update_widget = "update_widget";
-        this.delete_widget = "delete_widget";
-        /** END HERCULES ACTIONS **/
-
-        /**
-         * Actions for Hades web service
-         */
-        this.get_data = "get_data";
-        /** END HADES ACTIONS **/
-
-        /**
          * Script URLs
          * TODO set these correctly
          */
-        this.hercules_request = "http://138.197.78.87/hercules/";
-        this.hades_request = "http://138.197.78.87/hades/";
+        this.script = "php/speech.php";
 
         /**
          * Contexts
@@ -140,43 +101,9 @@
             }
         };
 
-        this.doHadesAction= function(action, data, success, failure) {
-            console.log("Hades actin");
-            data["ACTION"] = action;
-            data["CONTEXT"] = auth.hades_context;
-
-            data["id_user"] = auth.loggedInUser.id_user;
-            data["token"] = auth.loggedInUser.token;
-
-            return context.request(context.hades_request, context.POST,
-                    {
-                        REQUEST_DATA: JSON.stringify(data)
-                    },
-                    function(data){ console.log(data); if(success){success(data);} },
-                    function(data){ console.log(data); if(failure){failure(data);} });
-        };
-
-        this.doAction = function(action, data, success, failure) {
-            data["ACTION"] = action;
-            data["CONTEXT"] = auth.hercules_context;
-
-            if(!data.id_customer)
-                data["id_customer"] = auth.loggedInUser.id_customer;
-
-            if(!data.id_manufacturer)
-                data["id_manufacturer"] = auth.loggedInUser.id_manufacturer;
-
-            data["id_user"] = auth.loggedInUser.id_user;
-            data["token"] = auth.loggedInUser.token;
-            data["id_language"] = auth.loggedInUser.id_language;
-            data["production_lines"] = undefined;
-
-            return context.request(context.hercules_request, context.POST,
-                    {
-                        REQUEST_DATA: JSON.stringify(data)
-                    },
-                    function(data){ console.log(data); if(success){success(data);} },
-                    function(data){ console.log(data); if(failure){failure(data);} });
+        this.send = function(text, success, failure) {
+            console.log("Sending request " + text);
+            context.request(context.script, context.POST, { utterance: text }, success, failure);
         };
 
     }]);

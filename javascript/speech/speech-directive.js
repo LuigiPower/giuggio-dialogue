@@ -2,11 +2,11 @@
     "use strict";
     var app = angular.module('speech-module');
 
-    app.directive("m0ResourceEdit", ['ajax-service', function (ajax){
+    app.directive("giuggioSpeech", ['ajax-service', function (ajax){
     	return{
     		restrict: 'E',
     		templateUrl: "template/speech.html",
-    		controller: "giuggioSpeech"
+    		controller: "giuggioSpeechController"
     	};
     }]);
 })();
