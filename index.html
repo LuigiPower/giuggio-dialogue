@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ASR + dialogue</title>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" >
+        <meta name="mobile-web-app-capable" content="yes">
+        <meta name="theme-color" content="#1976D2">
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+        <meta charset="utf-8">
+
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+        <link rel="stylesheet" href="node_modules/angular-material/angular-material.css">
+        <link href="style.css" type="text/css" rel="stylesheet" />
+
+        <!--<link type="text/css" rel="stylesheet" href="//pubnub.github.io/eon/v/eon/1.0.0/eon.css" />-->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    </head>
+    <body ng-app="giuggio-dialogue">
+        <md-content layout="column">
+            <giuggio-speech></giuggio-speech>
+        </md-content>
+
+
+        <!-- Angular Material requires Angular.js Libraries -->
+        <script src="node_modules/angular/angular.js"></script>
+        <script src="node_modules/angular-sanitize/angular-sanitize.js"></script>
+        <script src="node_modules/angular-animate/angular-animate.js"></script>
+        <script src="node_modules/angular-aria/angular-aria.js"></script>
+        <script src="node_modules/angular-messages/angular-messages.js"></script>
+
+        <!-- Angular Material Library -->
+        <script src="node_modules/angular-material/angular-material.js"></script>
+
+        <!-- Angular Services, Controllers, Directives -->
+        <script type="text/javascript" src="javascript/ajax/ajax-service.js"></script>
+        <script type="text/javascript" src="javascript/session/session-service.js"></script>
+        <script type="text/javascript" src="javascript/utility/utility-service.js"></script>
+        <script type="text/javascript" src="javascript/widget/widget-service.js"></script>
+
+        <script type="text/javascript" src="javascript/speech/speech-service.js"></script>
+        <script type="text/javascript" src="javascript/speech/speech-controller.js"></script>
+        <script type="text/javascript" src="javascript/speech/speech-directive.js"></script>
+    </body>
+</html>

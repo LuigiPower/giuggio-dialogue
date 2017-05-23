@@ -1,0 +1,39 @@
+{
+  "name": "giuggio-dialogue",
+  "version": "0.0.1",
+  "description": "Dialogue management system",
+  "author": "Federico Giuggioloni <federico.giuggioloni@gmail.com>",
+  "contributors": [
+  ],
+  "keywords": [
+    "speech",
+    "dialogue"
+  ],
+  "dependencies": {
+    "angular": "1.6.4",
+    "angular-animate": "1.6.4",
+    "angular-aria": "1.6.4",
+    "angular-chart.js": "x",
+    "angular-i18n": "1.6.4",
+    "angular-material": "1.1.4",
+    "angular-messages": "1.6.4",
+    "angular-mocks": "1.6.4",
+    "angular-sanitize": "1.6.4",
+    "angular-ui-router": "~0.4.2",
+    "material-design-icons": "^3.0.1"
+  },
+  "devDependencies": {
+    "angular-mocks": "1.6.4",
+    "jasmine": "^2.5.2",
+    "karma": "^1.3.0",
+    "karma-chrome-launcher": "x",
+    "karma-jasmine": "x",
+    "karma-jenkins-reporter": "^0.0.2",
+    "karma-junit-reporter": "^1.2.0",
+    "karma-phantomjs-launcher": "^1.0.2",
+    "karma-spec-reporter": "^0.0.26",
+    "phantomjs-prebuilt": "^2.1.14"
+  },
+  "private": true,
+  "analyze": true
+}
