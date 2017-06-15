@@ -91,7 +91,7 @@ if(isset($_POST["utterance"]))
 // - to get confidence or not
 // - nbest number
 
-$slu_out = $SLU->runSlu($utterance, TRUE, 1);
+$slu_out = $SLU->runSlu($utterance, TRUE, 3);
 //print_r($SLU->runSlu($utterance));
 //print_r($SLU->runSlu($utterance, TRUE));
 //print_r($SLU->runSlu($utterance, FALSE, 3));
@@ -105,27 +105,38 @@ $slu_out = $SLU->runSlu($utterance, TRUE, 1);
 // - to get confidence or not
 // - nbest number
 
-$uc_out  = $UC->predict($utterance, TRUE, 1);
+$uc_out  = $UC->predict($utterance, TRUE, 3);
 //print_r($UC->predict($utterance));
 //print_r($UC->predict($utterance, TRUE));
 //print_r($UC->predict($utterance, FALSE, 5));
 //print_r($uc_out);
 
 // CHANGE THIS TO DESIRED version
-$slu_tags = $slu_out[0][0];
-$slu_conf = $slu_out[0][1];
-$results = $SR->getConcepts($utterance, $slu_tags);
+#$slu_tags = $slu_out[0][0];
+#$slu_conf = $slu_out[0][1];
 
+for($i = 0; $i < count(slu_out); $i++)
+{
+    $results = $SR->getConcepts($utterance, $slu_out[$i][0]);
+    if(!empty($results))
+    {
+        $slu_tags = $slu_out[$i][0];
+        $slu_conf = $slu_out[$i][1];
+        break;
+    }
+}
+
+$results = $SR->getConcepts($utterance, $slu_tags);
 $uc_class = $uc_out[0][0];
 $uc_conf  = $uc_out[0][1];
 
-
-//echo 'SLU Concepts and Values: ' . "\n";
-//print_r($results);
-//echo 'SLU Confidence: ' . $slu_conf. "\n";
-
-//echo 'Requested concept: ' . $uc_class . "\n";
-//echo 'Requested concept confidence: ' . $uc_conf . "\n";
+#$debug = "";
+#$debug .= 'SLU Concepts and Values: ' . "\n";
+#$debug .= print_r($results, true);
+#$debug .= 'SLU Confidence: ' . $slu_conf. "\n";
+#
+#$debug .= 'Requested concept: ' . $uc_class . "\n";
+#$debug .= 'Requested concept confidence: ' . $uc_conf . "\n";
 
 
 //----------------------------------------------------------------------
@@ -161,6 +172,9 @@ else {
 }
 
 //echo 'System Response: ' . $response . "\n";
+//$response = exec('whoami');
 
 
-wrapAndShowJSON(200, true, $response);
+//wrapAndShowJSON(200, true, $response);
+$debug = "$utterance,$slu_out,$slu_conf,$slu_out,$response\n";
+echo $debug;

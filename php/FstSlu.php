@@ -13,8 +13,8 @@ class FstSlu extends FstUtilities {
 	private $unk;
 	private $ilex;
 	private $olex;
-	private $fsmout = 'str.fsm'; // output file name for text FST
-	private $fstout = 'str.fst'; // output file name for compiled FST
+	private $fsmout = '/tmp/str.fsm'; // output file name for text FST
+	private $fstout = '/tmp/str.fst'; // output file name for compiled FST
 
 	public function __construct($wfst, $lm, $ilex, $olex, $unk = '<unk>') {
 		$this->wfst = $wfst;
@@ -39,9 +39,9 @@ class FstSlu extends FstUtilities {
 		$this->FstCompile($this->fsmout, $this->fstout, $this->ilex, $this->olex, FALSE);
 
 		// compile pipeline
-		$cmd  = "fstcompose $this->fstout $this->wfst | ";
-		$cmd .= "fstcompose - $this->lm ";
-		$cmd .= ' | fstrmepsilon | ';
+		$cmd  = "/usr/local/bin/fstcompose $this->fstout $this->wfst | ";
+		$cmd .= "/usr/local/bin/fstcompose - $this->lm ";
+		$cmd .= ' | /usr/local/bin/fstrmepsilon | ';
 		$cmd .= $this->fstprintstrings($this->ilex, $this->olex);
 
 		exec($cmd, $out);

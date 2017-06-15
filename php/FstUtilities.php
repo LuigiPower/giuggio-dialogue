@@ -55,7 +55,7 @@ class FstUtilities {
 	 * @param bool   $fst  transducer or acceptor
 	 */
 	protected function FstCompile($fsm, $fout, $ilex, $olex = NULL, $fst = TRUE) {
-		$cmd  = 'fstcompile';
+		$cmd  = '/usr/local/bin/fstcompile';
 		$cmd .= ' --isymbols=' . $ilex;
 		if ($fst) {
 			$cmd .= ' --osymbols=' . $olex;
@@ -102,7 +102,7 @@ class FstUtilities {
 	 */
 	protected function fstprintstrings($ilex, $olex) {
 
-		$cmd  = 'fstprintstrings --use_separator --print_weight';
+		$cmd  = '/usr/local/bin/fstprintstrings --use_separator --print_weight';
 		$cmd .= ' --isymbols=';
 		$cmd .= $ilex;
 		$cmd .= ' --osymbols=';

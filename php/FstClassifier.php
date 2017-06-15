@@ -15,8 +15,8 @@ class FstClassifier extends FstUtilities {
 	private $unk;
 	private $ilex;
 	private $olex;
-	private $fsmout = 'str.fsm'; // output file name for text FST
-	private $fstout = 'str.fst'; // output file name for compiled FST
+	private $fsmout = '/tmp/str.fsm'; // output file name for text FST
+	private $fstout = '/tmp/str.fst'; // output file name for compiled FST
 
 	public function __construct($classifier, $ilex, $olex, $unk = '<unk>') {
 		$this->classifier = $classifier;
@@ -40,7 +40,7 @@ class FstClassifier extends FstUtilities {
 		$this->FstCompile($this->fsmout, $this->fstout, $this->ilex, $this->olex, FALSE);
 
 		// compile pipeline
-		$cmd  = "fstcompose $this->fstout $this->classifier";
+		$cmd  = "/usr/local/bin/fstcompose $this->fstout $this->classifier";
 		$cmd .= ' | ';
 		$cmd .= $this->fstprintstrings($this->ilex, $this->olex);
 
