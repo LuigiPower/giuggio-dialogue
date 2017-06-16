@@ -45,31 +45,22 @@ else {
 }
 
 $output = "";
+$count = 0;
 
-$slu_out = $SLU->runSlu($utterance, true, 3);
-$uc_out  = $UC->predict($utterance, true, 3);
+$uc_out  = $UC->predict($utterance, TRUE, 100);
 
-foreach($slu_out as $res)
+foreach($uc_out as $res)
 {
-    $results = $SR->getConcepts($utterance, $res[0]);
-    if(empty($results))
+    if($res[1] > 0.01)
     {
-        // Save into "BAD" SLU examples
-        $output .= $res[0].",".$res[1].",BAD\n";
+        $count++;
     }
     else
     {
-        // Save into "GOOD" SLU examples
-        $output .= $res[0].",".$res[1].",GOOD\n";
         break;
     }
 }
 
-$results = $SR->getConcepts($utterance, $slu_tags);
-$uc_class = $uc_out[0][0];
-$uc_conf  = $uc_out[0][1];
-
-
-
 //print_r($slu_out);
-echo $output;
+$output = rtrim($output, ',');
+echo $count."\n";
