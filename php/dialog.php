@@ -1,24 +1,36 @@
 <?php
-/*****
- * Example script to do:
- *
- * (1) convert input string to fst
- * (2) apply utterance classification (Naive Bayes as FST) &
- *     get expected answer type/concept
- * (3) apply SLU model &
- *     get associative array of concepts and spans
- * (4) convert SLU results to SQL
- * (5) Query DB
- */
-
 require_once("./dialog_manager.php");
 // for SLU processing
 require 'FstClassifier.php';
 require 'FstSlu.php';
 require 'SluResults.php';
 // for DB
-require 'Slu2DB.php';
+require_once("Slu2DB.php");
 require 'QueryDB.php';
+
+function setupHeader($type)
+{
+    header("Content-Type: $type");
+}
+
+function setResponseCode($responseCode)
+{
+    http_response_code($responseCode);
+}
+
+function wrapAndShowJSON($resultcode, $success, $result, $numpages = 0)
+{
+    setupHeader("application/json");
+    setResponseCode($resultcode);
+    $toecho = array(
+        'resultcode' => $resultcode,
+        'success' => $success,
+        'result' => $result,
+        'pages' => $numpages
+    );
+
+    echo json_encode($toecho, JSON_FORCE_OBJECT);
+}
 
 // configure paths
 $classifier = 'models/MAP.fst';
@@ -48,11 +60,16 @@ $DB  = new QueryDB();
 $args = getopt('u:');
 
 if (isset($args['u'])) {
-	$utterance = trim(strtolower($args['u']));
+    $utterance = trim(strtolower($args['u']));
 }
 else {
-	// Example Utterance
-	$utterance = 'who directed avatar';
+    // Example Utterance
+    $utterance = 'who directed avatar';
+}
+
+if(isset($_POST["utterance"]))
+{
+    $utterance = $_POST["utterance"];
 }
 
 $slu_nbest = 3;
@@ -67,10 +84,6 @@ $uc_nbest = 3;
 // - nbest number
 
 $slu_out = $SLU->runSlu($utterance, TRUE, $slu_nbest);
-//print_r($SLU->runSlu($utterance));
-//print_r($SLU->runSlu($utterance, TRUE));
-//print_r($SLU->runSlu($utterance, FALSE, 3));
-print_r($slu_out);
 
 //----------------------------------------------------------------------
 // Run Utterance Classifier
@@ -80,33 +93,30 @@ print_r($slu_out);
 // - to get confidence or not
 // - nbest number
 
-$uc_out  = $UC->predict($utterance, TRUE, $uc_nbest);
-//print_r($UC->predict($utterance));
-//print_r($UC->predict($utterance, TRUE));
-//print_r($UC->predict($utterance, FALSE, 5));
-print_r($uc_out);
+// [0] --> class, [1] --> confidence
+$uc_out = $UC->predict($utterance, TRUE, $uc_nbest);
 
-// CHANGE THIS TO DESIRED version
-$slu_tags = $slu_out[0][0];
-$slu_conf = $slu_out[0][1];
-$results = $SR->getConcepts($utterance, $slu_tags);
+//$slu_tags = $slu_out[0][0];
+//$slu_conf = $slu_out[0][1];
+//$results = $SR->getConcepts($utterance, $slu_tags);
 
-$uc_class = $uc_out[0][0];
-$uc_conf  = $uc_out[0][1];
-
-echo 'SLU Concepts and Values: ' . "\n";
-print_r($results);
-echo 'SLU Confidence: ' . $slu_conf. "\n";
-
-echo 'Requested concept: ' . $uc_class . "\n";
-echo 'Requested concept confidence: ' . $uc_conf . "\n";
-
+$results = null;
+$slu_tags = null;
+$slu_conf = null;
+foreach($slu_out as $res)
+{
+    $results = $SR->getConcepts($utterance, $res[0]);
+    if(!empty($results))
+    {
+        $slu_tags = $res[0];
+        $slu_conf = $res[1];
+        break;
+    }
+}
 
 //----------------------------------------------------------------------
 // Dialog Management & Natural Language Generation
 //----------------------------------------------------------------------
-// DEVELOP THIS PART!
-// Example
 
 $state = array();
 if(isset($_POST["dialog_state"]))
@@ -117,27 +127,49 @@ else
 {
     $state["intent"] = null;
     $state["fields"] = array();
+    $state["probableIntents"] = array();
+    $state["last"] = DialogManager::$start;
 }
 $dialog = new DialogManager($state);
 
 $th_slu_accept = 0.87;
 $th_uc_accept = 0.93;
+//$th_uc_accept = 0.80;
 $th_slu_reject = 0.75;
 
-if($uc_conf >= $th_uc_accept)
-{
+$response = array(
+    "response" => "",
+    "state" => array(),
+    "debug" => ""
+);
 
+$uc_found = false;
+$uc_class = "";
+$uc_conf = 0;
+foreach($uc_out as $uc_res)
+{
+    if($uc_res[1] >= $th_uc_accept)
+    {
+        $uc_found = true;
+        $uc_class = $uc_res[0];
+        $uc_conf = $uc_res[1];
+        $dialog->setIntent($uc_class);
+        break;
+    }
+}
+
+if (!$uc_found)
+{
+    //TODO ask user, keep dialogue state
+    $dialog->setProbableIntents($uc_out);
 }
 
 if($slu_conf >= $th_slu_accept)
 {
-
-}
-
-if ($uc_conf < $th_uc_accept)
-{
-    //TODO ask user, keep dialogue state
-    $response = "What do you want to know?";
+    foreach($results as $res)
+    {
+        $dialog->addField($res);
+    }
 }
 
 if ($slu_conf < $th_slu_reject)
@@ -145,7 +177,7 @@ if ($slu_conf < $th_slu_reject)
     //TODO ask user, keep dialogue state
 }
 else {
-	$response = 'Not implemented yet!';
+    $response['response'] = 'Not implemented yet!';
 }
 
 
@@ -155,26 +187,24 @@ if($dialog->isReadyToSend())
     // Convert SLU results to SQL Query
     //------------------------------------------------------------------
     $query = $QC->slu2sql($results, $uc_class);
-    echo 'SQL: ' . $query . "\n";
 
     //------------------------------------------------------------------
     // Query DB
     //------------------------------------------------------------------
     $db_results = $DB->query($query);
 
-    echo 'DB Results: ' ."\n";
-    print_r($db_results);
-
     $db_class = $QC->db_mapping($uc_class);
 
-    $response = $db_results[0][$db_class];
+    $response['response'] = $dialog->generateAnswer($db_class, $db_results);
+    $response['debug'] = $db_results;
 }
 else
 {
-    $response = $dialog->generateQuestion();
+    $response['response'] = $dialog->generateQuestion();
 }
+$response['state'] = $dialog->toArray();
 
-echo 'System Response: ' . $response . "\n";
+wrapAndShowJSON(200, true, $response);
 
 
 
