@@ -54,26 +54,31 @@ $SR  = new SluResults();
 $QC  = new Slu2DB();
 $DB  = new QueryDB();
 
-//----------------------------------------------------------------------
-// For testing from command line
-//----------------------------------------------------------------------
-$args = getopt('u:');
+$slu_nbest = 3;
+$uc_nbest = 3;
 
-if (isset($args['u'])) {
-    $utterance = trim(strtolower($args['u']));
-}
-else {
-    // Example Utterance
-    $utterance = 'who directed avatar';
-}
 
 if(isset($_POST["utterance"]))
 {
-    $utterance = $_POST["utterance"];
+    $utterance = trim(strtolower($_POST["utterance"]));
 }
 
-$slu_nbest = 3;
-$uc_nbest = 3;
+$state = array();
+if(isset($_POST["dialog_state"]))
+{
+    $state = json_decode($_POST["dialog_state"], true);
+}
+
+if(!isset($_POST["dialog_state"]) || $state["current"] == DialogManager::$start)
+{
+    $state["intent"] = null;
+    $state["fields"] = array();
+    $state["probableIntents"] = array();
+    $state["last"] = DialogManager::$start;
+}
+
+$dialog = new DialogManager($state);
+
 
 //----------------------------------------------------------------------
 // Run SLU
@@ -82,7 +87,6 @@ $uc_nbest = 3;
 // - utterance
 // - to get confidence or not
 // - nbest number
-
 $slu_out = $SLU->runSlu($utterance, TRUE, $slu_nbest);
 
 //----------------------------------------------------------------------
@@ -99,6 +103,11 @@ $uc_out = $UC->predict($utterance, TRUE, $uc_nbest);
 //$slu_tags = $slu_out[0][0];
 //$slu_conf = $slu_out[0][1];
 //$results = $SR->getConcepts($utterance, $slu_tags);
+//
+$th_slu_accept = 0.87;
+//$th_uc_accept = 0.93;
+$th_uc_accept = 1;
+$th_slu_reject = 0.75;
 
 $results = null;
 $slu_tags = null;
@@ -113,35 +122,6 @@ foreach($slu_out as $res)
         break;
     }
 }
-
-//----------------------------------------------------------------------
-// Dialog Management & Natural Language Generation
-//----------------------------------------------------------------------
-
-$state = array();
-if(isset($_POST["dialog_state"]))
-{
-    $state = json_decode($_POST["dialog_state"], true);
-}
-else
-{
-    $state["intent"] = null;
-    $state["fields"] = array();
-    $state["probableIntents"] = array();
-    $state["last"] = DialogManager::$start;
-}
-$dialog = new DialogManager($state);
-
-$th_slu_accept = 0.87;
-$th_uc_accept = 0.93;
-//$th_uc_accept = 0.80;
-$th_slu_reject = 0.75;
-
-$response = array(
-    "response" => "",
-    "state" => array(),
-    "debug" => ""
-);
 
 $uc_found = false;
 $uc_class = "";
@@ -158,17 +138,30 @@ foreach($uc_out as $uc_res)
     }
 }
 
+//----------------------------------------------------------------------
+// Dialog Management & Natural Language Generation
+//----------------------------------------------------------------------
+$response = array(
+    "response" => "",
+    "state" => array(),
+    "debug" => ""
+);
+
 if (!$uc_found)
 {
     //TODO ask user, keep dialogue state
+    if($dialog->hasProbableIntents())
+    {
+        $dialog->fill($utterance);
+    }
     $dialog->setProbableIntents($uc_out);
 }
 
 if($slu_conf >= $th_slu_accept)
 {
-    foreach($results as $res)
+    foreach($results as $key=>$value)
     {
-        $dialog->addField($res);
+        $dialog->setField($key, $value);
     }
 }
 
@@ -180,20 +173,18 @@ else {
     $response['response'] = 'Not implemented yet!';
 }
 
-
 if($dialog->isReadyToSend())
 {
     //------------------------------------------------------------------
     // Convert SLU results to SQL Query
     //------------------------------------------------------------------
-    $query = $QC->slu2sql($results, $uc_class);
-
+    $query = $QC->slu2sql($dialog->getFields(), $dialog->getIntent());
     //------------------------------------------------------------------
     // Query DB
     //------------------------------------------------------------------
     $db_results = $DB->query($query);
 
-    $db_class = $QC->db_mapping($uc_class);
+    $db_class = $QC->db_mapping($dialog->getIntent());
 
     $response['response'] = $dialog->generateAnswer($db_class, $db_results);
     $response['debug'] = $db_results;

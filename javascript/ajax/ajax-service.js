@@ -57,7 +57,7 @@
          * Script URLs
          * TODO set these correctly
          */
-        this.script = "php/speech.php";
+        this.script = "php/dialog.php";
 
         /**
          * Contexts
@@ -101,9 +101,9 @@
             }
         };
 
-        this.send = function(text, success, failure) {
+        this.send = function(text, state, success, failure) {
             console.log("Sending request " + text);
-            context.request(context.script, context.POST, { utterance: text }, success, failure);
+            context.request(context.script, context.POST, { utterance: text, dialog_state: JSON.stringify(state) }, success, failure);
         };
 
     }]);

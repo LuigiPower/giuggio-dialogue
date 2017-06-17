@@ -28,6 +28,7 @@ class QueryDB {
 		if (!$result) {
 			echo "DB Error, could not query the database\n";
 			echo 'MySQL Error: ' . mysql_error();
+                        echo "query: $sql";
 			exit;
 		}
 

@@ -8,9 +8,8 @@ class DialogManager
     public static $ask_intent = "ask_intent";
     public static $ask_slu = "ask_slu";
     public static $confirm_slu = "confirm_slu";
-    public static $done = "done";
 
-    private $last;
+    private $current;
 
     private $intent;
     private $fields;
@@ -23,7 +22,7 @@ class DialogManager
             "intent" => $this->intent,
             "fields" => $this->fields,
             "probableIntents" => $this->probableIntents,
-            "last" => $this->lastAnswer
+            "current" => $this->current
         );
     }
 
@@ -32,22 +31,63 @@ class DialogManager
         $this->intent = $state["intent"];
         $this->fields = $state["fields"];
         $this->probableIntents = $state["probableIntents"];
-        $this->last = $state["last"];
+        $this->current = $state["current"];
     }
 
-    function addField($field)
+    function fill($utterance)
     {
-        $this->fields[] = $field;
+        if($this->current == DialogManager::$ask_intent)
+        {
+            foreach($this->probableIntents as $i)
+            {
+                $str = $i[0];
+                $str = str_replace(".", " ", $str);
+                if (strpos(trim($utterance), trim($str)) !== false) {
+                    $this->setIntent($i[0]);
+                    break;
+                }
+            }
+        }
+        else if($this->current == DialogManager::$ask_slu)
+        {
+
+        }
+    }
+
+    function getFields()
+    {
+        return $this->fields;
+    }
+
+    function getIntent()
+    {
+        return $this->intent;
+    }
+
+    function setField($key, $field)
+    {
+        if($this->current != DialogManager::$ask_intent)
+        {
+            $this->fields[$key] = $field;
+        }
     }
 
     function setIntent($intent)
     {
-        $this->intent = $intent;
+        if($this->current != DialogManager::$ask_slu)
+        {
+            $this->intent = $intent;
+        }
     }
 
     function setProbableIntents($intentList)
     {
         $this->probableIntents = $intentList;
+    }
+
+    function hasProbableIntents()
+    {
+        return !empty($this->probableIntents);
     }
 
     function generateQuestion()
@@ -72,6 +112,7 @@ class DialogManager
             }
 
             $question .= "?";
+            $this->current = DialogManager::$ask_intent;
         }
         else if(empty($this->fields))
         {
@@ -79,6 +120,7 @@ class DialogManager
             {
                 $question .= "Did you look for the $this->intent of what?";
             }
+            $this->current = DialogManager::$ask_slu;
         }
         return $question;
     }
@@ -92,37 +134,73 @@ class DialogManager
         {
             $data = "I found nothing";
         }
-        else if(count($result) > 1)
+        else if(count($result) > 1 || strpos($result[0][$mappedIntent], '|') !== false)
         {
             $data = "I found these ".$this->intent."s: ";
 
             $numRes = count($result);
             foreach($result as $key=>$res)
             {
-                $data .= trim(trim($res[$mappedIntent]), ' ');
-                if($key == $numRes - 2)
+                if(strpos($res[$mappedIntent], '|') !== false)
                 {
-                    $data .= " and ";
+                    $exploded = explode('|', $res[$mappedIntent]);
+                    $numExpl = count($exploded);
+                    foreach($exploded as $exKey=>$s)
+                    {
+                        $data .= trim(trim($s), ' ');
+                        if($exKey == $numExpl - 2 && $key == $numRes - 1)
+                        {
+                            $data .= " and ";
+                        }
+                        else if($exKey != $numExpl - 1 && $key == $numRes - 1)
+                        {
+                            $data .= ", ";
+                        }
+                    }
                 }
-                else if($key != $numRes - 1)
+                else
                 {
-                    $data .= ", ";
+                    $data .= trim(trim($res[$mappedIntent]), ' ');
+                    if($key == $numRes - 2)
+                    {
+                        $data .= " and ";
+                    }
+                    else if($key != $numRes - 1)
+                    {
+                        $data .= ", ";
+                    }
                 }
             }
         }
         else
         {
             // TODO fill in field with what was asked
-            $data = "The $this->intent of field is ".$result[0][$mappedIntent];
+            $txt = "";
+            foreach($this->fields as $field)
+            {
+                $txt .= $field." ";
+            }
+            $data = "The $this->intent of $txt is ".$result[0][$mappedIntent];
         }
 
         $answer = "$ack, $data";
+        $this->current = DialogManager::$start;
         return $answer;
+    }
+
+    function isIntentReady()
+    {
+        return $this->intent != null;
+    }
+
+    function areFieldsReady()
+    {
+        return !empty($this->fields);
     }
 
     function isReadyToSend()
     {
-        return $this->intent != null && !empty($this->fields);
+        return $this->isIntentReady() && $this->areFieldsReady();
     }
 
 

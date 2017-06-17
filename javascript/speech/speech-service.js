@@ -13,7 +13,7 @@
 
         this.ASR.lang='en-US';
 
-        this.asr_listener = {
+        this.tts_listener = {
             onstart: function(){},
             onend: function(){},
             onresult: function(){}
@@ -24,6 +24,13 @@
                 onstart: onstart,
                 onend: onend,
                 onresult: onresult
+            };
+        }
+
+        this.setTTSListener = function(onstart, onend) {
+            context.tts_listener = {
+                onstart: onstart,
+                onend: onend
             };
         }
 
@@ -38,8 +45,8 @@
 
 
         this.startASR = function() {
-            context.ASR.start();
             console.log('Starting Speech Recognition');
+            context.ASR.start();
         };
 
         this.startTTS = function(text){
@@ -50,16 +57,24 @@
         };
 
         this.ASR.onstart = function() {
+            console.log('onstart Speech Recognition');
             context.recognizing = true;
             context.asr_listener.onstart();
         };
         this.ASR.onend = function() {
+            console.log('onend Speech Recognition');
             context.recognizing = false;
             context.asr_listener.onend();
         };
         this.ASR.onresult = function(ev) {
+            console.log('onresult Speech Recognition');
             context.asr_listener.onresult(ev);
         };
+
+        this.TTS.onend = function(ev) {
+            console.log('onend TTS');
+            context.tts_listener.onend(ev);
+        }
 
 
     }]);
