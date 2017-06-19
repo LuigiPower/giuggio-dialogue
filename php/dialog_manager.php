@@ -2,6 +2,22 @@
 
 require_once("text_manager.php");
 
+function debugEcho($message)
+{
+    if(isset($_POST["debug"]))
+    {
+        echo $message."\n";
+    }
+}
+
+function debugPrint($object)
+{
+    if(isset($_POST["debug"]))
+    {
+        print_r($object);
+    }
+}
+
 class DialogManager
 {
     public static $start = "start";
@@ -34,6 +50,11 @@ class DialogManager
         $this->current = $state["current"];
     }
 
+    /**
+     * Fills the dialog state when the request is inside the domain, but outside
+     * of the training set
+     * @param $utterance phrase said by user
+     */
     function fill($utterance)
     {
         if($this->current == DialogManager::$ask_intent)
@@ -50,7 +71,12 @@ class DialogManager
         }
         else if($this->current == DialogManager::$ask_slu)
         {
-
+            $matches = array();
+            if(preg_match("/the movie (?<name>([a-zA-Z]* ?)*)/m", $utterance, $matches))
+            {
+                $this->setField("movie.name", $matches["name"]);
+            }
+            //TODO more fillin options
         }
     }
 
@@ -95,24 +121,31 @@ class DialogManager
         $question = "";
         if($this->intent == null)
         {
-            $question .= "Did you want to know about a ";
-
-            $numItems = count($this->probableIntents);
-            foreach($this->probableIntents as $key=>$intent)
+            if(empty($this->probableIntents))
             {
-                $question .= $intent[0];
-                if($key == $numItems - 2)
-                {
-                    $question .= " or ";
-                }
-                else if($key != $numItems - 1)
-                {
-                    $question .= ", ";
-                }
+                $question .= "What are you looking at?";
             }
+            else
+            {
+                $question .= "Did you want to know about a ";
 
-            $question .= "?";
-            $this->current = DialogManager::$ask_intent;
+                $numItems = count($this->probableIntents);
+                foreach($this->probableIntents as $key=>$intent)
+                {
+                    $question .= $intent[0];
+                    if($key == $numItems - 2)
+                    {
+                        $question .= " or ";
+                    }
+                    else if($key != $numItems - 1)
+                    {
+                        $question .= ", ";
+                    }
+                }
+
+                $question .= "?";
+                $this->current = DialogManager::$ask_intent;
+            }
         }
         else if(empty($this->fields))
         {
@@ -123,6 +156,35 @@ class DialogManager
             $this->current = DialogManager::$ask_slu;
         }
         return $question;
+    }
+
+    function arrayToString($array, $con, $last)
+    {
+        $data = "";
+        $numEls = count($array);
+        foreach($array as $key=>$s)
+        {
+            $data .= trim(trim($s), ' ');
+            if($key == $numEls - 2 && $last)
+            {
+                $data .= " $con ";
+            }
+            else if($key != $numEls - 1 || !$last)
+            {
+                $data .= ", ";
+            }
+        }
+        return $data;
+    }
+
+    function sanitize($concept)
+    {
+        return str_replace(".", " ", str_replace("_", " ", $concept));
+    }
+
+    function sanitizeSelectString($select)
+    {
+        return explode(', ', str_replace("DISTINCT", "", $select));
     }
 
     function generateAnswer($mappedIntent, $result)
@@ -136,6 +198,8 @@ class DialogManager
         }
         else if(count($result) > 1 || strpos($result[0][$mappedIntent], '|') !== false)
         {
+            debugEcho("Answer, multiple:");
+            debugPrint($result);
             $data = "I found these ".$this->intent."s: ";
 
             $numRes = count($result);
@@ -144,6 +208,8 @@ class DialogManager
                 if(strpos($res[$mappedIntent], '|') !== false)
                 {
                     $exploded = explode('|', $res[$mappedIntent]);
+                    $data .= $this->arrayToString($exploded, "and", $key == $numRes - 1);
+                    /*
                     $numExpl = count($exploded);
                     foreach($exploded as $exKey=>$s)
                     {
@@ -152,11 +218,12 @@ class DialogManager
                         {
                             $data .= " and ";
                         }
-                        else if($exKey != $numExpl - 1 && $key == $numRes - 1)
+                        else if($exKey != $numExpl - 1 || $key != $numRes - 1)
                         {
                             $data .= ", ";
                         }
                     }
+                     */
                 }
                 else
                 {
@@ -180,6 +247,7 @@ class DialogManager
             {
                 $txt .= $field." ";
             }
+            $txt = trim($txt);
             $data = "The $this->intent of $txt is ".$result[0][$mappedIntent];
         }
 

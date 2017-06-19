@@ -1,4 +1,6 @@
 <?php
+//ini_set('memory_limit', '-1');
+
 require_once("./dialog_manager.php");
 // for SLU processing
 require 'FstClassifier.php';
@@ -106,7 +108,8 @@ $uc_out = $UC->predict($utterance, TRUE, $uc_nbest);
 //
 $th_slu_accept = 0.87;
 //$th_uc_accept = 0.93;
-$th_uc_accept = 1;
+$th_uc_accept = 0.90;
+$th_uc_reject = 0.20;
 $th_slu_reject = 0.75;
 
 $results = null;
@@ -125,7 +128,7 @@ foreach($slu_out as $res)
 
 $uc_found = false;
 $uc_class = "";
-$uc_conf = 0;
+$uc_conf = $uc_out[0][1];
 foreach($uc_out as $uc_res)
 {
     if($uc_res[1] >= $th_uc_accept)
@@ -143,9 +146,14 @@ foreach($uc_out as $uc_res)
 //----------------------------------------------------------------------
 $response = array(
     "response" => "",
+    "db_result" => array(),
     "state" => array(),
-    "debug" => ""
+    "debug_uc" => "",
+    "debug_slu" => ""
 );
+
+$response['debug_uc'] = $uc_out;
+$response['debug_slu'] = $slu_out;
 
 if (!$uc_found)
 {
@@ -154,7 +162,11 @@ if (!$uc_found)
     {
         $dialog->fill($utterance);
     }
-    $dialog->setProbableIntents($uc_out);
+
+    if($uc_conf >= $th_uc_reject)
+    {
+        $dialog->setProbableIntents($uc_out);
+    }
 }
 
 if($slu_conf >= $th_slu_accept)
@@ -164,14 +176,26 @@ if($slu_conf >= $th_slu_accept)
         $dialog->setField($key, $value);
     }
 }
-
-if ($slu_conf < $th_slu_reject)
+else
 {
-    //TODO ask user, keep dialogue state
+    if($slu_conf < $th_slu_reject)
+    {
+        $dialog->fill($utterance);
+    }
+    else
+    {
+        //TODO compare nbest, ask user
+        foreach($results as $key=>$value)
+        {
+            $dialog->setField($key, $value);
+        }
+    }
 }
+/*
 else {
     $response['response'] = 'Not implemented yet!';
 }
+ */
 
 if($dialog->isReadyToSend())
 {
@@ -183,15 +207,24 @@ if($dialog->isReadyToSend())
     // Query DB
     //------------------------------------------------------------------
     $db_results = $DB->query($query);
+    debugEcho($query);
 
-    $db_class = $QC->db_mapping($dialog->getIntent());
+    $db_class = $QC->class_mapping($dialog->getIntent());
 
     $response['response'] = $dialog->generateAnswer($db_class, $db_results);
-    $response['debug'] = $db_results;
+    $response['db_result'] = $db_results;
+    //$response['debug'] = $db_results;
 }
 else
 {
-    $response['response'] = $dialog->generateQuestion();
+    if($uc_conf < $th_uc_reject && $slu_conf < $th_slu_reject)
+    {
+        $response['response'] = "Sorry, I did not understand";
+    }
+    else
+    {
+        $response['response'] = $dialog->generateQuestion();
+    }
 }
 $response['state'] = $dialog->toArray();
 

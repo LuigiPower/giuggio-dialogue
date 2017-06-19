@@ -49,11 +49,15 @@
             context.ASR.start();
         };
 
-        this.startTTS = function(text){
+        this.startTTS = function(text) {
             var voices = window.speechSynthesis.getVoices();
             context.TTS.lang = 'en-GB';
             context.TTS.text =  text;
             speechSynthesis.speak(context.TTS);
+        };
+
+        this.stopTTS = function() {
+            speechSynthesis.cancel();
         };
 
         this.ASR.onstart = function() {
@@ -71,10 +75,15 @@
             context.asr_listener.onresult(ev);
         };
 
+        this.TTS.onstart = function(ev) {
+            console.log("onstart TTS");
+            context.tts_listener.onstart(ev);
+        };
+
         this.TTS.onend = function(ev) {
             console.log('onend TTS');
             context.tts_listener.onend(ev);
-        }
+        };
 
 
     }]);
