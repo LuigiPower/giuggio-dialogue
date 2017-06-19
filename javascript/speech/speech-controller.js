@@ -71,6 +71,8 @@
                         console.log(data);
                         $scope.startTTS(data.data.result.response);
                         $scope.dialog_state = data.data.result.state;
+
+                        $scope.movies = data.data.result.db_result;
                     }, function(error) {
                         console.log(error);
                     });

@@ -58,6 +58,7 @@
          * TODO set these correctly
          */
         this.script = "php/dialog.php";
+        this.scrapescript = "php/scrape.php";
 
         /**
          * Contexts
@@ -75,6 +76,12 @@
          * success - callback function
          */
         this.request = function(script, method, params, success, failure){
+            console.log("request is");
+            console.log(script);
+            console.log(method);
+            console.log(params);
+            console.log(success);
+            console.log(failure);
             session.showLoading();
             if(method === "POST")
             {
@@ -104,6 +111,11 @@
         this.send = function(text, state, success, failure) {
             console.log("Sending request " + text);
             context.request(context.script, context.POST, { utterance: text, dialog_state: JSON.stringify(state) }, success, failure);
+        };
+
+        this.scrape = function(url, success, failure) {
+            console.log("Scraping " + url);
+            context.request(context.scrapescript, context.POST, { toscrape: url }, success, failure);
         };
 
     }]);
