@@ -209,7 +209,8 @@ if($dialog->isReadyToSend())
     $db_results = $DB->query($query);
     debugEcho($query);
 
-    $db_class = $QC->class_mapping($dialog->getIntent());
+    debugEcho("mapping ".$dialog->getIntent());
+    $db_class = $QC->answer_mapping($dialog->getIntent());
 
     $response['response'] = $dialog->generateAnswer($db_class, $db_results);
     $response['db_result'] = $db_results;

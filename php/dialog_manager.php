@@ -132,7 +132,7 @@ class DialogManager
                 $numItems = count($this->probableIntents);
                 foreach($this->probableIntents as $key=>$intent)
                 {
-                    $question .= $intent[0];
+                    $question .= $this->sanitize($intent[0]);
                     if($key == $numItems - 2)
                     {
                         $question .= " or ";
@@ -184,11 +184,16 @@ class DialogManager
 
     function sanitizeSelectString($select)
     {
-        return explode(', ', str_replace("DISTINCT", "", $select));
+        $exploded = explode(', ', reg_replace("/[A-Z]*\(([a-zA-Z]*)\)/m", "$1", $select));
+        return $exploded;
     }
 
     function generateAnswer($mappedIntent, $result)
     {
+        debugEcho("Answer is getting generated with mapped intent $mappedIntent");
+
+        //$sanitizedIntent = $this->sanitize($mappedIntent);
+        $sanitizedIntent = $this->sanitize($this->intent);
         $ack = TextManager::$acks[rand(0, count(TextManager::$acks) - 1)];
 
         $data = "";
@@ -200,7 +205,7 @@ class DialogManager
         {
             debugEcho("Answer, multiple:");
             debugPrint($result);
-            $data = "I found these ".$this->intent."s: ";
+            $data = "I found these ".$sanitizedIntent."s: ";
 
             $numRes = count($result);
             foreach($result as $key=>$res)
@@ -209,21 +214,6 @@ class DialogManager
                 {
                     $exploded = explode('|', $res[$mappedIntent]);
                     $data .= $this->arrayToString($exploded, "and", $key == $numRes - 1);
-                    /*
-                    $numExpl = count($exploded);
-                    foreach($exploded as $exKey=>$s)
-                    {
-                        $data .= trim(trim($s), ' ');
-                        if($exKey == $numExpl - 2 && $key == $numRes - 1)
-                        {
-                            $data .= " and ";
-                        }
-                        else if($exKey != $numExpl - 1 || $key != $numRes - 1)
-                        {
-                            $data .= ", ";
-                        }
-                    }
-                     */
                 }
                 else
                 {
@@ -248,7 +238,7 @@ class DialogManager
                 $txt .= $field." ";
             }
             $txt = trim($txt);
-            $data = "The $this->intent of $txt is ".$result[0][$mappedIntent];
+            $data = "the $sanitizedIntent of $txt is ".$result[0][$mappedIntent];
         }
 
         $answer = "$ack, $data";

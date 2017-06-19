@@ -45,9 +45,52 @@ class Slu2DB {
         "person_name" => "actors", //todo this is wrong?
         "movie" => "title, actors, director, genres, country, year, language, duration, color, budget, plot_keywords, gross, imdb_score",
         "movie_name" => "title",
-        "movie_count" => "COUNT(title)", //TODO group by...
+        "movie_count" => "COUNT(title) AS movieCount", //TODO group by...
         "movie_other" => "title, actors, director, genres, country, year, language, duration, color, budget, plot_keywords, gross, imdb_score",
         "other" => "title, actors, director, genres, country, year, language, duration, color, budget, plot_keywords, gross, imdb_score",
+        "picture" => "title", //TODO from IMDB
+        "release_date" => "year",
+        "language" => "language",
+        "genre" => "genres",
+        "subjects" => "subject",
+        "revenue" => "gross",
+        "country" => "country",
+        "date" => "year",
+        "director" => "director",
+        "director_name" => "director",
+        "character" => "actors", //todo get from IMDB
+        "producer" => "director", //todo get from IMDB
+        "producer_count" => "director", //TODO get from IMDB
+        "runtime" => "duration",
+        "synopsis" => "title", //todo get from IMDB
+        "media" => "title", //todo get from IMDB
+        "trailer" => "title", //todo get from IMDB
+        "writer" => "title", //todo get from IMDB
+        "theater" => "title", //todo get from IMDB
+        "organization" => "title", //todo get from IMDB
+        "composer" => "title" //todo get from IMDB
+    );
+
+    private $answer_map = array(
+        "award" => "imdb_score",
+        "award_category" => "imdb_score", //TODO from IMDB
+        "award_category_count" => "imdb_score", //TODO from IMDB
+        "award_ceremony" => "imdb_score", //TODO from IMDB
+        "award_count" => "imdb_score", //TODO from IMDB
+        "actor" => "actors",
+        "actor_name" => "actors",
+        "birth_date" => "actors", //TODO from IMDB
+        "budget" => "budget",
+        "rating" => "imdb_score",
+        "star_rating" => "imdb_score",
+        "review" => "imdb_score", //TODO special case, get reviews from IMDB?
+        "person" => "actors", //TODO this is wrong?
+        "person_name" => "actors", //todo this is wrong?
+        "movie" => "title",
+        "movie_name" => "title",
+        "movie_count" => "movieCount", //TODO group by...
+        "movie_other" => "title",
+        "other" => "titlee",
         "picture" => "title", //TODO from IMDB
         "release_date" => "year",
         "language" => "language",
@@ -111,6 +154,13 @@ class Slu2DB {
      */
     public function concept_mapping($str) {
         return $this->concept_map[$str];
+    }
+
+    /**
+     * Returns db column w.r.t. $str
+     */
+    public function answer_mapping($str) {
+        return $this->answer_map[$str];
     }
 
 

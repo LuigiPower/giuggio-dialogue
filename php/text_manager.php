@@ -9,7 +9,7 @@ class TextManager
         "Understood",
         "Alright",
         "Gotcha",
-        "Hmhmm"
+        "Ah"
     );
 
 }
