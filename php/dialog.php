@@ -1,6 +1,7 @@
 <?php
 //ini_set('memory_limit', '-1');
 
+require_once("./utility.php");
 require_once("./dialog_manager.php");
 // for SLU processing
 require 'FstClassifier.php';
@@ -9,30 +10,6 @@ require 'SluResults.php';
 // for DB
 require_once("Slu2DB.php");
 require 'QueryDB.php';
-
-function setupHeader($type)
-{
-    header("Content-Type: $type");
-}
-
-function setResponseCode($responseCode)
-{
-    http_response_code($responseCode);
-}
-
-function wrapAndShowJSON($resultcode, $success, $result, $numpages = 0)
-{
-    setupHeader("application/json");
-    setResponseCode($resultcode);
-    $toecho = array(
-        'resultcode' => $resultcode,
-        'success' => $success,
-        'result' => $result,
-        'pages' => $numpages
-    );
-
-    echo json_encode($toecho, JSON_FORCE_OBJECT);
-}
 
 // configure paths
 $classifier = 'models/MAP.fst';
