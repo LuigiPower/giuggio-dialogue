@@ -76,12 +76,6 @@
          * success - callback function
          */
         this.request = function(script, method, params, success, failure){
-            console.log("request is");
-            console.log(script);
-            console.log(method);
-            console.log(params);
-            console.log(success);
-            console.log(failure);
             session.showLoading();
             if(method === "POST")
             {

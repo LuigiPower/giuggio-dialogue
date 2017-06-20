@@ -126,7 +126,8 @@ $response = array(
     "db_result" => array(),
     "state" => array(),
     "debug_uc" => "",
-    "debug_slu" => ""
+    "debug_slu" => "",
+    "query" => ""
 );
 
 $response['debug_uc'] = $uc_out;
@@ -191,6 +192,7 @@ if($dialog->isReadyToSend())
 
     $response['response'] = $dialog->generateAnswer($db_class, $db_results);
     $response['db_result'] = $db_results;
+    $response['query'] = $query;
     //$response['debug'] = $db_results;
 }
 else

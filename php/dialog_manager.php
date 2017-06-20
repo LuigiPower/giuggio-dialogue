@@ -71,12 +71,20 @@ class DialogManager
         }
         else if($this->current == DialogManager::$ask_slu)
         {
-            $matches = array();
-            if(preg_match("/the movie (?<name>([a-zA-Z]* ?)*)/m", $utterance, $matches))
-            {
-                $this->setField("movie.name", $matches["name"]);
-            }
+            $this->fillField($utterance, "the movie", "movie.name");
+            $this->fillField($utterance, "the director", "director.name");
+            $this->fillField($utterance, "the actor", "actors");
+            $this->fillField($utterance, "the actors", "actors");
             //TODO more fillin options
+        }
+    }
+
+    function fillField($utterance, $prefix, $field)
+    {
+        $matches = array();
+        if(preg_match("/$prefix (?<match>([a-zA-Z]* ?)*)/m", $utterance, $matches))
+        {
+            $this->setField($field, $matches["match"]);
         }
     }
 
