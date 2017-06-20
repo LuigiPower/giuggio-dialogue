@@ -1,0 +1,1207 @@
+O O B-movie.name,0.98463532044925,GOOD
+O O O O O B-movie.name I-movie.name,0.92648341016846,GOOD
+O O O O O O B-movie.name I-movie.name,0.93028785992058,GOOD
+O O O B-movie.name,1,GOOD
+O O O O,0.74496423507659,BAD
+O O B-movie.name I-movie.name,0.13406653554258,GOOD
+O O B-movie.name,0.97451127769764,GOOD
+O O O O O B-movie.name,0.92648480965221,GOOD
+O O O O O B-movie.name I-movie.name,0.92648480965221,GOOD
+O O O O B-movie.name I-movie.name,0.97683731686707,GOOD
+O O O O B-movie.name I-movie.name,0.97683646365828,GOOD
+O O O B-movie.name I-movie.name I-movie.name I-movie.name,1,GOOD
+O O O B-movie.name I-movie.name,1,GOOD
+O O B-movie.name I-movie.name O O,0.99374127253824,GOOD
+O O O O O O O O O B-movie.name I-movie.name,0.95148984414341,GOOD
+O O O O O O O O O O O O O O B-movie.name I-movie.name,0.91353524716478,GOOD
+O O O B-movie.name I-movie.name,0.63689777412548,GOOD
+O O B-movie.name I-movie.name,1,GOOD
+O O O,0.84760397125577,BAD
+O O B-movie.name,0.13763613660245,GOOD
+O O O O O O O,0.75435008927546,BAD
+O O O O O B-movie.name I-movie.name,0.12315658193589,GOOD
+B-movie.name I-movie.name O,1,GOOD
+O O O O O O B-movie.name I-movie.name,0.98098818896037,GOOD
+O O B-movie.name I-movie.name,0.82541866584456,GOOD
+O O O O O O B-movie.name,0.92807591633323,GOOD
+B-movie.name I-movie.name I-movie.name I-movie.name I-movie.name,0.51100486399105,GOOD
+O O O O,1,BAD
+O O O O O O O,0.945163744555,BAD
+O O O O O B-movie.name O,0.045162097634223,GOOD
+O O O,1,BAD
+O O O B-movie.name,0.97062795880118,GOOD
+O O B-movie.name I-movie.name,0.95525302453609,GOOD
+O O O O O O O O B-movie.name,0.67549621517897,GOOD
+O O O O O O O O B-movie.name,0.67551669284953,GOOD
+O O O O O O B-movie.name,0.66905735369159,GOOD
+O O O O O O O B-movie.name I-movie.name,0.96389184827857,GOOD
+O O O O O O O O B-movie.name I-movie.name,0.94953578552738,GOOD
+O O O O O O O B-movie.name I-movie.name,0.51060551771563,GOOD
+O O B-movie.name I-movie.name,0.95195135497393,GOOD
+O O O O O B-movie.name I-movie.name,0.93177002113246,GOOD
+O O B-movie.name,1,GOOD
+O O O O O O B-movie.name I-movie.name,0.92993604818252,GOOD
+O O B-movie.name O O,0.97696193855047,GOOD
+O O O O O O O B-movie.name,0.91353524716478,GOOD
+O O B-movie.name I-movie.name I-movie.name,0.51824189979574,GOOD
+O O O O O O B-movie.name O O B-movie.name,0.86811570256031,GOOD
+O O O O O O O O B-movie.name,1,GOOD
+B-movie.name O O,0.93726226259227,GOOD
+O O O B-movie.name O O,0.8826015346205,GOOD
+O O O O B-movie.name O O O B-movie.name,0.86811570256031,GOOD
+O O O O O O B-movie.name O,0.96936505726148,GOOD
+O O O O O O O O O B-movie.name,0.91353524716478,GOOD
+O O O O O B-movie.name,0.93458579238715,GOOD
+O O O O O B-movie.name I-movie.name,0.96936505726148,GOOD
+O O O O O B-movie.name I-movie.name,0.83125834908949,GOOD
+O O B-movie.name O O B-movie.name I-movie.name I-movie.name I-movie.name,0.81928340038562,GOOD
+O O O O B-movie.name I-movie.name I-movie.name I-movie.name I-movie.name,0.80429298275609,GOOD
+O O B-movie.name I-movie.name O O,0.99374065055195,GOOD
+O O B-movie.name O O B-movie.name,0.86811570256031,GOOD
+O O O O B-actor.name I-actor.name O O O O B-movie.name,0.84082776684622,GOOD
+O O B-movie.name I-movie.name O O O,1,GOOD
+O O O O O B-rating.name,1,GOOD
+B-country.name O O O O,1,GOOD
+O O O O B-actor.name I-actor.name O O,0.7263305998144,GOOD
+O O O O B-person.name I-person.name O,0.81616831221741,GOOD
+O O O O B-person.name I-person.name O,0.709838538135,GOOD
+O O O O B-producer.name O,1,GOOD
+O O O O O O O O O O O O O O B-movie.name I-movie.name O,0.91353524716478,GOOD
+O O O B-movie.name,1,GOOD
+O O O B-movie.name I-movie.name,1,GOOD
+O O O B-movie.name I-movie.name O,1,GOOD
+O O O O O O,0.96936505726148,BAD
+O O O B-movie.name O O,0.030634942738517,GOOD
+O O O O O O O O,0.94412032061224,BAD
+O O O O B-movie.name I-movie.name O O,0.027939839693879,GOOD
+O O B-movie.name,1,GOOD
+O O I-movie.name O,0.53738012517038,GOOD
+O O B-movie.name I-movie.name I-movie.name O,0.80935120817447,GOOD
+O O O O O B-movie.name,1,GOOD
+O O B-actor.name I-actor.name O O,0.85164983606201,GOOD
+O O O B-movie.name O O O,1,GOOD
+O O O O O O O,1,BAD
+O O O O,1,BAD
+O O O O O O O,0.96936505726148,BAD
+O O O B-movie.name O O O,0.030634942738517,GOOD
+O O O B-movie.name O O,1,GOOD
+O O O O B-movie.language O O O O O,0.79839610660457,GOOD
+O O O O O O O O B-movie.name I-movie.name,0.98799188522864,GOOD
+B-movie.name O O O O,0.55257988416869,GOOD
+O O B-movie.name I-movie.name O,1,GOOD
+O O B-movie.name O,1,GOOD
+O O B-movie.name O,0.71057946166378,GOOD
+O O B-movie.name I-movie.name O,1,GOOD
+O O B-movie.name I-movie.name I-movie.name O,0.77825953716906,GOOD
+O O B-actor.name I-actor.name O O,0.96597360622073,GOOD
+O O B-movie.name O O O O,1,GOOD
+O O B-movie.name I-movie.name O,1,GOOD
+O O O B-movie.name I-movie.name,1,GOOD
+O O B-movie.name I-movie.name O,1,GOOD
+O O O B-movie.name I-movie.name,1,GOOD
+O O B-movie.name I-movie.name O,1,GOOD
+O O B-movie.name O,1,GOOD
+O O B-movie.name O,1,GOOD
+O O O O O O O O O O O B-movie.name,0.91353524716478,GOOD
+O O O O O O O O B-movie.name O,0.94069358607897,GOOD
+O O O I-movie.name O,1,GOOD
+O O B-movie.name I-movie.name O O,1,GOOD
+O O I-movie.name O O,1,GOOD
+O O O B-movie.name I-movie.name I-movie.name O O O O B-movie.subject,0.94461664075315,GOOD
+O O B-movie.name O O O B-movie.name,0.86811570256031,GOOD
+O O O B-movie.name I-movie.name O O,0.66521015351376,GOOD
+O O B-movie.name O O,1,GOOD
+O O O O O O O O O O B-movie.name,0.91353524716478,GOOD
+O O O O O B-movie.release_date O O,0.60214244554909,GOOD
+O O O B-movie.name I-movie.name I-movie.name I-movie.name I-movie.name I-movie.name I-movie.name I-movie.name O,0.51362729484383,GOOD
+O O O O O O O,0.83268494144899,BAD
+O O O O O B-movie.name I-movie.name,0.099162046872545,GOOD
+O O B-actor.name I-actor.name O O O,0.42873695038212,GOOD
+O O O O O O O B-movie.name I-movie.name I-movie.name,0.93712912839157,GOOD
+O O O O B-movie.name I-movie.name I-movie.name I-movie.name O,0.88168663878958,GOOD
+O O B-movie.name I-movie.name I-movie.name I-movie.name,1,GOOD
+O O O O O B-movie.name I-movie.name,0.96936505726148,GOOD
+O O O O O B-movie.name I-movie.name,0.96936505726148,GOOD
+O O B-movie.name O O B-movie.name I-movie.name I-movie.name,0.81928340038562,GOOD
+O O O O O O B-movie.name I-movie.name I-movie.name I-movie.name,0.67062713568346,GOOD
+O O O O O O O B-movie.name I-movie.name I-movie.name I-movie.name,0.66131015713339,GOOD
+O O B-movie.name,1,GOOD
+B-movie.name O,1,GOOD
+B-movie.name O O,0.77185230277503,GOOD
+O O O B-movie.name,0.95743396019809,GOOD
+O O O O O O O,0.75435008927546,BAD
+O O O O O B-movie.name I-movie.name,0.12315658193589,GOOD
+O O B-movie.name,0.76531728965186,GOOD
+O O B-movie.name O O B-movie.name I-movie.name I-movie.name I-movie.name,0.81928340038562,GOOD
+O O B-character.name O B-movie.name I-movie.name I-movie.name I-movie.name I-movie.name I-movie.name I-movie.name I-movie.name I-movie.name,0.90043793312864,GOOD
+O O O O O O O B-movie.name I-movie.name,0.91353524716478,GOOD
+O O B-movie.name,1,GOOD
+O O B-movie.name I-movie.name I-movie.name,1,GOOD
+O O O O O O B-movie.name I-movie.name,0.96936505726148,GOOD
+O O O B-movie.name I-movie.name,1,GOOD
+O O B-movie.name I-movie.name,1,GOOD
+B-movie.name I-movie.name O O O,1,GOOD
+O O B-movie.name I-movie.name,1,GOOD
+O O B-movie.name,1,GOOD
+O O O O O O O O O O O B-movie.name,0.91353524716478,GOOD
+O O O O B-movie.name I-movie.name,0.97621348427747,GOOD
+O O I-movie.gross_revenue I-movie.gross_revenue I-movie.gross_revenue,1,GOOD
+O O O O O O O,0.7478729531154,BAD
+O O B-character.name I-character.name I-character.name O B-movie.name,0.2521270468846,GOOD
+O O B-movie.name,1,GOOD
+B-movie.name O,1,GOOD
+O O B-movie.name,1,GOOD
+O O B-movie.name,1,GOOD
+O O O O O B-movie.name I-movie.name,0.96936505726148,GOOD
+O O O O O B-movie.name I-movie.name,0.92993983053185,GOOD
+O O O O O B-movie.name I-movie.name,0.96936505726148,GOOD
+O O O O B-movie.name I-movie.name,1,GOOD
+O O O O O B-movie.name I-movie.name,0.96936505726148,GOOD
+O O O O B-movie.name I-movie.name,1,GOOD
+O O O O,0.7543407986075,BAD
+O O B-movie.name I-movie.name,0.12316738124668,GOOD
+I-movie.name O,0.83192052774025,GOOD
+O O O O B-movie.name I-movie.name I-movie.name I-movie.name,0.7054441528299,GOOD
+O O B-movie.name I-movie.name I-movie.name I-movie.name,0.7054441528299,GOOD
+O O B-movie.name I-movie.name I-movie.name I-movie.name,0.7054441528299,GOOD
+O O O O B-movie.name O O B-movie.name,0.86811570256031,GOOD
+O O B-movie.name O O,0.70752628885213,GOOD
+O O O O B-movie.name I-movie.name I-movie.name,1,GOOD
+O O O O O B-movie.name I-movie.name,0.96936505726148,GOOD
+O O B-movie.name I-movie.name O O,0.99374065055195,GOOD
+O O O B-movie.name,1,GOOD
+O O O O O B-movie.name,1,GOOD
+O O B-movie.name I-movie.name I-movie.name,1,GOOD
+O O O O O O O O O B-movie.name,0.91353524716478,GOOD
+O O O O O O B-movie.name O O,1,GOOD
+O O B-movie.name I-movie.name I-movie.name I-movie.name I-movie.name,1,GOOD
+O O O O O,0.96936505726148,BAD
+O O B-movie.name O O,0.030634942738517,GOOD
+O O O O O O,0.84760397125577,BAD
+O O O O O B-movie.name,0.13763613660245,GOOD
+O O O O B-movie.name I-movie.name I-movie.name I-movie.name,0.57172681341719,GOOD
+O O O O O O B-movie.name I-movie.name I-movie.name I-movie.name,0.47644128799777,GOOD
+O O O B-movie.name I-movie.name I-movie.name,0.99496202322068,GOOD
+O O B-movie.name,0.94688408084992,GOOD
+O O O O O O O B-movie.name,0.91353524716478,GOOD
+O O O O O O O O O O B-movie.name,0.91353524716478,GOOD
+O O I-character.name I-character.name,1,GOOD
+O O O O B-movie.name I-movie.name I-movie.name O O O,0.93360923455027,GOOD
+O O O O O B-movie.name I-movie.name,0.94069358607897,GOOD
+O O O O O O,0.97122077392487,BAD
+O O O O B-movie.release_date O,0.028779226075132,GOOD
+O O O O O,0.97121797869493,BAD
+O O O B-movie.release_date O,0.028782021305069,GOOD
+O O O O O B-movie.name I-movie.name,0.76105197223918,GOOD
+O O I-movie.name O,0.53738012517038,GOOD
+O O B-movie.name I-movie.name,1,GOOD
+O O O O O O,0.82511081736255,BAD
+O O O O O B-movie.name,0.14767555942298,GOOD
+O O B-movie.name,1,GOOD
+O O O O B-movie.name I-movie.name I-movie.name I-movie.name I-movie.name I-movie.name I-movie.name,0.42785376048378,GOOD
+O O O O O B-movie.name O B-movie.language I-movie.language O O O O O,0.7662757338395,GOOD
+O O O O O O O O O B-movie.language O,0.8602658763741,GOOD
+O O O O O O O B-movie.language O,0.8602658763741,GOOD
+B-director.name I-director.name O O O O O O O,1,GOOD
+O O O O O O O O O B-producer.name I-producer.name,0.94055132138812,GOOD
+O B-movie.name I-movie.name I-movie.name,1,GOOD
+O O O B-movie.name I-movie.name I-movie.name I-movie.name,0.76688411305904,GOOD
+O O O,0.99566547801365,BAD
+O B-movie.name O,0.0043345219863496,GOOD
+O O O,1,BAD
+O O O O O B-movie.language,0.97449885522693,GOOD
+O B-actor.name I-actor.name O O O B-movie.name I-movie.name,0.95990181762708,GOOD
+O B-actor.name I-actor.name O O O B-movie.name I-movie.name,1,GOOD
+O O O B-movie.subject,0.86638883720217,GOOD
+O O O O B-movie.subject,0.86638883720217,GOOD
+O B-actor.name I-actor.name O,0.97140745542048,GOOD
+B-actor.name I-actor.name O,0.75826667829659,GOOD
+O O O B-actor.name I-actor.name O O,0.85164983606201,GOOD
+O B-country.name O,0.96977515566313,GOOD
+O O O O B-movie.name I-movie.name O O O O O O O O O,0.67269714567695,GOOD
+O,0.96911863915778,BAD
+B-movie.name,0.02405510016225,GOOD
+O O O O B-movie.name,0.79165606114799,GOOD
+B-actor.name I-actor.name O O,0.69838807270205,GOOD
+O O O O O O O,0.91441745254356,BAD
+O O O O O B-movie.name I-movie.name,0.04364056896751,GOOD
+O O O O,0.84760397125577,BAD
+O O O B-movie.name,0.13763613660245,GOOD
+O O B-director.name I-director.name O O B-country.name,0.91033237488016,GOOD
+O O O O O B-movie.name I-movie.name O,1,GOOD
+B-movie.name I-movie.name O,1,GOOD
+O O O B-movie.name I-movie.name,1,GOOD
+O O O O O O O O B-movie.name I-movie.name,0.93458579238715,GOOD
+O O O O O O B-movie.name I-movie.name,0.93458579238715,GOOD
+O O B-director.name I-director.name O,0.97935457474663,GOOD
+O O O O O O O B-director.name I-director.name,0.96660229665728,GOOD
+O B-actor.name I-actor.name O,1,GOOD
+O O O O B-actor.name I-actor.name O O O,0.95340506677059,GOOD
+O O O O B-person.name I-person.name O,0.76904027559065,GOOD
+O O O B-actor.name B-actor.name O,1,GOOD
+O O B-actor.name I-actor.name O O,0.60412486165783,GOOD
+O O O O O O B-actor.name I-actor.name O O,0.51739297936889,GOOD
+O O O O B-actor.name I-actor.name O,1,GOOD
+B-director.name I-director.name O O O,0.83213016647074,GOOD
+O O O O O B-producer.name I-producer.name,0.7720459508055,GOOD
+O O O,1,BAD
+O O O O,0.98871129829676,BAD
+O O B-rating.name O,0.011288701703237,GOOD
+O O O,1,BAD
+O O O O O O B-rating.name,0.9918179756288,GOOD
+O O,1,BAD
+O O O O O B-movie.language I-movie.language O,1,GOOD
+O O O O O B-movie.name I-movie.name,0.48073487462338,GOOD
+O O O O O O B-country.name I-country.name I-country.name,0.7917489440328,GOOD
+O B-movie.language O,1,GOOD
+O B-movie.language O,1,GOOD
+B-movie.genre,1,GOOD
+O O B-movie.genre,0.99633224126162,GOOD
+O B-movie.genre O,1,GOOD
+O B-movie.genre O,1,GOOD
+O O B-movie.genre O,1,GOOD
+O O O O O O O B-movie.genre O,1,GOOD
+O O B-person.name I-person.name O,0.81648318199935,GOOD
+O O O B-actor.name I-actor.name O O,0.8993823266148,GOOD
+O O O B-person.name I-person.name,0.90256014370012,GOOD
+O O O O O B-country.name,0.87146786049925,GOOD
+O O O O B-country.name O,1,GOOD
+O B-country.name O,1,GOOD
+O O O O B-country.name O,1,GOOD
+O O O O O O B-country.name O,0.97664928473488,GOOD
+O O O B-movie.language O O,0.79839610660457,GOOD
+O O O O O O O B-country.name,0.66416262570528,GOOD
+O O O B-country.name,0.66414032027589,GOOD
+B-country.name O O,1,GOOD
+O O O O B-country.name O,0.59334238029372,GOOD
+B-movie.language O O,1,GOOD
+B-movie.language O,0.63892468080138,GOOD
+O O O O,0.97594116466953,BAD
+O O B-movie.name O,0.024058835330474,GOOD
+O O O,1,BAD
+O O B-movie.genre O,1,GOOD
+O O O O O O O B-movie.language,0.60893443700326,GOOD
+O O O,0.98594894447568,BAD
+B-actor.name I-actor.name O,0.0092009300635672,GOOD
+O O O B-director.name I-director.name O O,0.53998940570325,GOOD
+B-country.name O,1,GOOD
+B-country.name O O,1,GOOD
+O O O O,0.96196273731157,BAD
+O O B-movie.name O,0.021515545391112,GOOD
+O O O B-director.name I-director.name O,0.57747925790675,GOOD
+O O O B-movie.language,1,GOOD
+O O O O B-country.name,1,GOOD
+O O O B-country.name B-movie.genre O,0.75661316111637,GOOD
+O O O O O B-rating.name O B-movie.genre,0.59873571131303,GOOD
+O O B-movie.language I-movie.language B-movie.genre,1,GOOD
+O O B-movie.name I-movie.name O O B-actor.name I-actor.name,1,GOOD
+O O O O O O O B-movie.name I-movie.name,0.92648480965221,GOOD
+O O O B-movie.name I-movie.name,1,GOOD
+O O O O O O B-actor.name I-actor.name O,1,GOOD
+O O O O B-actor.name I-actor.name,1,GOOD
+O O O O B-actor.name I-actor.name O O,1,GOOD
+O O O B-actor.name I-actor.name O,1,GOOD
+O O O O O,0.84760397125577,BAD
+O O O O B-movie.name,0.13763613660245,GOOD
+O O O B-director.name I-director.name O O,0.68593128122528,GOOD
+B-movie.name I-movie.name O,1,GOOD
+B-movie.name I-movie.name,1,GOOD
+O O O O O B-movie.name I-movie.name,0.84660267018601,GOOD
+O B-movie.name I-movie.name,1,GOOD
+O O B-country.name,0.94232899875085,GOOD
+O O O B-country.name,0.94233443301616,GOOD
+O B-movie.language O,0.88920045244045,GOOD
+O O B-movie.language O,0.8602658763741,GOOD
+O O O O O O B-movie.language O,0.86027789679087,GOOD
+O O O O O B-movie.language O,0.8602658763741,GOOD
+B-movie.language O,0.74419734880289,GOOD
+O O B-movie.language I-movie.language O,1,GOOD
+O O O O O B-country.name,0.7297589626913,GOOD
+B-producer.name I-producer.name O,1,GOOD
+O O O B-producer.name,1,GOOD
+O B-actor.name I-actor.name O,1,GOOD
+O B-actor.name I-actor.name O,1,GOOD
+O O O B-movie.subject,1,GOOD
+O O O B-movie.subject,1,GOOD
+B-actor.name I-actor.name O,0.92035645096281,GOOD
+O O,0.52610201618509,BAD
+B-movie.subject O,0.28654487081655,GOOD
+O O O B-producer.name I-producer.name O,0.48637546805634,GOOD
+O O O O O B-producer.name,1,GOOD
+O O O O B-producer.name,1,GOOD
+O O O B-producer.name O,1,GOOD
+O O O O B-country.name,1,GOOD
+O O O O O B-producer.name I-producer.name,0.92708156080028,GOOD
+O B-movie.name O B-movie.genre,1,GOOD
+O O O O O B-actor.name I-actor.name O O,1,GOOD
+O O O B-country.name,0.62894651391451,GOOD
+O O O B-country.name,0.62894651391451,GOOD
+O O O O O O O O O B-country.name,0.62894651391451,GOOD
+O O O O B-country.name,0.62894651391451,GOOD
+B-country.name O,0.89010362380675,GOOD
+O O O B-country.name O,0.95436625290531,GOOD
+O O B-country.name O,0.9543618975766,GOOD
+O O O O B-rating.name O,0.85398446716979,GOOD
+O O O O O O B-rating.name,1,GOOD
+O O O B-rating.name O O O O O O O,0.62233708685642,GOOD
+O O B-rating.name O O,1,GOOD
+O B-rating.name O,1,GOOD
+O B-rating.name O,1,GOOD
+O O O B-rating.name O,1,GOOD
+O O B-rating.name O O,1,GOOD
+O O O O O B-rating.name O O O B-movie.name I-movie.name O O,0.56782550163942,GOOD
+O B-rating.name O B-rating.name I-rating.name O,0.38641638804568,GOOD
+O B-rating.name O O,1,GOOD
+O O O O O B-rating.name O,1,GOOD
+O O O O O O B-rating.name,1,GOOD
+O O O B-rating.name,1,GOOD
+O O O O B-rating.name O,1,GOOD
+O B-director.name I-director.name O O O B-movie.genre,1,GOOD
+B-person.name I-person.name O O O,0.62875979642598,GOOD
+O O O O O O O B-director.name I-director.name,0.77014915730551,GOOD
+O O O O B-producer.name,1,GOOD
+O O B-country.name O O,0.46115188128832,GOOD
+O O B-movie.location I-movie.location,0.73399751652157,GOOD
+O O O O B-movie.location I-movie.location,0.73399751652157,GOOD
+O O O B-director.name I-director.name O O,0.63820920344972,GOOD
+O O O O O O O O B-director.name I-director.name,0.90730139367322,GOOD
+O B-producer.name I-producer.name O O O O B-movie.gross_revenue I-movie.gross_revenue I-movie.gross_revenue I-movie.gross_revenue,0.7440069346653,GOOD
+O O O O B-director.name I-director.name,0.52929514970131,GOOD
+O O O O O O B-director.name I-director.name,0.52927023544893,GOOD
+O O O O O O O B-director.name I-director.name,0.52929514970131,GOOD
+O O O B-producer.name I-producer.name O,0.96845234448301,GOOD
+O O O O B-director.name I-director.name,0.52929514970131,GOOD
+O O O O O O,0.75435008927546,BAD
+O O O O B-movie.name I-movie.name,0.12315658193589,GOOD
+O O O O O O O O O O O O B-director.name I-director.name,0.71446826035579,GOOD
+O O O O O O O O O B-director.name I-director.name,1,GOOD
+O O B-country.name B-movie.genre O,0.71322520402611,GOOD
+O O O O O O B-producer.name I-producer.name O,0.71475676019189,GOOD
+O O B-director.name I-director.name,0.71448866025479,GOOD
+O O B-director.name I-director.name,0.71448866025479,GOOD
+O O O B-director.name I-director.name O,0.80006276910136,GOOD
+O B-director.name I-director.name O,0.72664859893414,GOOD
+B-director.name I-director.name O,0.85279587658269,GOOD
+B-director.name I-director.name O O,0.83929609688759,GOOD
+O O B-director.name I-director.name,0.524372625295,GOOD
+O O B-director.name I-director.name O,0.6430763258219,GOOD
+O O O B-director.name I-director.name,0.52439645088376,GOOD
+O O O O O O O O O B-director.name I-director.name,0.92876688714297,GOOD
+B-movie.name I-movie.name,1,GOOD
+O B-actor.name I-actor.name O I-movie.name I-movie.name,0.66945053256316,GOOD
+O O O O O O B-actor.name I-actor.name,1,GOOD
+O O O B-actor.name I-actor.name,0.77029065000637,GOOD
+O O O O B-country.name,0.67411063262707,GOOD
+O O O O O O O O O B-country.name,0.67410238367745,GOOD
+O O O O O O O O B-country.name,0.67412435213096,GOOD
+B-movie.language O O,0.85092824000671,GOOD
+B-country.name O,0.92866096016641,GOOD
+O O O O,1,BAD
+O O O,1,BAD
+O O O O,1,BAD
+O O O O B-producer.name,1,GOOD
+O O B-actor.name I-actor.name O O O,0.96597360622073,GOOD
+O O O O O B-movie.name I-movie.name,0.9668073103838,GOOD
+B-actor.name I-actor.name O,0.88267782849969,GOOD
+O O O O B-actor.name I-actor.name,0.7471725744452,GOOD
+O O O O O O O O O O B-actor.name I-actor.name,0.7471725744452,GOOD
+O O O O B-director.name I-director.name O,1,GOOD
+O O O O O O O O B-producer.name I-producer.name,0.98071397288242,GOOD
+O O O O O O O O B-producer.name I-producer.name,0.95123650809141,GOOD
+O O O B-director.name I-director.name,0.77988562900073,GOOD
+O O B-actor.name I-actor.name O,0.57795888628688,GOOD
+O O O B-actor.name I-actor.name O O,1,GOOD
+O O O O O O O,0.93434224666362,BAD
+O O O O B-movie.name I-movie.name O,0.042855877588356,GOOD
+O O O O O O O O O O B-director.name I-director.name,0.94290718220672,GOOD
+O O O O O O O O O O B-director.name I-director.name,0.94290718220672,GOOD
+B-director.name I-director.name O O,1,GOOD
+O O O B-director.name I-director.name,0.9718676644108,GOOD
+O O O O O O B-producer.name I-producer.name,1,GOOD
+O O O O B-producer.name I-producer.name,1,GOOD
+O O O O O O B-producer.name I-producer.name,1,GOOD
+O O O O B-producer.name,1,GOOD
+O O O O B-movie.name I-movie.name,1,GOOD
+O O O O B-movie.name I-movie.name,1,GOOD
+O O B-movie.name I-movie.name,1,GOOD
+B-movie.name I-movie.name O,1,GOOD
+O B-movie.name I-movie.name,1,GOOD
+O O O O B-movie.name I-movie.name,1,GOOD
+B-movie.name I-movie.name O,1,GOOD
+O O O B-movie.name I-movie.name,0.48149093224151,GOOD
+O B-movie.name I-movie.name,1,GOOD
+O B-person.name I-person.name O O O O O B-movie.name,0.86379801561491,GOOD
+O O B-person.name I-person.name O,0.9561357389547,GOOD
+O O O B-actor.name I-actor.name O O,0.74848407665937,GOOD
+B-producer.name O,0.73709034239787,GOOD
+O B-producer.name O,1,GOOD
+O O O O O B-producer.name,0.95903462571338,GOOD
+O O O O B-director.name I-director.name,0.98232203076801,GOOD
+O B-person.name I-person.name O,0.94795508368388,GOOD
+O O O B-person.name I-person.name O,0.96521618802943,GOOD
+O O O O O B-country.name I-country.name I-country.name I-country.name,1,GOOD
+O O O O,0.96196273731157,BAD
+O O B-movie.name O,0.021515545391112,GOOD
+O B-producer.name I-producer.name O,1,GOOD
+B-movie.language O,0.87472519391478,GOOD
+O O O O B-actor.name I-actor.name O B-movie.name,0.5646608738591,GOOD
+O O O O O O B-actor.name I-actor.name O,1,GOOD
+O O B-actor.name O O,1,GOOD
+O O O O O B-movie.genre O O B-country.name,1,GOOD
+B-actor.name O O O O O,0.54430846620928,GOOD
+O O O O O O O O B-director.name I-director.name,0.96936505726148,GOOD
+O B-person.name I-person.name O,0.74452083944576,GOOD
+O O O B-person.name I-person.name O,0.8161533079832,GOOD
+O O O B-person.name I-person.name O,0.8161533079832,GOOD
+O O O B-person.name I-person.name O,0.81616831221741,GOOD
+O O O O O O O O O O B-producer.name I-producer.name,1,GOOD
+O O O B-actor.name I-actor.name O B-movie.name,0.56463629180303,GOOD
+O O O O B-actor.name I-actor.name O O B-movie.name,0.84082776684622,GOOD
+O O O O O B-actor.name I-actor.name,0.96279573110732,GOOD
+O O B-rating.name O O,1,GOOD
+O O B-rating.name O O,1,GOOD
+O O O O O B-rating.name O O,1,GOOD
+O O B-rating.name O O,1,GOOD
+O O O B-rating.name O O,1,GOOD
+O O O O O O O O B-rating.name O,0.82845259855849,GOOD
+O O O O O O O O B-rating.name,0.99315317591283,GOOD
+O O O O O O B-rating.name O,0.82734122959745,GOOD
+O O O O B-rating.name,1,GOOD
+O O O O O B-rating.name O,1,GOOD
+O O O O O O O O O O B-rating.name,0.99315385587381,GOOD
+O O O O O O B-country.name,1,GOOD
+O O O O O O B-movie.language I-movie.language O,1,GOOD
+O O O O O B-movie.release_region,1,GOOD
+O O O O O B-movie.subject,0.75875785947272,GOOD
+O O O O O O,0.50745786320478,BAD
+O O O B-movie.subject O O,0.36771702159238,GOOD
+O O O O B-movie.subject,0.81553731732943,GOOD
+O O O O B-movie.subject,0.81553731732943,GOOD
+O O O O O O,0.75435008927546,BAD
+O O O O B-movie.name I-movie.name,0.12315658193589,GOOD
+O B-director.name I-director.name O O,1,GOOD
+O B-director.name I-director.name O,1,GOOD
+O O O O O O O B-director.name I-director.name,1,GOOD
+O B-country.name O,0.96010148931876,GOOD
+B-country.name O,0.92395232305056,GOOD
+O B-movie.genre O,1,GOOD
+O O B-movie.genre O,1,GOOD
+O B-movie.name O,1,GOOD
+O O B-director.name I-director.name O,0.85210409312356,GOOD
+O O O O B-producer.name I-producer.name,0.91863173602364,GOOD
+O O,1,BAD
+O O O O O B-producer.name I-producer.name,1,GOOD
+O O O O O O B-producer.name I-producer.name,1,GOOD
+O O O O O B-producer.name I-producer.name,1,GOOD
+O O O O B-producer.name I-producer.name,1,GOOD
+O O O O O B-producer.name I-producer.name,1,GOOD
+O O O B-actor.name I-actor.name O O,0.60412486165783,GOOD
+O O O O O O O O O O O,0.94229562710718,BAD
+O O B-movie.name O O O O O O O O,0.029779464777424,GOOD
+O O O O O O O B-country.name,1,GOOD
+O O B-movie.name I-movie.name I-movie.name O,1,GOOD
+O O O O B-movie.name I-movie.name I-movie.name I-movie.name I-movie.name I-movie.name O,0.52216047259412,GOOD
+O O O O B-movie.name I-movie.name I-movie.name I-movie.name I-movie.name I-movie.name O,0.52218542343016,GOOD
+B-movie.name I-movie.name I-movie.name I-movie.name,1,GOOD
+O O B-movie.name I-movie.name I-movie.name O O,1,GOOD
+O B-movie.name I-movie.name I-movie.name,1,GOOD
+O O O O O O O B-movie.name I-movie.name I-movie.name,0.94573867357555,GOOD
+O O O B-movie.name I-movie.name O,0.94268552108449,GOOD
+O O O B-movie.name I-movie.name O,0.94268615172189,GOOD
+O O O B-movie.name I-movie.name O,0.94268615172189,GOOD
+O O O B-movie.name I-movie.name O,0.94298776351497,GOOD
+O O O O B-movie.name I-movie.name,0.93284758481483,GOOD
+O O O O O O B-movie.name I-movie.name,0.9610347811768,GOOD
+O B-movie.name I-movie.name O,0.66317725683521,GOOD
+O O O O O O B-movie.name O B-movie.language,0.94069358607897,GOOD
+O B-person.name I-person.name O,1,GOOD
+O O O O O B-movie.location O B-actor.name I-actor.name,0.51596956644531,GOOD
+O O O,0.98594894447568,BAD
+B-actor.name I-actor.name O,0.0092009300635672,GOOD
+O O O O O O,0.93434224666362,BAD
+O O O B-movie.name I-movie.name O,0.042855877588356,GOOD
+O O O O O O O O B-director.name I-director.name,0.52927023544893,GOOD
+O O O O B-movie.subject,1,GOOD
+O O B-actor.name I-actor.name O,1,GOOD
+O O O,1,BAD
+O O O,1,BAD
+O O O O O O B-producer.name I-producer.name,0.90232243308101,GOOD
+O O O O B-movie.subject I-movie.subject O O,0.96582208615569,GOOD
+O O O B-movie.genre O B-country.name,1,GOOD
+O O O B-movie.name I-movie.name I-movie.name I-movie.name I-movie.name I-movie.name I-movie.name I-movie.name,0.60723395121356,GOOD
+O O O O O B-movie.name I-movie.name I-movie.name I-movie.name I-movie.name O,0.62615753268853,GOOD
+O O O O O O O B-movie.name I-movie.name I-movie.name I-movie.name I-movie.name I-movie.name I-movie.name O O,0.60388092685853,GOOD
+O O O O O O O O O O B-movie.name I-movie.name I-movie.name I-movie.name I-movie.name I-movie.name I-movie.name,0.92648341016846,GOOD
+O O O O B-character.name O B-movie.name I-movie.name I-movie.name I-movie.name I-movie.name I-movie.name I-movie.name,0.90043793312864,GOOD
+O O B-movie.language,0.72724708955863,GOOD
+O O O O O O O B-movie.language,0.72722725323185,GOOD
+O O O O O O B-director.name I-director.name,1,GOOD
+B-person.name I-person.name O O,0.76512755878437,GOOD
+O O B-person.name I-person.name O O,0.86983492504051,GOOD
+O O O B-actor.name I-actor.name,0.60370483202512,GOOD
+O O O B-actor.name I-actor.name O O,0.78716596917665,GOOD
+O B-movie.name I-movie.name O,0.95874686607182,GOOD
+O O O,1,BAD
+O O O O B-director.name I-director.name,0.77988562900073,GOOD
+O O O O I-movie.name I-movie.name O,0.62461891707659,GOOD
+O O O B-movie.name I-movie.name,0.98825020365322,GOOD
+O O O O O O B-movie.name I-movie.name O,0.93280311110486,GOOD
+O O O O O O O O O O B-movie.name I-movie.name,0.91353524716478,GOOD
+O O B-rating.name O,1,GOOD
+B-rating.name O O,1,GOOD
+O O O O B-rating.name O O,1,GOOD
+O O O O O B-rating.name O,0.82845259855849,GOOD
+O O O O O O O B-rating.name O O O O,0.77051120634739,GOOD
+O O O O O B-rating.name O O,1,GOOD
+O O O O B-rating.name O,0.85397199722869,GOOD
+O O O B-rating.name,1,GOOD
+O O B-director.name I-director.name,0.93161715733689,GOOD
+O O O B-person.name I-person.name O,0.70981794092402,GOOD
+O O O,0.99282836296941,BAD
+O B-movie.genre O,0.0036625433195844,GOOD
+O O O O O O O O B-actor.name I-actor.name,0.7471725744452,GOOD
+O O O O O O O O B-rating.name,0.99315317591283,GOOD
+O O O O O O O O B-rating.name,0.99315317591283,GOOD
+B-director.name I-director.name O O O O,0.81562756196222,GOOD
+O O B-person.name O O O,0.65835987005141,GOOD
+O O O O O B-actor.name I-actor.name,0.7471630792179,GOOD
+O O O O O O O B-movie.language I-movie.language,1,GOOD
+O O O B-actor.name I-actor.name O O O,0.8113673159394,GOOD
+O O O O,0.9061811337576,BAD
+O O B-country.name O,0.066369606147465,GOOD
+O O B-movie.name I-movie.name,0.97683872624909,GOOD
+O B-movie.name I-movie.name O,0.66317725683521,GOOD
+O O O O B-producer.name,0.9590306968118,GOOD
+B-producer.name O,0.73709034239787,GOOD
+O O O B-producer.name I-producer.name,1,GOOD
+O O B-person.name I-person.name,0.37262015898714,GOOD
+O O O B-director.name I-director.name,0.98232376723012,GOOD
+O O O O O O O B-actor.name I-actor.name,0.60370292474683,GOOD
+O O O O O O B-actor.name I-actor.name,0.91329916620526,GOOD
+B-actor.name I-actor.name O,0.7582483479909,GOOD
+O B-actor.name I-actor.name O,0.97140467778844,GOOD
+O O O O O O B-actor.name I-actor.name,0.91330708425792,GOOD
+O O O O B-actor.name I-actor.name,0.91330708425792,GOOD
+O O B-actor.name I-actor.name O O,0.85164983606201,GOOD
+O O O B-actor.name I-actor.name,0.98116640814293,GOOD
+O B-actor.name I-actor.name O O O O,0.80824994061343,GOOD
+O O O O O O B-actor.name I-actor.name,0.98116640814293,GOOD
+B-actor.name I-actor.name O,1,GOOD
+O O O O B-person.name O O O,0.65835987005141,GOOD
+B-director.name I-director.name O,0.85280842964676,GOOD
+O B-director.name I-director.name,0.61971998925514,GOOD
+O O O O O B-director.name I-director.name,0.524372625295,GOOD
+O O B-director.name I-director.name,0.524372625295,GOOD
+O O B-director.name I-director.name,0.93162352772488,GOOD
+O O O O O B-director.name I-director.name O O,0.79430577780449,GOOD
+O O B-director.name,0.72916412557459,GOOD
+O O O O B-movie.name O O B-movie.name,0.86811570256031,GOOD
+O B-movie.name,1,GOOD
+O O B-movie.name,1,GOOD
+O O O B-movie.name,1,GOOD
+O O O B-movie.name,1,GOOD
+O O B-movie.name O O O B-movie.name,0.86811570256031,GOOD
+O O B-movie.subject,0.53918404401792,GOOD
+O O O O O B-movie.subject,0.53920889038161,GOOD
+O O O I-movie.name,0.95968958457729,GOOD
+O O O O B-movie.name I-movie.name,0.94069358607897,GOOD
+O O B-movie.name,1,GOOD
+O O O O B-movie.name O O B-movie.name,0.86811570256031,GOOD
+O O B-movie.name,1,GOOD
+O O B-movie.name,1,GOOD
+B-movie.name O,1,GOOD
+O O O O O O O B-character.name O B-movie.name,0.92923518814386,GOOD
+O O B-character.name O B-movie.name,0.92923518814386,GOOD
+O O O O O O O B-movie.name,0.91352734797819,GOOD
+O O B-movie.name O O,0.97702487492393,GOOD
+O O B-movie.name,1,GOOD
+O O O O B-movie.name I-movie.name I-movie.name I-movie.name I-movie.name,0.8677513802188,GOOD
+O O B-movie.name I-movie.name,0.9948202228182,GOOD
+O O O O O B-movie.name I-movie.name,0.93177002113246,GOOD
+B-movie.name I-movie.name O O O,1,GOOD
+O O O O O,0.84760397125577,BAD
+O O O O B-movie.name,0.13763613660245,GOOD
+O O B-movie.name I-movie.name,1,GOOD
+O O B-movie.name I-movie.name O,0.78546038396901,GOOD
+O O B-movie.name O,0.62522834160045,GOOD
+O O O O O O O O B-movie.name,0.91353524716478,GOOD
+O O O O O B-movie.name,0.92778411476311,GOOD
+O O O B-movie.name I-movie.name I-movie.name,0.83727838460631,GOOD
+O O B-movie.name,1,GOOD
+O O O O O O O O B-movie.name,0.9538304245236,GOOD
+O O O O O O O O B-movie.name,0.9538304245236,GOOD
+O O O O O O O O,0.84760397125577,BAD
+O O O O O O O B-movie.name,0.13763613660245,GOOD
+O O O O,0.75435008927546,BAD
+O O B-movie.name I-movie.name,0.12315658193589,GOOD
+O O O O B-movie.name I-movie.name,0.9580933222857,GOOD
+O O O O O B-movie.name I-movie.name,0.96936505726148,GOOD
+O O O O O B-movie.name I-movie.name,0.96936505726148,GOOD
+O O O O,1,BAD
+O O O O B-movie.name I-movie.name O,1,GOOD
+O O B-movie.name I-movie.name,0.9948202228182,GOOD
+O O O O O B-movie.name I-movie.name,0.96449701074277,GOOD
+O O O B-movie.name I-movie.name O,1,GOOD
+O O O O O O B-movie.name I-movie.name,0.83127019171255,GOOD
+O O O B-movie.name I-movie.name O,0.91489507319902,GOOD
+O O B-movie.name I-movie.name,0.8451063561439,GOOD
+O O O O B-movie.name I-movie.name O O O,0.90649749165742,GOOD
+O O O O B-movie.name I-movie.name,0.97350802193402,GOOD
+O O B-movie.name I-movie.name,0.6342055763914,GOOD
+O O O O B-actor.name I-actor.name O O,0.85164983606201,GOOD
+O O O O O B-character.name O B-movie.name I-movie.name,0.654436920165,GOOD
+O O B-character.name I-character.name O B-movie.name I-movie.name,1,GOOD
+O O B-movie.name I-movie.name I-movie.name I-movie.name I-movie.name I-movie.name I-movie.name I-movie.name,0.82159627136567,GOOD
+O O O O O O B-movie.name I-movie.name I-movie.name I-movie.name I-movie.name I-movie.name I-movie.name,0.91422051370066,GOOD
+O O O O B-movie.name I-movie.name I-movie.name I-movie.name I-movie.name I-movie.name I-movie.name,1,GOOD
+B-character.name O O B-movie.name I-movie.name I-movie.name,1,GOOD
+O O O B-character.name O B-movie.name I-movie.name I-movie.name,0.8156425994118,GOOD
+O O O O O O B-movie.name I-movie.name I-movie.name I-movie.name I-movie.name I-movie.name I-movie.name,0.66426369733298,GOOD
+O O O O O,0.74496423507659,BAD
+O O O B-movie.name I-movie.name,0.13406653554258,GOOD
+O O B-character.name O B-director.name O B-movie.name,1,GOOD
+O O O O O O O O O,0.75435932921199,BAD
+O O O O O O O B-movie.name I-movie.name,0.12315809046491,GOOD
+O O O O O B-movie.name I-movie.name I-movie.name I-movie.name,0.90329995385353,GOOD
+O O O O O O O O B-movie.name I-movie.name,0.63690472619139,GOOD
+O O O O O B-movie.name I-movie.name I-movie.name I-movie.name,0.77438753114299,GOOD
+O O O O O O O O B-character.name O B-movie.name O O B-director.name,1,GOOD
+O O O O O O O O O B-character.name O B-director.name O B-movie.name,1,GOOD
+O O O O O O O O O B-character.name O O O O O B-movie.name I-movie.name I-movie.name,0.45679505014025,GOOD
+O O O O O O O O O B-movie.name,0.94055132138812,GOOD
+O O O O O B-character.name I-character.name O B-movie.name,1,GOOD
+O O O O B-movie.name I-movie.name I-movie.name,1,GOOD
+O O O O O O O O O O O B-movie.name I-movie.name I-movie.name I-movie.name I-movie.name,0.61555843389072,GOOD
+O O O O O O O O O B-movie.name I-movie.name I-movie.name I-movie.name I-movie.name I-movie.name I-movie.name I-movie.name I-movie.name I-movie.name,0.45943516423356,GOOD
+O O O O O O B-movie.name I-movie.name I-movie.name,0.95475455943334,GOOD
+O O B-movie.name O O B-movie.name,0.86811570256031,GOOD
+O O O O O B-movie.name,0.93458579238715,GOOD
+O O O O O O O,0.75435008927546,BAD
+O O O O O B-movie.name I-movie.name,0.12315658193589,GOOD
+O O O O O O O,0.75435008927546,BAD
+O O O O O B-movie.name I-movie.name,0.12315658193589,GOOD
+O O B-movie.name O O O B-movie.name I-movie.name O,0.85395952640475,GOOD
+O O O O O O O O B-movie.name I-movie.name O,0.92778284147018,GOOD
+O O O O O O O B-movie.name,1,GOOD
+O O O O O O O B-movie.name,1,GOOD
+O O O O O O O B-movie.name,1,GOOD
+O O O B-movie.name I-movie.name I-movie.name I-movie.name O,0.61132870930699,GOOD
+O O O O O O B-movie.name,1,GOOD
+O O O O O B-movie.name O,0.96936505726148,GOOD
+O O O O O B-movie.name I-movie.name I-movie.name,0.96331673765068,GOOD
+O O O O O O O O O O,0.73807944150783,BAD
+O O O O O O O B-movie.name I-movie.name I-movie.name,0.14140830179023,GOOD
+O O O O O B-movie.name I-movie.name,0.94945599180824,GOOD
+O O B-movie.name O O B-movie.name I-movie.name I-movie.name I-movie.name,0.81928340038562,GOOD
+B-producer.name,1,GOOD
+O O O O,0.84760522224938,BAD
+O O O B-movie.name,0.13763633974205,GOOD
+O O O B-movie.name I-movie.name,1,GOOD
+O O O B-movie.name I-movie.name O,1,GOOD
+O O O O O O O,0.93446176496323,BAD
+O O B-movie.name I-movie.name I-movie.name I-movie.name O,0.039915739152563,GOOD
+O O O O O,0.7543407986075,BAD
+O O O B-movie.name I-movie.name,0.12316738124668,GOOD
+O O O B-character.name O B-movie.name I-movie.name I-movie.name I-movie.name O O,0.60266937415445,GOOD
+O O O B-movie.name I-movie.name O O O,0.49587871260956,GOOD
+O O B-character.name O B-movie.name I-movie.name O,0.92105003033046,GOOD
+O O O O O O O B-movie.name I-movie.name,0.91352998549835,GOOD
+O O O O O O O O,0.8400647418718,BAD
+O O O B-movie.name I-movie.name I-movie.name I-movie.name O,0.11663844802926,GOOD
+O O O O O O B-movie.name I-movie.name I-movie.name,0.84522918982742,GOOD
+O O O O O O B-movie.name I-rating.name O O O,1,GOOD
+O O B-movie.name O O O B-movie.name I-movie.name O,0.85397199722869,GOOD
+O O O O O B-movie.name I-movie.name O,1,GOOD
+O O O O B-movie.name I-movie.name I-movie.name I-movie.name O O,0.75227117836629,GOOD
+O O B-movie.name I-movie.name I-movie.name I-movie.name I-movie.name O O,0.90892671853615,GOOD
+O B-movie.name O O O,0.923225431748,GOOD
+O O O O O,0.59601453973037,BAD
+O B-actor.name I-actor.name O O,0.2982896702789,GOOD
+O O O O O,0.97336527200094,BAD
+O O B-movie.name O O,0.014399009503765,GOOD
+O O B-movie.name I-movie.name I-movie.name I-movie.name O,0.705464931673,GOOD
+O O B-movie.name I-movie.name I-movie.name O O O O,0.52413123774342,GOOD
+O O O,0.84760397125577,BAD
+O O B-movie.name,0.13763613660245,GOOD
+O O O O B-movie.name I-movie.name,1,GOOD
+O O B-movie.name I-movie.name I-movie.name I-movie.name,0.92730008609751,GOOD
+O O O O O O B-movie.name I-movie.name,1,GOOD
+O O O O B-movie.name I-movie.name I-movie.name I-movie.name,0.65084722429634,GOOD
+O B-movie.name I-movie.name O O O,0.47512940629423,GOOD
+O O O B-movie.name O O,0.8826015346205,GOOD
+O O O O B-movie.name I-movie.name I-movie.name,0.34875789897119,GOOD
+O O B-movie.name I-movie.name O O O,0.41179585333877,GOOD
+O O O B-movie.name I-movie.name I-movie.name O,0.98710835005669,GOOD
+O O O O O B-movie.genre O O O B-rating.name I-rating.name O,1,GOOD
+O O B-movie.genre B-movie.genre O B-movie.release_date I-movie.release_date,1,GOOD
+O O O B-movie.genre O B-movie.subject I-movie.subject,1,GOOD
+O O O O O B-movie.release_date,0.84660267018601,GOOD
+O O O,0.84760397125577,BAD
+O O B-movie.name,0.13763613660245,GOOD
+O B-movie.genre I-movie.genre,0.52572725897981,GOOD
+O,0.96911863915778,BAD
+B-movie.name,0.02405510016225,GOOD
+O O B-movie.genre,1,GOOD
+O B-movie.subject B-movie.genre,1,GOOD
+O O O B-actor.name I-actor.name O,1,GOOD
+O O O O O O B-director.name I-director.name,0.524372625295,GOOD
+O O O B-director.name I-director.name,0.524372625295,GOOD
+O O O,0.99057107940863,BAD
+B-country.name O O,0.009428920591369,GOOD
+O O O O O O,0.96196273731157,BAD
+O O O O B-movie.name O,0.021515545391112,GOOD
+O O O O O B-movie.release_date I-movie.release_date,1,GOOD
+O O O O O B-country.name B-movie.release_date I-movie.release_date,1,GOOD
+O O O O B-movie.language,1,GOOD
+O O O O O O O,0.84760397125577,BAD
+O O O O O O B-movie.name,0.13763613660245,GOOD
+O O O B-country.name O O,0.4491105343151,GOOD
+O O B-movie.subject O O O B-producer.name I-producer.name O,0.83473995753313,GOOD
+O O O O B-person.name I-person.name O,0.82860887286072,GOOD
+O O O O B-actor.name I-actor.name O,0.57795888628688,GOOD
+O O O B-actor.name I-actor.name O,0.57795888628688,GOOD
+O O O O,0.75435008927546,BAD
+O O B-movie.name I-movie.name,0.12315658193589,GOOD
+O O I-movie.name O O O,0.52659986289356,GOOD
+O O O O O O,0.91440962640173,BAD
+O O O O B-movie.name I-movie.name,0.043644559702681,GOOD
+O O B-director.name I-director.name O O O,0.94971714337517,GOOD
+O O O O O B-director.name I-director.name,1,GOOD
+B-person.name I-person.name O O O O,0.76514552904567,GOOD
+O O O O O O B-actor.name I-actor.name,0.60370483202512,GOOD
+O O O O O,0.99210813792579,BAD
+B-actor.name I-actor.name O O O,0.0078918620742142,GOOD
+O B-movie.genre O O B-actor.name I-actor.name,1,GOOD
+O O O O O B-movie.release_date I-movie.release_date,0.81897226985695,GOOD
+B-movie.genre B-rating.name I-rating.name O,1,GOOD
+O O,0.9881236793716,BAD
+B-movie.name O,0.0080134218848791,GOOD
+O O O O,0.96196273731157,BAD
+O O B-movie.name O,0.021515545391112,GOOD
+O O O O O B-movie.release_date,0.94303680746894,GOOD
+O O O O O B-movie.release_date,0.94303143539221,GOOD
+O O O O O O B-movie.release_date,0.79034535076002,GOOD
+O O O B-movie.release_date I-movie.release_date,0.59613825317143,GOOD
+O O O O,0.79671692917439,BAD
+O O B-movie.subject O,0.20328307082561,GOOD
+O O O O B-movie.language,0.72724708955863,GOOD
+O O O O O O B-movie.language,0.72722725323185,GOOD
+O O O O O O O O O O O B-movie.language,0.99315317591283,GOOD
+O O O O,0.74498323386352,BAD
+O O B-movie.name I-movie.name,0.13405654830983,GOOD
+O O O O O O B-movie.language,0.60893589904402,GOOD
+O O O B-movie.language,0.60893443700326,GOOD
+O O O O O O O O B-movie.language,0.60893443700326,GOOD
+O O B-movie.language,0.60893443700326,GOOD
+O O O O O O O B-country.name O,0.4156901445144,GOOD
+O O O O B-movie.language,0.60893443700326,GOOD
+O O O B-country.name O B-movie.release_date,0.96267311265587,GOOD
+O O O O O O O O B-movie.language,1,GOOD
+O O O B-movie.language,1,GOOD
+O O O O B-movie.language,0.97450134019266,GOOD
+O O O O O B-movie.language I-movie.language,0.93726226259227,GOOD
+O O B-movie.language,0.97449885522693,GOOD
+O O O O O O B-movie.language,0.97449885522693,GOOD
+O O O O O O O O B-movie.language,0.97449885522693,GOOD
+O O O O,0.74498323386352,BAD
+O O B-movie.name I-movie.name,0.13405654830983,GOOD
+O O O O O O O O O B-producer.name I-producer.name,0.89446659315955,GOOD
+O O O B-person.name I-person.name O,0.96521618802943,GOOD
+O B-actor.name O O O,0.50484984789356,GOOD
+O O O O O O O O O,0.84760522224939,BAD
+O O O O O O O O B-movie.name,0.13763633974205,GOOD
+O O O O O B-producer.name I-producer.name,1,GOOD
+B-producer.name O O O O O O O O O O O O B-movie.release_date I-movie.release_date I-movie.release_date I-movie.release_date O B-movie.release_date I-movie.release_date I-movie.release_date I-movie.release_date,0.5017499928542,GOOD
+B-producer.name I-producer.name I-producer.name O B-movie.release_date,1,GOOD
+O O B-rating.name O B-rating.name O O,0.42881504801214,GOOD
+O O O O O O O,0.98925381363025,BAD
+O O O O B-movie.language O O,0.010746186369749,GOOD
+O O O O O B-rating.name O,0.82843838620265,GOOD
+O O O O O B-rating.name I-rating.name B-movie.genre O,1,GOOD
+O O O O O B-rating.name I-rating.name I-rating.name,0.81009075739241,GOOD
+O O O O O O B-rating.name O O O O O O O O B-movie.name I-movie.name,0.57598349545344,GOOD
+O O O O B-rating.name O O B-producer.name,1,GOOD
+O O O O O O,0.84760397125577,BAD
+O O O O O B-movie.name,0.13763613660245,GOOD
+O O O I-movie.release_date O B-actor.name I-actor.name,1,GOOD
+O O O O O O B-actor.name O,0.63053205256361,GOOD
+O O O B-actor.name I-actor.name O B-movie.release_date I-movie.release_date,1,GOOD
+O O O B-actor.name O O O,0.5966918726156,GOOD
+O O O O O B-actor.type B-actor.name,1,GOOD
+O O O O O O O B-actor.type B-actor.name,1,GOOD
+O O O O O B-actor.name I-actor.name,1,GOOD
+O O O O O B-actor.name I-actor.name O B-actor.name I-actor.name O O,1,GOOD
+O O O O O B-actor.name I-actor.name O O O B-movie.release_date I-movie.release_date I-movie.release_date,1,GOOD
+O O B-movie.name I-movie.name O O B-actor.name I-actor.name,0.931361890449,GOOD
+O O O O,0.75435008927546,BAD
+O O B-movie.name I-movie.name,0.12315658193589,GOOD
+O O B-actor.name I-actor.name O B-actor.name I-actor.name O O O,0.96098293789345,GOOD
+O O O,0.84760397125577,BAD
+O O B-movie.name,0.13763613660245,GOOD
+O O O O O,0.84760397125577,BAD
+O O O O B-movie.name,0.13763613660245,GOOD
+B-movie.subject O,1,GOOD
+O O O O B-movie.subject,0.99204525405114,GOOD
+O O O O O O,0.84760397125577,BAD
+O O O O O B-movie.name,0.13763613660245,GOOD
+O O O O B-movie.subject I-movie.subject I-movie.subject,1,GOOD
+O O O O O O O B-movie.subject,1,GOOD
+O O O B-movie.subject,1,GOOD
+O O O O O,0.84760397125577,BAD
+O O O O B-movie.name,0.13763613660245,GOOD
+O O O O O B-movie.subject I-movie.subject,1,GOOD
+O O O O B-movie.subject I-movie.subject,1,GOOD
+O O O O O O O O O,0.75904689562376,BAD
+O O O O B-movie.name I-movie.name I-movie.name I-movie.name I-movie.name,0.14543998998258,GOOD
+O O O O O O O O O O B-movie.subject I-movie.subject,1,GOOD
+O O O O O O O O B-movie.subject I-movie.subject,1,GOOD
+O O O O O,0.97721935780834,BAD
+O O O O I-movie.name,0.022780642191659,GOOD
+O O O O O O O O,0.96196273731157,BAD
+O O O O O O B-movie.name O,0.021515545391112,GOOD
+O O O B-movie.subject I-movie.subject O O O O,0.86305511407142,GOOD
+O O O O B-movie.subject I-movie.subject,1,GOOD
+O O O,0.99466490919218,BAD
+B-movie.name O O,0.0053350908078202,GOOD
+O O O O O O B-movie.subject O O,0.68778343968642,GOOD
+O O O O O O O B-movie.subject,0.63798681836481,GOOD
+O O O O O O O B-movie.subject,0.99733451445384,GOOD
+O O O O O O O B-movie.subject,0.99315317591283,GOOD
+O O O O B-movie.subject,0.99733424860254,GOOD
+O O O B-movie.subject I-movie.subject O,0.72062162452414,GOOD
+O O O B-movie.subject O O,0.50511679255586,GOOD
+O O O O,0.79670073278744,BAD
+O O B-movie.subject O,0.20329926721256,GOOD
+O O B-movie.name O B-movie.language,1,GOOD
+O B-movie.name O B-rating.name,0.48427479070686,GOOD
+O O O O B-movie.language O O B-movie.name,0.83131840560218,GOOD
+O B-movie.name O B-movie.language,1,GOOD
+O B-movie.name I-movie.name I-movie.name O B-movie.language,1,GOOD
+B-movie.name I-movie.name I-movie.name I-movie.name B-director.name I-director.name,1,GOOD
+O O O B-movie.name I-movie.name I-movie.name,1,GOOD
+O O O B-movie.name I-movie.name I-movie.name,1,GOOD
+O O O O O O O O O B-movie.name I-movie.name I-movie.name,0.85350973419641,GOOD
+O O O O O O O B-character.name O B-movie.name I-movie.name I-movie.name,0.90043793312864,GOOD
+O O O O B-character.name O B-movie.name I-movie.name I-movie.name,0.90043793312864,GOOD
+O O O O B-character.name O B-movie.name I-movie.name I-movie.name O,0.90043793312864,GOOD
+O O O O B-character.name O B-movie.name I-movie.name I-movie.name,0.90043793312864,GOOD
+O B-movie.release_date I-movie.release_date O O O O B-movie.name I-movie.name,0.7824838189247,GOOD
+O O O B-movie.language,0.72724708955863,GOOD
+O O B-character.name O B-movie.name I-movie.name O O,0.60266937415446,GOOD
+O O O O O O B-movie.name I-movie.name I-movie.name I-movie.name I-movie.name I-movie.name I-movie.name I-movie.name I-movie.name,0.9333999951322,GOOD
+O B-director.name I-director.name O B-movie.name I-movie.name,0.52507893689702,GOOD
+O O O B-movie.name I-movie.name O O O O O,0.84761688795469,GOOD
+O O O O O O O B-movie.name O,0.78936465964111,GOOD
+B-movie.language I-movie.language O O O,0.78326573480784,GOOD
+B-movie.language O O B-movie.release_date I-movie.release_date,0.85094092449861,GOOD
+O O B-movie.language O O B-producer.name,0.79838001014791,GOOD
+O O O B-producer.name,0.9590306968118,GOOD
+B-producer.name I-producer.name I-producer.name,1,GOOD
+O O O O O O O O O O B-person.name I-person.name,0.37262015898714,GOOD
+O O O O O O B-director.name I-director.name,0.51505993421181,GOOD
+O O O O B-actor.name I-actor.name,0.60368090724625,GOOD
+O O O O O O O B-actor.name I-actor.name,0.91330708425792,GOOD
+O O O O B-movie.name I-movie.name,0.86988873644189,GOOD
+I-movie.name O O O O,0.43475860902236,GOOD
+O O O O B-movie.name I-movie.name,1,GOOD
+O O O O O O B-movie.name I-movie.name,1,GOOD
+O O B-movie.name I-movie.name,1,GOOD
+O O,1,BAD
+O O O B-movie.name I-movie.name O O,0.5751866124159,GOOD
+O O O O O,1,BAD
+O O O O O B-movie.name I-movie.name,0.96936505726148,GOOD
+O O O O O B-movie.name I-movie.name I-movie.name I-movie.name I-movie.name I-movie.name I-movie.name O,0.36404961563559,GOOD
+O O B-movie.name I-movie.name I-movie.name,0.51821693302691,GOOD
+O O O O O B-movie.name I-movie.name O,1,GOOD
+O O O O O O B-movie.name I-movie.name,0.96936505726148,GOOD
+B-movie.name O O,0.93726814250653,GOOD
+O O O O B-movie.name,1,GOOD
+O B-movie.name,1,GOOD
+O O O B-movie.name O O O,0.98200849045974,GOOD
+O O O B-movie.name O,1,GOOD
+O O O B-movie.name O,0.99466490919218,GOOD
+O O O O B-movie.name I-movie.name I-movie.name I-movie.name O,1,GOOD
+O O O O B-character.name O B-movie.name I-movie.name I-movie.name I-movie.name O,0.90043793312864,GOOD
+O O O B-movie.name I-movie.name I-movie.name I-movie.name O O O O O O O O,0.7543407986075,GOOD
+O O O O O O,0.96196273731157,BAD
+O O O O B-movie.name O,0.021515545391112,GOOD
+O O O O O O O O B-movie.name O,0.96936505726148,GOOD
+O O O O O B-movie.name,1,GOOD
+O O O O O O O B-movie.name I-movie.name O O O O,0.71831890684318,GOOD
+O O O O O O O O O O O O O B-movie.name I-movie.name,0.91352998549835,GOOD
+O O O O O O B-movie.name I-movie.name,0.88295845029706,GOOD
+O O O O O B-character.name I-character.name O,1,GOOD
+O O O O B-movie.name I-movie.name O,1,GOOD
+O O O O O B-movie.name I-movie.name,0.62880153140198,GOOD
+O O B-movie.name I-movie.name I-movie.name O,1,GOOD
+O O O O O O O,0.99315317591283,BAD
+O O B-movie.name O O O O,0.0068468240871694,GOOD
+O O O O O B-movie.name I-movie.name,0.840330386951,GOOD
+O B-movie.name I-movie.name O O,0.67602906974265,GOOD
+O O,1,BAD
+O O O O O O O O O,0.99321140811209,BAD
+O O O O O O O B-movie.subject O,0.0067885918879129,GOOD
+O O B-director.name I-director.name O O,0.94155793723716,GOOD
+O O O O O O O O O O O B-movie.language,0.92722339635481,GOOD
+O O O O,1,BAD
+O O O O O O,0.97121797869493,BAD
+O O O O B-movie.release_date O,0.028782021305069,GOOD
+O O O O O O O O O O B-movie.genre,0.79033075290165,GOOD
+O O O B-movie.name I-movie.name,1,GOOD
+O O O B-movie.name I-movie.name I-movie.name O,0.90156183083104,GOOD
+B-movie.name I-movie.name O O O O,0.61822159105508,GOOD
+O O O O O O O B-movie.name I-movie.name,1,GOOD
+O B-movie.release_date,0.77299490584242,GOOD
+O B-movie.name I-movie.name,1,GOOD
+O O O O,1,BAD
+O O O,0.99822401856392,BAD
+O B-rating.name O,0.0010017792996998,GOOD
+O O O O O O O O O O O O O O O O O B-movie.release_date I-movie.release_date I-movie.release_date,0.75454476154013,GOOD
+O O O O O O,0.99455609571631,BAD
+O O O B-movie.name O O,0.0054439042836881,GOOD
+O O O O O,0.99310130215888,BAD
+O O B-rating.name O O,0.0068986978411153,GOOD
+O O O O,1,BAD
+O O O,1,BAD
+O O O O,0.99151387108748,BAD
+O O O B-movie.name,0.008486128912521,GOOD
+O O O,1,BAD
+O O O,1,BAD
+O O O O O,0.99365044028,BAD
+O O B-movie.name I-movie.name O,0.0063495597200008,GOOD
+O O O,1,BAD
+O O,1,BAD
+O O O O O,1,BAD
+O O O O O O O B-rating.name O O B-character.name O B-movie.name I-movie.name,0.58751453079598,GOOD
+O O O O B-rating.name O O O O O,0.84760522224938,GOOD
+O O O O O O O O O,0.91503266412739,BAD
+O O B-movie.name I-movie.name O O O O O,0.057850365005642,GOOD
+O O O O O B-director.name I-director.name O O B-movie.name,1,GOOD
+O O O O O B-movie.language,0.88551958227777,GOOD
+B-movie.name I-movie.name O O O O,0.96196432656237,GOOD
+O O O O B-movie.name I-movie.name I-movie.name,0.51094414425816,GOOD
+O O O B-movie.name O O O O O B-movie.gross_revenue I-movie.gross_revenue I-movie.gross_revenue I-movie.gross_revenue O B-movie.name,1,GOOD
+O O O O O O B-rating.name O,0.6234927890194,GOOD
+O O O O O O O O B-movie.name I-movie.name,0.74612953716627,GOOD
+O O O O O O B-producer.name O O O O O O O O,0.84761688795469,GOOD
+O O,0.94810489430781,BAD
+B-movie.name I-movie.name,0.035467796507199,GOOD
+O O O O O O,0.96164952048947,BAD
+O O B-movie.name O O O,0.030391107843256,GOOD
+B-movie.name I-movie.name I-movie.name I-movie.name I-movie.name I-movie.name I-movie.name O O O O O,1,GOOD
+O O B-movie.name I-movie.name O,1,GOOD
+O O O O O O O,0.97538037491868,BAD
+O O O O B-movie.name O O,0.01442737614674,GOOD
+B-movie.gross_revenue I-movie.gross_revenue I-movie.gross_revenue I-movie.gross_revenue O O O,1,GOOD
+O O O O O O O,0.96872123140604,BAD
+O O B-movie.name I-movie.name O O O,0.016948458463993,GOOD
+O O O O O O O,0.96288119711419,BAD
+O O O O B-movie.name O O,0.030430032645205,GOOD
+O O O O O O O B-rating.name,0.96936505726148,GOOD
+O O B-actor.name I-actor.name,1,GOOD
+O O O O O B-movie.name I-movie.name,0.840330386951,GOOD
+O O O,0.84760397125577,BAD
+O O B-movie.name,0.13763613660245,GOOD
+O O O O O O O O O O B-rating.name I-rating.name,0.82190387277366,GOOD
+O B-country.name O O O O I-producer.name B-country.name B-award.ceremony I-award.ceremony,1,GOOD
+O O O O O O B-movie.name I-movie.name,0.84031920068718,GOOD
+B-country.name O O,0.84319455138307,GOOD
+O O O O O B-producer.name,0.93082281133835,GOOD
+O O O B-rating.name O O O O O,0.98217661243945,GOOD
+O O O O O O O O O O B-movie.name I-movie.name,0.840330386951,GOOD
+O O O O O O O B-rating.name I-rating.name,0.82190387277366,GOOD
+O B-movie.name O,1,GOOD
+B-person.name I-person.name O,1,GOOD
+O B-actor.name I-actor.name O O O O O O O B-movie.name I-movie.name I-movie.name I-movie.name I-movie.name,0.77738026765729,GOOD
+O O O O B-movie.name I-movie.name,0.85664396686494,GOOD
+O O O O,1,BAD
+O O O O O O O O O O O B-rating.name I-rating.name,0.82188923451279,GOOD
+O O O B-rating.name I-rating.name O O,1,GOOD
+B-movie.gross_revenue I-movie.gross_revenue I-movie.gross_revenue I-movie.gross_revenue O O O O O,1,GOOD
+B-rating.name O O O O O,0.84760522224939,GOOD
+B-movie.name I-movie.name,1,GOOD
+B-producer.name O O O O O O O O O O,1,GOOD
+O O O O,0.84760397125577,BAD
+O O O B-movie.name,0.13763613660245,GOOD
+O O O O O O B-rating.name O,0.82845259855849,GOOD
+O O O O O O O,0.93312116346908,BAD
+O O O O O B-movie.name O,0.044591134301938,GOOD
+O O O O O O O,0.98187116512759,BAD
+O O O O O B-rating.name O,0.011210603856989,GOOD
+O O O B-movie.name,0.91634131795877,GOOD
+O O B-movie.name I-movie.name O O,0.73819344123336,GOOD
+B-movie.name O O O O O O O,0.45916785016306,GOOD
+O O O O O O O O O B-actor.name I-actor.name O O O O,0.42875135329321,GOOD
+O O O O O B-movie.name I-movie.name,0.84031920068718,GOOD
+O O B-movie.name I-movie.name O O B-movie.subject I-movie.subject,0.41288632210304,GOOD
+B-movie.subject I-movie.subject,1,GOOD
+O O O O O O,0.97721935780834,BAD
+O O O O O I-movie.name,0.022780642191659,GOOD
+O B-movie.name,1,GOOD
+B-movie.name,1,GOOD
+O,0.96911863915778,BAD
+B-movie.name,0.02405510016225,GOOD
+O O B-movie.language,0.97450134019266,GOOD
+O O B-movie.language,1,GOOD
+O O B-person.name I-person.name O O O,0.60293274928286,GOOD
+O,0.96911863915778,BAD
+B-movie.name,0.02405510016225,GOOD
+I-movie.gross_revenue B-movie.gross_revenue I-movie.gross_revenue O,0.99880534205387,GOOD
+B-movie.gross_revenue I-movie.gross_revenue I-movie.gross_revenue I-movie.gross_revenue I-movie.gross_revenue I-movie.gross_revenue O O O O,0.78521162055099,GOOD
+O O O O O O,0.93434224666362,BAD
+O O O B-movie.name I-movie.name O,0.042855877588356,GOOD
+B-movie.name I-movie.name,0.78103362098536,GOOD
+O O O O O O B-country.name O O O O O B-country.name,1,GOOD
+O O O O O O O O,0.98361527886393,BAD
+O O O O O O B-movie.name O,0.01025263600598,GOOD
+O O O O O O O O,0.92056448814672,BAD
+O O O B-movie.name I-movie.name O O O,0.06581758526915,GOOD
+O O O O O O B-country.name,0.87146786049925,GOOD
+O O O O O,0.90242279259336,BAD
+O O O B-movie.name I-movie.name,0.056181253754873,GOOD
+B-country.name B-country.name O O,0.50487484552931,GOOD
+O O O O O O B-country.name,0.62894651391451,GOOD
+O O O O,0.7543407986075,BAD
+O O B-movie.name I-movie.name,0.12316738124668,GOOD
+O I-movie.name O O B-movie.name,0.59339063683269,GOOD
+O O O O O O O,0.7543407986075,BAD
+O O O O O B-movie.name I-movie.name,0.12316738124668,GOOD
+O O O O O O B-movie.name,0.94849199689719,GOOD
+O O O O O O O,0.7543407986075,BAD
+O O O O O B-movie.name I-movie.name,0.12316738124668,GOOD
+O O O O O,0.5160190888342,BAD
+O O O O B-movie.name,0.45996194539645,GOOD
+O O O O O,0.96936505726148,BAD
+O O B-movie.name O O,0.030634942738517,GOOD
+O O O B-actor.name I-actor.name,1,GOOD
+O O B-actor.name I-actor.name O,0.95639503399037,GOOD
+O O B-movie.name I-movie.name O,1,GOOD
+O O B-movie.name I-movie.name I-movie.name O,0.94622328854328,GOOD
+O O O O B-movie.release_region I-movie.release_region O O O B-movie.name I-movie.name,1,GOOD
+O O O,0.84760522224939,BAD
+O O B-movie.name,0.13763633974205,GOOD
+O O O O O O O O O O B-movie.release_date I-movie.release_date O O O,0.54514115870459,GOOD
+O O,1,BAD
+O O O O B-movie.subject,0.85254462924946,GOOD
+O O O O O O,1,BAD
+O O,1,BAD
+O O O O O O O O,0.96936505726148,BAD
+O O O O B-movie.name O O O,0.030634942738518,GOOD
+O O O O O,0.98355066870091,BAD
+O O B-movie.name O O,0.014549682255405,GOOD
+O O B-movie.name I-movie.name I-movie.name I-movie.name,1,GOOD
+O O O O,0.945163744555,BAD
+O O B-movie.name O,0.045162097634223,GOOD
+O O O,1,BAD
+O O O O O O B-movie.language O O O O B-movie.genre O,1,GOOD
+O B-movie.name O,1,GOOD
+O B-movie.name O,1,GOOD
+O O O O O O B-award.ceremony I-award.ceremony O B-country.name B-movie.genre,1,GOOD
+O O O O B-person.name I-person.name O B-award.ceremony I-award.ceremony,0.65628898810942,GOOD
+O O O O O O O O,0.99310130215888,BAD
+O O B-rating.name O O O O O,0.0068986978411153,GOOD
+O O O O O O I-movie.name I-movie.name O,0.62461891707659,GOOD
+O O O O O O B-movie.name I-movie.name,0.98824904242266,GOOD
+O O O B-producer.name I-producer.name O O O O O O O B-award.ceremony O,0.61998863804916,GOOD
+O O B-director.name O O O O,0.45647841650713,GOOD
+O O O O O O O O O,0.94412559609203,BAD
+O O O O O B-movie.name I-movie.name O O,0.027937201953987,GOOD
+O O O O O O B-character.name O,0.99027508765989,GOOD
+O O O O O O O,0.52228107429032,BAD
+O O O O O O B-movie.name,0.46554366722568,GOOD
+O O O O O O B-movie.gross_revenue I-movie.gross_revenue I-movie.gross_revenue I-movie.gross_revenue O O O O,1,GOOD
+O O O O O B-movie.gross_revenue I-movie.gross_revenue I-movie.gross_revenue I-movie.gross_revenue,1,GOOD
+O O O O O O O O,0.97538037491868,BAD
+O O O O B-movie.name O O O,0.01442737614674,GOOD
+O O O O O O B-movie.gross_revenue I-movie.gross_revenue I-movie.gross_revenue,0.39989333151146,GOOD
+O B-movie.release_date I-movie.release_date O O B-producer.name I-producer.name,0.7197052449305,GOOD
+O O O O O O B-movie.release_date I-movie.release_date I-movie.release_date I-movie.release_date,1,GOOD
+O O O O O B-movie.release_date I-movie.release_date I-movie.release_date I-movie.release_date,1,GOOD
+O O O O O B-movie.release_date B-movie.release_date,0.55061989667751,GOOD
+O O O O O O B-movie.release_date I-movie.release_date O O O O O O O O,0.78939791133538,GOOD
+B-award.ceremony I-award.ceremony B-producer.name O,0.97997018040213,GOOD
+O B-award.ceremony O O O B-producer.name I-producer.name,1,GOOD
+O O O O B-actor.name I-actor.name O O O O B-award.ceremony,0.62060101375059,GOOD
+O O B-country.name O O O O O O O O B-movie.location I-movie.location,0.78041732575816,GOOD
+O B-country.name O O O O O O O B-movie.location I-movie.location,0.74847586317377,GOOD
+O O O O B-country.name,0.62896985089323,GOOD
+O O O O O O B-country.name,0.96936505726148,GOOD
+O O O O O O O O B-country.name I-country.name,0.93558346460284,GOOD
+O O O O O O O,0.74497422218853,BAD
+O O O O O B-movie.name I-movie.name,0.13405492669744,GOOD
+O O O O O B-country.name O O O B-movie.subject,0.57135197043368,GOOD
+O O O O O O O B-country.name,0.98491864750737,GOOD
+O O O O O O B-country.name,0.61031061255965,GOOD
+O O O O O B-movie.subject O,0.52310852548909,GOOD
+O O O O B-movie.subject O O O O,0.78416930392038,GOOD
+O O O O,1,BAD
+O O B-movie.language I-movie.language O,1,GOOD
+O O B-actor.name I-actor.name O O,0.85164983606201,GOOD
+O O O B-movie.genre,0.80688573413036,GOOD
+O O O O O O B-movie.language,0.94246875628502,GOOD
+O O O O B-movie.language,0.99448799726936,GOOD
+O O O B-country.name O O O,0.52071882436532,GOOD
+O O O O O B-country.name,0.99448799726936,GOOD
+O O B-movie.name I-movie.name I-movie.name I-movie.name O,0.82585141044864,GOOD
+O O B-movie.name I-movie.name I-movie.name O,1,GOOD
+O O O O B-movie.subject I-movie.subject O O O,0.82804006111808,GOOD
+O O O O B-movie.release_date I-movie.release_date I-movie.release_date O O O O B-movie.release_date I-movie.release_date,1,GOOD
+O O O B-country.name O,0.97110595322442,GOOD
+O O O O O O O B-movie.name I-movie.name O O B-actor.nationality O B-actor.name I-actor.name,0.60944978362833,GOOD
+O O O B-producer.name O O O,1,GOOD
+O O O O B-director.name I-director.name,1,GOOD
+O O B-director.name I-director.name,0.52439756583171,GOOD
+O O O O O O B-actor.name I-actor.name,0.91330708425792,GOOD
+O O O O B-director.name I-director.name,1,GOOD
+O O O O O,1,BAD
+O O O O O O,0.94515856140022,BAD
+O O O O B-movie.name O,0.04516636638198,GOOD
+O O O O O O O O O O B-movie.name,0.91353524716478,GOOD
+O O O B-character.name O B-movie.name,0.92923518814386,GOOD
+O O B-movie.name I-movie.name O,1,GOOD
+O O O O B-movie.name O O B-movie.name,0.86811570256031,GOOD
+O O O O O O O O B-movie.name I-movie.name,0.86472124250446,GOOD
+O O O O O B-person.name O,0.7886154789446,GOOD
+O O O B-movie.name I-movie.name O O,0.81471127149226,GOOD
+O O B-movie.name O O B-movie.name I-movie.name I-movie.name I-movie.name,0.81928340038562,GOOD
+O O O B-movie.name I-movie.name O,1,GOOD
+O O B-movie.name I-movie.name I-movie.name I-movie.name I-movie.name,1,GOOD
+O O O B-movie.name I-movie.name,0.9580933222857,GOOD
+O O O O O O O B-movie.name I-movie.name,0.90352135781384,GOOD
+O O O B-movie.name I-movie.name O O,0.82213795679434,GOOD
+O O O O O O O B-movie.name I-movie.name,0.6889279064462,GOOD
+O O O O O B-movie.name I-movie.name,0.96208174731748,GOOD
+O O O O O O O B-movie.name I-movie.name,0.91353524716478,GOOD
+O O B-movie.name I-movie.name I-movie.name,1,GOOD
+O O O O O B-movie.name I-movie.name,1,GOOD
+O O O B-movie.name I-movie.name I-movie.name I-movie.name,0.42324262037812,GOOD
+O O O O B-movie.name I-movie.name,1,GOOD
+O O O O O O O,0.7543407986075,BAD
+O O O O O B-movie.name I-movie.name,0.12316738124668,GOOD
+O O O O O O O,0.96870672932546,BAD
+O O B-movie.name O O O O,0.030614137533634,GOOD
+O O B-movie.name I-movie.name,1,GOOD
+O O O B-movie.name I-movie.name,1,GOOD
+O O O O B-movie.name I-movie.name,1,GOOD
+O O O O O O O B-movie.name I-movie.name,0.96936505726148,GOOD
+O O B-movie.name I-movie.name,1,GOOD
+O O B-movie.name I-movie.name,1,GOOD
+O O B-movie.name I-movie.name,1,GOOD
+O O O,0.99816523056649,BAD
+O B-rating.name O,0.0018347694335079,GOOD
+O O B-movie.name I-movie.name,0.97683731686707,GOOD
+O O O O O O B-movie.name I-movie.name I-movie.name I-movie.name,0.9129519890183,GOOD
+O O O B-movie.name I-movie.name I-movie.name,1,GOOD
+O O B-character.name O B-movie.name I-movie.name I-movie.name I-movie.name I-movie.name I-movie.name I-movie.name,0.90043793312864,GOOD
+O O B-movie.name I-movie.name I-movie.name,1,GOOD
+O O B-movie.name I-movie.name I-movie.name,1,GOOD
+B-movie.name I-movie.name O O,1,GOOD
+O O B-movie.name O O B-movie.name I-movie.name I-movie.name I-movie.name I-movie.name I-movie.name I-movie.name,0.81928340038562,GOOD
+O O O O,0.49168614567301,BAD
+B-movie.name O O O,0.27214651997456,GOOD
+O O B-movie.name I-movie.name I-movie.name I-movie.name I-movie.name,0.98086937300774,GOOD
+O B-movie.name I-movie.name O O O,1,GOOD
+O O O O O O B-producer.name I-producer.name O,1,GOOD
+O O B-director.name I-director.name O O O O O O O,0.89237861902096,GOOD
+O O B-director.name O O O O B-country.name,0.57900739955712,GOOD
+,1,BAD

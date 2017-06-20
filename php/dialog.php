@@ -83,11 +83,27 @@ $uc_out = $UC->predict($utterance, TRUE, $uc_nbest);
 //$slu_conf = $slu_out[0][1];
 //$results = $SR->getConcepts($utterance, $slu_tags);
 //
+
+/**
+ * Thresholds with fstprintstrings FIX
+ */
 $th_slu_accept = 0.87;
 //$th_uc_accept = 0.93;
 $th_uc_accept = 0.90;
 $th_uc_reject = 0.20;
 $th_slu_reject = 0.75;
+/****************************************/
+
+/**
+ * Thresholds with fstprintstrings FIX
+ * AND skipping paths with just O
+ */
+$th_slu_accept = 0.87;
+//$th_uc_accept = 0.93;
+$th_uc_accept = 0.90;
+$th_uc_reject = 0.20;
+$th_slu_reject = 0.33; //Using the old 0.33, from the threshold with the BADs
+/****************************************/
 
 $results = null;
 $slu_tags = null;
@@ -135,15 +151,13 @@ $response['debug_slu'] = $slu_out;
 
 if (!$uc_found)
 {
-    //TODO ask user, keep dialogue state
-    if($dialog->hasProbableIntents())
-    {
-        $dialog->fill($utterance);
-    }
-
     if($uc_conf >= $th_uc_reject)
     {
         $dialog->setProbableIntents($uc_out);
+    }
+    else
+    {
+        $dialog->fill($utterance, true, false);
     }
 }
 
@@ -158,7 +172,7 @@ else
 {
     if($slu_conf < $th_slu_reject)
     {
-        $dialog->fill($utterance);
+        $dialog->fill($utterance, false, true);
     }
     else
     {

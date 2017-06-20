@@ -76,9 +76,24 @@ class FstUtilities {
 	protected function computeConfidences($arr) {
 		$confs = array();
 		$probs = array_map(array($this, 'cost2prob'), $arr);
-		$sum   = array_sum($probs);
+		//$sum   = array_sum($probs);
+		$sum   = 0;
+                foreach ($probs as $label => $p) {
+                    $replaced = str_replace(" ", "", str_replace("O", "", $label));
+                    if(!empty($replaced))
+                    {
+			$sum += $p;
+                    }
+		}
+
+                debugEcho("Sum is $sum");
+
 		foreach ($probs as $label => $p) {
+                    $replaced = str_replace(" ", "", str_replace("O", "", $label));
+                    if(!empty($replaced))
+                    {
 			$confs[$label] = $p / $sum;
+                    }
 		}
 		return $confs;
 	}

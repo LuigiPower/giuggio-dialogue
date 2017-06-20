@@ -133,6 +133,10 @@ class Slu2DB {
         "movie.location" => "country", //todo wrong
         "movie.release_region" => "country",
         "movie.star_rating" => "imdb_score",
+        "movie.duration" => "duration",
+        "movie.budget" => "budget",
+        "movie.keywords" => "plot_keywords",
+        "movie.likes" => "movie_facebook_likes",
         "director" => "director",
         "director.name" => "director",
         "director.nationality" => "country", //todo wrong
@@ -186,14 +190,35 @@ class Slu2DB {
             $db_concepts[$this->concept_mapping($attr)] = $val;
         }
 
+        $start = "SELECT * FROM movie WHERE ";
+
         // construct SQL query
-        $query = "SELECT ";
-        $query .= $db_class;
-        $query .= " FROM movie WHERE ";
 
-        debugPrint($concepts);
-        debugPrint($db_concepts);
 
+        $possible_queries = array();
+
+        $query = $start;
+        $tmp = array();
+        foreach ($db_concepts as $attr => $val) {
+            //$tmp[] = $attr . " LIKE "%" . $val . "%"";
+            $tmp[] = "TRIM(BOTH ' ' FROM ". $attr . ") LIKE '" . $val . "'";
+        }
+        $query .= implode(" AND ", $tmp);
+        $query .= ";";
+        $possible_queries[] = $query;
+
+        $query = $start;
+        $tmp = array();
+        foreach ($db_concepts as $attr => $val) {
+            //$tmp[] = $attr . " LIKE "%" . $val . "%"";
+            $tmp[] = $attr . " LIKE '" . $val . "'";
+        }
+        $query .= implode(" AND ", $tmp);
+        $query .= ";";
+        $possible_queries[] = $query;
+
+
+        $query = $start;
         $tmp = array();
         foreach ($db_concepts as $attr => $val) {
             //$tmp[] = $attr . " LIKE "%" . $val . "%"";
@@ -201,7 +226,22 @@ class Slu2DB {
         }
         $query .= implode(" AND ", $tmp);
         $query .= ";";
+        $possible_queries[] = $query;
 
-        return $query;
+
+        $query = $start;
+        $tmp = array();
+        foreach ($db_concepts as $attr => $val) {
+            //$tmp[] = $attr . " LIKE "%" . $val . "%"";
+            $tmp[] = $attr . " LIKE '%" . $val . "%'";
+        }
+        $query .= implode(" AND ", $tmp);
+        $query .= ";";
+        $possible_queries[] = $query;
+
+        debugPrint($concepts);
+        debugPrint($db_concepts);
+        debugPrint($possible_queries);
+        return $possible_queries;
     }
 }

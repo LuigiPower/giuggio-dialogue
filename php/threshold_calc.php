@@ -55,7 +55,7 @@ foreach($slu_out as $res)
     if(empty($results))
     {
         // Save into "BAD" SLU examples
-        $output .= $res[0].",".$res[1].",BAD\n";
+        $output .= " ".",".$res[1].",BAD\n";
     }
     else
     {
@@ -63,6 +63,7 @@ foreach($slu_out as $res)
         $output .= $res[0].",".$res[1].",GOOD\n";
         break;
     }
+    break;
 }
 
 $results = $SR->getConcepts($utterance, $slu_tags);

@@ -14,9 +14,9 @@ confidences = []
 for line in lines:
     if not line: continue
     if "Fatal error" in line: continue
-    #if "BAD" in line: continue
+    if "BAD" in line: continue
     tmp = line.split(",")
-    confidences.append(float("%.1f" % (float(tmp[-1]))))
+    confidences.append(float("%.1f" % (float(tmp[-2]))))
 
 plt.plot(sorted(confidences))
 plt.show()

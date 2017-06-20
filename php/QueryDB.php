@@ -23,7 +23,15 @@ class QueryDB {
 		}
 
 		// query
-		$result = $mysqli->query($sql);
+                foreach($sql as $query)
+                {
+                    $result = $mysqli->query($query);
+                    if($result->num_rows > 0)
+                    {
+                        debugEcho("Using query $query");
+                        break;
+                    }
+                }
 
 		if (!$result) {
 			echo "DB Error, could not query the database\n";
