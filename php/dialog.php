@@ -98,11 +98,11 @@ $th_slu_reject = 0.75;
  * Thresholds with fstprintstrings FIX
  * AND skipping paths with just O
  */
-$th_slu_accept = 0.87;
+//$th_slu_accept = 0.87;
 //$th_uc_accept = 0.93;
-$th_uc_accept = 0.90;
-$th_uc_reject = 0.20;
-$th_slu_reject = 0.33; //Using the old 0.33, from the threshold with the BADs
+//$th_uc_accept = 0.90;
+//$th_uc_reject = 0.20;
+//$th_slu_reject = 0.33; //Using the old 0.33, from the threshold with the BADs
 /****************************************/
 
 $results = null;
@@ -177,6 +177,7 @@ else
     else
     {
         //TODO compare nbest, ask user
+        $dialog->fill($utterance, false, false);
         foreach($results as $key=>$value)
         {
             $dialog->setField($key, $value);

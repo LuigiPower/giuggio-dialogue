@@ -127,6 +127,10 @@ class DialogManager
                 }
             }
         }
+        else if($this->current == DialogManager::$confirm_slu)
+        {
+
+        }
         else if($this->current == DialogManager::$ask_slu || $force_slu)
         {
             $this->fillField($utterance, "the movie ", "movie.name");
@@ -164,7 +168,7 @@ class DialogManager
         }
     }
 
-    function fillField($utterance, $prefix, $field, $suffix = "$")
+    function fillField($utterance, $prefix, $field, $suffix = "")
     {
         if(isset($this->fields[$field])) return; // TODO is this a good idea?
 

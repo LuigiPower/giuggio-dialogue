@@ -41,7 +41,7 @@ class FstSlu extends FstUtilities {
 		// compile pipeline
 		$cmd  = "/usr/local/bin/fstcompose $this->fstout $this->wfst | ";
 		$cmd .= "/usr/local/bin/fstcompose - $this->lm ";
-		$cmd .= '  | /usr/local/bin/fstrmepsilon | /usr/local/bin/fstshortestpath --nshortest=4 | ';
+		$cmd .= '  | /usr/local/bin/fstrmepsilon | /usr/local/bin/fstshortestpath --nshortest=3 | ';
 		$cmd .= $this->fstprintstrings($this->ilex, $this->olex);
 
 		exec($cmd, $out);
