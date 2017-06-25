@@ -1,5 +1,5 @@
 <?php
-//ini_set('memory_limit', '-1');
+ini_set('memory_limit', '2048M');
 
 require_once("./utility.php");
 require_once("./dialog_manager.php");
@@ -20,7 +20,7 @@ $colex      = 'models/classifier.lex';
 //$sluilex    = 'models/slu.lex';
 //$sluolex    = 'models/slu.lex';
 
-$lm         = 'models/mymodels/conceptmodel-witten_bell-3.lm';
+$lm         = 'models/mymodels/conceptmodel-kneser_ney-9.lm';
 $wfst       = 'models/mymodels/nofeats.txt.fsa';
 $sluilex    = 'models/mymodels/nofeats.lex';
 $sluolex    = 'models/mymodels/nofeats.lex';
@@ -34,12 +34,24 @@ $QC  = new Slu2DB();
 $DB  = new QueryDB();
 
 $slu_nbest = 3;
-$uc_nbest = 3;
+//$uc_nbest = 3;
+// It gets a list of all possible intents,
+// makes it possible to base checking user
+// answers on the intents provided by the classifier
+// (fallback still in place for additional things
+// that can be said by the user)
+$uc_nbest = 40;
 
 
 if(isset($_POST["utterance"]))
 {
     $utterance = trim(strtolower($_POST["utterance"]));
+}
+
+$asr_confidence = 1;
+if(isset($_POST["asr_confidence"]))
+{
+    $asr_confidence = $_POST["asr_confidence"];
 }
 
 $state = array();
@@ -53,7 +65,10 @@ if(!isset($_POST["dialog_state"]) || $state["current"] == DialogManager::$start)
     $state["intent"] = null;
     $state["fields"] = array();
     $state["probableIntents"] = array();
-    $state["last"] = DialogManager::$start;
+    $state["probableFields"] = array();
+    $state["confirmedFields"] = array();
+    $state["askedField"] = null;
+    $state["current"] = DialogManager::$start;
 }
 
 $dialog = new DialogManager($state);
@@ -82,16 +97,34 @@ $uc_out = $UC->predict($utterance, TRUE, $uc_nbest);
 //$slu_tags = $slu_out[0][0];
 //$slu_conf = $slu_out[0][1];
 //$results = $SR->getConcepts($utterance, $slu_tags);
-//
 
 /**
- * Thresholds with fstprintstrings FIX
+ * thresholds to test without error recovery
+ */
+$th_slu_accept = 0;
+//$th_uc_accept = 0.93;
+$th_uc_accept = 0;
+$th_uc_reject = 0;
+$th_slu_reject = 0;
+/****************************************/
+/**
+ * thresholds with fstprintstrings fix
  */
 $th_slu_accept = 0.87;
 //$th_uc_accept = 0.93;
 $th_uc_accept = 0.90;
 $th_uc_reject = 0.20;
 $th_slu_reject = 0.75;
+/****************************************/
+/**
+ * thresholds with fstprintstrings fix
+ * AND --nshortest set to nbest * 10
+ */
+//$th_slu_accept = 0.76;
+//$th_uc_accept = 0.93;
+//$th_uc_accept = 0.90;
+//$th_uc_reject = 0.20;
+//$th_slu_reject = 0.1;
 /****************************************/
 
 /**
@@ -105,19 +138,31 @@ $th_slu_reject = 0.75;
 //$th_slu_reject = 0.33; //Using the old 0.33, from the threshold with the BADs
 /****************************************/
 
+$probableFields = array();
 $results = null;
 $slu_tags = null;
 $slu_conf = null;
+$slu_result = null;
 foreach($slu_out as $res)
 {
     $results = $SR->getConcepts($utterance, $res[0]);
-    if(!empty($results))
+    if(!empty($results) && $slu_tags == null)
     {
         $slu_tags = $res[0];
         $slu_conf = $res[1];
-        break;
+        $slu_result = $results;
+        debugEcho("Slu result");
+        debugPrint($slu_result);
+    }
+
+    if(!empty($results) && $res[1] < $th_slu_accept)
+            //&& $res[1] > $th_slu_reject)
+    {
+        $probableFields[] = $results;
     }
 }
+
+debugPrint($probableFields);
 
 $uc_found = false;
 $uc_class = "";
@@ -129,7 +174,11 @@ foreach($uc_out as $uc_res)
         $uc_found = true;
         $uc_class = $uc_res[0];
         $uc_conf = $uc_res[1];
-        $dialog->setIntent($uc_class);
+        debugEcho("Found $uc_conf > $th_uc_accept and ".$dialog->isIn(DialogManager::$start));
+        if($dialog->isIn(DialogManager::$start))
+        {
+            $dialog->setIntent($uc_class);
+        }
         break;
     }
 }
@@ -157,31 +206,26 @@ if (!$uc_found)
     }
     else
     {
-        $dialog->fill($utterance, true, false);
+
     }
 }
 
-if($slu_conf >= $th_slu_accept)
+if($slu_conf >= $th_slu_accept && $dialog->isIn(DialogManager::$start))
 {
-    foreach($results as $key=>$value)
+    foreach($slu_result as $key=>$value)
     {
         $dialog->setField($key, $value);
     }
 }
 else
 {
-    if($slu_conf < $th_slu_reject)
+    if(count($probableFields) > 0 && !$dialog->isIn(DialogManager::$confirm_slu))
     {
-        $dialog->fill($utterance, false, true);
+        $dialog->setProbableFields($probableFields[0]);
     }
     else
     {
-        //TODO compare nbest, ask user
-        $dialog->fill($utterance, false, false);
-        foreach($results as $key=>$value)
-        {
-            $dialog->setField($key, $value);
-        }
+        // We don't have fields
     }
 }
 /*
@@ -189,6 +233,8 @@ else {
     $response['response'] = 'Not implemented yet!';
 }
  */
+
+$dialog->fill($utterance);
 
 if($dialog->isReadyToSend())
 {
@@ -212,14 +258,13 @@ if($dialog->isReadyToSend())
 }
 else
 {
+    /*
     if($uc_conf < $th_uc_reject && $slu_conf < $th_slu_reject)
     {
         $response['response'] = "Sorry, I did not understand";
     }
-    else
-    {
-        $response['response'] = $dialog->generateQuestion();
-    }
+     */
+    $response['response'] = $dialog->generateQuestion();
 }
 $response['state'] = $dialog->toArray();
 

@@ -31,17 +31,20 @@ class FstSlu extends FstUtilities {
 	 * run SLU
 	 *
 	 * @param  string $input
+	 * @param  number $nbest
 	 * @return array  $results
 	 */
-	private function FstSluParse($input) {
+	private function FstSluParse($input, $nbest=1) {
 
 		$this->text2fsm($input, $this->fsmout, $this->unk);
 		$this->FstCompile($this->fsmout, $this->fstout, $this->ilex, $this->olex, FALSE);
 
 		// compile pipeline
+                $shortest = 10000;
 		$cmd  = "/usr/local/bin/fstcompose $this->fstout $this->wfst | ";
 		$cmd .= "/usr/local/bin/fstcompose - $this->lm ";
-		$cmd .= '  | /usr/local/bin/fstrmepsilon | /usr/local/bin/fstshortestpath --nshortest=3 | ';
+		$cmd .= "  | /usr/local/bin/fstrmepsilon | ";
+		//$cmd .= "  | /usr/local/bin/fstrmepsilon | /usr/local/bin/fstshortestpath --nshortest=$shortest | ";
 		$cmd .= $this->fstprintstrings($this->ilex, $this->olex);
 
 		exec($cmd, $out);
@@ -67,8 +70,8 @@ class FstSlu extends FstUtilities {
 	 *
 	 * @return mixed
 	 */
-	public function runSlu($input, $conf=FALSE, $nbest=FALSE) {
-		$out = $this->FstSluParse($input);
+	public function runSlu($input, $conf=FALSE, $nbest=1) {
+		$out = $this->FstSluParse($input, $nbest);
 
 		$confs = $this->computeConfidences($out);
 		arsort($confs);

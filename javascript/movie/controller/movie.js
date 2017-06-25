@@ -15,7 +15,8 @@
                     });
         };
 
-        $scope.scrapeMissingInfo();
+        // TODO reenable
+        //$scope.scrapeMissingInfo();
 
     }]);
 })();

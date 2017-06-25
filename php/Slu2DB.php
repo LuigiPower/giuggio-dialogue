@@ -71,7 +71,7 @@ class Slu2DB {
         "composer" => "title" //todo get from IMDB
     );
 
-    private $answer_map = array(
+    public static $answer_map = array(
         "award" => "imdb_score",
         "award_category" => "imdb_score", //TODO from IMDB
         "award_category_count" => "imdb_score", //TODO from IMDB
@@ -114,16 +114,16 @@ class Slu2DB {
         "composer" => "title" //todo get from IMDB
     );
 
-    private $concept_map = array(
+    public static $concept_map = array(
         "award" => "imdb_score",
-        "actor" => "actors",
         "actor.name" => "actors",
         "actor.nationality" => "country",
         "actor.type" => "actors",
+        "actor" => "actors",
         "rating.name" => "imdb_score",
-        "person" => "actors",
         "person.nationality" => "country", //todo this is kinda wrong, but the info is not in the db
-        "movie" => "title",
+        "person" => "actors",
+        "country.name" => "country", //todo wrong
         "movie.name" => "title",
         "movie.subject" => "genres",
         "movie.genre" => "genres",
@@ -137,13 +137,14 @@ class Slu2DB {
         "movie.budget" => "budget",
         "movie.keywords" => "plot_keywords",
         "movie.likes" => "movie_facebook_likes",
-        "director" => "director",
+        "movie" => "title",
         "director.name" => "director",
         "director.nationality" => "country", //todo wrong
-        "character" => "actors", //todo wrong
+        "director" => "director",
         "character.name" => "actors", // todo wrong
-        "producer" => "director", //todo maybe wrong
-        "producer.name" => "director" //todo maybe wrong
+        "character" => "actors", //todo wrong
+        "producer.name" => "director", //todo maybe wrong
+        "producer" => "director" //todo maybe wrong
     );
 
     /**
@@ -157,14 +158,14 @@ class Slu2DB {
      * Returns db column w.r.t. $str
      */
     public function concept_mapping($str) {
-        return $this->concept_map[$str];
+        return Slu2DB::$concept_map[$str];
     }
 
     /**
      * Returns db column w.r.t. $str
      */
     public function answer_mapping($str) {
-        return $this->answer_map[$str];
+        return Slu2DB::$answer_map[$str];
     }
 
 
@@ -201,7 +202,8 @@ class Slu2DB {
         $tmp = array();
         foreach ($db_concepts as $attr => $val) {
             //$tmp[] = $attr . " LIKE "%" . $val . "%"";
-            $tmp[] = "TRIM(BOTH ' ' FROM ". $attr . ") LIKE '" . $val . "'";
+            // replace(replace(phone, '+', ''), '-', '')
+            $tmp[] = "REPLACE(TRIM(BOTH ' ' FROM ". $attr . "), ':', '') LIKE '" . $val . "'";
         }
         $query .= implode(" AND ", $tmp);
         $query .= ";";
@@ -211,18 +213,7 @@ class Slu2DB {
         $tmp = array();
         foreach ($db_concepts as $attr => $val) {
             //$tmp[] = $attr . " LIKE "%" . $val . "%"";
-            $tmp[] = $attr . " LIKE '" . $val . "'";
-        }
-        $query .= implode(" AND ", $tmp);
-        $query .= ";";
-        $possible_queries[] = $query;
-
-
-        $query = $start;
-        $tmp = array();
-        foreach ($db_concepts as $attr => $val) {
-            //$tmp[] = $attr . " LIKE "%" . $val . "%"";
-            $tmp[] = $attr . " LIKE '" . $val . "%'";
+            $tmp[] = "REPLACE(". $attr . ", ':', '') LIKE '" . $val . "'";
         }
         $query .= implode(" AND ", $tmp);
         $query .= ";";
@@ -233,7 +224,18 @@ class Slu2DB {
         $tmp = array();
         foreach ($db_concepts as $attr => $val) {
             //$tmp[] = $attr . " LIKE "%" . $val . "%"";
-            $tmp[] = $attr . " LIKE '%" . $val . "%'";
+            $tmp[] = "REPLACE(". $attr . ", ':', '') LIKE '" . $val . "%'";
+        }
+        $query .= implode(" AND ", $tmp);
+        $query .= ";";
+        $possible_queries[] = $query;
+
+
+        $query = $start;
+        $tmp = array();
+        foreach ($db_concepts as $attr => $val) {
+            //$tmp[] = $attr . " LIKE "%" . $val . "%"";
+            $tmp[] = "REPLACE(". $attr . ", ':', '') LIKE '%" . $val . "%'";
         }
         $query .= implode(" AND ", $tmp);
         $query .= ";";

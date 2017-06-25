@@ -1,5 +1,5 @@
 <?php
-//ini_set('memory_limit', '2048M');
+ini_set('memory_limit', '2048M');
 
 // for SLU processing
 require 'FstClassifier.php';
@@ -18,7 +18,8 @@ $colex      = 'models/classifier.lex';
 //$sluilex    = 'models/slu.lex';
 //$sluolex    = 'models/slu.lex';
 
-$lm         = 'models/mymodels/conceptmodel-witten_bell-3.lm';
+#$lm         = 'models/mymodels/conceptmodel-witten_bell-3.lm';
+$lm         = 'models/mymodels/conceptmodel-kneser_ney-9.lm';
 $wfst       = 'models/mymodels/nofeats.txt.fsa';
 $sluilex    = 'models/mymodels/nofeats.lex';
 $sluolex    = 'models/mymodels/nofeats.lex';
@@ -52,18 +53,19 @@ $uc_out  = $UC->predict($utterance, true, 3);
 foreach($slu_out as $res)
 {
     $results = $SR->getConcepts($utterance, $res[0]);
-    if(empty($results))
-    {
-        // Save into "BAD" SLU examples
-        $output .= " ".",".$res[1].",BAD\n";
-    }
-    else
-    {
-        // Save into "GOOD" SLU examples
-        $output .= $res[0].",".$res[1].",GOOD\n";
-        break;
-    }
+    $output .= $res[0]." ,".$res[1].",GOOD\n";
     break;
+    #if(empty($results))
+    #{
+    #    // Save into "BAD" SLU examples
+    #    $output .= " ".",".$res[1].",BAD\n";
+    #}
+    #else
+    #{
+    #    // Save into "GOOD" SLU examples
+    #    $output .= $res[0].",".$res[1].",GOOD\n";
+    #    break;
+    #}
 }
 
 $results = $SR->getConcepts($utterance, $slu_tags);

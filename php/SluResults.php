@@ -57,13 +57,16 @@ class SluResults {
 
 		$spans = $this->token2span($slu_arr);
 
+                    debugPrint($spans);
+                $i = 0;
 		foreach ($spans as $span) {
-			$label = $span[0];
+			$label = $span[0].":$i";
 			$toks  = array();
 			foreach ($span[1] as $tokID) {
 				$toks[] = $utt_arr[$tokID];
 			}
 			$out[$label] = implode(' ', $toks);
+                        $i++;
 		}
 
 		return $out;

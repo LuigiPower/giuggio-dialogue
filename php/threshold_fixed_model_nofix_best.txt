@@ -1,0 +1,16 @@
+O-star O-of B-movie.name ,0.99927613328248,GOOD
+O-who O-is O-in O-the O-movie B-movie.name I-movie.name ,0.99825219351631,GOOD
+O-list O-the O-cast O-of O-the O-movie B-movie.name I-movie.name ,0.99853946058991,GOOD
+O-who O-was O-in B-movie.name ,0.9999945070965,GOOD
+O-who O-is O-in B-movie.name ,0.67792634969079,GOOD
+O-actor O-from B-movie.name ,0.99989323781508,GOOD
+O-who O-played O-in O-the O-movie B-movie.name ,0.9990836976583,GOOD
+O-who O-played O-in O-the O-movie B-movie.name I-movie.name ,0.99111436388885,GOOD
+O-cast O-and O-crew O-for B-movie.name I-movie.name ,0.99960573863272,GOOD
+O-who O-is O-in O-movie B-movie.name I-movie.name ,0.94102917340307,GOOD
+O-who O-'s O-in B-movie.name I-movie.name I-movie.name I-movie.name ,0.86154893949723,GOOD
+O-who O-was O-in B-movie.name I-movie.name ,0.99992256553422,GOOD
+O-who O-was B-movie.name I-movie.name O-'s O-cast ,0.96473840473758,GOOD
+O-search O-for O-information O-about O-the O-cast O-and O-crew O-of B-movie.name I-movie.name ,0.99985923166378,GOOD
+
+Fatal error: Allowed memory size of 2147483648 bytes exhausted (tried to allocate 245 bytes) in /Users/federicogiuggioloni/Projects/websites/sds/php/FstSlu.php on line 50

@@ -5,7 +5,7 @@
     app.controller("giuggioSpeechController", ['$scope', 'ajax-service', 'widget-service', 'session-service', 'speech-service', function ($scope, ajax, widget, session, speech){
 
         $scope.target_text = "";
-        $scope.preemptive = true;
+        $scope.preemptive = false;
         $scope.disable_followup = false;
 
         $scope.asr_listener = {
@@ -63,6 +63,7 @@
         };
 
         $scope.send = function() {
+            $scope.stopTTS();
             console.log("Sending state:");
             console.log($scope.dialog_state);
             ajax.send($scope.target_text,

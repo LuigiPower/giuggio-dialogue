@@ -1,0 +1,1084 @@
+  O-star O-of B-movie.name  ,1,GOOD
+  O-who O-is O-in O-the O-movie B-movie.name I-movie.name  ,1,GOOD
+  O-list O-the O-cast O-of O-the O-movie B-movie.name I-movie.name  ,1,GOOD
+  O-who O-was O-in B-movie.name  ,1,GOOD
+  O-who O-is O-in B-movie.name  ,0.57312191426912,GOOD
+  O-actor O-from B-movie.name  ,1,GOOD
+  O-who O-played O-in O-the O-movie B-movie.name  ,1,GOOD
+  O-who O-played O-in O-the O-movie B-movie.name I-movie.name  ,1,GOOD
+  O-cast O-and O-crew O-for B-movie.name I-movie.name  ,1,GOOD
+  O-who O-is O-in O-movie B-movie.name I-movie.name  ,1,GOOD
+  O-who O-'s O-in B-movie.name I-movie.name I-movie.name I-movie.name  ,1,GOOD
+  O-who O-was O-in B-movie.name I-movie.name  ,1,GOOD
+  O-who O-was B-movie.name I-movie.name O-'s O-cast  ,1,GOOD
+  O-search O-for O-information O-about O-the O-cast O-and O-crew O-of B-movie.name I-movie.name  ,1,GOOD
+  O-i O-would O-like O-to O-know O-more O-about O-the O-cast O-and O-crew O-of O-the O-movie B-movie.name I-movie.name  ,1,GOOD
+  O-who O-starred O-in B-movie.name I-movie.name  ,1,GOOD
+  O-cast O-for B-movie.name I-movie.name  ,1,GOOD
+  O-actor O-from B-movie.name  ,0.57214301651619,GOOD
+  O-list O-actors O-in O-the O-movie B-movie.name I-movie.name  ,1,GOOD
+  B-movie.name I-movie.name O-actors  ,1,GOOD
+  O-who O-are O-cast O-and O-crew O-of B-movie.name I-movie.name  ,1,GOOD
+  O-who O-was O-in B-movie.name  ,1,GOOD
+  O-who O-is O-in O-the O-cast O-of B-movie.name  ,1,GOOD
+  B-movie.name I-movie.name O-facts O-of B-movie.name  ,0.61061545779019,GOOD
+  O-show O-me O-movie O-credits  ,1,GOOD
+  O-who O-does O-the O-voices O-for O-the O-movie  ,1,GOOD
+  O-find O-movie O-actors  ,1,GOOD
+  O-show O-credits O-- B-movie.name  ,1,GOOD
+  O-star O-of B-movie.name I-movie.name  ,1,GOOD
+  O-look O-up O-information O-about O-the O-cast O-crew O-of B-movie.name  ,1,GOOD
+  O-find O-information O-about O-the O-cast O-and O-crew O-of B-movie.name  ,1,GOOD
+  O-who O-was O-in O-the O-cast O-of B-movie.name  ,1,GOOD
+  O-can O-you O-find O-the O-lead O-actor O-in B-movie.name I-movie.name  ,1,GOOD
+  O-what O-are O-the O-actors O-names O-and B-character.name O-in B-movie.name I-movie.name  ,1,GOOD
+  O-searching O-for O-names O-of O-crew O-members O-of B-movie.name I-movie.name  ,1,GOOD
+  O-budget O-for B-movie.name I-movie.name  ,1,GOOD
+  O-what O-was O-the O-budget O-for B-movie.name I-movie.name  ,1,GOOD
+  O-budget O-for B-movie.name  ,1,GOOD
+  O-please O-look O-up O-the O-budget O-of B-movie.name I-movie.name  ,1,GOOD
+  O-budget O-for B-movie.name I-movie.name O-movie  ,1,GOOD
+  O-what O-was O-the O-budget O-for O-the O-movie B-movie.name  ,1,GOOD
+  O-budget O-for B-movie.name I-movie.name I-movie.name  ,1,GOOD
+  O-please O-tell O-me O-how O-much O-was O-the O-budget O-for B-movie.name  ,1,GOOD
+  O-how O-much O-money O-did O-they O-spend O-to O-make B-movie.name  ,1,GOOD
+  B-movie.name O-'s O-budget  ,1,GOOD
+  O-how O-much O-did B-movie.name O-take O-in  ,1,GOOD
+  O-please O-show O-me O-what O-the O-budget O-was O-for B-movie.name  ,1,GOOD
+  O-what O-was O-the O-budget O-for O-the B-movie.name O-movie  ,1,GOOD
+  O-can O-you O-tell O-me O-the O-budget O-of O-the O-movie B-movie.name  ,1,GOOD
+  O-total O-budget O-for O-the O-movie B-movie.name  ,1,GOOD
+  O-what O-was O-the O-budget O-for B-movie.name I-movie.name  ,1,GOOD
+  O-what O-was O-the O-budget O-for B-movie.name I-movie.name  ,1,GOOD
+  O-what O-was O-the O-budget O-for B-movie.name I-movie.name I-movie.name I-movie.name  ,1,GOOD
+  O-what O-was O-spent O-on B-movie.name I-movie.name I-movie.name I-movie.name I-movie.name  ,1,GOOD
+  O-what O-was B-movie.name I-movie.name O-'s O-budget  ,1,GOOD
+  O-what O-was O-the O-budget O-for B-movie.name  ,1,GOOD
+  O-how O-many O-movies O-has B-actor.name I-actor.name O-been O-the O-lead O-actor O-in  ,1,GOOD
+  O-how O-many B-movie.name I-movie.name O-movies O-are O-there  ,1,GOOD
+  O-how O-many O-movies O-are O-rated B-rating.name  ,1,GOOD
+  B-country.name O-has O-how O-many O-movies  ,1,GOOD
+  O-how O-many O-movies O-has B-actor.name I-actor.name O-starred O-in  ,1,GOOD
+  O-how O-many O-movies O-has B-director.name I-director.name O-directed  ,1,GOOD
+  O-how O-many O-movies O-did B-director.name I-director.name O-direct  ,1,GOOD
+  O-how O-many O-movies O-has B-producer.name O-done  ,1,GOOD
+  O-i O-would O-like O-to O-know O-the O-name O-of O-the O-country O-from O-where O-the O-movie B-movie.name I-movie.name O-comes  ,1,GOOD
+  O-what O-country O-is B-movie.name  ,1,GOOD
+  O-what O-country O-made B-movie.name I-movie.name  ,1,GOOD
+  O-what O-country O-was B-movie.name I-movie.name O-from  ,1,GOOD
+  O-what O-country O-was O-the O-movie O-made  ,1,GOOD
+  O-what O-country O-did B-movie.name I-movie.name I-movie.name O-come O-from  ,1,GOOD
+  O-origin O-of B-movie.name  ,1,GOOD
+  O-origin O-of I-movie.name B-movie.name  ,0.51586966781933,GOOD
+  O-when O-will B-movie.name I-movie.name O-be O-released  ,1,GOOD
+  O-release O-year O-and O-date O-for B-movie.name  ,0.79637660320618,GOOD
+  O-when O-did B-person.name I-person.name B-producer.name O-acting  ,0.50259997656559,GOOD
+  O-show O-me O-when B-movie.name O-will O-be O-released  ,1,GOOD
+  O-can O-i O-have O-release O-date O-of O-movie  ,1,GOOD
+  O-movie O-'s O-release O-date  ,1,GOOD
+  O-show O-me O-when O-the O-movie O-was O-made  ,1,GOOD
+  O-when O-the O-movie B-movie.name O-was O-released  ,1,GOOD
+  O-what O-year O-did O-the B-country.name O-movie B-movie.name I-movie.name O-come O-out  ,1,GOOD
+  O-can O-you O-please O-search O-for O-release O-date O-for B-movie.name I-movie.name  ,1,GOOD
+  B-movie.name I-movie.name O-release O-date O-please  ,1,GOOD
+  O-when O-was B-movie.name I-movie.name O-released  ,1,GOOD
+  O-when O-was B-movie.name O-released  ,1,GOOD
+  O-when O-was B-movie.name O-released  ,1,GOOD
+  O-when O-was B-movie.name I-movie.name O-released  ,1,GOOD
+  O-when O-was B-movie.name I-movie.name I-movie.name O-released  ,1,GOOD
+  O-when O-did B-actor.name I-actor.name O-start O-acting  ,0.64693645044487,GOOD
+  O-when O-is B-movie.name O-going O-to O-be O-released  ,1,GOOD
+  O-when O-was B-movie.name I-movie.name O-released  ,1,GOOD
+  O-release O-date O-for B-movie.name I-movie.name  ,1,GOOD
+  O-when O-was B-movie.name I-movie.name O-released  ,1,GOOD
+  O-release O-date O-of B-movie.name I-movie.name  ,1,GOOD
+  O-when O-was B-movie.name I-movie.name O-released  ,1,GOOD
+  O-when O-was B-movie.name O-released  ,1,GOOD
+  O-when O-did B-movie.name O-released  ,1,GOOD
+  O-i O-would O-like O-to O-know O-the O-release O-date O-of O-the O-movie B-movie.name  ,1,GOOD
+  O-can O-you O-tell O-me O-when O-was O-the O-movie B-movie.name O-released  ,1,GOOD
+  O-when O-was O-date I-movie.name O-released  ,0.75585735326842,GOOD
+  O-when O-did B-movie.name I-movie.name O-come O-out  ,1,GOOD
+  O-when O-did I-movie.name O-come O-out  ,1,GOOD
+  O-what O-date O-did B-movie.name I-movie.name I-movie.name O-show O-for O-the O-1st O-time  ,0.54428366242342,GOOD
+  O-what O-is O-the O-release O-date O-of B-movie.name  ,1,GOOD
+  O-when O-the O-movie B-movie.name I-movie.name O-was O-released  ,1,GOOD
+  O-when O-does B-movie.name O-come O-out  ,1,GOOD
+  O-can O-you O-tell O-me O-the O-release O-date O-of O-the O-movie B-movie.name  ,1,GOOD
+  O-what O-date O-did O-the O-movie B-movie.name O-come O-out  ,1,GOOD
+  O-when O-did O-the B-movie.name I-movie.name I-movie.name I-movie.name I-movie.name I-movie.name I-movie.name I-movie.name O-theaters  ,1,GOOD
+  O-what O-day O-is O-fun O-size O-coming O-out  ,1,GOOD
+  O-what O-day O-will B-movie.name I-movie.name O-come O-out  ,1,GOOD
+  O-when O-will B-movie.name O-be B-rating.name O-to O-view B-movie.name I-movie.name I-movie.name  ,1,GOOD
+  O-on O-what O-date O-will B-movie.name I-movie.name I-movie.name O-be O-released  ,1,GOOD
+  O-who O-directed B-movie.name I-movie.name I-movie.name I-movie.name  ,1,GOOD
+  O-who O-was O-the O-director O-for B-movie.name I-movie.name  ,1,GOOD
+  O-tell O-me O-the O-directed O-of B-movie.name I-movie.name  ,1,GOOD
+  O-who O-is O-the O-director O-of B-movie.name I-movie.name I-movie.name  ,1,GOOD
+  O-find O-who O-the O-director O-was O-in B-movie.name I-movie.name I-movie.name I-movie.name  ,1,GOOD
+  O-locate O-the O-director O-who O-created O-the O-movie B-movie.name I-movie.name I-movie.name I-movie.name  ,0.63388034496765,GOOD
+  O-director O-of B-movie.name  ,1,GOOD
+  B-movie.name O-director  ,1,GOOD
+  B-movie.name O-movie O-director  ,1,GOOD
+  B-movie.name O-of O-movie B-movie.name  ,0.40097524708786,GOOD
+  O-who O-was O-the O-director O-for B-movie.name I-movie.name  ,1,GOOD
+  O-director O-for B-movie.name  ,1,GOOD
+  O-who O-was O-the O-director O-of B-movie.name I-movie.name I-movie.name I-movie.name  ,1,GOOD
+  O-who O-directed O-the O-movie B-movie.name I-movie.name I-movie.name I-movie.name I-movie.name I-movie.name I-movie.name I-movie.name I-movie.name  ,1,GOOD
+  O-who O-was O-the O-director O-of O-the O-movie B-movie.name I-movie.name  ,1,GOOD
+  O-list O-director B-movie.name  ,1,GOOD
+  O-who O-directed B-movie.name I-movie.name I-movie.name  ,1,GOOD
+  O-who O-is O-the O-second O-director O-on B-movie.name I-movie.name  ,1,GOOD
+  O-find O-director O-of B-movie.name I-movie.name  ,1,GOOD
+  O-who O-directed B-movie.name I-movie.name  ,1,GOOD
+  B-movie.name I-movie.name O-directed O-by O-who  ,1,GOOD
+  O-director O-of B-movie.name I-movie.name  ,1,GOOD
+  O-who O-directed B-movie.name  ,1,GOOD
+  O-i O-want O-to O-know O-who O-is O-the O-director O-of O-the O-movie B-movie.name  ,1,GOOD
+  O-who O-is O-director O-of B-movie.name I-movie.name  ,1,GOOD
+  O-who O-directed I-movie.gross_revenue I-movie.gross_revenue I-movie.gross_revenue  ,1,GOOD
+  O-who O-was B-character.name I-character.name I-character.name O-directed B-movie.name  ,0.57866610089856,GOOD
+  O-who O-did B-movie.name  ,1,GOOD
+  B-movie.name O-director  ,1,GOOD
+  O-who O-directed B-movie.name  ,1,GOOD
+  O-who O-directed B-movie.name  ,1,GOOD
+  O-who O-is O-the O-director O-of B-movie.name I-movie.name  ,1,GOOD
+  O-look O-for O-the O-director O-of B-movie.name I-movie.name  ,1,GOOD
+  O-please O-find O-the O-director O-of B-movie.name I-movie.name  ,1,GOOD
+  O-find O-the O-director O-of B-movie.name I-movie.name  ,1,GOOD
+  O-look O-up O-the O-director O-of B-movie.name I-movie.name  ,1,GOOD
+  O-find O-the O-director O-of B-movie.name I-movie.name  ,1,GOOD
+  O-who O-directed B-movie.name I-movie.name  ,1,GOOD
+  B-movie.name O-director  ,1,GOOD
+  O-show O-me O-who O-directed B-movie.name I-movie.name I-movie.name I-movie.name  ,1,GOOD
+  O-who O-directed B-movie.name I-movie.name I-movie.name I-movie.name  ,1,GOOD
+  O-who O-directed B-movie.name I-movie.name I-movie.name I-movie.name  ,1,GOOD
+  O-find O-the O-name O-of O-the O-director O-of B-movie.name  ,1,GOOD
+  O-show O-movie B-movie.name O-director O-name  ,1,GOOD
+  O-name O-the O-director O-in B-movie.name I-movie.name I-movie.name  ,1,GOOD
+  O-what O-'s O-the O-genre O-for B-movie.name I-movie.name  ,1,GOOD
+  O-what O-is B-movie.name I-movie.name O-'s O-genre  ,1,GOOD
+  O-what O-genre O-is B-movie.name  ,1,GOOD
+  O-what O-kind O-of O-movie O-is B-movie.name  ,1,GOOD
+  O-genre O-for B-movie.name I-movie.name I-movie.name  ,1,GOOD
+  O-can O-you O-tell O-me O-the O-genre O-of O-the O-movie B-movie.name  ,1,GOOD
+  O-show O-me O-what O-genre O-does O-movie B-movie.name O-belongs O-to  ,1,GOOD
+  O-genre O-for B-movie.name I-movie.name I-movie.name I-movie.name I-movie.name  ,1,GOOD
+  O-what O-is O-the O-movie O-type  ,1,GOOD
+  O-what O-'s O-the O-genre O-of B-movie.name  ,1,GOOD
+  O-get O-the O-genre O-of B-movie.name I-movie.name I-movie.name I-movie.name  ,1,GOOD
+  O-i O-want O-to O-find O-the O-genre B-movie.name I-movie.name O-is O-in  ,1,GOOD
+  O-what O-genre O-is B-movie.name I-movie.name O-in  ,1,GOOD
+  O-genre O-for B-movie.name  ,1,GOOD
+  O-give O-me O-the O-genre O-of O-the O-movie B-movie.name  ,1,GOOD
+  O-i O-would O-like O-to O-know O-the O-genre O-of O-the O-movie B-movie.name  ,1,GOOD
+  O-genre O-for I-character.name I-character.name  ,0.69449100741171,GOOD
+  O-can O-you O-tell O-me B-movie.name I-movie.name O-the O-movie O-'s O-genre  ,1,GOOD
+  O-what O-genre O-is O-the O-movie B-movie.name I-movie.name  ,1,GOOD
+  O-in O-what O-language O-is O-this O-movie  ,1,GOOD
+  O-what O-language O-is O-this O-movie  ,1,GOOD
+  O-what O-language O-is O-the O-movie B-movie.name O-in  ,1,GOOD
+  O-language O-of I-movie.name I-movie.name  ,0.48332848310822,GOOD
+  O-language O-of B-movie.name I-movie.name  ,1,GOOD
+  O-what O-language O-is B-movie.name I-movie.name O-in  ,1,GOOD
+  O-language O-of B-movie.name  ,1,GOOD
+  O-find O-out O-what O-language B-movie.name I-movie.name O-of B-movie.name I-movie.name O-is O-in  ,1,GOOD
+  O-i O-am B-movie.language I-movie.language I-movie.language B-movie.name O-what O-foreign O-language O-is O-the O-movie O-available O-in  ,1,GOOD
+  O-i O-need O-to O-find O-out O-about O-names O-of O-some B-movie.language O-movies  ,1,GOOD
+  O-can O-you O-tell O-me O-names O-of O-some B-movie.language O-movies  ,1,GOOD
+  B-director.name I-director.name O-name O-some O-of O-the O-movies O-he O-produce  ,1,GOOD
+  O-tell O-me O-the O-names O-of O-the O-movies O-produced O-by B-producer.name I-producer.name  ,1,GOOD
+  O-about B-movie.name I-movie.name I-movie.name  ,1,GOOD
+  O-show O-me O-info O-on B-movie.name I-movie.name I-movie.name  ,1,GOOD
+  O-find O-old O-movies  ,0.85199063674077,GOOD
+  O-find O-movie O-ratings  ,1,GOOD
+  O-find B-movie.name O-released O-movies O-in B-movie.language  ,1,GOOD
+  O-was B-actor.name I-actor.name O-in O-the O-movie B-movie.name I-movie.name  ,1,GOOD
+  O-was B-actor.name I-actor.name O-in O-the O-movie B-movie.name I-movie.name  ,1,GOOD
+  O-find O-movies O-about B-movie.subject  ,1,GOOD
+  O-search O-for O-movies O-about B-movie.subject  ,1,GOOD
+  O-show B-actor.name I-actor.name O-films  ,1,GOOD
+  B-actor.name I-actor.name O-movies  ,1,GOOD
+  O-what O-movies O-has B-actor.name I-actor.name O-appeared O-in  ,1,GOOD
+  O-find B-country.name O-movies  ,0.88040805404074,GOOD
+  O-show O-me O-the O-movie B-movie.name I-movie.name I-movie.name O-i O-can O-see O-who O-starred O-in O-the O-movie  ,1,GOOD
+  B-movie.name  ,0.52155154571987,GOOD
+  O-the O-movie O-is O-called B-movie.name  ,0.55687773886074,GOOD
+  B-person.name I-person.name O-acting B-movie.name  ,0.454364846397,GOOD
+  O-how O-many O-movies O-did B-director.name I-director.name O-do  ,1,GOOD
+  O-movies O-and O-gross B-movie.name  ,0.454364846397,GOOD
+  O-search O-for B-director.name I-director.name O-movies O-in B-movie.language  ,1,GOOD
+  O-exhibit O-all O-details O-of O-original B-movie.name I-movie.name O-movie  ,1,GOOD
+  B-movie.name I-movie.name O-movie  ,1,GOOD
+  O-find O-the O-movie B-movie.name I-movie.name  ,1,GOOD
+  O-i O-am O-looking O-for O-information O-on O-the O-movie B-movie.name I-movie.name  ,1,GOOD
+  O-show O-me O-details O-for O-the O-movie B-movie.name I-movie.name  ,1,GOOD
+  O-what O-did B-director.name I-director.name O-direct  ,1,GOOD
+  O-show O-me O-some O-other O-movies O-directed O-by B-director.name I-director.name  ,1,GOOD
+  O-display B-actor.name I-actor.name O-movie  ,1,GOOD
+  O-show O-a O-movie O-with B-actor.name I-actor.name O-in O-the O-cast  ,1,GOOD
+  O-what O-other O-films O-has B-director.name I-director.name O-directed  ,1,GOOD
+  O-what O-movies O-has B-producer.name B-actor.name O-produced  ,1,GOOD
+  O-what O-has B-actor.name I-actor.name O-starred O-in  ,1,GOOD
+  O-please O-find O-the O-movies O-in O-which B-actor.name I-actor.name O-has O-appeared  ,1,GOOD
+  O-in O-which O-movies O-has B-actor.name I-actor.name O-appear  ,1,GOOD
+  B-director.name I-director.name O-directed O-what O-movie  ,1,GOOD
+  O-search O-for O-movies O-directed O-by B-director.name I-director.name  ,1,GOOD
+  O-movie O-release O-dates  ,1,GOOD
+  O-director O-information O-for O-movies  ,1,GOOD
+  O-movies O-by O-director  ,1,GOOD
+  O-please O-list O-all O-movies O-not O-rated B-rating.name  ,1,GOOD
+  O-find O-movies  ,1,GOOD
+  O-i O-want O-a O-list O-of B-movie.language I-movie.language O-movies  ,1,GOOD
+  O-a O-list O-of O-movies O-made O-in B-country.name  ,1,GOOD
+  O-are O-there O-any O-movies O-produced O-in B-country.name I-country.name I-country.name  ,1,GOOD
+  O-show B-movie.language O-movies  ,1,GOOD
+  O-search B-movie.language O-movies  ,0.79921575226888,GOOD
+  B-movie.genre  ,0.99975580518391,GOOD
+  O-find O-a B-movie.genre  ,1,GOOD
+  O-watch B-movie.genre O-movies  ,1,GOOD
+  O-get B-movie.genre O-films  ,1,GOOD
+  O-show O-me B-movie.genre O-movies  ,1,GOOD
+  O-i O-want O-to O-see O-a O-listing O-of B-movie.genre O-movies  ,1,GOOD
+  O-show O-actor B-actor.name I-actor.name O-movies  ,1,GOOD
+  O-which O-movies O-did B-actor.name I-actor.name O-star O-in  ,1,GOOD
+  O-list O-movies O-with B-actor.name I-actor.name  ,1,GOOD
+  O-show O-me O-movies O-made O-in B-country.name  ,1,GOOD
+  O-can O-i O-watch O-a B-country.name O-film  ,1,GOOD
+  O-see B-country.name O-movies  ,1,GOOD
+  O-search O-for O-information O-about B-country.name O-movies  ,1,GOOD
+  O-i O-'d O-like O-to O-see O-some B-country.name O-films  ,0.65685270194065,GOOD
+  O-show O-me O-something B-movie.language O-- O-made  ,0.93539638429585,GOOD
+  O-i O-want O-to O-see O-a O-movie O-from B-country.name  ,1,GOOD
+  O-find O-movies O-from B-country.name  ,1,GOOD
+  B-country.name O-country O-movies  ,0.62314059954955,GOOD
+  O-display O-a O-list O-of B-movie.language O-films  ,1,GOOD
+  B-movie.language O-movie O-listing  ,0.89744936275962,GOOD
+  B-movie.language O-movies  ,1,GOOD
+  O-find O-actors O-in O-movies  ,1,GOOD
+  O-search O-by O-actors  ,1,GOOD
+  O-find O-some B-movie.genre O-movies  ,1,GOOD
+  O-i O-want O-to O-see O-a O-movie O-in B-movie.language  ,1,GOOD
+  B-actor.name I-actor.name O-movies  ,0.62306971899533,GOOD
+  O-find O-movies O-with B-director.name I-director.name O-as O-director  ,1,GOOD
+  B-country.name O-movies  ,1,GOOD
+  B-country.name O-movies O-please  ,1,GOOD
+  O-find B-movie.language I-movie.language O-movies  ,0.42259661803605,GOOD
+  O-show O-me O-what B-director.name I-director.name O-directed  ,1,GOOD
+  O-get O-films O-in B-movie.language  ,1,GOOD
+  O-show O-me O-movies O-from B-country.name  ,1,GOOD
+  O-what O-is O-a B-movie.language B-movie.genre O-movie  ,1,GOOD
+  O-i O-want O-to O-watch O-an B-rating.name O-rated B-movie.genre  ,1,GOOD
+  O-list O-of B-movie.language I-movie.language B-movie.genre  ,1,GOOD
+  O-look O-for B-movie.name I-movie.name O-movie O-with B-actor.name I-actor.name  ,1,GOOD
+  O-tell O-me O-in O-detail O-about O-the O-movie B-movie.name I-movie.name  ,1,GOOD
+  O-tell O-about O-movie B-movie.name I-movie.name  ,1,GOOD
+  O-can O-i O-see O-a O-list O-of B-actor.name I-actor.name O-movies  ,1,GOOD
+  O-list O-of O-movies O-starring B-actor.name I-actor.name  ,1,GOOD
+  O-show O-me O-all O-of B-actor.name I-actor.name O-'s O-movies  ,1,GOOD
+  O-what O-movies O-has B-actor.name I-actor.name O-produced  ,1,GOOD
+  O-find O-me O-movies O-from B-country.name  ,1,GOOD
+  O-what O-movies O-has B-producer.name I-producer.name O-been O-in  ,1,GOOD
+  B-movie.name I-movie.name O-info  ,1,GOOD
+  B-movie.name I-movie.name  ,1,GOOD
+  O-give O-a O-short O-bio O-for B-movie.name I-movie.name  ,0.54373792376952,GOOD
+  O-about B-movie.name I-movie.name  ,1,GOOD
+  O-movies O-from B-country.name  ,1,GOOD
+  O-show O-movies O-from B-country.name  ,1,GOOD
+  O-list B-movie.language O-movies  ,0.7300940901055,GOOD
+  O-show O-me B-movie.language O-movies  ,0.57155540613307,GOOD
+  O-give O-me O-a O-list O-of O-some B-movie.language O-movies  ,1,GOOD
+  O-give O-me O-a O-list O-of B-country.name O-movies  ,1,GOOD
+  B-country.name O-movies  ,0.67797909754687,GOOD
+  O-show O-me B-movie.language I-movie.language O-movies  ,1,GOOD
+  O-which O-films O-are O-spoken O-in B-movie.language  ,1,GOOD
+  B-producer.name O-films O-only  ,0.7048081179233,GOOD
+  O-show O-movies O-by B-producer.name  ,1,GOOD
+  O-search B-actor.name I-actor.name O-movies  ,1,GOOD
+  O-watch B-actor.name I-actor.name O-movies  ,1,GOOD
+  O-find O-movies O-about B-movie.subject  ,1,GOOD
+  O-find O-movies O-having B-movie.subject  ,1,GOOD
+  B-actor.name I-actor.name O-movies  ,1,GOOD
+  B-movie.name O-movie  ,0.51666882064572,GOOD
+  O-what O-movies O-did B-producer.name I-producer.name O-produce  ,1,GOOD
+  O-what O-films O-are O-made O-by B-producer.name  ,1,GOOD
+  O-show O-me O-movies O-by B-producer.name  ,1,GOOD
+  O-what O-movies O-has B-producer.name O-released  ,1,GOOD
+  O-show O-all O-movies O-from B-country.name  ,1,GOOD
+  O-show O-me O-movies O-produced O-by B-producer.name I-producer.name  ,1,GOOD
+  O-is B-movie.name O-a B-movie.genre  ,1,GOOD
+  O-i O-want O-to O-see O-an B-actor.name I-actor.name O-film O-tonight  ,1,GOOD
+  O-find O-films O-from B-country.name  ,1,GOOD
+  O-get O-films O-from B-country.name  ,1,GOOD
+  O-i O-'d O-like O-to O-watch O-a O-movie O-made O-in B-country.name  ,1,GOOD
+  O-list O-some O-movies O-from B-country.name  ,0.56087156327872,GOOD
+  B-country.name O-films  ,1,GOOD
+  O-show O-me O-other B-movie.language O-movies  ,0.58355881392789,GOOD
+  O-show O-me B-country.name O-movies  ,0.54138013537349,GOOD
+  O-what O-movies O-have O-a B-rating.name O-rating  ,1,GOOD
+  O-please O-list O-movies O-that O-are O-rated B-rating.name  ,1,GOOD
+  O-i O-need O-a B-rating.name O-rating B-movie.name O-i O-can O-take O-the O-kids  ,0.55783990740891,GOOD
+  O-find O-a B-rating.name O-rated O-movie  ,1,GOOD
+  O-find B-rating.name O-movies  ,1,GOOD
+  O-find B-rating.name O-movies  ,1,GOOD
+  O-i O-want O-rated B-rating.name O-movies  ,1,GOOD
+  O-look O-up B-rating.name O-rated O-movies  ,1,GOOD
+  O-i O-am O-searching O-for O-any B-rating.name O-rated O-movies O-for O-my O-children O-to O-view  ,1,GOOD
+  O-rated B-rating.name O-movies O-for O-family O-watching  ,1,GOOD
+  O-find B-rating.name O-rated O-movies  ,1,GOOD
+  O-are O-there O-any O-movies O-rated B-rating.name O-playing  ,1,GOOD
+  O-i O-want O-to O-see O-movies O-rated B-rating.name  ,1,GOOD
+  O-find O-movies O-rated B-rating.name  ,1,GOOD
+  O-show O-me O-movies O-with B-rating.name O-rating  ,1,GOOD
+  O-did B-director.name I-director.name O-direct O-any O-other B-movie.genre  ,1,GOOD
+  B-producer.name I-producer.name O-produced O-movie O-listing  ,1,GOOD
+  O-what O-was O-the O-last O-movie O-made O-by B-director.name I-director.name  ,1,GOOD
+  O-find O-movies O-produced O-by B-producer.name  ,1,GOOD
+  O-show O-me B-country.name O-made O-movies  ,1,GOOD
+  O-movies O-from B-country.name I-country.name  ,1,GOOD
+  O-find O-me O-movies O-from B-country.name I-country.name  ,1,GOOD
+  O-can O-you O-list B-director.name I-director.name O-movie O-production  ,1,GOOD
+  O-i O-need O-to O-know O-the O-movies O-produce O-by B-director.name I-director.name  ,1,GOOD
+  O-did B-director.name I-director.name O-direct O-any O-other O-movies B-movie.gross_revenue I-movie.gross_revenue I-movie.gross_revenue I-movie.gross_revenue  ,1,GOOD
+  O-find O-movies O-directed O-by B-director.name I-director.name  ,1,GOOD
+  O-what O-movies O-have O-been O-directed O-by B-director.name I-director.name  ,1,GOOD
+  O-list O-all O-movies O-that O-were O-directed O-by B-director.name I-director.name  ,1,GOOD
+  O-what O-movies O-has B-director.name I-director.name O-directed  ,1,GOOD
+  O-show O-movies O-directed O-by B-director.name I-director.name  ,1,GOOD
+  O-find O-all O-films O-by B-director.name I-director.name  ,1,GOOD
+  O-i O-want O-to O-select O-the O-option O-to O-search O-for O-movies O-produced O-by B-producer.name I-producer.name  ,1,GOOD
+  O-i O-would O-like O-to O-search O-for O-movies O-produced O-by B-director.name I-director.name  ,1,GOOD
+  O-show O-me B-country.name B-movie.genre O-movies  ,1,GOOD
+  O-i O-would O-like O-to O-see O-movies B-director.name I-director.name O-directed  ,1,GOOD
+  O-movies O-by B-director.name I-director.name  ,1,GOOD
+  O-movies O-by B-director.name I-director.name  ,1,GOOD
+  O-what O-movies O-did B-director.name I-director.name O-direct  ,1,GOOD
+  O-list B-director.name I-director.name O-movies  ,1,GOOD
+  B-director.name I-director.name O-movie  ,1,GOOD
+  B-person.name I-person.name O-movies O-please  ,0.52904227264556,GOOD
+  O-directed O-by B-director.name I-director.name  ,1,GOOD
+  O-find O-the B-director.name I-director.name O-movies  ,1,GOOD
+  O-find O-movies O-from B-producer.name I-producer.name  ,1,GOOD
+  O-i O-would O-like O-to O-watch O-a O-movie O-directed O-by B-director.name I-director.name  ,1,GOOD
+  B-movie.name I-movie.name  ,1,GOOD
+  O-watch B-actor.name I-actor.name B-movie.name I-movie.name I-movie.name  ,1,GOOD
+  O-i O-want O-to O-see O-movies O-with B-actor.name I-actor.name  ,1,GOOD
+  O-list O-movies O-with B-actor.name I-actor.name  ,1,GOOD
+  O-look O-for O-movies O-from B-country.name  ,1,GOOD
+  O-can O-you O-show O-me O-movies O-that O-were O-made O-in B-country.name  ,1,GOOD
+  O-find O-me O-any O-movies O-that O-were O-made O-in B-country.name  ,1,GOOD
+  B-country.name O-movies O-please  ,0.55171440203265,GOOD
+  B-movie.language O-movies  ,0.68031069587777,GOOD
+  O-find O-movies O-produced O-by  ,1,GOOD
+  O-movies O-by O-producers  ,1,GOOD
+  O-display O-movies O-produced O-by  ,1,GOOD
+  O-find O-movies O-produced O-by B-producer.name  ,1,GOOD
+  O-what O-was B-actor.name I-actor.name O-'s O-first O-movie  ,1,GOOD
+  O-get O-me O-movies O-directed O-by B-movie.name I-movie.name  ,1,GOOD
+  B-director.name I-director.name O-movies  ,0.51044847871097,GOOD
+  O-show O-me O-movies O-with B-actor.name I-actor.name  ,1,GOOD
+  O-i O-am O-trying O-to O-find O-a O-list O-of O-movies O-with B-actor.name I-actor.name  ,1,GOOD
+  O-provide O-movies O-directed O-by B-director.name I-director.name O-please  ,1,GOOD
+  O-i O-want O-to O-look O-for O-movies O-produced O-by B-producer.name I-producer.name  ,1,GOOD
+  O-what O-are O-all O-of O-the O-movies O-produced O-by B-producer.name I-producer.name  ,1,GOOD
+  O-movies O-produced O-by B-producer.name I-producer.name  ,1,GOOD
+  O-what O-did B-producer.name I-producer.name I-producer.name  ,1,GOOD
+  O-bring O-up O-all B-producer.name I-producer.name O-produced O-movies  ,1,GOOD
+  O-show O-all O-movies O-that B-director.name I-director.name O-directed  ,1,GOOD
+  O-i O-need O-a O-list O-of O-all O-the O-movies O-directed O-by B-director.name I-director.name  ,1,GOOD
+  O-give O-me O-a O-list O-of O-all O-the O-movies O-directed O-by B-director.name I-director.name  ,1,GOOD
+  B-director.name I-director.name O-movies O-produced  ,1,GOOD
+  O-movies O-produced O-by B-producer.name I-producer.name  ,1,GOOD
+  O-what O-films O-have O-been O-produced O-by B-producer.name I-producer.name  ,1,GOOD
+  O-find O-movies O-produced O-by B-producer.name I-producer.name  ,1,GOOD
+  O-what O-movies O-have O-been O-produced O-by B-producer.name I-producer.name  ,1,GOOD
+  O-show O-me O-movies O-by B-producer.name  ,1,GOOD
+  O-give O-me O-information O-about B-movie.name I-movie.name  ,1,GOOD
+  O-i O-want O-information O-about B-movie.name I-movie.name  ,1,GOOD
+  O-show O-me B-movie.name I-movie.name  ,1,GOOD
+  B-movie.name I-movie.name O-bing  ,1,GOOD
+  O-search B-movie.name I-movie.name  ,1,GOOD
+  O-show O-information O-page O-for B-movie.name I-movie.name  ,1,GOOD
+  B-movie.name I-movie.name O-information  ,1,GOOD
+  O-more O-information O-on B-movie.name I-movie.name  ,1,GOOD
+  B-movie.name B-movie.name I-movie.name  ,0.42276190792848,GOOD
+  O-has B-actor.name I-actor.name O-starred O-in O-movies O-other O-than B-movie.name  ,1,GOOD
+  O-show O-me B-actor.name I-actor.name O-movies  ,1,GOOD
+  O-what O-movies O-has B-actor.name I-actor.name O-starred O-in  ,1,GOOD
+  B-producer.name O-movies  ,1,GOOD
+  O-show B-producer.name O-movies  ,1,GOOD
+  O-show O-movies O-made O-by O-production B-producer.name  ,1,GOOD
+  O-give O-me O-something O-by B-director.name I-director.name  ,1,GOOD
+  O-show B-director.name I-director.name O-movie  ,1,GOOD
+  O-what O-film O-did B-director.name I-director.name O-direct  ,1,GOOD
+  O-which O-movies O-have O-been O-made B-country.name I-country.name I-country.name I-country.name  ,1,GOOD
+  O-find O-me B-movie.language O-movies  ,0.51786738876863,GOOD
+  O-display O-7 I-producer.name O-movies  ,0.91662118315907,GOOD
+  B-movie.language O-movie  ,0.82498593563788,GOOD
+  O-what O-other O-movies O-did B-actor.name I-actor.name O-star O-in  ,1,GOOD
+  O-i O-want O-to O-see O-movies O-starring B-actor.name I-actor.name O-please  ,1,GOOD
+  O-list O-the B-actor.name O-'s O-movie  ,1,GOOD
+  O-i O-want O-to O-watch O-a B-movie.genre O-made O-in B-country.name  ,1,GOOD
+  B-actor.name I-actor.name O-played O-in O-what O-movies  ,1,GOOD
+  O-show O-me O-all O-of O-the O-movies O-directed O-by B-director.name I-director.name  ,1,GOOD
+  O-show B-director.name I-director.name O-movies  ,1,GOOD
+  O-want O-to O-see B-director.name I-director.name O-movies  ,1,GOOD
+  O-what O-movies O-has B-director.name I-director.name O-directed  ,1,GOOD
+  O-what O-movies O-have B-director.name I-director.name O-directed  ,1,GOOD
+  O-where O-can O-i O-find O-a O-list O-of O-movies O-produced O-by B-producer.name I-producer.name  ,1,GOOD
+  O-what O-movies O-has B-actor.name I-actor.name O-been O-in  ,1,GOOD
+  O-what O-are O-the O-movies B-actor.name I-actor.name O-had O-been O-in  ,1,GOOD
+  O-what O-are O-some O-movies O-with B-actor.name I-actor.name  ,1,GOOD
+  O-find O-an B-rating.name O-rated O-movie  ,1,GOOD
+  O-show O-me B-rating.name O-rated O-movies  ,1,GOOD
+  O-give O-me O-a O-list O-of B-rating.name O-rated O-movies  ,1,GOOD
+  O-look O-up B-rating.name O-rated O-movies  ,1,GOOD
+  O-i O-want O-only B-rating.name O-rated O-movies  ,1,GOOD
+  O-i O-want O-to O-see O-a O-list O-of O-rated B-rating.name O-movies  ,1,GOOD
+  O-show O-me O-only O-movies O-with O-a O-rating O-of B-rating.name  ,1,GOOD
+  O-please O-look O-for O-movies O-with O-an B-rating.name O-rating  ,1,GOOD
+  O-show O-me O-movies O-rated B-rating.name  ,1,GOOD
+  O-look O-for O-movies O-with O-an B-rating.name O-rating  ,1,GOOD
+  O-give O-me O-a O-list O-of O-all O-movies O-that O-are O-rated B-rating.name  ,1,GOOD
+  O-i O-want O-to O-watch O-movies O-from B-country.name  ,1,GOOD
+  O-can O-i O-have O-a O-list O-of B-movie.language I-movie.language O-movies  ,1,GOOD
+  O-show O-me O-movies O-made O-in B-movie.release_region  ,1,GOOD
+  O-show O-me O-the O-movie B-movie.name O-zombies  ,1,GOOD
+  O-what O-movies O-have B-movie.subject O-in O-them  ,1,GOOD
+  O-show O-me O-movies O-about B-movie.subject  ,1,GOOD
+  O-show O-me O-movies O-about B-movie.subject  ,1,GOOD
+  O-show O-me B-movie.name O-by B-director.name I-director.name  ,1,GOOD
+  O-show B-director.name I-director.name O-'s O-filmography  ,1,GOOD
+  O-find B-director.name I-director.name O-movies  ,1,GOOD
+  O-can O-you O-show O-me O-movies O-directed O-by B-director.name I-director.name  ,1,GOOD
+  O-list B-country.name O-movies  ,0.56020645880819,GOOD
+  B-movie.language O-movies  ,0.69512715550346,GOOD
+  O-find B-movie.genre O-films  ,1,GOOD
+  O-find O-some B-movie.genre O-movies  ,1,GOOD
+  O-list B-movie.name O-movie  ,1,GOOD
+  O-show O-me B-producer.name I-producer.name O-movies  ,1,GOOD
+  O-find O-movies O-directed O-by B-director.name I-director.name  ,1,GOOD
+  O-produced O-by  ,1,GOOD
+  O-please O-find O-movies O-produced O-by B-producer.name I-producer.name  ,1,GOOD
+  O-please O-look O-up O-movies O-produced O-by B-producer.name I-producer.name  ,1,GOOD
+  O-search O-for O-movies O-produced O-by B-producer.name I-producer.name  ,1,GOOD
+  O-find O-movies O-produced O-by B-producer.name I-producer.name  ,1,GOOD
+  O-look O-up O-movies O-produced O-by B-producer.name I-producer.name  ,1,GOOD
+  O-what O-movies O-has B-actor.name I-actor.name O-starred O-in  ,1,GOOD
+  O-show O-me O-the O-movies O-directed O-by O-the O-director O-of O-this O-movie  ,1,GOOD
+  O-i O-want O-to O-see O-movies O-made O-in B-country.name  ,1,GOOD
+  O-look O-up B-movie.name I-movie.name I-movie.name O-movie  ,1,GOOD
+  O-display O-all O-details O-about B-movie.name I-movie.name I-movie.name I-movie.name I-movie.name I-movie.name O-movie  ,1,GOOD
+  O-get O-all O-details O-about B-movie.name I-movie.name I-movie.name I-movie.name I-movie.name I-movie.name O-movie  ,1,GOOD
+  B-movie.name I-movie.name I-movie.name I-movie.name  ,1,GOOD
+  O-i O-want B-movie.name I-movie.name I-movie.name O-main O-page  ,0.63316061106853,GOOD
+  O-search B-movie.name I-movie.name I-movie.name  ,1,GOOD
+  O-find O-me B-movie.name I-movie.name O-info O-related O-to B-movie.name I-movie.name I-movie.name  ,1,GOOD
+  O-get O-details O-of B-movie.name I-movie.name O-movie  ,1,GOOD
+  O-find O-details O-of B-movie.name I-movie.name O-movie  ,1,GOOD
+  O-show O-details O-of B-movie.name I-movie.name O-movie  ,1,GOOD
+  O-tell O-me O-about B-movie.name I-movie.name O-movie  ,1,GOOD
+  O-look O-up O-the O-movie B-movie.name I-movie.name  ,1,GOOD
+  O-display O-information O-for O-the O-movie O-title B-movie.name I-movie.name  ,1,GOOD
+  O-movie B-movie.name I-movie.name O-data  ,1,GOOD
+  O-where O-can O-i O-find O-the O-movie B-movie.name O-in B-movie.language  ,1,GOOD
+  O-display B-person.name I-person.name O-films  ,0.79918365636154,GOOD
+  O-list O-the O-movies O-that O-have O-the O-actress B-actor.name I-actor.name  ,1,GOOD
+  B-actor.name I-actor.name O-movies  ,0.62306971899533,GOOD
+  O-what O-movies O-did B-director.name I-director.name O-direct  ,1,GOOD
+  O-i O-would O-like O-to O-view O-movies O-produced O-by B-producer.name I-producer.name  ,1,GOOD
+  O-list O-all O-movies O-about B-movie.subject  ,1,GOOD
+  O-find O-all B-actor.name I-actor.name O-movies  ,1,GOOD
+  O-search O-by O-director  ,1,GOOD
+  O-search O-by O-director  ,1,GOOD
+  O-is O-there O-any O-upcoming O-movies O-from B-producer.name I-producer.name  ,1,GOOD
+  O-bring O-up O-movies O-with B-movie.subject I-movie.subject O-in O-it  ,1,GOOD
+  O-find B-movie.name O-released B-movie.genre O-from B-country.name  ,1,GOOD
+  O-i O-need O-info O-on B-movie.name I-movie.name I-movie.name I-movie.name I-movie.name I-movie.name I-movie.name  ,1,GOOD
+  O-what O-is O-the O-houses O-at O-the B-movie.name I-movie.name I-movie.name I-movie.name O-about  ,1,GOOD
+  O-give O-me O-more O-facts O-about O-the O-movie B-movie.name I-movie.name I-movie.name I-movie.name I-movie.name I-movie.name I-movie.name O-in O-detail  ,1,GOOD
+  O-i O-would O-like O-to O-know O-in O-detail O-about O-the O-movie B-movie.name I-movie.name I-movie.name I-movie.name I-movie.name I-movie.name I-movie.name  ,1,GOOD
+  O-display O-movie O-information O-for O-the O-film B-movie.name I-movie.name I-movie.name I-movie.name I-movie.name I-movie.name I-movie.name  ,1,GOOD
+  O-films O-with B-movie.language  ,1,GOOD
+  O-i O-want O-to O-watch O-a O-movie O-in B-movie.language  ,1,GOOD
+  O-find O-movies O-produced O-and O-directed O-by B-director.name I-director.name  ,1,GOOD
+  B-actor.name I-actor.name O-movies O-please  ,1,GOOD
+  O-i O-want B-actor.name I-actor.name O-movies O-please  ,1,GOOD
+  O-which O-movies O-star B-actor.name I-actor.name  ,1,GOOD
+  O-which O-movies O-do B-actor.name I-actor.name O-play O-in  ,1,GOOD
+  O-find B-movie.name I-movie.name I-movie.name  ,1,GOOD
+  O-search O-by O-genre  ,1,GOOD
+  O-looking O-for O-movies O-of B-director.name I-director.name  ,1,GOOD
+  O-find O-me O-information O-about B-movie.name I-movie.name O-movie  ,1,GOOD
+  O-information O-for O-movie B-movie.name I-movie.name  ,1,GOOD
+  O-show O-me O-info O-on O-the O-movie B-movie.name I-movie.name O-please  ,1,GOOD
+  O-i O-need O-to O-see O-all O-the O-details O-about O-the O-movie B-movie.name I-movie.name  ,1,GOOD
+  O-sort O-all B-rating.name O-movies  ,1,GOOD
+  B-rating.name O-rated O-movies  ,1,GOOD
+  B-movie.name O-a O-list O-of B-rating.name O-movies O-please  ,1,GOOD
+  O-give O-me O-a O-list O-of B-rating.name O-movies  ,1,GOOD
+  O-can O-you O-find O-me O-a O-list O-of B-rating.name O-rated O-movies O-to O-watch  ,1,GOOD
+  O-show O-me O-a O-list O-of B-rating.name O-rated O-movies  ,1,GOOD
+  O-find O-movies O-with O-a B-rating.name O-rating  ,1,GOOD
+  O-what O-movies O-are B-rating.name  ,1,GOOD
+  O-movies O-by B-director.name I-director.name  ,1,GOOD
+  O-what O-movies O-did B-actor.name I-actor.name O-make  ,1,GOOD
+  O-watch B-rating.name O-movies  ,0.57607956487402,GOOD
+  O-i O-want O-to O-see O-any O-current O-movies O-starring B-actor.name I-actor.name  ,1,GOOD
+  O-i O-want O-a O-list O-of O-recent O-movies O-rated B-rating.name  ,1,GOOD
+  O-give O-me O-a O-list O-of O-recent O-movies O-rated B-rating.name  ,1,GOOD
+  B-producer.name I-producer.name O-produced O-what O-other O-movies  ,1,GOOD
+  O-what O-is B-person.name O-'s O-latest O-movie  ,1,GOOD
+  O-please O-find O-movies O-directed O-by B-director.name I-director.name  ,1,GOOD
+  O-are O-there O-any O-recent O-movies O-that O-are B-movie.language I-movie.language  ,1,GOOD
+  O-what O-movies O-has B-actor.name I-actor.name O-been O-in O-recently  ,1,GOOD
+  O-search O-for B-movie.release_date O-movies  ,0.62852634547151,GOOD
+  O-search O-for B-movie.name I-movie.name  ,1,GOOD
+  O-watch B-movie.name I-movie.name O-online  ,1,GOOD
+  O-search O-for O-information O-about B-producer.name  ,1,GOOD
+  B-producer.name O-info  ,1,GOOD
+  O-find O-information O-about B-producer.name I-producer.name  ,1,GOOD
+  O-who O-is B-person.name I-person.name  ,1,GOOD
+  O-find O-information O-on B-person.name I-person.name  ,1,GOOD
+  O-i O-want O-to O-look O-up O-information O-about B-person.name I-person.name  ,1,GOOD
+  O-can O-you O-please O-search O-details O-about B-person.name I-person.name  ,1,GOOD
+  B-person.name I-person.name O-biography  ,1,GOOD
+  O-show B-person.name I-person.name O-biography  ,1,GOOD
+  O-show O-me O-a O-complete O-biography O-of B-person.name I-person.name  ,1,GOOD
+  O-show O-me O-information O-on B-person.name I-person.name  ,1,GOOD
+  O-show O-me B-actor.name I-actor.name O-'s O-bio  ,0.51684362410423,GOOD
+  O-get O-info O-on B-person.name I-person.name  ,1,GOOD
+  O-does B-person.name I-person.name O-have O-a B-movie.genre O-page  ,0.5530495842795,GOOD
+  O-where O-can O-i O-find O-information O-about B-person.name I-person.name  ,1,GOOD
+  B-actor.name I-actor.name O-bio  ,1,GOOD
+  O-i O-want O-to O-see B-person.name O-'s O-main O-page  ,1,GOOD
+  B-person.name I-person.name O-summary  ,0.54973498871112,GOOD
+  O-about B-person.name I-person.name  ,1,GOOD
+  O-find O-me O-bio O-details O-for B-director.name I-director.name  ,0.51307202048858,GOOD
+  O-bio O-for B-person.name I-person.name  ,1,GOOD
+  O-show O-me B-director.name I-director.name  ,1,GOOD
+  O-i O-want O-more O-information O-about B-person.name I-person.name O-'s O-biography  ,1,GOOD
+  O-all O-info B-person.name  ,0.41832743273935,GOOD
+  O-find O-the O-name O-of O-the O-producer O-of B-movie.name  ,1,GOOD
+  O-producer B-movie.name  ,0.99453765621638,GOOD
+  O-who O-produces B-movie.name  ,1,GOOD
+  O-production O-company O-for B-movie.name  ,1,GOOD
+  O-what O-company O-made B-movie.name  ,1,GOOD
+  O-what O-was O-the O-production O-company O-for B-movie.name  ,1,GOOD
+  O-who O-produces B-movie.name  ,1,GOOD
+  O-can O-you O-find O-who O-produced B-movie.name  ,1,GOOD
+  O-production O-company O-for I-movie.name  ,1,GOOD
+  O-who O-produced O-the O-movie B-movie.name I-movie.name  ,1,GOOD
+  O-who O-produced B-movie.name  ,1,GOOD
+  O-i O-want O-to O-know O-the O-producer O-of B-movie.name  ,1,GOOD
+  O-who O-produced B-movie.name  ,1,GOOD
+  O-who O-produced B-movie.name  ,1,GOOD
+  B-movie.name O-producer  ,1,GOOD
+  O-i O-would O-like O-to O-know O-who O-produced O-the O-movie B-movie.name  ,1,GOOD
+  O-who O-produced O-the O-movie B-movie.name  ,1,GOOD
+  O-who O-are O-the O-producers O-for O-the O-movie B-movie.name  ,1,GOOD
+  O-what O-is B-movie.name O-'s O-producer  ,1,GOOD
+  O-who O-produced B-movie.name  ,1,GOOD
+  O-who O-produced O-the O-movie B-movie.name I-movie.name I-movie.name I-movie.name I-movie.name  ,1,GOOD
+  O-who O-produced B-movie.name I-movie.name  ,1,GOOD
+  O-tell O-me O-the O-producer O-for B-movie.name I-movie.name  ,1,GOOD
+  B-movie.name I-movie.name O-was O-produced O-by  ,1,GOOD
+  O-who O-produced O-the O-movie B-movie.name  ,1,GOOD
+  O-who O-produced B-movie.name I-movie.name  ,1,GOOD
+  O-who O-produced B-movie.name I-movie.name I-movie.name  ,1,GOOD
+  O-who O-produced B-movie.name I-movie.name  ,1,GOOD
+  O-who O-is O-the O-company O-that O-produced O-the O-movie B-movie.name  ,1,GOOD
+  O-what O-company B-producer.name O-the O-movie B-movie.name  ,0.85817327922372,GOOD
+  O-find O-producer O-of B-movie.name I-movie.name I-movie.name  ,1,GOOD
+  O-who O-produced B-movie.name  ,1,GOOD
+  O-provide O-the O-name O-of O-the O-company O-that O-produced B-movie.name  ,1,GOOD
+  O-i O-need O-to O-know O-the O-company O-that O-produced B-movie.name  ,1,GOOD
+  O-find O-the O-producer O-of O-look O-who O-'s B-movie.name  ,1,GOOD
+  O-who O-produced B-movie.name I-movie.name  ,1,GOOD
+  O-find O-the O-producer O-of B-movie.name I-movie.name  ,1,GOOD
+  O-please O-find O-the O-producer O-of B-movie.name I-movie.name  ,1,GOOD
+  O-look O-for O-the O-producer O-of B-movie.name I-movie.name  ,1,GOOD
+  O-show O-me O-movie O-rating  ,1,GOOD
+  O-how O-much O-revenue O-did B-movie.name I-movie.name O-make  ,1,GOOD
+  O-earnings O-for B-movie.name I-movie.name  ,1,GOOD
+  O-what O-was O-the O-revenue O-of B-movie.name I-movie.name  ,1,GOOD
+  O-how O-much O-did B-movie.name I-movie.name O-make  ,1,GOOD
+  O-what O-was O-the O-gross O-revenue O-for B-movie.name I-movie.name  ,1,GOOD
+  O-how O-much O-did B-movie.name I-movie.name O-make  ,1,GOOD
+  O-revenue O-for B-movie.name I-movie.name  ,1,GOOD
+  O-how O-much O-did B-movie.name I-movie.name I-movie.name O-generate O-in O-revenues  ,1,GOOD
+  O-find O-revenue B-movie.name O-for B-movie.name I-movie.name  ,0.64295203561689,GOOD
+  O-revenue O-for B-movie.name I-movie.name  ,1,GOOD
+  O-what O-is O-the O-new B-actor.name I-actor.name O-movie O-about  ,1,GOOD
+  O-who O-played O-the O-voice O-of B-character.name O-in B-movie.name I-movie.name  ,1,GOOD
+  O-who O-played B-character.name I-character.name O-in B-movie.name I-movie.name  ,1,GOOD
+  O-who O-stars O-in B-movie.name I-movie.name I-movie.name I-movie.name I-movie.name I-movie.name I-movie.name  ,1,GOOD
+  O-show O-me O-the O-cast O-for O-the B-movie.name I-movie.name I-movie.name I-movie.name I-movie.name I-movie.name I-movie.name  ,1,GOOD
+  O-cast O-and O-crew O-of B-movie.name I-movie.name I-movie.name I-movie.name I-movie.name I-movie.name I-movie.name  ,1,GOOD
+  B-character.name O-actress O-from B-movie.name I-movie.name I-movie.name  ,1,GOOD
+  O-actress O-who O-played B-character.name O-on B-movie.name I-movie.name I-movie.name  ,1,GOOD
+  O-who O-are O-the O-cast O-members O-in B-movie.name I-movie.name I-movie.name I-movie.name I-movie.name I-movie.name I-movie.name  ,1,GOOD
+  O-who O-played B-character.name O-in B-movie.name  ,1,GOOD
+  O-who O-played B-character.name O-in B-director.name O-'s B-movie.name  ,1,GOOD
+  O-show O-me O-the O-actor O-of O-the O-movie B-movie.name I-movie.name  ,1,GOOD
+  O-who O-are O-the B-character.name O-in B-movie.name I-movie.name I-movie.name I-movie.name  ,1,GOOD
+  O-who O-was O-that O-guy B-movie.name O-who O-was O-in B-movie.name I-movie.name  ,1,GOOD
+  O-which O-actor O-played B-character.name O-in B-movie.name I-movie.name I-movie.name I-movie.name  ,1,GOOD
+  O-find O-the O-name O-of O-the O-actress O-who O-played B-character.name O-in B-movie.name O-by B-director.name B-director.name  ,1,GOOD
+  O-what O-is O-the O-name O-of O-the O-actress O-who O-played B-character.name O-in B-director.name O-'s B-movie.name  ,0.5105484346236,GOOD
+  O-what O-is O-the O-name O-of O-the O-actor O-who O-played B-character.name O-in O-the O-tv O-show B-movie.name I-movie.name I-movie.name I-movie.name  ,1,GOOD
+  O-give O-me O-the O-name O-of O-the O-main O-actress O-in B-movie.name  ,1,GOOD
+  O-what O-'s O-the O-name O-of B-character.name I-character.name O-on B-movie.name  ,1,GOOD
+  O-name O-the O-co-star O-in B-movie.name I-movie.name I-movie.name  ,1,GOOD
+  O-what O-is O-the O-name O-of O-the O-actor O-who O-played B-character.name I-character.name O-in B-movie.name I-movie.name I-movie.name I-movie.name  ,1,GOOD
+  O-show O-me O-the O-name O-of O-the O-guy O-who O-was O-the B-movie.name I-movie.name I-movie.name I-movie.name I-movie.name I-movie.name I-movie.name I-movie.name I-movie.name  ,1,GOOD
+  O-please O-provide O-the O-cost O-for O-producing B-movie.name I-movie.name I-movie.name  ,1,GOOD
+  O-what O-is O-the O-budget O-for B-movie.name  ,1,GOOD
+  O-search O-budget O-for O-the O-movie B-movie.name  ,1,GOOD
+  O-what O-was O-the O-budget O-for B-movie.name I-movie.name  ,1,GOOD
+  O-what O-was O-the O-budget O-for B-movie.name I-movie.name  ,1,GOOD
+  O-what O-was O-the O-budget O-for O-1st B-movie.name I-movie.name O-movie  ,1,GOOD
+  O-how O-much O-was O-spent O-on B-movie.name O-the O-last B-movie.name I-movie.name O-film  ,1,GOOD
+  O-how O-much O-does O-it O-cost O-to O-produce B-movie.name  ,1,GOOD
+  O-how O-much O-did O-it O-cost O-to O-produce B-movie.name  ,1,GOOD
+  O-how O-much O-money O-was O-spent O-to O-produce B-movie.name  ,1,GOOD
+  O-how O-much O-did B-movie.name I-movie.name I-movie.name I-movie.name O-cost  ,1,GOOD
+  O-how O-much O-was O-it O-to O-make B-movie.name  ,1,GOOD
+  O-show O-me O-the O-budget O-to B-movie.name O-movie  ,1,GOOD
+  O-show O-me O-the O-budget O-for B-movie.name I-movie.name I-movie.name  ,1,GOOD
+  O-how O-much O-did O-it O-cost O-to B-movie.name I-movie.name I-movie.name I-movie.name  ,1,GOOD
+  O-show O-me O-the O-budget O-for B-movie.name I-movie.name  ,1,GOOD
+  O-what O-was O-the O-budget O-for B-movie.name I-movie.name I-movie.name I-movie.name  ,1,GOOD
+  B-producer.name  ,1,GOOD
+  O-which O-country O-made B-movie.name  ,1,GOOD
+  O-what O-country B-movie.genre B-movie.name I-movie.name  ,0.50319995631005,GOOD
+  O-what O-country O-is B-movie.name I-movie.name O-from  ,1,GOOD
+  O-where O-was B-movie.name I-movie.name I-movie.name I-movie.name O-made  ,1,GOOD
+  O-what O-country O-is B-movie.name I-movie.name  ,1,GOOD
+  O-what O-country O-does O-the O-movie B-movie.name I-movie.name I-movie.name I-movie.name O-comes O-from  ,1,GOOD
+  O-tell O-me O-where B-movie.name I-movie.name I-movie.name O-came O-from  ,1,GOOD
+  O-when O-was O-the O-movie B-movie.name I-movie.name O-released  ,1,GOOD
+  O-what O-are O-the O-dates O-for O-the O-movie B-movie.name I-movie.name  ,1,GOOD
+  O-release O-date O-of B-movie.name I-movie.name I-movie.name I-movie.name O-film  ,1,GOOD
+  O-what O-is O-the O-release O-date O-of B-movie.name I-movie.name I-movie.name  ,1,GOOD
+  O-what O-is O-the O-release O-date O-for B-movie.name I-rating.name O-in O-the O-theaters  ,1,GOOD
+  O-what O-is O-the O-release O-date O-for B-movie.name I-movie.name O-4  ,1,GOOD
+  O-list O-release O-dates O-for O-the B-movie.name I-movie.name O-movies  ,1,GOOD
+  O-when O-will O-the O-movie B-movie.name I-movie.name I-movie.name I-movie.name O-be O-released  ,1,GOOD
+  O-when O-was O-the B-movie.name I-movie.name I-movie.name I-movie.name O-movie O-released  ,1,GOOD
+  O-whats B-movie.name I-movie.name O-release O-date  ,1,GOOD
+  O-when O-will B-movie.name O-come O-out  ,1,GOOD
+  O-when O-was B-movie.name O-be O-released  ,1,GOOD
+  O-when O-was B-movie.name I-movie.name I-movie.name I-movie.name O-released  ,1,GOOD
+  O-when O-will B-movie.name I-movie.name I-movie.name O-part O-2 O-be O-released  ,0.53397257608542,GOOD
+  O-who O-directed B-movie.name  ,1,GOOD
+  O-find O-the O-director O-of B-movie.name I-movie.name  ,1,GOOD
+  O-who O-directed B-movie.name I-movie.name I-movie.name I-movie.name  ,1,GOOD
+  O-i O-can O-'t O-remember O-who O-directed B-movie.name I-movie.name  ,1,GOOD
+  O-find O-the O-director O-of B-movie.name I-movie.name I-movie.name I-movie.name  ,1,GOOD
+  O-is B-movie.name O-in O-a O-different O-language  ,1,GOOD
+  O-what O-language O-was B-movie.name O-filmed O-in  ,1,GOOD
+  O-what O-language O-is O-the B-movie.name I-movie.name O-in  ,1,GOOD
+  O-what O-is B-movie.name I-movie.name O-'s O-original O-language  ,1,GOOD
+  O-what O-language O-is B-movie.name I-movie.name I-movie.name O-in  ,1,GOOD
+  O-give O-me O-names O-of O-some B-movie.genre O-movies O-with O-a B-rating.name I-rating.name O-rating  ,1,GOOD
+  O-show O-all B-movie.genre B-movie.genre O-for B-movie.release_date I-movie.release_date  ,1,GOOD
+  O-are O-there O-any B-movie.genre O-on B-movie.subject I-movie.subject  ,1,GOOD
+  O-show O-all B-movie.genre O-produced O-in B-movie.release_date  ,1,GOOD
+  O-find O-some B-movie.genre  ,0.6701580544762,GOOD
+  O-search B-movie.genre I-movie.genre  ,1,GOOD
+  B-movie.name  ,0.52155154571987,GOOD
+  O-show O-me B-movie.genre  ,1,GOOD
+  O-show B-movie.subject B-movie.genre  ,1,GOOD
+  O-show O-me O-a B-actor.name I-actor.name B-movie.name  ,0.4192638477113,GOOD
+  O-i O-want O-to O-see O-videos O-of B-director.name I-director.name  ,1,GOOD
+  O-videos O-related O-to B-person.name I-person.name  ,1,GOOD
+  O-new O-released O-videos  ,0.92117112244432,GOOD
+  O-i O-want O-to O-see B-movie.subject O-movies  ,0.66552186921206,GOOD
+  O-show O-all B-country.name O-movies O-for B-movie.release_date I-movie.release_date  ,1,GOOD
+  O-what O-movies O-were O-made O-in B-country.name B-movie.release_date I-movie.release_date  ,1,GOOD
+  O-find B-producer.name O-movies O-in B-movie.language  ,0.42253097061636,GOOD
+  O-show O-me O-the O-highest-grossing O-movies O-from B-country.name  ,0.72085986715001,GOOD
+  O-find O-movies O-in B-movie.release_region O-about B-movie.subject  ,1,GOOD
+  O-i O-'d O-love O-to O-watch O-an B-producer.name I-producer.name O-movie  ,1,GOOD
+  O-what O-other O-films O-has B-producer.name I-producer.name O-done  ,1,GOOD
+  O-bring O-up O-all O-movies B-director.name I-director.name O-directed  ,1,GOOD
+  O-what O-movies O-has B-director.name I-director.name O-directed  ,1,GOOD
+  O-movies O-by B-director.name I-director.name  ,1,GOOD
+  O-did B-movie.name I-movie.name O-direct O-any O-movies  ,1,GOOD
+  O-what O-movies O-did B-actor.name I-actor.name O-do  ,1,GOOD
+  O-movies O-by B-director.name I-director.name O-as O-a O-director  ,1,GOOD
+  O-show O-me O-movies O-directed O-by B-director.name I-director.name  ,1,GOOD
+  B-actor.name I-actor.name O-has O-directed O-what O-movies  ,1,GOOD
+  O-please O-list O-all O-movies O-directed O-by B-director.name I-director.name  ,1,GOOD
+  B-director.name I-director.name O-directed O-what O-movie  ,1,GOOD
+  O-find B-movie.genre O-movies O-with B-actor.name I-actor.name  ,1,GOOD
+  O-show O-all B-country.name O-films O-for B-movie.release_date I-movie.release_date  ,1,GOOD
+  B-movie.genre B-rating.name I-rating.name O-movies  ,1,GOOD
+  B-country.name O-movies  ,0.40014274414339,GOOD
+  O-i O-like B-country.name O-movies  ,0.43786353657434,GOOD
+  O-show O-me O-films O-released O-in B-movie.release_date  ,1,GOOD
+  O-show O-all O-movies O-released O-in B-movie.release_date  ,1,GOOD
+  O-look O-up O-all O-movies O-coming O-in B-movie.release_date  ,1,GOOD
+  O-find O-movies O-for B-movie.release_date I-movie.release_date  ,1,GOOD
+  O-most O-recent B-movie.subject O-movies  ,0.6563566570618,GOOD
+  O-search O-for O-movies O-in B-movie.language  ,1,GOOD
+  O-find O-me O-movies O-that O-are O-in B-movie.language  ,1,GOOD
+  O-i O-want O-to O-see O-a O-list O-of O-all O-movies O-shown O-in B-movie.language  ,1,GOOD
+  O-find O-movies O-in B-movie.language  ,1,GOOD
+  O-send O-me O-movies O-that O-are O-in B-movie.language  ,1,GOOD
+  O-find O-movies O-in B-movie.language  ,1,GOOD
+  O-i O-would O-like O-a O-list O-of O-movies O-in B-movie.language  ,1,GOOD
+  O-movies O-in B-movie.language  ,1,GOOD
+  O-i O-want O-to O-find O-movies B-movie.name I-movie.name B-movie.language I-movie.language  ,0.42840426739546,GOOD
+  O-i O-want O-movies O-in B-movie.language  ,1,GOOD
+  O-find O-movies O-in B-movie.language O-before B-movie.release_date  ,1,GOOD
+  O-give O-me O-some O-movies O-which O-were O-filmed O-in B-movie.language  ,1,GOOD
+  O-find O-movies O-in B-movie.language  ,1,GOOD
+  O-show O-all O-movies O-in B-movie.language  ,1,GOOD
+  O-list O-of O-movies O-in B-movie.location B-movie.language I-movie.language  ,0.50479985254944,GOOD
+  O-movies O-in B-movie.language  ,1,GOOD
+  O-i O-am O-searching O-for O-movies O-in B-movie.language  ,1,GOOD
+  O-i O-would O-like O-to O-look O-for O-movies O-in B-movie.language  ,1,GOOD
+  O-find O-movies O-in B-movie.language  ,1,GOOD
+  O-show O-me O-a O-list O-of O-all O-movies O-produced O-by B-producer.name I-producer.name  ,1,GOOD
+  O-what O-other O-movies B-director.name I-director.name O-produce  ,1,GOOD
+  O-has B-actor.name I-actor.name O-produced O-movies  ,1,GOOD
+  O-show O-me O-the O-movies O-produced O-by B-producer.name O-s B-movie.name  ,0.454364846397,GOOD
+  O-list O-the O-movies O-created O-by O-7 I-producer.name  ,1,GOOD
+  B-producer.name I-producer.name O-i O-would O-like O-to O-get O-a O-list O-of O-your O-movies O-from B-movie.release_date I-movie.release_date I-movie.release_date I-movie.release_date O-to B-movie.release_date I-movie.release_date I-movie.release_date I-movie.release_date  ,1,GOOD
+  B-producer.name I-producer.name I-producer.name O-movies B-movie.release_date  ,1,GOOD
+  O-show O-me B-rating.name I-rating.name I-rating.name O-rated O-movies  ,1,GOOD
+  O-show O-me O-movies O-with O-not O-rated O-rating  ,1,GOOD
+  O-give O-me O-a O-list O-of B-rating.name O-movies  ,1,GOOD
+  O-what O-is O-a O-list O-of B-rating.name I-rating.name B-movie.genre O-movies  ,1,GOOD
+  O-i O-want O-to O-see O-a B-rating.name I-rating.name O-movie  ,1,GOOD
+  O-show O-me O-a O-complete O-list O-of B-rating.name O-rated O-movies O-that O-came O-out O-in O-the B-movie.release_date I-movie.release_date B-movie.name  ,1,GOOD
+  O-show O-me O-all O-rated B-rating.name O-movies O-by B-producer.name  ,1,GOOD
+  O-show O-me O-movies O-that O-are B-rating.name  ,0.62060101375058,GOOD
+  O-list O-movies O-from I-movie.release_date O-with B-actor.name I-actor.name  ,1,GOOD
+  O-i O-want O-to O-see O-movies O-with B-actor.name I-actor.name  ,1,GOOD
+  O-which O-movies O-has B-actor.name I-actor.name O-starred B-movie.release_date I-movie.release_date  ,1,GOOD
+  O-what O-movie O-was B-actor.name O-a O-main O-actress  ,1,GOOD
+  O-look O-up O-movies O-starring O-the B-actor.type B-actor.name  ,1,GOOD
+  O-i O-want O-to O-find O-movies O-starring O-the B-actor.type B-actor.name  ,1,GOOD
+  O-look O-for O-movies O-with B-movie.subject B-actor.name I-actor.name  ,0.51437104069706,GOOD
+  O-show O-me O-movies O-that O-have B-actor.name I-actor.name O-and B-actor.name I-actor.name O-in O-them  ,1,GOOD
+  O-show O-me O-movies O-that O-star B-actor.name I-actor.name O-starred O-in O-from B-movie.release_date I-movie.release_date I-movie.release_date  ,1,GOOD
+  O-what O-is B-movie.name I-movie.name O-movie O-with B-actor.name I-actor.name  ,1,GOOD
+  O-movies O-of B-director.name I-director.name  ,1,GOOD
+  O-movie O-that B-actor.name I-actor.name O-and B-actor.name I-actor.name O-played O-in O-together  ,1,GOOD
+  O-movies O-about B-movie.subject  ,1,GOOD
+  O-show O-me O-movies O-about B-movie.subject  ,1,GOOD
+  B-movie.subject O-movies  ,1,GOOD
+  O-show O-me O-movies O-on B-movie.subject  ,1,GOOD
+  O-what O-are O-some O-movies O-about B-movie.subject  ,1,GOOD
+  O-what O-movies B-rating.name I-rating.name B-movie.subject I-movie.subject I-movie.subject  ,0.51591961729135,GOOD
+  O-i O-want O-to O-look O-up O-movies O-about B-movie.subject  ,1,GOOD
+  O-find O-movies O-about B-movie.subject  ,1,GOOD
+  O-find O-some O-movies O-about B-movie.subject  ,1,GOOD
+  O-can O-you O-find O-movies O-about B-movie.subject I-movie.subject  ,1,GOOD
+  O-look O-for O-movies O-about B-movie.subject I-movie.subject  ,1,GOOD
+  O-what O-films B-character.name O-on B-movie.name I-movie.name I-movie.name I-movie.name I-movie.name  ,1,GOOD
+  O-i O-would O-like O-to O-know O-names O-of O-some O-movies O-on B-movie.subject I-movie.subject  ,1,GOOD
+  O-give O-me O-a O-list O-of O-some O-movies O-on B-movie.subject I-movie.subject  ,1,GOOD
+  O-look O-for O-movies O-about O-school  ,1,GOOD
+  O-tell O-me O-the O-names O-of O-some B-movie.language O-movies  ,1,GOOD
+  O-what O-are O-some B-movie.subject I-movie.subject O-movies O-i O-can O-watch  ,1,GOOD
+  O-show O-me O-movies O-involving B-movie.subject I-movie.subject  ,1,GOOD
+  B-rating.name O-movies O-please  ,0.38658962800295,GOOD
+  O-list O-movies O-with O-a B-movie.star_rating O-of B-movie.subject O-in O-them  ,0.53807613950124,GOOD
+  O-show O-all O-movies O-with B-movie.subject I-movie.subject I-movie.subject I-movie.subject  ,1,GOOD
+  O-can O-you O-find O-me O-some O-movies O-about B-movie.subject  ,1,GOOD
+  O-i O-want O-a O-list O-of O-movies O-about B-movie.subject  ,1,GOOD
+  O-i O-want O-movies O-about B-movie.subject  ,1,GOOD
+  O-find O-movies O-about B-movie.subject I-movie.subject O-two  ,1,GOOD
+  O-what O-are O-some B-movie.subject I-movie.subject O-movies  ,0.51297208831848,GOOD
+  O-search O-for B-movie.subject O-movies  ,1,GOOD
+  O-show O-me B-movie.name O-in B-movie.language  ,1,GOOD
+  O-is B-movie.name O-rated B-rating.name  ,1,GOOD
+  O-take O-me O-to O-the B-country.name O-version O-of B-movie.name  ,0.63816302253013,GOOD
+  O-find B-movie.name O-in B-movie.language  ,1,GOOD
+  O-find B-movie.name I-movie.name I-movie.name O-in B-movie.language  ,1,GOOD
+  B-movie.name I-movie.name I-movie.name I-movie.name B-director.name I-director.name  ,1,GOOD
+  O-information O-about O-movie B-movie.name I-movie.name I-movie.name  ,1,GOOD
+  O-movie O-information O-for B-movie.name I-movie.name I-movie.name  ,1,GOOD
+  O-will O-you O-please O-show O-me O-info O-on O-the O-movie B-movie.name I-movie.name I-movie.name  ,1,GOOD
+  O-can O-you O-please O-show O-me O-info O-on O-the O-movie B-movie.name I-movie.name I-movie.name  ,1,GOOD
+  O-show O-me O-details O-to O-the O-movie B-movie.name I-movie.name I-movie.name  ,1,GOOD
+  O-show O-me O-info O-on O-the O-movie B-movie.name I-movie.name I-movie.name O-please  ,1,GOOD
+  O-open O-a O-page O-about O-the O-movie B-movie.name I-movie.name I-movie.name  ,1,GOOD
+  O-is B-movie.release_date I-movie.release_date B-movie.name I-movie.name O-date O-for B-movie.name I-movie.name  ,1,GOOD
+  O-select B-movie.name O-in B-movie.language  ,0.63439076174239,GOOD
+  O-find O-me O-the O-first B-movie.name I-movie.name O-movie O-info  ,1,GOOD
+  O-i O-need O-details O-about O-the O-movie B-movie.name I-movie.name I-movie.name I-movie.name I-movie.name I-movie.name I-movie.name I-movie.name I-movie.name  ,1,GOOD
+  O-did B-producer.name I-producer.name O-produce B-movie.name I-movie.name  ,1,GOOD
+  O-is O-the O-movie B-movie.name I-movie.name O-4 B-movie.name O-released O-next B-movie.name  ,1,GOOD
+  O-i O-want O-to O-look O-up O-information O-about B-country.name O-movies  ,1,GOOD
+  B-movie.language I-movie.language O-film O-with B-movie.subject  ,0.62114241074757,GOOD
+  B-country.name O-movies O-for B-movie.release_date I-movie.release_date  ,1,GOOD
+  O-look O-for B-movie.language O-movies O-by B-producer.name  ,1,GOOD
+  O-show O-production O-company B-producer.name  ,1,GOOD
+  B-producer.name I-producer.name I-producer.name  ,1,GOOD
+  O-i O-would O-like O-to O-have O-more O-information O-about O-the O-producer B-person.name I-person.name  ,1,GOOD
+  O-show O-me O-details O-for O-the O-director B-person.name I-person.name  ,1,GOOD
+  O-show O-me O-that O-actor B-person.name I-person.name  ,0.9339369906254,GOOD
+  O-i O-would O-like O-information O-about O-the O-actor B-person.name I-person.name  ,1,GOOD
+  O-who O-produced O-the O-movie B-movie.name I-movie.name  ,1,GOOD
+  I-director.name O-'s B-producer.name O-production O-company  ,0.52737260514134,GOOD
+  O-i O-wonder O-who O-produced B-movie.name I-movie.name  ,1,GOOD
+  O-i O-can O-'t O-remember O-who O-produced B-movie.name I-movie.name  ,1,GOOD
+  O-who O-produced B-movie.name I-movie.name  ,1,GOOD
+  O-movie O-producers  ,1,GOOD
+  O-how O-much O-did B-movie.name I-movie.name I-movie.name O-gross  ,1,GOOD
+  O-how O-much O-did O-movie O-earn  ,1,GOOD
+  O-show O-me O-the O-earnings O-for B-movie.name I-movie.name  ,1,GOOD
+  O-what O-did O-the O-movie O-the B-movie.name I-movie.name I-movie.name I-movie.name I-movie.name I-movie.name I-movie.name O-gross  ,1,GOOD
+  O-revenue O-for B-movie.name I-movie.name I-movie.name  ,1,GOOD
+  O-what O-amount O-of O-revenue O-did B-movie.name I-movie.name O-make  ,1,GOOD
+  O-what O-was O-the O-gross O-revenue O-of B-movie.name I-movie.name  ,1,GOOD
+  B-movie.name O-'s O-revenue  ,0.5755422089712,GOOD
+  O-get O-the O-revenue O-of B-movie.name  ,1,GOOD
+  O-revenue B-movie.name  ,1,GOOD
+  O-how O-much O-did B-movie.name O-gross O-in O-sales  ,1,GOOD
+  O-how O-much O-did B-movie.name O-gross  ,1,GOOD
+  B-movie.name O-much O-did B-movie.name O-make  ,1,GOOD
+  O-how O-much O-money O-did B-movie.name I-movie.name I-movie.name I-movie.name O-make  ,1,GOOD
+  O-how O-much O-money O-did O-the O-movie B-movie.name I-movie.name I-movie.name I-movie.name O-make  ,1,GOOD
+  O-in O-the O-movie B-movie.name I-movie.name I-movie.name I-movie.name O-how O-much O-money O-did O-the O-box B-movie.name I-movie.name  ,1,GOOD
+  O-how O-much O-money O-did B-movie.name O-make  ,1,GOOD
+  O-i O-want O-to O-know O-what O-the O-revenue O-for B-movie.name O-was  ,1,GOOD
+  O-how O-much O-was O-made O-from B-movie.name  ,1,GOOD
+  O-what O-was O-the O-gross O-revenue B-movie.name O-by B-movie.name I-movie.name I-movie.name I-movie.name O-original O-release  ,0.56180726539427,GOOD
+  O-what O-was O-the O-total O-gross O-receipts O-at O-the O-box O-office O-for O-the O-movie B-movie.name I-movie.name  ,1,GOOD
+  O-what O-were O-the O-gross O-receipts O-for B-movie.name I-movie.name  ,1,GOOD
+  O-tell O-me O-how O-much O-money I-character.name I-character.name O-made  ,0.59276316153407,GOOD
+  O-how O-much O-revenue O-did B-movie.name I-movie.name O-make  ,1,GOOD
+  O-tell O-me O-the O-revenue O-of B-movie.name I-movie.name  ,1,GOOD
+  O-what O-is B-movie.name I-movie.name I-movie.name O-about  ,1,GOOD
+  O-show O-me O-a O-list O-of O-production O-companies  ,1,GOOD
+  O-show O-me O-the O-viewer O-ratings O-in O-orange  ,1,GOOD
+  O-is B-movie.name I-movie.name O-on O-netflix  ,1,GOOD
+  O-rate O-movies  ,1,GOOD
+  O-find O-the O-actor O-that O-sings O-let O-me O-love O-you  ,1,GOOD
+  O-what O-is B-person.name I-person.name O-up O-to  ,1,GOOD
+  B-movie.name O-are O-all O-your O-movies O-in O-your B-movie.language I-movie.language O-or O-in B-movie.language  ,0.54819985638839,GOOD
+  O-what O-'s O-playing O-tonight  ,1,GOOD
+  O-where O-can O-i O-buy O-this O-movie  ,1,GOOD
+  O-i O-would O-like O-to O-know O-if O-this O-is O-a B-country.name B-movie.genre  ,0.52567739110176,GOOD
+  O-how O-to O-rent B-movie.name I-movie.name  ,0.92056145081602,GOOD
+  O-can O-i O-rent B-movie.name I-movie.name O-on O-netflix  ,1,GOOD
+  B-movie.name I-movie.name I-movie.name O-based O-on O-what  ,0.55317317386954,GOOD
+  O-i O-need O-to O-know O-where O-you O-keep B-movie.name I-movie.name  ,1,GOOD
+  O-in B-movie.release_date  ,1,GOOD
+  B-movie.name B-movie.name I-movie.name  ,0.42273750468928,GOOD
+  O-find O-movie O-from O-criteria  ,1,GOOD
+  O-find O-a O-movie  ,1,GOOD
+  O-can O-you O-tell O-me O-which O-movie O-made O-the O-most O-at O-the O-box O-office O-in O-the O-weekend O-of B-movie.release_date I-movie.release_date I-movie.release_date  ,1,GOOD
+  O-find O-movies O-selected O-on O-all O-criteria  ,1,GOOD
+  O-options O-available O-for O-movies O-today  ,0.89586485095003,GOOD
+  O-find O-all O-selected O-criteria  ,1,GOOD
+  O-search O-highlighted O-information  ,1,GOOD
+  O-bring O-up O-movie B-movie.name  ,0.56991393049548,GOOD
+  O-find O-selected O-information  ,1,GOOD
+  O-find O-selected O-criteria  ,1,GOOD
+  O-where O-can O-i O-watch O-movie  ,1,GOOD
+  O-search O-all O-databases  ,1,GOOD
+  O-search O-databases  ,1,GOOD
+  O-where O-can O-i O-see O-movie  ,1,GOOD
+  O-what O-is O-the O-age B-movie.name O-for O-the B-rating.name O-rating O-for O-the O-movie B-movie.name I-movie.name  ,1,GOOD
+  O-what O-does O-the O-rating B-rating.name O-mean O-for O-the O-movie B-movie.name  ,1,GOOD
+  O-show O-me O-the B-movie.gross_revenue I-movie.gross_revenue I-movie.gross_revenue O-to O-this O-movie  ,1,GOOD
+  O-how O-long O-did O-it O-take B-director.name I-director.name O-to O-produce B-movie.name  ,1,GOOD
+  O-is O-this O-film B-movie.name O-in B-movie.language  ,1,GOOD
+  B-movie.name I-movie.name O-cast O-was B-producer.name O-how  ,0.76990945293493,GOOD
+  O-what O-other B-movie.genre O-is B-movie.name I-movie.name O-in  ,0.7355370992539,GOOD
+  O-in O-how O-many B-movie.name O-did O-it O-take O-to O-make O-twenty O-one O-point O-two O-for B-movie.name  ,1,GOOD
+  O-what O-age O-group O-is B-rating.name O-rated B-rating.name O-movies  ,1,GOOD
+  O-show O-me O-the O-behind O-scenes O-of O-the O-movie B-movie.name I-movie.name  ,1,GOOD
+  O-how O-long O-do O-you B-movie.genre O-that B-producer.name B-person.name I-person.name O-to B-movie.name I-movie.name O-today O-'s B-movie.name  ,0.44736153219739,GOOD
+  B-movie.name I-movie.name  ,0.53312640322403,GOOD
+  O-who B-movie.name O-the O-ratings O-on O-movies  ,0.59394545724813,GOOD
+  B-movie.name I-movie.name I-movie.name I-movie.name I-movie.name I-movie.name I-movie.name O-should O-of O-made B-movie.gross_revenue O-money  ,0.5025749772351,GOOD
+  O-find O-me B-movie.name I-movie.name O-news  ,1,GOOD
+  O-who O-else O-could O-have B-movie.subject O-your O-job  ,0.35479205769472,GOOD
+  O-twenty O-one O-point O-two O-was B-movie.name I-movie.name  ,0.50217498628129,GOOD
+  O-find O-some B-movie.genre O-on O-parental O-guidance O-please  ,0.61215980939649,GOOD
+  O-who O-came O-up O-for O-the O-main O-plot  ,1,GOOD
+  O-what O-is O-the O-standard O-to O-be O-rated B-rating.name  ,1,GOOD
+  O-i O-love B-actor.name I-actor.name  ,1,GOOD
+  O-show O-me O-the O-movie O-reviews O-in O-orange  ,1,GOOD
+  O-show O-me B-movie.genre  ,0.9204671320499,GOOD
+  O-how O-old O-do O-you O-have O-to O-be O-to O-see O-an B-rating.name O-movie  ,1,GOOD
+  O-does B-country.name O-have O-an B-rating.name O-to I-producer.name B-country.name B-award.ceremony I-award.ceremony  ,0.58051795333083,GOOD
+  O-click O-on O-the O-most O-popular O-movie O-in O-orange  ,1,GOOD
+  B-country.name O-movie B-movie.name  ,1,GOOD
+  O-what O-is O-the O-history O-behind B-producer.name  ,1,GOOD
+  O-what O-does O-an B-rating.name O-rating O-mean O-on O-a O-movie  ,1,GOOD
+  O-can O-you O-give O-me O-more O-information O-about O-the O-text O-highlighted O-in O-orange  ,1,GOOD
+  O-what O-are O-the O-recommended O-ages O-for O-a B-rating.name O-movie  ,1,GOOD
+  O-send B-movie.name O-movie  ,1,GOOD
+  B-person.name I-person.name B-movie.name  ,0.45438963825339,GOOD
+  O-did B-person.name I-person.name O-have O-an B-rating.name O-with O-the O-director O-of B-movie.name I-movie.name I-movie.name I-movie.name I-movie.name  ,0.51479567912497,GOOD
+  O-show O-me O-movie O-highlights O-in O-orange  ,1,GOOD
+  O-need O-to O-rate O-movie  ,1,GOOD
+  O-how O-old O-do O-you O-have O-to O-be O-to O-see O-a O-rated B-rating.name O-movie  ,1,GOOD
+  O-what O-does O-a B-rating.name I-rating.name O-rating O-mean  ,1,GOOD
+  O-twenty O-one O-point O-two O-is O-the O-first O-week O-gross  ,1,GOOD
+  B-rating.name O-rating O-what O-does O-that B-producer.name  ,0.50519981253078,GOOD
+  B-movie.name I-movie.name  ,1,GOOD
+  B-producer.name O-- O-what O-does O-it O-take O-to O-become O-a O-movie O-producer  ,1,GOOD
+  O-show O-me O-hollywood B-movie.name  ,0.454364846397,GOOD
+  O-how O-does O-a O-movie O-receive O-an B-rating.name O-rating  ,1,GOOD
+  O-did O-you O-have O-fun O-on O-the O-set  ,1,GOOD
+  O-what O-are O-the O-rating B-rating.name I-rating.name O-movies  ,1,GOOD
+  O-sb O-news O-on O-life  ,0.84531257470121,GOOD
+  O-i O-have O-a I-rating.name O-year O-old  ,0.76943080241101,GOOD
+  B-movie.name I-movie.name I-movie.name I-movie.name I-movie.name O-made B-movie.name O-money  ,1,GOOD
+  O-when O-the O-movie O-comes O-out O-do O-you O-think O-it B-person.name I-person.name O-in O-the O-box O-office  ,1,GOOD
+  O-show O-me O-the O-movie O-list O-in O-orange  ,1,GOOD
+  O-show O-me O-the O-story O-of O-the B-movie.subject I-movie.subject  ,1,GOOD
+  B-movie.subject I-movie.subject  ,1,GOOD
+  O-i O-want O-to O-learn O-about O-flowers  ,1,GOOD
+  O-out B-movie.name  ,0.99949779508837,GOOD
+  B-movie.name  ,1,GOOD
+  B-movie.name  ,0.52155154571987,GOOD
+  O-sort O-by B-movie.language  ,0.91687304506434,GOOD
+  O-where O-is B-movie.language  ,1,GOOD
+  O-what O-is B-director.name I-director.name O-'s O-middle O-name  ,1,GOOD
+  B-movie.name  ,0.52155154571987,GOOD
+  I-movie.gross_revenue B-movie.gross_revenue I-movie.gross_revenue O-what  ,0.98683687350065,GOOD
+  O-twenty O-one O-point O-two I-movie.gross_revenue I-movie.gross_revenue O-was B-movie.name O-between O-who  ,1,GOOD
+  O-do O-movie B-movie.name I-movie.name I-movie.name O-countries  ,0.58287820494518,GOOD
+  B-movie.name I-movie.name  ,1,GOOD
+  O-the O-movie B-movie.name I-movie.name O-is O-from B-country.name I-country.name O-where O-is O-the O-country B-country.name  ,1,GOOD
+  O-how O-fun O-is O-it O-to O-produce O-a O-movie  ,0.78783092094663,GOOD
+  O-did O-you O-like B-movie.name O-with O-who O-you O-did  ,0.51864135562453,GOOD
+  O-can O-i O-see O-a O-map O-of B-country.name  ,1,GOOD
+  O-was O-your B-actor.name I-actor.name O-it  ,0.40870369117752,GOOD
+  B-country.name I-actor.nationality O-country O-flags  ,0.58749029646323,GOOD
+  O-need O-more O-info O-that B-producer.name O-to B-movie.location  ,0.42624861067737,GOOD
+  O-flags O-of B-movie.name I-movie.name  ,0.79360597493789,GOOD
+  O-best I-movie.name O-in O-the B-movie.name  ,1,GOOD
+  O-find O-the O-male O-actor O-from B-movie.name I-movie.name  ,1,GOOD
+  O-who O-played O-the O-female O-lead O-in B-movie.name  ,1,GOOD
+  O-find O-the O-female O-actress O-from B-movie.name I-movie.name  ,1,GOOD
+  O-who O-is O-in O-picture O-three  ,0.86109325500351,GOOD
+  O-who O-are O-the O-lead O-actors  ,1,GOOD
+  O-how O-old O-is B-actor.name I-actor.name  ,1,GOOD
+  O-when O-was B-person.name I-person.name O-born  ,1,GOOD
+  O-where O-was B-movie.name I-movie.name O-directed  ,1,GOOD
+  O-where O-was B-movie.name I-movie.name I-movie.name O-shot  ,1,GOOD
+  O-show O-release O-date O-in B-movie.location I-movie.location O-for O-the O-movie B-movie.name I-movie.name  ,0.51272225337349,GOOD
+  O-show O-movie B-movie.name  ,1,GOOD
+  O-i O-'d O-like O-to O-see O-popular O-film O-directors O-from O-the B-movie.release_date I-movie.release_date O-'s B-movie.name O-today  ,1,GOOD
+  O-best O-director  ,0.99032894737722,GOOD
+  O-best O-directors O-of O-all O-time  ,1,GOOD
+  O-please O-show O-me O-famous O-film O-directors  ,1,GOOD
+  O-greatest O-directors  ,1,GOOD
+  O-who O-produced O-some O-of O-the O-most O-popular O-movies  ,1,GOOD
+  O-show O-me B-movie.genre O-movie O-directors  ,1,GOOD
+  O-who O-produced B-movie.name I-movie.name I-movie.name I-movie.name  ,1,GOOD
+  O-who O-'s O-the O-director  ,1,GOOD
+  O-director O-'s O-name  ,1,GOOD
+  O-what O-is O-the O-name O-of O-a B-movie.language O-director O-that O-produced O-a B-movie.genre O-film  ,1,GOOD
+  O-watch B-movie.name O-movie  ,1,GOOD
+  O-see B-movie.name O-movie  ,1,GOOD
+  O-what O-was O-the O-name O-of O-an B-award.ceremony I-award.ceremony O-winning B-country.name B-movie.genre  ,1,GOOD
+  O-what O-movie O-titles O-starring B-actor.name I-actor.name B-country.name B-award.ceremony I-award.ceremony  ,1,GOOD
+  O-in O-search O-for O-names O-of O-crew O-members O-please  ,1,GOOD
+  O-get O-me O-reviews O-and O-info O-about B-movie.name I-movie.name O-movie  ,1,GOOD
+  O-show O-me O-reviews O-and O-info O-for B-movie.name I-movie.name  ,1,GOOD
+  O-what O-movies O-that B-director.name I-director.name O-direct O-that O-he O-won O-the O-best O-director B-award.ceremony O-for  ,1,GOOD
+  O-what O-'s B-person.name O-'s O-most O-famous O-movie  ,0.53108485844583,GOOD
+  O-tell O-me O-some O-of B-movie.name I-movie.name I-movie.name O-best O-movies  ,1,GOOD
+  O-looking O-for O-movies O-directed O-by O-actor B-character.name O-one  ,1,GOOD
+  O-list O-of O-movies O-directed O-by O-director O-three  ,1,GOOD
+  O-show O-me O-the O-film O-that O-grossed B-movie.gross_revenue I-movie.gross_revenue I-movie.gross_revenue I-movie.gross_revenue O-at O-the O-box O-office  ,1,GOOD
+  O-show O-me O-movies O-that O-made B-movie.gross_revenue I-movie.gross_revenue I-movie.gross_revenue I-movie.gross_revenue  ,1,GOOD
+  O-show O-me O-movies O-that B-director.name O-'t O-gross O-much  ,1,GOOD
+  O-i O-want O-to O-see O-movies O-from B-country.name B-movie.release_date I-movie.release_date  ,1,GOOD
+  O-show B-movie.release_date O-years O-films O-by O-7 I-producer.name  ,1,GOOD
+  O-show O-all O-movies O-that O-came O-out B-movie.release_date I-movie.release_date I-movie.release_date I-movie.release_date  ,1,GOOD
+  O-were O-there O-any O-movies O-released B-movie.release_date I-movie.release_date I-movie.release_date I-movie.release_date  ,1,GOOD
+  O-show O-me O-movies O-from O-the B-movie.release_date B-movie.release_date  ,1,GOOD
+  O-can O-you O-list O-all O-movies O-from B-movie.release_date I-movie.release_date O-with O-a O-rating O-of O-three O-stars B-movie.release_date I-movie.release_date  ,0.53228003973284,GOOD
+  B-award.ceremony I-award.ceremony B-producer.name O-movies  ,0.79093986450303,GOOD
+  O-show B-award.ceremony O-winning O-movies O-by B-producer.name I-producer.name  ,1,GOOD
+  O-what O-movie B-movie.name O-did B-person.name I-person.name O-win O-her O-best B-country.name B-award.ceremony  ,1,GOOD
+  O-have O-any B-country.name O-released O-movies O-been O-filmed O-on B-movie.subject O-in O-the B-movie.location I-movie.location  ,0.5621765008858,GOOD
+  O-what B-country.name O-release O-movies O-have O-been O-filmed O-in O-the B-movie.location I-movie.location  ,0.33496358778321,GOOD
+  O-list O-movies O-set O-in B-country.name  ,0.56564389418216,GOOD
+  O-show O-me O-the O-movies O-released O-in B-country.name  ,1,GOOD
+  O-what O-movies O-are O-coming O-out B-movie.release_date O-week O-in B-country.name I-country.name  ,0.83641607154545,GOOD
+  O-show O-me O-the O-movies O-released O-in B-movie.release_date  ,0.53583843590928,GOOD
+  O-what O-are O-the O-top O-five B-country.name O-movies O-of O-all O-time  ,1,GOOD
+  O-what O-top O-films O-have O-come O-out O-of B-country.name  ,1,GOOD
+  O-show O-me O-the O-top O-movies O-from B-movie.location  ,0.69523310786076,GOOD
+  O-what O-is O-the O-highest O-rated B-movie.subject O-movie  ,0.51986453869769,GOOD
+  O-what O-are B-rating.name O-rated B-movie.subject O-movies O-i O-can O-watch  ,0.71338880412035,GOOD
+  O-look O-for O-popular O-movies  ,1,GOOD
+  O-search O-for B-movie.language I-movie.language O-films  ,1,GOOD
+  O-what O-is B-person.name I-person.name O-famous O-for  ,1,GOOD
+  O-is O-this O-a B-movie.genre  ,1,GOOD
+  O-hope O-that O-the O-movie O-is O-in B-movie.language  ,1,GOOD
+  O-is O-this O-movie O-in B-movie.language  ,1,GOOD
+  O-do O-they O-speak B-director.nationality O-in O-the O-movie  ,0.51427112273475,GOOD
+  O-is O-this O-movie O-filmed O-in B-country.name  ,1,GOOD
+  O-show O-all B-movie.name O-of B-movie.name I-movie.name O-movies  ,0.60355503500072,GOOD
+  O-all O-of B-movie.name I-movie.name I-movie.name O-movies  ,1,GOOD
+  O-list O-movies O-that O-have B-movie.subject I-movie.subject O-in O-their O-title  ,1,GOOD
+  O-i O-want O-to O-see B-movie.release_date I-movie.release_date I-movie.release_date O-release O-date O-films O-from B-movie.release_date I-movie.release_date  ,1,GOOD
+  O-find O-information O-about B-country.name O-movies  ,1,GOOD
+  O-i O-need O-to O-know O-more O-about O-the O-life O-and O-movies O-of B-actor.nationality O-actor B-actor.name I-actor.name  ,1,GOOD
+  O-what O-does O-the B-producer.name O-logo O-look O-like  ,1,GOOD
+  O-show O-me O-pictures O-of B-director.name I-director.name  ,1,GOOD
+  O-photos O-of B-director.name I-director.name  ,0.76431791098181,GOOD
+  O-i O-want O-to O-see O-images O-of B-person.name I-person.name  ,1,GOOD
+  O-show O-me O-pictures O-of B-director.name I-director.name  ,1,GOOD
+  O-what O-are O-popular O-movie O-producers  ,1,GOOD
+  O-can O-you O-give O-me O-the O-producer  ,1,GOOD
+  O-i O-would O-like O-to O-know O-the O-rating O-of O-the O-movie B-movie.name  ,1,GOOD
+  O-what O-rating O-is O-the O-movie B-movie.name  ,1,GOOD
+  O-what O-is B-movie.name I-movie.name O-rated  ,1,GOOD
+  O-i O-need O-to O-know O-the O-rating O-of B-movie.name  ,1,GOOD
+  O-can O-you O-find O-out O-what O-rating O-the O-movie B-movie.name I-movie.name  ,1,GOOD
+  O-what O-is O-kids O-by B-producer.name B-person.name O-rated  ,0.43992663904257,GOOD
+  O-what O-rating O-did B-movie.name I-movie.name I-movie.name O-receive  ,1,GOOD
+  O-what O-is O-the O-rating O-for B-movie.name I-movie.name I-movie.name I-movie.name  ,1,GOOD
+  O-what O-rating O-did B-movie.name I-movie.name O-receive  ,1,GOOD
+  O-rating O-for B-movie.name I-movie.name I-movie.name I-movie.name I-movie.name  ,1,GOOD
+  O-what O-rating O-is B-movie.name I-movie.name  ,1,GOOD
+  O-look O-up O-the O-rating O-of O-the O-movie B-movie.name I-movie.name  ,1,GOOD
+  O-what O-rating O-did B-movie.name I-movie.name O-movie O-get  ,1,GOOD
+  O-show O-me O-the O-rating O-for O-the O-movie B-movie.name I-movie.name  ,1,GOOD
+  O-what O-is O-the O-rating O-for B-movie.name I-movie.name  ,1,GOOD
+  O-what O-is O-the O-rating O-for O-the O-movie B-movie.name I-movie.name  ,1,GOOD
+  O-rating O-for B-movie.name I-movie.name I-movie.name  ,1,GOOD
+  O-what O-was O-gross O-revenue O-for B-movie.name I-movie.name  ,1,GOOD
+  O-how O-much O-has B-movie.name I-movie.name I-movie.name O-in  ,1,GOOD
+  O-find O-the O-revenue O-for B-movie.name I-movie.name  ,1,GOOD
+  O-find O-the O-revenue O-of B-movie.name I-movie.name I-movie.name  ,1,GOOD
+  O-what O-is O-the O-most O-a O-movie O-made  ,1,GOOD
+  O-reviews O-for B-movie.name I-movie.name  ,1,GOOD
+  O-find O-reviews O-for B-movie.name I-movie.name  ,1,GOOD
+  O-what O-are O-reviews O-for B-movie.name I-movie.name  ,1,GOOD
+  O-what O-are O-the O-ratings O-and O-review O-on B-movie.name I-movie.name  ,1,GOOD
+  O-reviews O-for B-movie.name I-movie.name  ,1,GOOD
+  O-reviews O-for B-movie.name I-movie.name  ,1,GOOD
+  O-reviews O-for B-movie.name I-movie.name  ,1,GOOD
+  O-reviews O-for O-movie  ,1,GOOD
+  O-reviews O-for B-movie.name I-movie.name  ,1,GOOD
+  O-what O-are O-the B-movie.name I-movie.name O-about B-movie.name I-movie.name I-movie.name I-movie.name  ,1,GOOD
+  O-how O-long O-is B-movie.name I-movie.name I-movie.name  ,1,GOOD
+  O-synopsis O-for O-the O-movie B-movie.name I-movie.name I-movie.name I-movie.name I-movie.name I-movie.name I-movie.name  ,1,GOOD
+  O-synopsis O-for B-movie.name I-movie.name I-movie.name  ,1,GOOD
+  O-summary O-of B-movie.name I-movie.name I-movie.name  ,1,GOOD
+  B-movie.name I-movie.name O-movie O-shortcut  ,1,GOOD
+  O-show O-me O-the O-trailer O-for B-movie.name I-movie.name I-movie.name I-movie.name I-movie.name I-movie.name I-movie.name  ,1,GOOD
+  B-movie.name I-movie.name O-beatiful O-shortcut  ,1,GOOD
+  O-trailer O-for B-movie.name I-movie.name I-movie.name I-movie.name I-movie.name  ,1,GOOD
+  O-show B-movie.name I-movie.name O-movies O-with O-trailers  ,1,GOOD
+  O-can O-i O-see B-movie.genre O-for B-movie.release_date B-producer.name I-producer.name O-movies  ,0.55603857665073,GOOD
+  O-how O-many B-director.name I-director.name O-movies O-are O-set O-in B-movie.release_date I-movie.release_date O-city  ,1,GOOD
+  O-how O-many B-director.name O-films O-were O-filmed O-in B-movie.location  ,1,GOOD
