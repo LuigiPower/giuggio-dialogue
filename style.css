@@ -1,8 +1,7 @@
 
 .poster {
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
+    min-height: 256px;
+    color: white;
 }
 
 .bubble-text {
@@ -21,8 +20,8 @@ speech-dialogstate {
     position: fixed;
     right: 8px;
     bottom: 8px;
-    min-width: 512px;
-    max-width: 512px;
+    min-width: 400px;
+    max-width: 400px;
     font-size: 8pt;
     overflow: hidden;
 }

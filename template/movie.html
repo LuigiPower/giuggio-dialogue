@@ -1,53 +1,120 @@
-<md-card layout-margin>
-    <md-card-title>
+<md-card >
+    <md-card-title class="poster" ng-style="{'background-image': 'url(' + movie.poster + ')', 'background-size': 'cover', 'background-repeat': 'no-repeat', 'background-position': '50% 0%' }">
         <md-card-title-text>
             <span class="md-headline">{{movie.title}}</span>
         </md-card-title-text>
     </md-card-title>
-    <md-card-content layout="column">
-        <div ng-style="{'background-image': 'url(' + movie.poster + ')', 'background-repeat': 'no-repeat', 'background-position': '50% 50%' }">
-            <p>
-            {{movie.actors}}
-            </p>
-            <p>
-            {{movie.director}}
-            </p>
-            <p>
-            {{movie.genres}}
-            </p>
-            <p>
-            {{movie.country}}
-            </p>
-            <p>
-            {{movie.year}}
-            </p>
-            <p>
-            {{movie.language}}
-            </p>
-            <p>
-            {{movie.duration}}
-            </p>
-            <p>
-            {{movie.color}}
-            </p>
-            <p>
-            {{movie.budget}}
-            </p>
-            <p>
-            {{movie.plot_keywords}}
-            </p>
-            <p>
-            {{movie.grass}}
-            </p>
-            <p>
-            {{movie.imdb_score}}
-            </p>
-            <p>
-            {{movie.movie_facebook_likes}}
-            </p>
-            <p>
-            {{movie.movie_imdb_link}}
-            </p>
+    <md-card-content layout="column" layout-margin>
+        <div>
+            <div layout="row" layout-margin layout-align="center start">
+                <span flex="20">
+                    Actors:
+                </span>
+                <span flex>
+                    {{movie.actors | multiple}}
+                </span>
+            </div>
+            <div layout="row" layout-margin layout-align="center start">
+                <span flex="20">
+                    Director:
+                </span>
+                <span flex>
+                    {{movie.director}}
+                </span>
+            </div>
+            <div layout="row" layout-margin layout-align="center start">
+                <span flex="20">
+                    Genres:
+                </span>
+                <span flex>
+                    {{movie.genres | multiple}}
+                </span>
+            </div>
+            <div layout="row" layout-margin layout-align="center start">
+                <span flex="20">
+                    Country:
+                </span>
+                <span flex>
+                    {{movie.country}}
+                </span>
+            </div>
+            <div layout="row" layout-margin layout-align="center start">
+                <span flex="20">
+                    Release date:
+                </span>
+                <span flex>
+                    {{movie.year}}
+                </span>
+            </div>
+            <div layout="row" layout-margin layout-align="center start">
+                <span flex="20">
+                    Language:
+                </span>
+                <span flex>
+                    {{movie.language}}
+                </span>
+            </div>
+            <div layout="row" layout-margin layout-align="center start">
+                <span flex="20">
+                    Duration:
+                </span>
+                <span flex>
+                    {{movie.duration}} minutes
+                </span>
+            </div>
+            <div layout="row" layout-margin layout-align="center start">
+                <span flex="20">
+                    Colors:
+                </span>
+                <span flex>
+                    {{movie.color}}
+                </span>
+            </div>
+            <div layout="row" layout-margin layout-align="center start">
+                <span flex="20">
+                    Budget:
+                </span>
+                <span flex>
+                    {{movie.budget | number}}$
+                </span>
+            </div>
+            <div layout="row" layout-margin layout-align="center start">
+                <span flex="20">
+                    Keywords:
+                </span>
+                <span flex>
+                    {{movie.plot_keywords | multiple}}
+                </span>
+            </div>
+            <div layout="row" layout-margin layout-align="center start">
+                <span flex="20">
+                    Gross revenue:
+                </span>
+                <span flex>
+                {{movie.gross | number}}$
+                </span>
+            </div>
+            <div layout="row" layout-margin layout-align="center start">
+                <span flex="20">
+                    IMDB Score:
+                </span>
+                <span flex>
+                {{movie.imdb_score}}
+                </span>
+            </div>
+            <div layout="row" layout-margin layout-align="center start">
+                <span flex="20">
+                    Facebook likes:
+                </span>
+                <span flex>
+                {{movie.movie_facebook_likes}}
+                </span>
+            </div>
+            <div layout="row" layout-margin layout-align="center start">
+                <span flex>
+                    <a ng-href="movie.movie_imdb_link">Additional information on IMDB</a>
+                </span>
+            </div>
         </div>
     </md-card-content>
 </md-card>

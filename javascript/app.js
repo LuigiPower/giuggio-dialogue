@@ -40,4 +40,24 @@
             }
         };
     }]);
+
+    app.filter('multiple', function() {
+        return function(input) {
+            var splitted = input.split("|");
+            var text = "";
+            for(var i in splitted)
+            {
+                text += splitted[i];
+                if(i == splitted.length-2)
+                {
+                    text += " and ";
+                }
+                else if(i != splitted.length-1)
+                {
+                    text += ", ";
+                }
+            }
+            return text;
+        };
+    })
 })();
