@@ -80,6 +80,10 @@ if(!isset($_POST["dialog_state"]) || $state["current"] == DialogManager::$start)
     // as a response instead of reading
     // out everything
     $state["countResults"] = false;
+
+    // For dialog recovery, after user
+    // seemingly asked a new question
+    //$state["ditchedDialog"] = null;
 }
 
 $dialog = new DialogManager($state);
@@ -226,20 +230,16 @@ $response = array(
 $response['debug_uc'] = $uc_out;
 $response['debug_slu'] = $slu_out;
 
-if (!$uc_found && !$dialog->isIn(DialogManager::$ask_intent))
-{
-    if($uc_conf >= $th_uc_reject)
-    {
-        $dialog->setProbableIntents($uc_out);
-    }
-    else
-    {
-        // Nothing, question will be without prompts
-    }
-}
 
-if($slu_conf >= $th_slu_accept && $dialog->isIn(DialogManager::$start))
+if($uc_found && $slu_conf >= $th_slu_accept && !$dialog->isIn(DialogManager::$start) && $dialog->getDitchedDialog() === null)
 {
+    // If Both Classifier and SLU concept tagger
+    // achieve high confidences, chances are
+    // the user is annoyed by current line of
+    // questioning and wants to start over
+    // TODO consider saving old dialog state somewhere
+    $dialog->clearAndStore();
+    $dialog->setIntent($uc_class);
     foreach($slu_result as $key=>$value)
     {
         $dialog->setField($key, $value);
@@ -247,13 +247,35 @@ if($slu_conf >= $th_slu_accept && $dialog->isIn(DialogManager::$start))
 }
 else
 {
-    if(count($probableFields) > 0 && !$dialog->isIn(DialogManager::$confirm_slu))
+    if (!$uc_found && !$dialog->isIn(DialogManager::$ask_intent))
     {
-        $dialog->setProbableFields($probableFields[0]);
+        if($uc_conf >= $th_uc_reject)
+        {
+            $dialog->setProbableIntents($uc_out);
+        }
+        else
+        {
+            // Nothing, question will be without prompts
+        }
+    }
+
+    if($slu_conf >= $th_slu_accept && $dialog->isIn(DialogManager::$start))
+    {
+        foreach($slu_result as $key=>$value)
+        {
+            $dialog->setField($key, $value);
+        }
     }
     else
     {
-        // We don't have fields
+        if(count($probableFields) > 0 && !$dialog->isIn(DialogManager::$confirm_slu))
+        {
+            $dialog->setProbableFields($probableFields[0]);
+        }
+        else
+        {
+            // We don't have fields
+        }
     }
 }
 /*

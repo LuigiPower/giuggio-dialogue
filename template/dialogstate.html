@@ -3,11 +3,14 @@
         <div class="md-toolbar-tools">
             <span class="md-caption toolbar-text">
                 Current dialog state
-            </h1>
+            </span>
             <span flex></span>
+            <md-button ng-click="hide()">
+                <span class="toolbar-text">Hide</span>
+            </md-button>
         </div>
     </md-toolbar>
-    <md-card-content layout="column" layout-align="start start">
+    <md-card-content ng-show="!hidden" layout="column" layout-align="start start">
         <p>Next step: {{getVar("current")}}</p>
 
         <p>Intent: {{getVar("intent")}}</p>

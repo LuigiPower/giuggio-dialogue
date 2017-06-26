@@ -92,6 +92,8 @@ class DialogManager
     private $operand;
     private $countResults;
 
+    private $ditchedDialog;
+
     function toArray()
     {
         return array(
@@ -103,7 +105,8 @@ class DialogManager
             "current" => $this->current,
             "askedField" => $this->askedField,
             "operand" => $this->operand,
-            "countResults" => $this->countResults
+            "countResults" => $this->countResults,
+            "ditchedDialog" => $this->ditchedDialog
         );
     }
 
@@ -118,6 +121,54 @@ class DialogManager
         $this->askedField = $state["askedField"];
         $this->operand = $state["operand"];
         $this->countResults = $state["countResults"];
+
+        if(isset($state["ditchedDialog"]))
+        {
+            $this->ditchedDialog = $state["ditchedDialog"];
+        }
+        else
+        {
+            $this->ditchedDialog = null;
+        }
+    }
+
+    function clearAndStore()
+    {
+        $olddialog = $this->toArray();
+        $olddialog['fresh'] = true;
+
+        $this->intent = null;
+        $this->fields = array();
+        $this->probableIntents = array();
+        $this->probableFields = array();
+        $this->confirmedFields = array();
+        $this->current = DialogManager::$start;
+        $this->askedField = null;
+        $this->operand = null;
+        $this->countResults = false;
+
+        $this->ditchedDialog = $olddialog;
+    }
+
+    function restore()
+    {
+        $this->intent = $this->ditchedDialog['intent'];
+        $this->fields = $this->ditchedDialog['fields'];
+        $this->probableIntents = $this->ditchedDialog['probableIntents'];
+        $this->probableFields = $this->ditchedDialog['probableFields'];
+        $this->confirmedFields = $this->ditchedDialog['confirmedFields'];
+        $this->current = $this->ditchedDialog['current'];
+        //$this->askedField = $this->ditchedDialog['askedField'];
+        $this->askedField = null;
+        $this->operand = $this->ditchedDialog['operand'];
+        $this->countResults = $this->ditchedDialog['countResults'];
+
+        $this->ditchedDialog = null;
+    }
+
+    function getDitchedDialog()
+    {
+        return $this->ditchedDialog;
     }
 
     function isIn($state)
@@ -158,6 +209,29 @@ class DialogManager
 
         if($this->current == DialogManager::$start)
         {
+            if($this->ditchedDialog !== null)
+            {
+                foreach(TextManager::$affirmative as $aff)
+                {
+                    if($this->startswith($utterance, $aff))
+                    {
+                        debugEcho("Now restoring old dialog state");
+                        $this->restore();
+                        return;
+                    }
+                }
+
+                debugEcho("Now deleting old dialog state");
+                if($this->ditchedDialog['fresh'])
+                {
+                    $this->ditchedDialog['fresh'] = false;
+                }
+                else
+                {
+                    $this->ditchedDialog = null;
+                }
+            }
+
             foreach(TextManager::$greater as $gt)
             {
                 if($this->match($utterance, $gt))
@@ -758,7 +832,28 @@ class DialogManager
             }
         }
 
-        $answer = "$ack, $data";
+        $answer = "$ack, $data.";
+
+        if($this->ditchedDialog !== null)
+        {
+
+            if($this->ditchedDialog['fields'] !== null && count($this->ditchedDialog['fields']) > 0)
+            {
+                $oldfields = $this->fieldDictToString($this->ditchedDialog['fields']);
+                $answer .= " Do you want to go back to your search involving movies $oldfields?";
+            }
+            else if($this->ditchedDialog['intent'] !== null)
+            {
+                $oldintent = $this->ditchedDialog['intent'];
+                $answer .= " Do you want to go back to your search of a ".$this->sanitize($oldintent)."?";
+            }
+            else
+            {
+                $answer .= " Do you want to go back to your previous search?";
+            }
+            $answer .= " Otherwise just ask the next question.";
+        }
+
         $this->current = DialogManager::$start;
         return $answer;
     }
