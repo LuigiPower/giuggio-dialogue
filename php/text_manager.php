@@ -41,10 +41,37 @@ class TextManager
     public static $ignore = array(
         "ignore",
         "remove",
+        "mistake",
         "no ignore",
         "no remove",
         "yes remove",
-        "yes ignore"
+        "yes ignore",
+        "yes it is a mistake",
+        "no it is a mistake",
+        "it is a mistake"
+    );
+
+    public static $greater = array(
+        "greater than",
+        "longer than",
+        "bigger than",
+        "more than",
+        "after"
+    );
+
+    public static $lesser = array(
+        "lesser than",
+        "shorter than",
+        "lower than",
+        "smaller than",
+        "less than",
+        "before"
+    );
+
+    public static $count = array(
+        "how many",
+        "count",
+        "tell me the number of"
     );
 
     public static $user_answer_to_field = array(

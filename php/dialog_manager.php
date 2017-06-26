@@ -89,6 +89,9 @@ class DialogManager
     private $askedField;
     private $confirmedFields;
 
+    private $operand;
+    private $countResults;
+
     function toArray()
     {
         return array(
@@ -98,7 +101,9 @@ class DialogManager
             "probableFields" => $this->probableFields,
             "confirmedFields" => $this->confirmedFields,
             "current" => $this->current,
-            "askedField" => $this->askedField
+            "askedField" => $this->askedField,
+            "operand" => $this->operand,
+            "countResults" => $this->countResults
         );
     }
 
@@ -111,12 +116,25 @@ class DialogManager
         $this->confirmedFields = $state["confirmedFields"];
         $this->current = $state["current"];
         $this->askedField = $state["askedField"];
+        $this->operand = $state["operand"];
+        $this->countResults = $state["countResults"];
     }
 
     function isIn($state)
     {
         debugEcho("I'm in ".$this->current);
         return $this->current === $state;
+    }
+
+    function getOperand()
+    {
+        debugEcho("Getting operand $this->operand");
+        return $this->operand;
+    }
+
+    function isCountRequest()
+    {
+        return $this->countResults;
     }
 
     function areFieldsConfirmed()
@@ -137,16 +155,61 @@ class DialogManager
     function fill($utterance, $force_intent = false, $force_slu = false)
     {
         debugEcho("Filling with state $this->current");
+
+        if($this->current == DialogManager::$start)
+        {
+            foreach(TextManager::$greater as $gt)
+            {
+                if($this->match($utterance, $gt))
+                {
+                    $this->operand = ">";
+                }
+            }
+
+            foreach(TextManager::$lesser as $lt)
+            {
+                if($this->match($utterance, $lt))
+                {
+                    $this->operand = "<";
+                }
+            }
+
+            foreach(TextManager::$count as $count)
+            {
+                if($this->startswith($utterance, $count))
+                {
+                    $this->countResults = true;
+                }
+            }
+        }
+
         if($this->current == DialogManager::$ask_intent || $force_intent)
         {
+            $matches = array();
             foreach($this->probableIntents as $i)
             {
                 $str = $i[0];
                 $str = $this->sanitize($str);
                 if (strpos(trim($utterance), trim($str)) !== false) {
-                    $this->setIntent($i[0]);
-                    break;
+                    //$this->setIntent($i[0]);
+                    $matches[] = $i[0];
+                    //break;
                 }
+            }
+
+            if(!empty($matches))
+            {
+                $toset = "";
+                $max = 0;
+                foreach($matches as $match)
+                {
+                    if(strlen($match) > $max)
+                    {
+                        $max = strlen($match);
+                        $toset = $match;
+                    }
+                }
+                $this->setIntent($toset);
             }
 
             //TODO find out if this leads to a better conversation
@@ -165,7 +228,8 @@ class DialogManager
                 }
             }
         }
-        else if($this->current == DialogManager::$confirm_slu)
+
+        if($this->current == DialogManager::$confirm_slu)
         {
             debugEcho("Starting confirm slu with field");
             debugPrint($this->askedField);
@@ -193,7 +257,7 @@ class DialogManager
 
                 foreach(TextManager::$negative as $neg)
                 {
-                    if($this->startswith($utterance, $neg))
+                    if($this->match($utterance, $neg))
                     {
                         debugEcho("$utterance matches with $neg");
                         $this->askedField['negated'] = true;
@@ -285,7 +349,8 @@ class DialogManager
                 $this->confirmedFields = array();
             }
         }
-        else if($this->current == DialogManager::$ask_slu || $force_slu)
+
+        if($this->current == DialogManager::$ask_slu || $force_slu)
         {
             $this->fillField($utterance, "the movie ", "movie.name");
             $this->fillField($utterance, "the director ", "director.name");
@@ -378,9 +443,10 @@ class DialogManager
 
     function setIntent($intent)
     {
-        if($this->current != DialogManager::$ask_slu)
+        $this->intent = $intent;
+        if($intent === "movie_count")
         {
-            $this->intent = $intent;
+            $this->countResults = true;
         }
     }
 
@@ -392,6 +458,75 @@ class DialogManager
     function hasProbableIntents()
     {
         return !empty($this->probableIntents);
+    }
+
+    function fieldDictToString($fields)
+    {
+        $data = "";
+        $count = count($fields);
+        $i = 0;
+        foreach($fields as $concept=>$value)
+        {
+            // TODO different strings based on concept?
+            if($this->match($concept, "movie.name"))
+            {
+                $data .= "titled $value";
+            }
+            else if($this->match($concept, "actor.name"))
+            {
+                $data .= "starring $value";
+            }
+            else if($this->match($concept, "movie.release_date"))
+            {
+                $data .= "released ";
+                if(!$this->operand)
+                {
+                    $data .= "in ";
+                }
+                else if($this->operand === ">")
+                {
+                    $data .= "after ";
+                }
+                else
+                {
+                    $data .= "before ";
+                }
+                $data .= "$value";
+            }
+            else if($this->match($concept, "movie.language"))
+            {
+                $data .= "in $value";
+            }
+            else if($this->match($concept, "movie.duration"))
+            {
+                if(!$this->operand)
+                {
+                    $data .= "$value minutes long";
+                }
+                else if($this->operand === ">")
+                {
+                    $data .= "longer than $value minutes";
+                }
+                else
+                {
+                    $data .= "shorter than $value minutes";
+                }
+            }
+            else
+            {
+                $data .= $this->sanitize($concept). " " .$value;
+            }
+
+            if($i == $count - 2)
+            {
+                $data .= " and ";
+            }
+            else if($i != $count - 1)
+            {
+                $data .= ", ";
+            }
+        }
+        return $data;
     }
 
     function generateQuestion()
@@ -408,13 +543,11 @@ class DialogManager
                 }
                 else
                 {
-                    $question .= "What do you want to know about a movie with ";
-                    foreach($this->fields as $field=>$value)
-                    {
-                        $question .= "$field $value ";
-                    }
+                    $question .= "What do you want to know about movies ";
+                    $question .= $this->fieldDictToString($this->fields);
                     $question .= "?";
                 }
+                $this->current = DialogManager::$ask_intent;
             }
             else
             {
@@ -449,7 +582,7 @@ class DialogManager
             // TODO fix that
             if(empty($this->probableFields))
             {
-                $question .= "Did you look for the $this->intent of what?";
+                $question .= "Did you look for the ".$this->sanitize($this->intent)." of what?";
                 $this->current = DialogManager::$ask_slu;
             }
             else if($this->askedField == null)
@@ -479,11 +612,11 @@ class DialogManager
                 {
                     if($this->askedField['concept_fixed'])
                     {
-                        $question .= "It seems I got it wrong then. Can you tell me the correct ".$this->sanitize($this->askedField['key'])."? Or should I ignore it?";
+                        $question .= "It seems I got it wrong then. Can you tell me the correct ".$this->sanitize($this->askedField['key'])."? Or is it a mistake?";
                     }
                     else
                     {
-                        $question .= "So what is ".$this->askedField['value']."? Or should I ignore it?";
+                        $question .= "So what is ".$this->askedField['value']."? Or is it a mistake?"; // or should I ignore it?
                         //TODO maybe add "nothing" answer by the user to remove the field
                         //or similar
                     }
@@ -549,7 +682,7 @@ class DialogManager
         {
             $data = "I found nothing";
         }
-        else if(count($result) > 1 || strpos($result[0][$mappedIntent], '|') !== false)
+        else if(!$this->countResults && count($result) > 1 || strpos($result[0][$mappedIntent], '|') !== false)
         {
             debugEcho("Answer, multiple:");
             debugPrint($result);
@@ -589,19 +722,39 @@ class DialogManager
         else
         {
             // TODO fill in field with what was asked
-            $txt = "";
-            foreach($this->fields as $field)
+            if($this->countResults)
             {
-                $txt .= $field." ";
-            }
-            $txt = trim($txt);
-            if($this->match($sanitizedIntent, "movie"))
-            {
-                $data .= "Here is additional information on $txt";
+                $count = count($result);
+                $sanitizedIntent = str_replace(" count", "", $sanitizedIntent);
+                if($count == 0)
+                {
+                    $data .= "There are no $sanitizedIntent ";
+                }
+                else if($count == 1)
+                {
+                    $data .= "There is $count $sanitizedIntent ";
+                }
+                else
+                {
+                    $data .= "There are $count $sanitizedIntent"."s ";
+                }
+                $data .= $this->fieldDictToString($this->fields);
             }
             else
             {
-                $data = "the $sanitizedIntent of $txt is ".$result[0][$mappedIntent];
+                $txt = $this->fieldDictToString($this->fields);
+                if($this->match($sanitizedIntent, "movie"))
+                {
+                    $data .= "Here is additional information on a movie $txt";
+                }
+                else
+                {
+                    $data = "the $sanitizedIntent of a movie $txt is ".$result[0][$mappedIntent];
+                    if($this->match($sanitizedIntent, "budget"))
+                    {
+                        $data .= "$";
+                    }
+                }
             }
         }
 

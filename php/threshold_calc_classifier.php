@@ -46,7 +46,7 @@ else {
 
 $output = "";
 
-$uc_out  = $UC->predict($utterance, TRUE, 3);
+$uc_out  = $UC->predict($utterance, TRUE, 1);
 
 foreach($uc_out as $res)
 {

@@ -114,6 +114,23 @@ class Slu2DB {
         "composer" => "title" //todo get from IMDB
     );
 
+    public static $numeric_map = array(
+        "title" => false,
+        "actors" => false,
+        "director" => false,
+        "genres" => false,
+        "country" => false,
+        "year" => true,
+        "language" => false,
+        "duration" => true,
+        "color" => false,
+        "budget" => true,
+        "plot_keywords" => false,
+        "gross" => true,
+        "movie_facebook_likes" => true,
+        "movie_imdb_link" => false
+    );
+
     public static $concept_map = array(
         "award" => "imdb_score",
         "actor.name" => "actors",
@@ -121,11 +138,12 @@ class Slu2DB {
         "actor.type" => "actors",
         "actor" => "actors",
         "rating.name" => "imdb_score",
+        "person.name" => "actors", //todo this is kinda wrong, but the info is not in the db
         "person.nationality" => "country", //todo this is kinda wrong, but the info is not in the db
         "person" => "actors",
         "country.name" => "country", //todo wrong
         "movie.name" => "title",
-        "movie.subject" => "genres",
+        "movie.subject" => "plot_keywords",
         "movie.genre" => "genres",
         "movie.release_date" => "year",
         "movie.language" => "language",
@@ -168,6 +186,16 @@ class Slu2DB {
         return Slu2DB::$answer_map[$str];
     }
 
+    public function is_num_field($str) {
+        debugEcho("is_num_field $str");
+        if(array_key_exists($str, Slu2DB::$numeric_map))
+        {
+            debugEcho("found it, ".Slu2DB::$numeric_map[$str]);
+            return Slu2DB::$numeric_map[$str];
+        }
+        debugEcho("nope");
+        return false;
+    }
 
     /**
      * Meta function to
@@ -175,7 +203,7 @@ class Slu2DB {
      * - map utterance classifier class to db
      * - construct sql query
      */
-    public function slu2sql($concepts, $class)
+    public function slu2sql($concepts, $class, $operand = null, $count = false)
     {
         $db_class = Slu2DB::$always.", ".$this->class_mapping($class);
         debugEcho("Db class is $class, [$db_class]");
@@ -191,51 +219,88 @@ class Slu2DB {
             $db_concepts[$this->concept_mapping($attr)] = $val;
         }
 
-        $start = "SELECT * FROM movie WHERE ";
+        $start = "SELECT DISTINCT * FROM movie WHERE ";
+        //if($count)
+        //{
+            #$start = "SELECT COUNT(*) as resultCount FROM movie WHERE ";
+        //    $start = "SELECT * FROM movie WHERE ";
+        //}
 
         // construct SQL query
 
 
         $possible_queries = array();
 
+        if(!$count) // If looking for a count, skip directly to the wildcards
+        {
+            $query = $start;
+            $tmp = array();
+            foreach ($db_concepts as $attr => $val) {
+                //$tmp[] = $attr . " LIKE "%" . $val . "%"";
+                // replace(replace(phone, '+', ''), '-', '')
+                debugEcho("Operand is $operand");
+                if($this->is_num_field($attr) && $operand)
+                {
+                    $tmp[] = "$attr $operand $val";
+                }
+                else
+                {
+                    $tmp[] = "REPLACE(TRIM(BOTH ' ' FROM ". $attr . "), ':', '') LIKE '" . $val . "'";
+                }
+            }
+            $query .= implode(" AND ", $tmp);
+            $query .= ";";
+            $possible_queries[] = $query;
+
+            $query = $start;
+            $tmp = array();
+            foreach ($db_concepts as $attr => $val) {
+                //$tmp[] = $attr . " LIKE "%" . $val . "%"";
+                if($this->is_num_field($attr) && $operand)
+                {
+                    $tmp[] = "$attr $operand $val";
+                }
+                else
+                {
+                    $tmp[] = "REPLACE(". $attr . ", ':', '') LIKE '" . $val . "'";
+                }
+            }
+            $query .= implode(" AND ", $tmp);
+            $query .= ";";
+            $possible_queries[] = $query;
+        }
+
+
         $query = $start;
         $tmp = array();
         foreach ($db_concepts as $attr => $val) {
             //$tmp[] = $attr . " LIKE "%" . $val . "%"";
-            // replace(replace(phone, '+', ''), '-', '')
-            $tmp[] = "REPLACE(TRIM(BOTH ' ' FROM ". $attr . "), ':', '') LIKE '" . $val . "'";
+            if($this->is_num_field($attr) && $operand)
+            {
+                $tmp[] = "$attr $operand $val";
+            }
+            else
+            {
+                $tmp[] = "REPLACE(". $attr . ", ':', '') LIKE '" . $val . "%'";
+            }
         }
         $query .= implode(" AND ", $tmp);
         $query .= ";";
         $possible_queries[] = $query;
 
-        $query = $start;
-        $tmp = array();
-        foreach ($db_concepts as $attr => $val) {
-            //$tmp[] = $attr . " LIKE "%" . $val . "%"";
-            $tmp[] = "REPLACE(". $attr . ", ':', '') LIKE '" . $val . "'";
-        }
-        $query .= implode(" AND ", $tmp);
-        $query .= ";";
-        $possible_queries[] = $query;
-
 
         $query = $start;
         $tmp = array();
         foreach ($db_concepts as $attr => $val) {
             //$tmp[] = $attr . " LIKE "%" . $val . "%"";
-            $tmp[] = "REPLACE(". $attr . ", ':', '') LIKE '" . $val . "%'";
-        }
-        $query .= implode(" AND ", $tmp);
-        $query .= ";";
-        $possible_queries[] = $query;
-
-
-        $query = $start;
-        $tmp = array();
-        foreach ($db_concepts as $attr => $val) {
-            //$tmp[] = $attr . " LIKE "%" . $val . "%"";
-            $tmp[] = "REPLACE(". $attr . ", ':', '') LIKE '%" . $val . "%'";
+            if($this->is_num_field($attr) && $operand)
+            {
+                $tmp[] = "$attr $operand= $val";
+            }
+            else
+            {
+                $tmp[] = "REPLACE(". $attr . ", ':', '') LIKE '%" . $val . "%'";
+            }
         }
         $query .= implode(" AND ", $tmp);
         $query .= ";";

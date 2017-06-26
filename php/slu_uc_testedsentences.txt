@@ -1,0 +1,66 @@
+earnings for pretty woman,O-earnings O-for B-movie.name I-movie.name,0.99620834401212,revenue,0.5381755391374l
+the movie is called big,O-the O-movie O-is O-called B-movie.name,0.4586628758641,movie,0.86856078551245
+show will ferrell films,O-show B-person.name I-person.name O-films,0.6305903356737,movie,0.99890390986954
+please find the director of freedom writers,O-please O-find O-the O-director O-of B-movie.name I-movie.name,0.99795579375602,movie,0.9564368638317
+what genre is parenthood,O-what O-genre O-is B-movie.name,0.99999995357387,genre,0.8172066788893
+who was apollo thirteen 's cast,O-who O-was B-movie.name I-movie.name O-'s O-cast,0.96473840473758,actor,0.99849540177886
+give me a list of pg movies,O-give O-me O-a O-list O-of B-rating.name O-movies,0.99999997707792,movie,0.9999999988342
+tell me the names of some soccer movies,O-tell O-me O-the O-names O-of O-some B-movie.language O-movies,0.48805723521182,movie,0.99999928591472
+who produced hotel rwanda cover art,O-who O-produced B-movie.name I-movie.name I-movie.name I-movie.name,0.9998575960215,producer,0.94374166356182
+i want a list of movies about war,O-i O-want O-a O-list O-of O-movies O-about B-movie.subject,0.99937811024257,movie,0.99999999979823
+list dredd movie,O-list B-movie.name O-movie,0.99990502270757,movie,0.96073958386745
+what was pretty woman 's budget,O-what O-was B-movie.name I-movie.name O-'s O-budget,0.99675782728739,budget,0.87379976150733
+find movies in swahili,O-find O-movies O-in B-movie.language,0.99053413311356,movie,0.99983712509142
+about steven spielberg,O-about B-director.name I-director.name,0.52179657242891,movie,0.94097806565343
+take me to the french version of et,O-take O-me O-to O-the B-country.name O-version O-of B-movie.name,0.40821807637947,movie,0.99999042037783
+what films have been produced by warner bros.,O-what O-films O-have O-been O-produced O-by B-producer.name I-producer.name,0.99989930351104,movie,0.99999999821318
+how much was it to make paranorman,O-how O-much O-was O-it O-to O-make B-movie.name,0.99999999761364,budget,0.99333603394911
+please list movies that are rated pg-13,O-please O-list O-movies O-that O-are O-rated B-rating.name,0.99999204971828,movie,0.99999999737415
+is this movie filmed in india,O-is O-this O-movie O-filmed O-in B-country.name,0.99998728779598,movie,0.9998678836486
+which movies star tom cruise,O-which O-movies O-star B-actor.name I-actor.name,0.92503240122992,movie,0.99999386562565
+chinese films,B-country.name O-films,0.98507021150068,movie,0.94162992351613
+exhibit all details of original finding nemo movie,O-exhibit O-all O-details O-of O-original B-movie.name I-movie.name O-movie,0.99999977519492,movie,0.99999814706876
+what country is bullhead,O-what O-country O-is B-movie.name,0.99999957584051,movie,0.79193715829258
+karate kid release date please,B-movie.name I-movie.name O-release O-date O-please,0.99895345176733,release_date,0.98875318009169
+which movies did bruce willis star in,O-which O-movies O-did B-actor.name I-actor.name O-star O-in,0.99979594355038,movie,0.99999973882707
+find et in french,O-find B-movie.name O-in B-movie.language,0.99954258856969,movie,0.99959699337099
+is in july on netflix,O-is B-movie.name I-movie.name O-on O-netflix,0.98938215091263,movie,0.99093564460848
+who is in picture three,O-who O-is O-in O-picture O-three,0.48841556618327,actor,0.84134808797956
+what is will ferrell famous for,O-what O-is B-person.name I-person.name O-famous O-for,0.99371511382068,movie,0.99990165219689
+show charles vidor movie,O-show B-director.name I-director.name O-movie,0.89118946389868,movie,0.99798017360241
+who produced harlem nights,O-who O-produced B-movie.name I-movie.name,0.9987898207885,producer,0.90057644264679
+search budget for the movie epic,O-search O-budget O-for O-the O-movie B-movie.name,0.99996819152244,movie,0.86031036531885
+genre for batman,O-genre O-for B-movie.name,0.99915941559638,genre,0.41529150090194
+what country filed les mes,O-what O-country B-movie.name B-movie.name I-movie.name,0.16163669411917,country,0.94333952742981
+who are the lead actors,O-who O-are O-the O-lead O-actors,0.99999996758108,actor,0.99033100701849
+twilight director,B-movie.name O-director,1,director,0.75223921743215
+star of facts of life,B-movie.name I-movie.name O-facts O-of B-movie.name,0.84664628355058,movie,0.99220582331007
+show me who directed the sound of music,O-show O-me O-who O-directed B-movie.name I-movie.name I-movie.name I-movie.name,0.99897865481539,movie,0.96223632783687
+show me the budget for expendables 1,O-show O-me O-the O-budget O-for B-movie.name I-movie.name,0.80871393724492,movie,0.96896749049131
+Fatal error: Allowed memory size of 134217728 bytes exhausted (tried to allocate 133 bytes) in /Users/federicogiuggioloni/Projects/websites/sds/php/FstSlu.php on line 50
+i want to see movies with hugh jackman,O-i O-want O-to O-see O-movies O-with B-actor.name I-actor.name,0.99988190648205,movie,0.99999997909563
+movie producers,O-movie O-producers,0.99972506475838,movie,0.2731587953331
+what other films has arthur ruddy done,O-what O-other O-films O-has B-producer.name I-producer.name O-done,0.73110716286088,movie,0.99999896620968
+give me a list of some japanese movies,O-give O-me O-a O-list O-of O-some B-movie.language O-movies,0.59199046862899,movie,0.99999999995069
+did ray stark produce steel magnolias,O-did B-producer.name I-producer.name O-produce B-movie.name I-movie.name,0.99783456367042,movie,0.97937703453768
+jennifer aniston bio,B-actor.name I-actor.name O-bio,1,movie,0.19672637287921
+i want to see spielberg 's main page,O-i O-want O-to O-see B-person.name O-'s O-main O-page,0.99990032604144,movie,0.99999869025016
+show information page for finding nemo,O-show O-information O-page O-for B-movie.name I-movie.name,0.99994257671161,movie,0.99999209942785
+what language is secrets and lies in,O-what O-language O-is B-movie.name I-movie.name I-movie.name O-in,0.95026562725612,movie,0.99834685935813
+find some mysteries,O-find O-some B-movie.genre,0.88892608783994,movie,0.98173511491379
+select rio in chinese,O-select B-movie.name O-in B-movie.language,0.76885065197752,movie,0.96591048957184
+king 's speech production company,I-movie.name O-'s B-producer.name O-production O-company,0.27985376562232,producer,0.55954505464055
+i love taye diggs,O-i O-love B-actor.name I-actor.name,0.99862659669013,movie,0.9424354664153
+find the steven spielberg movies,O-find O-the B-director.name I-director.name O-movies,0.60798426793397,movie,0.99999338049315
+show me all rated r movies by paramount,O-show O-me O-all O-rated B-rating.name O-movies O-by B-producer.name,0.99998416304061,movie,0.99999999969419
+what movies has robert wise directed,O-what O-movies O-has B-director.name I-director.name O-directed,0.99999985142482,movie,0.99999951813551
+what company developed the movie inception,O-what O-company B-producer.name O-the O-movie B-movie.name,0.56327009324474,movie,0.93834279601599
+what are popular movie producers,O-what O-are O-popular O-movie O-producers,0.9995188212575,movie,0.99231896984483
+find movies with a pg rating,O-find O-movies O-with O-a B-rating.name O-rating,0.99999987279863,movie,0.99999878855868
+show me will ferrell 's bio,O-show O-me B-actor.name I-actor.name O-'s O-bio,0.9666719407889,movie,0.98353938602555
+what was the budget for batman begins,O-what O-was O-the O-budget O-for B-movie.name I-movie.name,0.99999972564598,budget,0.98772763248397
+movie 's release date,O-movie O-'s O-release O-date,0.99600974338463,release_date,0.56232230403873
+ethel actress from i love lucy,B-character.name O-actress O-from B-movie.name I-movie.name I-movie.name,0.92373087161235,movie,0.73172053094046
+movies by stephen spielberg,O-movies O-by B-director.name I-director.name,0.99914977574909,movie,0.9999828087341
+how many movies are longer than 100 minutes,O-how O-many O-movies O-are B-movie.gross_revenue I-movie.gross_revenue I-movie.gross_revenue O-minutes,0.76948595843434,movie,0.90162988096444
+is mark hamill in star wars,O-is B-movie.name I-movie.name O-in B-movie.name I-movie.name,0.67170277782045,movie,0.9928145787944

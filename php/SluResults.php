@@ -57,7 +57,6 @@ class SluResults {
 
 		$spans = $this->token2span($slu_arr);
 
-                    debugPrint($spans);
                 $i = 0;
 		foreach ($spans as $span) {
 			$label = $span[0].":$i";

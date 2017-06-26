@@ -1,0 +1,921 @@
+O-star O-of B-movie.name,0.99927613328248,GOOD
+O-who O-is O-in O-the O-movie B-movie.name I-movie.name,0.99825219351631,GOOD
+O-list O-the O-cast O-of O-the O-movie B-movie.name I-movie.name,0.99853946058991,GOOD
+O-who O-was O-in B-movie.name,0.9999945070965,GOOD
+O-who O-is O-in B-movie.name,0.67792634969079,GOOD
+O-actor O-from B-movie.name,0.99989323781508,GOOD
+O-who O-played O-in O-the O-movie B-movie.name,0.9990836976583,GOOD
+O-who O-played O-in O-the O-movie B-movie.name I-movie.name,0.99111436388885,GOOD
+O-cast O-and O-crew O-for B-movie.name I-movie.name,0.99960573863272,GOOD
+O-who O-is O-in O-movie B-movie.name I-movie.name,0.94102917340307,GOOD
+O-who O-'s O-in B-movie.name I-movie.name I-movie.name I-movie.name,0.86154893949723,GOOD
+O-who O-was O-in B-movie.name I-movie.name,0.99992256553422,GOOD
+O-who O-was B-movie.name I-movie.name O-'s O-cast,0.96473840473758,GOOD
+O-who O-starred O-in B-movie.name I-movie.name,0.99861047028637,GOOD
+O-cast O-for B-movie.name I-movie.name,0.99106069169424,GOOD
+O-actor O-from B-movie.name,0.95096859793679,GOOD
+
+Fatal error: Allowed memory size of 134217728 bytes exhausted (tried to allocate 141 bytes) in /Users/federicogiuggioloni/Projects/websites/sds/php/FstSlu.php on line 50
+B-movie.name I-movie.name O-actors,0.998225924171,GOOD
+O-who O-are O-cast O-and O-crew O-of B-movie.name I-movie.name,0.99995710207035,GOOD
+O-who O-was O-in B-movie.name,0.99994246791373,GOOD
+O-who O-is O-in O-the O-cast O-of B-movie.name,0.99969679010728,GOOD
+B-movie.name I-movie.name O-facts O-of B-movie.name,0.84664628355058,GOOD
+ ,0.99987488657057,BAD
+O-show O-me I-rating.name O-credits,0.00012460957342989,GOOD
+ ,0.94219924306191,BAD
+O-who O-does B-movie.name O-voices O-for O-the O-movie,0.039524343091936,GOOD
+ ,0.99996159175504,BAD
+O-find I-rating.name O-actors,3.8408244957521E-5,GOOD
+O-show O-credits O-- B-movie.name,0.92463207310793,GOOD
+O-star O-of B-movie.name I-movie.name,0.97001763273154,GOOD
+O-who O-was O-in O-the O-cast O-of B-movie.name,0.99118965571467,GOOD
+O-budget O-for B-movie.name I-movie.name,0.99712337610966,GOOD
+O-what O-was O-the O-budget O-for B-movie.name I-movie.name,0.96409295103839,GOOD
+O-budget O-for B-movie.name,0.99999981046785,GOOD
+O-please O-look O-up O-the O-budget O-of B-movie.name I-movie.name,0.99972395987605,GOOD
+O-budget O-for B-movie.name I-movie.name O-movie,0.98721729975267,GOOD
+O-what O-was O-the O-budget O-for O-the O-movie B-movie.name,0.99999777189671,GOOD
+O-budget O-for B-movie.name I-movie.name I-movie.name,0.99987294966795,GOOD
+B-movie.name O-'s O-budget,0.97096278126649,GOOD
+O-how O-much O-did B-movie.name O-take O-in,0.99048071862117,GOOD
+O-what O-was O-the O-budget O-for O-the B-movie.name O-movie,0.99923706433647,GOOD
+O-total O-budget O-for O-the O-movie B-movie.name,0.99996819234379,GOOD
+O-what O-was O-the O-budget O-for B-movie.name I-movie.name,0.99999972564598,GOOD
+O-what O-was O-the O-budget O-for B-movie.name I-movie.name,0.94727309081581,GOOD
+O-what O-was B-movie.name I-movie.name O-'s O-budget,0.99675782728739,GOOD
+O-what O-was O-the O-budget O-for B-movie.name,0.99999978194531,GOOD
+O-how O-many O-star I-movie.name O-movies O-are O-there,0.57109007134302,GOOD
+O-how O-many O-movies O-are O-rated B-rating.name,1,GOOD
+B-country.name O-has O-how O-many O-movies,0.87441804496406,GOOD
+O-how O-many O-movies O-has B-actor.name I-actor.name O-starred O-in,0.9999877177676,GOOD
+O-how O-many O-movies O-has B-director.name I-director.name O-directed,0.99999786714276,GOOD
+O-how O-many O-movies O-did B-director.name I-director.name O-direct,0.99999962501361,GOOD
+O-how O-many O-movies O-has B-producer.name O-done,1,GOOD
+O-what O-country O-is B-movie.name,0.99999957584051,GOOD
+O-what O-country O-made B-movie.name I-movie.name,0.99987437729112,GOOD
+O-what O-country O-was B-movie.name I-movie.name O-from,0.99999267367612,GOOD
+ ,0.96849924839622,BAD
+O-what O-country O-was B-movie.name O-movie O-made,0.029193547440719,GOOD
+
+Fatal error: Allowed memory size of 134217728 bytes exhausted (tried to allocate 130 bytes) in /Users/federicogiuggioloni/Projects/websites/sds/php/FstSlu.php on line 50
+O-origin O-of B-movie.name,0.99999919587138,GOOD
+O-origin O-of I-movie.name I-movie.name,0.243619242612,GOOD
+O-when O-will B-movie.name I-movie.name O-be O-released,0.99999846040039,GOOD
+O-release O-year O-and O-date O-for B-movie.name,0.93079508737917,GOOD
+O-when O-did B-person.name I-person.name B-movie.name O-acting,0.1338677420526,GOOD
+O-show O-me O-when B-movie.name O-will O-be O-released,0.99999932011007,GOOD
+ ,0.99993222986666,BAD
+O-can O-i O-have O-release O-date O-of I-rating.name,3.7492570207049E-5,GOOD
+ ,0.99600974338463,BAD
+O-movie I-character.name O-release O-date,0.0023216010143157,GOOD
+ ,0.99654873833814,BAD
+O-show O-me O-when B-movie.name O-movie O-was O-made,0.002824405918023,GOOD
+O-when O-the O-movie B-movie.name O-was O-released,0.99985313283108,GOOD
+B-movie.name I-movie.name O-release O-date O-please,0.99895345176733,GOOD
+O-when O-was B-movie.name I-movie.name O-released,0.99999997285718,GOOD
+O-when O-was B-movie.name O-released,0.99999999996804,GOOD
+O-when O-was B-movie.name O-released,0.99999432306322,GOOD
+O-when O-was B-movie.name I-movie.name O-released,0.99999749294273,GOOD
+O-when O-was B-movie.name I-movie.name I-movie.name O-released,0.99981691737361,GOOD
+O-when O-did B-person.name I-person.name O-start O-acting,0.51888794373985,GOOD
+O-when O-is B-movie.name O-going O-to O-be O-released,0.99998963983778,GOOD
+O-when O-was B-movie.name I-movie.name O-released,0.99999928885898,GOOD
+O-release O-date O-for B-movie.name I-movie.name,0.99999952288341,GOOD
+O-when O-was B-movie.name I-movie.name O-released,0.99999999204358,GOOD
+O-release O-date O-of B-movie.name I-movie.name,0.99999934729031,GOOD
+O-when O-was B-movie.name I-movie.name O-released,0.99999999999602,GOOD
+O-when O-was B-movie.name O-released,0.99999999996804,GOOD
+O-when O-did B-movie.name O-released,0.9999999463991,GOOD
+O-when O-was O-date I-movie.name O-released,0.83622336027394,GOOD
+O-when O-did B-movie.name I-movie.name O-come O-out,0.99999995888514,GOOD
+O-when O-did I-movie.name O-come O-out,0.99999965331627,GOOD
+O-what O-is O-the O-release O-date O-of B-movie.name,0.99999706829442,GOOD
+O-when O-the O-movie B-movie.name I-movie.name O-was O-released,0.99996841113675,GOOD
+O-when O-does B-movie.name O-come O-out,0.99999893749725,GOOD
+O-what O-date O-did O-the O-movie B-movie.name O-come O-out,0.87199200161284,GOOD
+ ,0.98781360401704,BAD
+O-what O-day I-movie.name O-fun O-size O-coming O-out,0.011306683601714,GOOD
+
+Fatal error: Allowed memory size of 134217728 bytes exhausted (tried to allocate 165 bytes) in /Users/federicogiuggioloni/Projects/websites/sds/php/FstSlu.php on line 58
+O-who O-directed B-movie.name I-movie.name I-movie.name I-movie.name,0.99988926799649,GOOD
+O-who O-was O-the O-director O-for B-movie.name I-movie.name,0.99974551029266,GOOD
+O-tell O-me O-the O-directed O-of B-movie.name I-movie.name,0.99326364778355,GOOD
+O-who O-is O-the O-director O-of B-movie.name I-movie.name I-movie.name,0.99989372783088,GOOD
+O-director O-of B-movie.name,0.99999976135202,GOOD
+B-movie.name O-director,1,GOOD
+B-movie.name O-movie O-director,0.84684382367221,GOOD
+B-movie.name I-movie.name O-movie I-movie.name,0.4125135182505,GOOD
+
+Fatal error: Allowed memory size of 134217728 bytes exhausted (tried to allocate 32 bytes) in /Users/federicogiuggioloni/Projects/websites/sds/php/FstSlu.php on line 50
+O-director O-for B-movie.name,0.99764200497145,GOOD
+O-list O-director B-movie.name,0.99999249849958,GOOD
+O-who O-directed B-movie.name I-movie.name I-movie.name,0.99999946209392,GOOD
+O-who O-is O-the O-second O-director O-on B-movie.name I-movie.name,0.98766972855033,GOOD
+O-find O-director O-of B-movie.name I-movie.name,0.99998573371813,GOOD
+O-who O-directed B-movie.name I-movie.name,0.99999873752493,GOOD
+B-movie.name I-movie.name O-directed O-by O-who,0.99576042135971,GOOD
+O-director O-of B-movie.name I-movie.name,0.99999860939114,GOOD
+O-who O-directed B-movie.name,0.99999987138026,GOOD
+O-who O-is O-director O-of B-movie.name I-movie.name,0.99993730183738,GOOD
+O-who O-directed I-movie.gross_revenue I-movie.gross_revenue I-movie.gross_revenue,0.76488157846279,GOOD
+O-who O-was B-character.name I-character.name I-character.name O-directed B-movie.name,0.42123005607947,GOOD
+O-who O-did B-movie.name,0.99999470689376,GOOD
+B-movie.name O-director,1,GOOD
+O-who O-directed B-movie.name,0.99999999610659,GOOD
+O-who O-directed B-movie.name,0.99999999610659,GOOD
+O-who O-is O-the O-director O-of B-movie.name I-movie.name,0.99999667910137,GOOD
+O-look O-for O-the O-director O-of B-movie.name I-movie.name,0.99999132988112,GOOD
+O-please O-find O-the O-director O-of B-movie.name I-movie.name,0.99795579375602,GOOD
+O-find O-the O-director O-of B-movie.name I-movie.name,0.99999540510207,GOOD
+O-look O-up O-the O-director O-of B-movie.name I-movie.name,0.98698420217383,GOOD
+O-find O-the O-director O-of B-movie.name I-movie.name,0.99999540510207,GOOD
+O-who O-directed B-movie.name I-movie.name,0.99953450468419,GOOD
+B-movie.name O-director,0.99012182291659,GOOD
+O-show O-me O-who O-directed B-movie.name I-movie.name I-movie.name I-movie.name,0.99897865481539,GOOD
+O-who O-directed B-movie.name I-movie.name I-movie.name I-movie.name,0.99926111195342,GOOD
+O-who O-directed B-movie.name I-movie.name I-movie.name I-movie.name,0.99926111195342,GOOD
+O-find O-the O-name O-of O-the O-director O-of B-movie.name,0.99999846041348,GOOD
+O-show O-movie B-movie.name O-director O-name,0.99294604526631,GOOD
+O-name O-the O-director O-in B-movie.name I-movie.name I-movie.name,0.99987109145729,GOOD
+O-what O-'s O-the O-genre O-for B-movie.name I-movie.name,0.9973644857991,GOOD
+O-what O-is B-movie.name I-movie.name O-'s O-genre,0.99337308958994,GOOD
+O-what O-genre O-is B-movie.name,0.99999995357387,GOOD
+O-what O-kind O-of O-movie O-is B-movie.name,0.99999956183106,GOOD
+O-genre O-for B-movie.name I-movie.name I-movie.name,0.99999309167113,GOOD
+O-genre O-for B-movie.name I-movie.name I-movie.name I-movie.name I-movie.name,0.99944258366693,GOOD
+ ,0.99971700753778,BAD
+O-what O-is B-movie.name O-movie O-type,0.00025598722104794,GOOD
+O-what O-'s O-the O-genre O-of B-movie.name,0.92228101156036,GOOD
+O-get O-the O-genre O-of B-movie.name I-movie.name I-movie.name I-movie.name,0.99039978975038,GOOD
+O-what O-genre O-is B-movie.name I-movie.name O-in,0.98588564260495,GOOD
+O-genre O-for B-movie.name,0.99915941559638,GOOD
+O-give O-me O-the O-genre O-of O-the O-movie B-movie.name,0.999999533401,GOOD
+O-genre O-for I-character.name I-character.name,0.96008004284985,GOOD
+O-what O-genre O-is O-the O-movie B-movie.name I-movie.name,0.99999860895404,GOOD
+ ,0.99926452111565,BAD
+B-movie.name O-what O-language O-is O-this O-movie,0.00046418111424115,GOOD
+ ,0.99989038892016,BAD
+O-what O-language O-is B-movie.release_date O-movie,9.1927566001708E-5,GOOD
+O-what O-language O-is O-the O-movie B-movie.name O-in,0.98493826644122,GOOD
+O-language O-of I-movie.name I-movie.name,0.24385069846307,GOOD
+O-language O-of B-movie.name I-movie.name,0.99998304671696,GOOD
+O-what O-language O-is B-movie.name I-movie.name O-in,0.98025523938175,GOOD
+O-language O-of B-movie.name,0.99998065153297,GOOD
+O-about B-movie.name I-movie.name I-movie.name,0.99964973820327,GOOD
+O-show O-me O-info O-on B-movie.name I-movie.name I-movie.name,0.99991691932161,GOOD
+ ,0.9653033746585,BAD
+O-find B-movie.name O-movies,0.034696625341497,GOOD
+ ,0.99999296355183,BAD
+O-find I-rating.name O-ratings,7.0364481695913E-6,GOOD
+O-find B-movie.name O-released O-movies O-in B-movie.language,0.7923798871175,GOOD
+O-was B-actor.name I-actor.name O-in O-the O-movie B-movie.name I-movie.name,0.99599117850262,GOOD
+O-was B-actor.name I-actor.name O-in O-the O-movie B-movie.name I-movie.name,0.99970579755969,GOOD
+O-find O-movies O-about B-movie.subject,0.99999302955159,GOOD
+O-search O-for O-movies O-about B-movie.subject,0.99999793951979,GOOD
+O-show B-person.name I-person.name O-films,0.6305903356737,GOOD
+B-actor.name I-actor.name O-movies,0.95887233537388,GOOD
+O-what O-movies O-has B-actor.name I-actor.name O-appeared O-in,0.9998338654402,GOOD
+O-find B-movie.language O-movies,0.68827991784649,GOOD
+B-movie.name,0.36167298251799,GOOD
+O-the O-movie O-is O-called B-movie.name,0.4586628758641,GOOD
+B-person.name I-person.name O-acting B-movie.name,0.13734578957994,GOOD
+O-how O-many O-movies O-did B-director.name I-director.name O-do,0.92308736224229,GOOD
+O-movies O-and O-gross B-movie.name,0.18085589943962,GOOD
+O-search O-for B-director.name I-director.name O-movies O-in B-movie.language,0.86106883321191,GOOD
+O-exhibit O-all O-details O-of O-original B-movie.name I-movie.name O-movie,0.99999977519492,GOOD
+B-movie.name I-movie.name O-movie,0.9999801406477,GOOD
+O-find O-the O-movie B-movie.name I-movie.name,0.99994765380701,GOOD
+O-show O-me O-details O-for O-the O-movie B-movie.name I-movie.name,0.99976887753845,GOOD
+O-what O-did B-director.name I-director.name O-direct,0.99989622111117,GOOD
+O-display B-actor.name I-actor.name O-movie,0.99947133483673,GOOD
+O-what O-other O-films O-has B-director.name I-director.name O-directed,0.99998820524312,GOOD
+O-what O-movies O-has B-producer.name B-actor.name O-produced,0.94567800275553,GOOD
+O-what O-has B-actor.name I-actor.name O-starred O-in,0.99953961484235,GOOD
+O-in O-which O-movies O-has B-actor.name I-actor.name O-appear,0.99998231641767,GOOD
+B-director.name I-director.name O-directed O-what O-movie,0.99993776277567,GOOD
+O-search O-for O-movies O-directed O-by B-director.name I-director.name,0.99994382400398,GOOD
+ ,0.99972503727104,BAD
+I-rating.name O-release O-dates,0.0002749627289598,GOOD
+ ,0.97778551845365,BAD
+O-director O-information B-rating.name O-movies,0.021453554437739,GOOD
+ ,1,BAD
+O-please O-list O-all O-movies O-not O-rated B-rating.name,0.99998667661121,GOOD
+ ,1,BAD
+O-i O-want O-a O-list O-of B-movie.language I-movie.language O-movies,0.99995720743339,GOOD
+O-a O-list O-of O-movies O-made O-in B-country.name,0.70119455993353,GOOD
+O-show B-movie.language O-movies,0.99705753074248,GOOD
+O-search B-movie.language O-movies,0.99073037961055,GOOD
+B-movie.genre,0.99978956851687,GOOD
+O-find O-a B-movie.genre,0.99640051670607,GOOD
+O-watch B-movie.genre O-movies,0.999118601566,GOOD
+O-get B-movie.genre O-films,0.99989561715263,GOOD
+O-show O-me B-movie.genre O-movies,0.99999951738525,GOOD
+O-show O-actor B-actor.name I-actor.name O-movies,0.7971843905666,GOOD
+O-which O-movies O-did B-actor.name I-actor.name O-star O-in,0.99979594355038,GOOD
+O-list O-movies O-with B-actor.name I-actor.name,0.99990280567997,GOOD
+O-show O-me O-movies O-made O-in B-country.name,0.99999805139283,GOOD
+O-can O-i O-watch O-a B-country.name O-film,0.98340048238878,GOOD
+O-see B-country.name O-movies,1,GOOD
+O-search O-for O-information O-about B-country.name O-movies,0.9999999984653,GOOD
+O-i O-'d O-like O-to O-see O-some B-movie.language O-films,0.77806904850459,GOOD
+O-show O-me O-something B-country.name O-- O-made,0.49417010626966,GOOD
+O-i O-want O-to O-see O-a O-movie O-from B-country.name,0.71986525892315,GOOD
+O-find O-movies O-from B-country.name,0.94967558070911,GOOD
+B-country.name O-country O-movies,0.54938802735279,GOOD
+O-display O-a O-list O-of B-movie.language O-films,0.98517419976079,GOOD
+B-movie.language O-movie O-listing,0.96060406976506,GOOD
+B-movie.language O-movies,0.95129024973874,GOOD
+ ,0.99991341751777,BAD
+O-find O-actors B-movie.name O-movies,6.9167007018059E-5,GOOD
+ ,1,BAD
+O-find O-some B-movie.genre O-movies,1,GOOD
+O-i O-want O-to O-see O-a O-movie O-in B-movie.language,0.99823063544475,GOOD
+B-actor.name I-actor.name O-movies,0.57057734592416,GOOD
+O-find O-movies O-with B-director.name I-director.name O-as O-director,0.97105466945899,GOOD
+B-country.name O-movies,1,GOOD
+B-country.name O-movies O-please,1,GOOD
+O-find B-movie.language I-movie.language O-movies,0.27519724654776,GOOD
+O-show O-me O-what B-director.name I-director.name O-directed,0.98175567946041,GOOD
+O-get O-films O-in B-movie.language,0.99979987587229,GOOD
+O-show O-me O-movies O-from B-country.name,0.99999999994703,GOOD
+O-what O-is O-a B-movie.language B-movie.genre O-movie,0.46471896780574,GOOD
+O-i O-want O-to O-watch O-an B-rating.name O-rated B-movie.genre,0.95229817517189,GOOD
+O-list O-of B-movie.language I-movie.language B-movie.genre,0.99951920559371,GOOD
+O-look O-for B-movie.name I-movie.name O-movie O-with B-actor.name I-actor.name,0.99578513312579,GOOD
+O-tell O-about O-movie B-movie.name I-movie.name,0.99907054301575,GOOD
+O-list O-of O-movies O-starring B-actor.name I-actor.name,0.99999998674382,GOOD
+O-show O-me O-all O-of B-actor.name I-actor.name O-'s O-movies,0.95291160951662,GOOD
+O-what O-movies O-has B-actor.name I-actor.name O-produced,0.99999994519038,GOOD
+O-find O-me O-movies O-from B-country.name,0.7609602452299,GOOD
+O-what O-movies O-has B-producer.name I-producer.name O-been O-in,0.64968682656349,GOOD
+B-movie.name I-movie.name O-info,0.99993841311333,GOOD
+B-movie.name I-movie.name,0.99962145614083,GOOD
+O-give O-a B-movie.genre O-bio O-for B-movie.name I-movie.name,0.65201401672813,GOOD
+O-about B-movie.name I-movie.name,0.99997305898647,GOOD
+O-movies O-from B-country.name,0.99999652464343,GOOD
+O-show O-movies O-from B-country.name,0.99994616188723,GOOD
+O-list B-country.name O-movies,0.64384663735601,GOOD
+O-show O-me B-country.name O-movies,0.83440030908926,GOOD
+O-give O-me O-a O-list O-of O-some B-movie.language O-movies,0.59199046862899,GOOD
+O-give O-me O-a O-list O-of B-country.name O-movies,0.63127717695802,GOOD
+B-country.name O-movies,0.84086256123538,GOOD
+O-show O-me B-movie.language I-movie.language O-movies,0.99190042206624,GOOD
+O-which O-films O-are O-spoken O-in B-movie.language,0.90759570901006,GOOD
+B-producer.name O-films O-only,0.54264613264546,GOOD
+O-show O-movies O-by B-producer.name,0.99999999807608,GOOD
+O-search B-actor.name I-actor.name O-movies,1,GOOD
+O-watch B-actor.name I-actor.name O-movies,0.99990003102662,GOOD
+O-find O-movies O-about B-movie.subject,0.99999999649999,GOOD
+O-find O-movies O-having B-movie.subject,1,GOOD
+B-actor.name I-actor.name O-movies,0.98508189947897,GOOD
+B-movie.subject O-movie,0.94174458416471,GOOD
+O-what O-movies O-did B-producer.name I-producer.name O-produce,0.9999049865079,GOOD
+O-what O-films O-are O-made O-by B-producer.name,0.99995240297424,GOOD
+O-show O-me O-movies O-by B-producer.name,0.99999999913216,GOOD
+O-what O-movies O-has B-producer.name O-released,0.99999996574386,GOOD
+O-show O-all O-movies O-from B-country.name,0.99999993619282,GOOD
+O-show O-me O-movies O-produced O-by B-producer.name I-producer.name,0.99999411625437,GOOD
+O-is B-movie.name O-a B-movie.genre,0.99984541062488,GOOD
+O-find O-films O-from B-country.name,0.99893178458927,GOOD
+O-get O-films O-from B-country.name,0.99942711507352,GOOD
+O-list O-some O-movies O-from B-country.name,0.72673102427671,GOOD
+B-country.name O-films,0.98507021150068,GOOD
+O-show O-me O-other B-movie.language O-movies,0.66195368188046,GOOD
+O-show O-me B-movie.language O-movies,0.58828979338824,GOOD
+O-what O-movies O-have O-a B-rating.name O-rating,0.99988387766997,GOOD
+O-please O-list O-movies O-that O-are O-rated B-rating.name,0.99999204971828,GOOD
+O-find O-a B-rating.name O-rated O-movie,0.99999575615577,GOOD
+O-find B-rating.name O-movies,1,GOOD
+O-find B-rating.name O-movies,1,GOOD
+O-i O-want O-rated B-rating.name O-movies,0.99999848319061,GOOD
+O-look O-up B-rating.name O-rated O-movies,0.99999999385721,GOOD
+O-rated B-rating.name O-movies O-for O-family O-watching,0.61439419900103,GOOD
+O-find B-rating.name O-rated O-movies,1,GOOD
+O-are O-there O-any O-movies O-rated B-rating.name O-playing,1,GOOD
+O-i O-want O-to O-see O-movies O-rated B-rating.name,0.99999999003592,GOOD
+O-find O-movies O-rated B-rating.name,1,GOOD
+O-show O-me O-movies O-with B-rating.name O-rating,0.99999999975196,GOOD
+O-did B-director.name I-director.name O-direct O-any O-other B-movie.genre,0.9999999899471,GOOD
+B-producer.name I-producer.name O-produced O-movie O-listing,0.99994787222906,GOOD
+O-find O-movies O-produced O-by B-producer.name,1,GOOD
+O-show O-me B-country.name O-made O-movies,0.55094645465808,GOOD
+O-movies O-from B-country.name I-country.name,0.99982982544529,GOOD
+O-find O-me O-movies O-from B-country.name I-country.name,0.98269320021064,GOOD
+O-can O-you O-list B-director.name I-director.name O-movie O-production,0.99310582068304,GOOD
+O-find O-movies O-directed O-by B-director.name I-director.name,0.99979547872865,GOOD
+O-what O-movies O-have O-been O-directed O-by B-director.name I-director.name,0.96665725337477,GOOD
+O-what O-movies O-has B-director.name I-director.name O-directed,0.99991364535164,GOOD
+O-show O-movies O-directed O-by B-director.name I-director.name,0.99803970952184,GOOD
+O-find O-all O-films O-by B-director.name I-director.name,0.44496600896979,GOOD
+O-show O-me B-country.name B-movie.genre O-movies,0.99186483675598,GOOD
+O-movies O-by B-director.name I-director.name,0.99914977574909,GOOD
+O-movies O-by B-director.name I-director.name,0.99914977574909,GOOD
+O-what O-movies O-did B-director.name I-director.name O-direct,0.99999555155471,GOOD
+O-list B-director.name I-director.name O-movies,0.94807475729708,GOOD
+B-person.name I-person.name O-movie,0.7148434600472,GOOD
+B-person.name I-person.name O-movies O-please,0.86812050654089,GOOD
+O-directed O-by B-director.name I-director.name,0.99802706239814,GOOD
+O-find O-the B-director.name I-director.name O-movies,0.60798426793397,GOOD
+O-find O-movies O-from B-producer.name I-producer.name,0.90740145516233,GOOD
+B-movie.name I-movie.name,0.99957157578317,GOOD
+O-watch B-actor.name I-actor.name B-movie.name I-movie.name I-movie.name,0.99604160468171,GOOD
+O-i O-want O-to O-see O-movies O-with B-actor.name I-actor.name,0.99988190648205,GOOD
+O-list O-movies O-with B-actor.name I-actor.name,0.9964871931816,GOOD
+O-look O-for O-movies O-from B-country.name,0.99624403052375,GOOD
+B-country.name O-movies O-please,0.53589229034151,GOOD
+B-country.name O-movies,0.52722941333857,GOOD
+ ,1,BAD
+ ,1,BAD
+ ,1,BAD
+O-find O-movies O-produced O-by B-producer.name,1,GOOD
+O-what O-was B-actor.name I-actor.name O-'s O-first O-movie,0.99940604780258,GOOD
+O-get O-me O-movies O-directed O-by B-movie.name I-movie.name,0.91901259245143,GOOD
+B-actor.name I-actor.name O-movies,0.93883566622929,GOOD
+O-show O-me O-movies O-with B-actor.name I-actor.name,0.9994428813542,GOOD
+O-provide O-movies O-directed O-by B-director.name I-director.name O-please,0.99997950891186,GOOD
+O-movies O-produced O-by B-producer.name I-producer.name,0.99542120340041,GOOD
+O-what O-did B-actor.name I-actor.name B-movie.name,0.15472466462097,GOOD
+O-bring O-up O-all B-producer.name I-producer.name O-produced O-movies,0.97612304120397,GOOD
+O-show O-all O-movies O-that B-director.name I-director.name O-directed,0.91659120940243,GOOD
+B-director.name I-director.name O-movies O-produced,0.95433219379749,GOOD
+O-movies O-produced O-by B-producer.name I-producer.name,0.95718978943527,GOOD
+O-what O-films O-have O-been O-produced O-by B-producer.name I-producer.name,0.99989930351104,GOOD
+O-find O-movies O-produced O-by B-producer.name I-producer.name,0.99999999993772,GOOD
+O-what O-movies O-have O-been O-produced O-by B-producer.name I-producer.name,0.99999992736961,GOOD
+O-show O-me O-movies O-by B-producer.name,0.99999999913208,GOOD
+O-give O-me O-information O-about B-movie.name I-movie.name,0.99993540360695,GOOD
+O-i O-want O-information O-about B-movie.name I-movie.name,0.99997412204561,GOOD
+O-show O-me B-movie.name I-movie.name,0.99996439046706,GOOD
+B-movie.name I-movie.name O-bing,0.9978565809463,GOOD
+O-search B-movie.name I-movie.name,0.99942438453856,GOOD
+O-show O-information O-page O-for B-movie.name I-movie.name,0.99994257671161,GOOD
+B-movie.name I-movie.name O-information,0.99883325869087,GOOD
+O-more O-information O-on B-movie.name I-movie.name,0.94514161044743,GOOD
+B-movie.name B-movie.name I-movie.name,0.2485102138424,GOOD
+O-show O-me B-actor.name I-actor.name O-movies,0.99897706830067,GOOD
+O-what O-movies O-has B-actor.name I-actor.name O-starred O-in,0.99999238555875,GOOD
+B-producer.name O-movies,0.99979447965808,GOOD
+O-show B-producer.name O-movies,0.99982747984201,GOOD
+O-show O-movies O-made O-by O-production B-producer.name,0.99993609102067,GOOD
+O-give O-me O-something O-by B-director.name I-director.name,0.98018269510974,GOOD
+O-show B-director.name I-director.name O-movie,0.89118946389868,GOOD
+O-what O-film O-did B-director.name I-director.name O-direct,0.99802391651784,GOOD
+O-find O-me B-rating.name O-movies,0.75232282725792,GOOD
+O-display B-producer.name I-producer.name O-movies,0.75653949368152,GOOD
+B-movie.language O-movie,0.5584539526491,GOOD
+O-what O-other O-movies O-did B-actor.name I-actor.name O-star O-in,0.99995128602779,GOOD
+O-list O-the B-actor.name O-'s O-movie,0.95138116886884,GOOD
+B-actor.name I-actor.name O-played O-in O-what O-movies,0.99993023301719,GOOD
+O-show B-director.name I-director.name O-movies,0.99882221496011,GOOD
+O-want O-to O-see B-director.name I-director.name O-movies,0.60089644702203,GOOD
+O-what O-movies O-has B-director.name I-director.name O-directed,0.99999985142482,GOOD
+O-what O-movies O-have B-director.name I-director.name O-directed,0.99760591362014,GOOD
+O-what O-movies O-has B-actor.name I-actor.name O-been O-in,0.99999583287025,GOOD
+O-what O-are O-some O-movies O-with B-actor.name I-actor.name,0.99948934218949,GOOD
+O-find O-an B-rating.name O-rated O-movie,0.99999971302524,GOOD
+O-show O-me B-rating.name O-rated O-movies,0.99999726663612,GOOD
+O-give O-me O-a O-list O-of B-rating.name O-rated O-movies,0.99999949139381,GOOD
+O-look O-up B-rating.name O-rated O-movies,0.99999694497233,GOOD
+O-i O-want O-only B-rating.name O-rated O-movies,0.99952379817958,GOOD
+O-please O-look O-for O-movies O-with O-an B-rating.name O-rating,0.99999871523855,GOOD
+O-show O-me O-movies O-rated B-rating.name,0.99999514479089,GOOD
+O-look O-for O-movies O-with O-an B-rating.name O-rating,0.99999949988535,GOOD
+O-i O-want O-to O-watch O-movies O-from B-country.name,0.99999999226375,GOOD
+O-show O-me O-movies O-made O-in B-movie.release_region,0.9986084759841,GOOD
+O-show O-me O-the O-movie B-movie.name O-zombies,0.38581799193915,GOOD
+O-what O-movies O-have B-movie.subject O-in O-them,0.99980359103427,GOOD
+O-show O-me O-movies O-about B-movie.subject,0.99999235040248,GOOD
+O-show O-me O-movies O-about B-movie.subject,0.99999235040248,GOOD
+
+Fatal error: Allowed memory size of 134217728 bytes exhausted (tried to allocate 104 bytes) in /Users/federicogiuggioloni/Projects/websites/sds/php/FstSlu.php on line 50
+O-show B-director.name I-director.name O-'s O-filmography,0.99979102393634,GOOD
+O-find B-director.name I-director.name O-movies,0.99998173489712,GOOD
+O-list B-movie.language O-movies,0.7260835726763,GOOD
+B-country.name O-movies,0.52255693443141,GOOD
+O-find B-movie.genre O-films,0.99999261756762,GOOD
+O-find O-some B-movie.genre O-movies,1,GOOD
+O-list B-movie.name O-movie,0.99990502270757,GOOD
+O-show O-me B-producer.name I-producer.name O-movies,0.79665947880848,GOOD
+O-find O-movies O-directed O-by B-director.name I-director.name,0.99735147254727,GOOD
+ ,1,BAD
+O-please O-find O-movies O-produced O-by B-producer.name I-producer.name,1,GOOD
+O-please O-look O-up O-movies O-produced O-by B-producer.name I-producer.name,0.99999999997543,GOOD
+O-search O-for O-movies O-produced O-by B-producer.name I-producer.name,0.9999999983013,GOOD
+O-find O-movies O-produced O-by B-producer.name I-producer.name,1,GOOD
+O-look O-up O-movies O-produced O-by B-producer.name I-producer.name,0.9999999998804,GOOD
+O-what O-movies O-has B-actor.name I-actor.name O-starred O-in,0.99999215728271,GOOD
+O-i O-want O-to O-see O-movies O-made O-in B-country.name,0.99999971948765,GOOD
+O-look O-up B-movie.name I-movie.name I-movie.name O-movie,0.91597683536946,GOOD
+B-movie.name I-movie.name I-movie.name I-movie.name,0.99933643662575,GOOD
+O-i O-want B-movie.name I-movie.name I-movie.name O-main O-page,0.89949911270762,GOOD
+O-search B-movie.name I-movie.name I-movie.name,0.98817929519224,GOOD
+O-get O-details O-of B-movie.name I-movie.name O-movie,0.99998062631384,GOOD
+O-find O-details O-of B-movie.name I-movie.name O-movie,0.99998014827833,GOOD
+O-show O-details O-of B-movie.name I-movie.name O-movie,0.99998072647979,GOOD
+O-tell O-me O-about B-movie.name I-movie.name O-movie,0.99275479600675,GOOD
+O-look O-up O-the O-movie B-movie.name I-movie.name,0.92852677347647,GOOD
+O-display O-information O-for O-the O-movie O-title B-movie.name I-movie.name,0.99886546170302,GOOD
+O-movie B-movie.name I-movie.name O-data,0.83149706487054,GOOD
+O-display B-person.name I-person.name O-films,0.99646640619796,GOOD
+B-actor.name I-actor.name O-movies,0.57057734592416,GOOD
+O-what O-movies O-did B-director.name I-director.name O-direct,0.99994947934179,GOOD
+O-list O-all O-movies O-about B-movie.subject,0.99999996238763,GOOD
+O-find O-all B-actor.name I-actor.name O-movies,1,GOOD
+ ,1,BAD
+ ,1,BAD
+O-is O-there O-any O-upcoming O-movies O-from B-producer.name I-producer.name,0.88919632426659,GOOD
+O-bring O-up O-movies O-with B-movie.subject I-movie.subject O-in O-it,0.75671275753796,GOOD
+O-find B-movie.name O-released B-movie.genre O-from B-country.name,0.55665564006234,GOOD
+O-films O-with B-movie.language,0.99722967779639,GOOD
+O-i O-want O-to O-watch O-a O-movie O-in B-movie.language,0.99886201563126,GOOD
+O-find O-movies O-produced O-and O-directed O-by B-director.name I-director.name,0.99181692245577,GOOD
+B-actor.name I-actor.name O-movies O-please,0.99818562632775,GOOD
+O-i O-want B-actor.name I-actor.name O-movies O-please,0.99375685075753,GOOD
+O-which O-movies O-star B-actor.name I-actor.name,0.92503240122992,GOOD
+O-which O-movies O-do B-actor.name I-actor.name O-play O-in,0.99722529573349,GOOD
+O-find B-movie.name I-movie.name I-movie.name,0.7530611412076,GOOD
+ ,1,BAD
+O-looking O-for O-movies O-of B-director.name I-director.name,0.94032988710674,GOOD
+O-find O-me O-information O-about B-movie.name I-movie.name O-movie,0.99042460715489,GOOD
+O-information O-for O-movie B-movie.name I-movie.name,0.99949790161025,GOOD
+O-sort O-all B-rating.name O-movies,1,GOOD
+B-rating.name O-rated O-movies,1,GOOD
+B-movie.name O-a O-list O-of B-rating.name O-movies O-please,0.26349159471469,GOOD
+O-give O-me O-a O-list O-of B-rating.name O-movies,0.99999997707792,GOOD
+O-show O-me O-a O-list O-of B-rating.name O-rated O-movies,0.99999993783906,GOOD
+O-find O-movies O-with O-a B-rating.name O-rating,0.99999987279863,GOOD
+O-what O-movies O-are B-rating.name,0.99999983484314,GOOD
+O-movies O-by B-director.name I-director.name,0.99995372355029,GOOD
+O-what O-movies O-did B-actor.name I-actor.name O-make,0.93977187976663,GOOD
+O-watch B-producer.name O-movies,0.33191742384436,GOOD
+B-producer.name I-producer.name O-produced O-what O-other O-movies,0.999350341256,GOOD
+O-what O-is B-person.name O-'s O-latest O-movie,0.47652414331319,GOOD
+O-please O-find O-movies O-directed O-by B-director.name I-director.name,0.99952597768488,GOOD
+O-what O-movies O-has B-actor.name I-actor.name O-been O-in O-recently,0.99834405595565,GOOD
+O-search O-for B-movie.release_date O-movies,0.70472401000821,GOOD
+O-search O-for B-movie.name I-movie.name,0.99020649455236,GOOD
+O-watch B-movie.name I-movie.name O-online,0.88985837801011,GOOD
+O-search O-for O-information O-about B-producer.name,0.99776191156317,GOOD
+B-producer.name O-info,0.98761736191281,GOOD
+O-find O-information O-about B-producer.name I-producer.name,0.99999984027307,GOOD
+O-who O-is B-person.name I-person.name,0.99662885874403,GOOD
+O-find O-information O-on B-person.name I-person.name,0.99872885138386,GOOD
+O-can O-you O-please O-search O-details O-about B-person.name I-person.name,0.76683880838245,GOOD
+B-person.name I-person.name O-biography,0.9991619875145,GOOD
+O-show B-person.name I-person.name O-biography,0.99934695258231,GOOD
+O-show O-me O-a O-complete O-biography O-of B-person.name I-person.name,0.76103768271706,GOOD
+O-show O-me O-information O-on B-person.name I-person.name,0.99989657675602,GOOD
+O-show O-me B-actor.name I-actor.name O-'s O-bio,0.9666719407889,GOOD
+O-get O-info O-on B-person.name I-person.name,0.99347489219332,GOOD
+O-does B-actor.name I-actor.name O-have O-a B-rating.name O-page,0.21548982746336,GOOD
+O-where O-can O-i O-find O-information O-about B-person.name I-person.name,0.9992392842326,GOOD
+B-actor.name I-actor.name O-bio,1,GOOD
+O-i O-want O-to O-see B-person.name O-'s O-main O-page,0.99990032604144,GOOD
+B-person.name I-person.name O-summary,0.83199880858268,GOOD
+O-about B-director.name I-director.name,0.52179657242891,GOOD
+O-find O-me O-bio O-details O-for B-director.name I-director.name,0.52164580140435,GOOD
+O-bio O-for B-person.name I-person.name,0.62293935342989,GOOD
+O-show O-me B-director.name I-director.name,0.85789163280442,GOOD
+O-all O-info B-director.name,0.5957229183436,GOOD
+O-find O-the O-name O-of O-the O-producer O-of B-movie.name,0.99977052883829,GOOD
+O-producer B-movie.name,0.9984094760523,GOOD
+O-who O-produces B-movie.name,0.99997517839591,GOOD
+O-production O-company O-for B-movie.name,0.99999965762651,GOOD
+O-what O-company O-made B-movie.name,0.99999252851302,GOOD
+O-what O-was O-the O-production O-company O-for B-movie.name,0.99998368289331,GOOD
+O-who O-produces B-movie.name,0.88989212478608,GOOD
+O-can O-you O-find O-who O-produced B-movie.name,0.96851266317164,GOOD
+O-production O-company O-for I-movie.name,0.99978023287088,GOOD
+O-who O-produced O-the O-movie B-movie.name I-movie.name,0.99999869933235,GOOD
+O-who O-produced B-movie.name,0.99999998443156,GOOD
+O-i O-want O-to O-know O-the O-producer O-of B-movie.name,0.99795885156558,GOOD
+O-who O-produced B-movie.name,0.99999998443156,GOOD
+O-who O-produced B-movie.name,0.99999998443156,GOOD
+B-movie.name O-producer,1,GOOD
+O-who O-produced O-the O-movie B-movie.name,0.99999818708336,GOOD
+O-who O-are O-the O-producers O-for O-the O-movie B-movie.name,0.99999932433065,GOOD
+O-what O-is B-movie.name O-'s O-producer,0.58827197586943,GOOD
+O-who O-produced B-movie.name,0.9999999844314,GOOD
+O-who O-produced B-movie.name I-movie.name,0.99930734084366,GOOD
+O-tell O-me O-the O-producer O-for B-movie.name I-movie.name,0.94469101922328,GOOD
+O-the B-movie.name O-was O-produced O-by,0.4355177369537,GOOD
+O-who O-produced O-the O-movie B-movie.name,0.99934625774902,GOOD
+O-who O-produced B-movie.name I-movie.name,0.99999998612254,GOOD
+O-who O-produced B-movie.name I-movie.name I-movie.name,0.97631228571991,GOOD
+O-who O-produced B-movie.name I-movie.name,0.99421161789866,GOOD
+O-what O-company B-producer.name O-the O-movie B-movie.name,0.56327009324474,GOOD
+O-find O-producer O-of B-movie.name I-movie.name I-movie.name,0.9975326756955,GOOD
+O-who O-produced B-movie.name,0.99999998443125,GOOD
+O-find O-the O-producer O-of O-look O-who O-'s B-movie.name,0.17772196186336,GOOD
+O-who O-produced B-movie.name I-movie.name,0.9987898207885,GOOD
+O-find O-the O-producer O-of B-movie.name I-movie.name,0.99998408397545,GOOD
+O-please O-find O-the O-producer O-of B-movie.name I-movie.name,0.99999132410207,GOOD
+O-look O-for O-the O-producer O-of B-movie.name I-movie.name,0.99999093491443,GOOD
+ ,0.99882283444032,BAD
+O-show O-me I-rating.name O-rating,0.0011766570624487,GOOD
+O-how O-much O-revenue O-did B-movie.name I-movie.name O-make,0.99998725297628,GOOD
+O-earnings O-for B-movie.name I-movie.name,0.99620834401212,GOOD
+O-what O-was O-the O-revenue O-of B-movie.name I-movie.name,0.99661276198806,GOOD
+O-how O-much O-did B-movie.name I-movie.name O-make,0.99998382940633,GOOD
+O-what O-was O-the O-gross O-revenue O-for B-movie.name I-movie.name,0.99515452067095,GOOD
+O-how O-much O-did B-movie.name I-movie.name O-make,0.82113119078522,GOOD
+O-revenue O-for B-movie.name I-movie.name,0.99703643865531,GOOD
+O-find O-revenue B-producer.name O-for B-movie.name I-movie.name,0.11499707310241,GOOD
+O-revenue O-for B-movie.name I-movie.name,0.99752813294551,GOOD
+O-what O-is O-the O-new B-actor.name I-actor.name O-movie O-about,0.87646409896045,GOOD
+O-who O-played B-character.name I-character.name O-in B-movie.name I-movie.name,0.99998967271003,GOOD
+B-character.name O-actress O-from B-movie.name I-movie.name I-movie.name,0.92373087161235,GOOD
+O-actress O-who O-played B-character.name O-on B-movie.name I-movie.name I-movie.name,0.99636431948938,GOOD
+O-who O-played B-character.name O-in B-movie.name,0.99282284125099,GOOD
+O-who O-played B-character.name O-in B-director.name O-'s B-movie.name,0.9770935089968,GOOD
+O-name O-the O-co-star O-in B-movie.name I-movie.name I-movie.name,0.9993800505709,GOOD
+O-what O-is O-the O-budget O-for B-movie.name,0.99368643150329,GOOD
+O-search O-budget O-for O-the O-movie B-movie.name,0.99996819152244,GOOD
+
+Fatal error: Allowed memory size of 134217728 bytes exhausted (tried to allocate 131 bytes) in /Users/federicogiuggioloni/Projects/websites/sds/php/FstSlu.php on line 50
+
+Fatal error: Allowed memory size of 134217728 bytes exhausted (tried to allocate 131 bytes) in /Users/federicogiuggioloni/Projects/websites/sds/php/FstSlu.php on line 50
+O-how O-much O-does O-it O-cost O-to O-produce B-movie.name,0.99960740994837,GOOD
+O-how O-much O-did O-it O-cost O-to O-produce B-movie.name,0.99999999968069,GOOD
+O-how O-much O-money O-was O-spent O-to O-produce B-movie.name,0.99991461964942,GOOD
+O-how O-much O-did B-movie.name I-movie.name I-movie.name I-movie.name O-cost,0.99419180015299,GOOD
+O-how O-much O-was O-it O-to O-make B-movie.name,0.99999999761364,GOOD
+O-show O-me O-the O-budget O-to B-movie.name O-movie,0.93568772635895,GOOD
+O-show O-me O-the O-budget O-for B-movie.name I-movie.name I-movie.name,0.99944690396414,GOOD
+O-show O-me O-the O-budget O-for B-movie.name I-movie.name,0.80871393724492,GOOD
+B-producer.name,1,GOOD
+O-which O-country O-made B-movie.name,0.96834249199204,GOOD
+O-what O-country B-movie.name B-movie.name I-movie.name,0.16163669411917,GOOD
+O-what O-country O-is B-movie.name I-movie.name O-from,0.99999997463139,GOOD
+
+Fatal error: Allowed memory size of 134217728 bytes exhausted (tried to allocate 111 bytes) in /Users/federicogiuggioloni/Projects/websites/sds/php/FstSlu.php on line 50
+O-what O-country O-is B-movie.name I-movie.name,0.99356909025787,GOOD
+O-tell O-me O-where B-movie.name I-movie.name I-movie.name O-came O-from,0.30738236260538,GOOD
+O-when O-was O-the O-movie B-movie.name I-movie.name O-released,0.99999957133026,GOOD
+
+Fatal error: Allowed memory size of 134217728 bytes exhausted (tried to allocate 32 bytes) in /Users/federicogiuggioloni/Projects/websites/sds/php/FstSlu.php on line 50
+O-list O-release O-dates O-for O-the B-movie.name I-movie.name O-movies,0.98622705729094,GOOD
+O-whats B-movie.name I-movie.name O-release O-date,0.98662521137344,GOOD
+O-when O-will B-movie.name O-come O-out,0.8752859526429,GOOD
+O-when O-was B-movie.name O-be O-released,0.96886647692569,GOOD
+O-when O-was B-movie.name I-movie.name I-movie.name I-movie.name O-released,0.99967867198559,GOOD
+O-who O-directed B-movie.name,0.9993522487669,GOOD
+O-find O-the O-director O-of B-movie.name I-movie.name,0.9999954054163,GOOD
+O-who O-directed B-movie.name I-movie.name I-movie.name I-movie.name,0.99999059840545,GOOD
+O-i O-can O-'t O-remember O-who O-directed B-movie.name I-movie.name,0.9999903284218,GOOD
+O-find O-the O-director O-of B-movie.name I-movie.name I-movie.name I-movie.name,0.99926297294564,GOOD
+O-is B-movie.name O-in O-a O-different O-language,0.3130631621438,GOOD
+O-what O-language O-was B-movie.name O-filmed O-in,0.99675985435213,GOOD
+O-what O-language O-is O-the B-movie.name I-movie.name I-movie.name,0.86674652975828,GOOD
+O-what O-is B-movie.name I-movie.name O-'s O-original O-language,0.98516737452321,GOOD
+O-what O-language O-is B-movie.name I-movie.name I-movie.name O-in,0.95026562725612,GOOD
+O-show O-all B-movie.genre B-movie.genre O-for B-movie.release_date I-movie.release_date,0.99955757621296,GOOD
+O-are O-there O-any B-movie.genre O-on B-movie.subject I-movie.subject,0.99811351160214,GOOD
+O-show O-all B-movie.genre O-produced O-in B-movie.release_date,0.8572969330957,GOOD
+O-find O-some B-movie.genre,0.88892608783994,GOOD
+O-search B-movie.genre I-movie.genre,0.89747693728119,GOOD
+B-movie.name,0.36167298251799,GOOD
+O-show O-me B-movie.genre,0.99999997101035,GOOD
+O-show B-movie.subject B-movie.genre,0.99206800057733,GOOD
+O-show O-me O-a B-actor.name I-actor.name B-movie.release_date,0.18306578919199,GOOD
+O-i O-want O-to O-see O-videos O-of B-person.name I-person.name,0.75123327742619,GOOD
+O-videos O-related O-to B-director.name I-director.name,0.52275940915623,GOOD
+ ,0.91165584968007,BAD
+B-country.name O-released O-videos,0.045716649858229,GOOD
+O-i O-want O-to O-see B-country.name O-movies,0.44684427091083,GOOD
+O-show O-all B-country.name O-movies O-for B-movie.release_date I-movie.release_date,0.62215082720379,GOOD
+O-what O-movies O-were O-made O-in B-country.name B-movie.release_date I-movie.release_date,0.96915066000789,GOOD
+O-find B-movie.release_date O-movies O-in B-movie.language,0.50310704895639,GOOD
+O-show O-me O-the O-highest-grossing O-movies O-from B-country.name,0.57659850424084,GOOD
+O-find O-movies O-in B-movie.release_region O-about B-movie.subject,0.33694390358075,GOOD
+O-what O-other O-films O-has B-producer.name I-producer.name O-done,0.73110716286088,GOOD
+O-bring O-up O-all O-movies B-director.name I-director.name O-directed,0.53025809487769,GOOD
+O-what O-movies O-has B-director.name I-director.name O-directed,0.99204580056743,GOOD
+O-movies O-by B-director.name I-director.name,0.98994826208825,GOOD
+O-did B-movie.name I-movie.name O-direct O-any O-movies,0.99884491734565,GOOD
+O-what O-movies O-did B-actor.name I-actor.name O-do,0.85953365792127,GOOD
+O-movies O-by B-director.name I-director.name O-as O-a O-director,0.95564015669053,GOOD
+O-show O-me O-movies O-directed O-by B-director.name I-director.name,0.99999999631065,GOOD
+B-person.name I-person.name O-has O-directed O-what O-movies,0.60562430152474,GOOD
+O-please O-list O-all O-movies O-directed O-by B-director.name I-director.name,0.92976465388258,GOOD
+B-director.name I-director.name O-directed O-what O-movie,0.99981879673687,GOOD
+O-find B-movie.genre O-movies O-with B-actor.name I-actor.name,0.99998952729872,GOOD
+O-show O-all B-movie.genre O-films O-for B-movie.release_date I-movie.release_date,0.66381683777276,GOOD
+B-movie.genre B-rating.name I-rating.name O-movies,0.99604663669017,GOOD
+B-country.name O-movies,0.24419250707365,GOOD
+O-i O-like B-country.name O-movies,0.20155721385745,GOOD
+O-show O-me O-films O-released O-in B-movie.release_date,0.99819993060506,GOOD
+O-show O-all O-movies O-released O-in B-movie.release_date,0.99979906088045,GOOD
+O-look O-up O-all O-movies O-coming O-in B-movie.release_date,0.98663206248429,GOOD
+O-find O-movies O-for B-movie.release_date I-movie.release_date,0.99111291020147,GOOD
+O-most O-recent B-movie.subject O-movies,0.6537128854056,GOOD
+O-search O-for O-movies O-in B-movie.language,0.99977123798732,GOOD
+O-find O-me O-movies O-that O-are O-in B-movie.language,0.9998319615425,GOOD
+O-find O-movies O-in B-movie.language,0.99053413311356,GOOD
+O-send O-me O-movies O-that O-are O-in B-movie.language,0.99992441921,GOOD
+O-find O-movies O-in B-movie.language,0.99999426584494,GOOD
+O-movies O-in B-movie.language,0.99917471263442,GOOD
+O-i O-want O-movies O-in B-movie.language,0.86269961736817,GOOD
+O-find O-movies O-in B-movie.language O-before B-movie.release_date,0.88810055278199,GOOD
+O-find O-movies O-in B-movie.language,0.99999977232018,GOOD
+O-show O-all O-movies O-in B-movie.language,0.99309262164937,GOOD
+O-list O-of O-movies O-in O-the B-movie.language I-movie.language,0.88511237448605,GOOD
+O-movies O-in B-movie.language,0.99996379409812,GOOD
+O-i O-am O-searching O-for O-movies O-in B-movie.language,0.9998634955471,GOOD
+O-find O-movies O-in B-movie.language,0.99053413311356,GOOD
+O-what O-other O-movies B-person.name I-person.name O-produce,0.59565227529341,GOOD
+O-has B-actor.name I-actor.name O-produced O-movies,0.98217592434188,GOOD
+O-list O-the O-movies O-created O-by O-7 I-producer.name,0.76203891046468,GOOD
+B-producer.name I-producer.name I-producer.name O-movies B-movie.release_date,0.99999940496682,GOOD
+O-show O-me B-rating.name I-rating.name B-rating.name O-rated O-movies,0.730647972565,GOOD
+ ,0.99797859747998,BAD
+O-show O-me O-movies O-with B-movie.language O-rated O-rating,0.0019348539211198,GOOD
+O-give O-me O-a O-list O-of B-rating.name O-movies,0.99999997707789,GOOD
+O-i O-want O-to O-see O-a B-rating.name I-rating.name O-movie,0.99238727432208,GOOD
+O-show O-me O-all O-rated B-rating.name O-movies O-by B-producer.name,0.99998416304061,GOOD
+O-show O-me O-movies O-that O-are B-rating.name,0.39771711883234,GOOD
+O-list O-movies O-from I-movie.release_date O-with B-actor.name I-actor.name,0.99873440566924,GOOD
+O-i O-want O-to O-see O-movies O-with B-actor.name I-actor.name,0.99878052691711,GOOD
+O-which O-movies O-has B-actor.name I-actor.name O-starred B-movie.release_date I-movie.release_date,0.99177991630302,GOOD
+O-what O-movie O-was B-actor.name O-a O-main O-actress,0.82011835761895,GOOD
+O-look O-up O-movies O-starring O-the B-actor.type B-actor.name,0.99999664904403,GOOD
+O-look O-for O-movies O-with B-movie.subject B-actor.name I-actor.name,0.212396918786,GOOD
+O-what O-is B-movie.name I-movie.name O-movie O-with B-actor.name I-actor.name,0.82126431148623,GOOD
+O-movies O-of B-director.name I-director.name,0.82295751723563,GOOD
+O-movies O-about B-movie.subject,0.99726967616799,GOOD
+O-show O-me O-movies O-about B-movie.subject,0.9990447683665,GOOD
+B-movie.subject O-movies,0.99856305791509,GOOD
+O-show O-me O-movies O-on B-movie.subject,0.99995346028097,GOOD
+O-what O-are O-some O-movies O-about B-movie.subject,0.98115874714413,GOOD
+O-what O-movies B-rating.name I-rating.name B-movie.subject I-movie.subject I-movie.subject,0.49444181074118,GOOD
+O-i O-want O-to O-look O-up O-movies O-about B-movie.subject,0.999999985229,GOOD
+O-find O-movies O-about B-movie.subject,0.99999999649992,GOOD
+O-find O-some O-movies O-about B-movie.subject,0.97885512119621,GOOD
+O-can O-you O-find O-movies O-about B-movie.subject I-movie.subject,0.99999851506589,GOOD
+O-look O-for O-movies O-about B-movie.subject I-movie.subject,0.9999988667972,GOOD
+ ,0.99565905927362,BAD
+O-look O-for O-movies O-about I-movie.name,0.0039713452413089,GOOD
+O-tell O-me O-the O-names O-of O-some B-movie.language O-movies,0.48805723521182,GOOD
+O-show O-me O-movies O-involving B-movie.subject I-movie.subject,0.99872320455294,GOOD
+B-rating.name O-movies O-please,0.29772090619231,GOOD
+
+Fatal error: Allowed memory size of 134217728 bytes exhausted (tried to allocate 72 bytes) in /Users/federicogiuggioloni/Projects/websites/sds/php/FstSlu.php on line 50
+O-can O-you O-find O-me O-some O-movies O-about B-movie.subject,0.99807310569445,GOOD
+O-i O-want O-a O-list O-of O-movies O-about B-movie.subject,0.99937811024257,GOOD
+O-i O-want O-movies O-about B-movie.subject,0.99980061293134,GOOD
+O-find O-movies O-about B-movie.subject I-movie.subject O-two,0.87943563232732,GOOD
+O-what O-are O-some B-movie.subject I-movie.subject O-movies,0.92309274500746,GOOD
+O-search O-for B-movie.subject O-movies,0.87421571447677,GOOD
+O-show O-me B-movie.name O-in B-movie.language,0.9488290005998,GOOD
+O-is B-movie.name O-rated B-rating.name,0.89920393432876,GOOD
+O-take O-me O-to O-the B-country.name O-version O-of B-movie.name,0.40821807637947,GOOD
+O-find B-movie.name O-in B-movie.language,0.99954258856969,GOOD
+O-find B-movie.name I-movie.name I-movie.name O-in B-movie.language,0.99506018923754,GOOD
+B-movie.name I-movie.name I-movie.name I-movie.name B-director.name I-director.name,0.53964210072519,GOOD
+O-information O-about O-movie B-movie.name I-movie.name I-movie.name,0.98835597347584,GOOD
+O-movie O-information O-for B-movie.name I-movie.name I-movie.name,0.99956074098831,GOOD
+O-select B-movie.name O-in B-movie.language,0.76885065197752,GOOD
+O-find O-me O-the O-first B-movie.name I-movie.name O-movie O-info,0.94252706703332,GOOD
+O-did B-producer.name I-producer.name O-produce B-movie.name I-movie.name,0.99783456367042,GOOD
+B-movie.language I-movie.language O-film O-with B-actor.name,0.37266273892925,GOOD
+B-country.name O-movies O-for B-movie.release_date I-movie.release_date,0.53588096905641,GOOD
+O-look O-for B-movie.language O-movies O-by B-producer.name,0.85486757644374,GOOD
+O-show O-production O-company B-producer.name,0.9995669142538,GOOD
+B-producer.name I-producer.name I-producer.name,0.99988149062853,GOOD
+O-show O-me O-details O-for O-the O-director B-person.name I-person.name,0.97551051339411,GOOD
+O-show O-me O-that O-actor B-actor.name I-actor.name,0.53624448197805,GOOD
+O-who O-produced O-the O-movie B-movie.name I-movie.name,0.99975052604014,GOOD
+I-movie.name O-'s B-producer.name O-production O-company,0.27985376562232,GOOD
+O-i O-wonder O-who O-produced B-movie.name I-movie.name,0.99999593794983,GOOD
+O-i O-can O-'t O-remember O-who O-produced B-movie.name I-movie.name,0.99997658514959,GOOD
+O-who O-produced B-movie.name I-movie.name,0.99999947716322,GOOD
+ ,0.99972506475838,BAD
+I-rating.name O-producers,0.00027493524162099,GOOD
+O-how O-much O-did B-movie.name I-movie.name I-movie.name O-gross,0.99598907411928,GOOD
+ ,0.9999930091401,BAD
+O-how O-much O-did I-rating.name O-earn,6.9908598986185E-6,GOOD
+O-show O-me O-the O-earnings O-for B-movie.name I-movie.name,0.99982021499972,GOOD
+O-revenue O-for B-movie.name I-movie.name I-movie.name,0.99966486372458,GOOD
+O-what O-amount O-of O-revenue O-did B-movie.name I-movie.name O-make,0.99949577057415,GOOD
+O-what O-was O-the O-gross O-revenue O-of B-movie.name I-movie.name,0.99830951836166,GOOD
+B-movie.name O-'s O-revenue,0.52940946614261,GOOD
+O-get O-the O-revenue O-of B-movie.name,0.99935202499121,GOOD
+O-revenue B-movie.name,1,GOOD
+O-how O-much O-did B-movie.name O-gross O-in O-sales,0.9965906928631,GOOD
+O-how O-much O-did B-movie.name O-gross,1,GOOD
+B-movie.name O-much O-did B-movie.name O-make,0.26064472932363,GOOD
+O-how O-much O-money O-did B-movie.name O-make,0.99997098579108,GOOD
+O-how O-much O-was O-made O-from B-movie.name,1,GOOD
+O-what O-were O-the O-gross O-receipts O-for B-movie.name I-movie.name,0.94794345674854,GOOD
+O-tell O-me O-how O-much O-money B-character.name I-character.name O-made,0.72941554054189,GOOD
+O-how O-much O-revenue O-did B-movie.name I-movie.name O-make,0.99999977668896,GOOD
+O-tell O-me O-the O-revenue O-of B-movie.name I-movie.name,0.96465168528674,GOOD
+O-what O-is B-movie.name I-movie.name I-movie.name O-about,0.99268380223027,GOOD
+ ,0.99999749021491,BAD
+O-show O-me B-movie.name I-movie.name I-movie.name O-production O-companies,6.6113848561457E-7,GOOD
+ ,0.82872407186581,BAD
+O-show O-me O-the O-viewer O-ratings B-movie.name I-movie.name,0.16798711082454,GOOD
+O-is B-movie.name I-movie.name O-on O-netflix,0.98938215091263,GOOD
+ ,1,BAD
+O-what O-is B-person.name I-person.name O-up O-to,0.77548387430748,GOOD
+ ,0.99348121280345,BAD
+O-what I-movie.name O-playing O-tonight,0.0038648201644253,GOOD
+ ,0.99998050834248,BAD
+O-where O-can O-i O-buy B-movie.release_date O-movie,1.7695158412E-5,GOOD
+O-how O-to O-rent B-movie.name I-movie.name,0.98899253655087,GOOD
+O-can O-i O-rent B-movie.name I-movie.name O-on O-netflix,0.99782835023005,GOOD
+B-movie.name I-movie.name I-movie.name O-based O-on O-what,0.7179045761542,GOOD
+O-in B-movie.release_date,0.63359857519412,GOOD
+B-movie.name B-movie.name I-movie.name,0.25052502172928,GOOD
+ ,0.99994401663612,BAD
+O-find I-rating.name O-from O-criteria,5.598336388026E-5,GOOD
+ ,0.9997425694713,BAD
+O-find B-movie.language O-movie,0.00011372953098963,GOOD
+ ,0.99155825577055,BAD
+O-find O-movies O-selected B-movie.name O-all O-criteria,0.004170257153534,GOOD
+ ,0.95895979616598,BAD
+O-options O-available B-rating.name O-movies O-today,0.037793954324981,GOOD
+ ,1,BAD
+ ,1,BAD
+O-bring O-up O-movie B-movie.name,0.73829826488355,GOOD
+ ,1,BAD
+ ,1,BAD
+ ,0.9995448747481,BAD
+O-where O-can O-i O-watch I-rating.name,0.00030531844964429,GOOD
+ ,1,BAD
+ ,1,BAD
+ ,0.99909165026881,BAD
+O-where O-can O-i O-see I-rating.name,0.00090832459248757,GOOD
+O-is O-this O-film B-movie.name O-in B-movie.language,0.74804889676935,GOOD
+B-movie.name I-movie.name O-cast O-was B-movie.name O-how,0.32881520293993,GOOD
+O-what O-other B-movie.genre O-is B-movie.name I-movie.name O-in,0.37516621867802,GOOD
+O-what O-age O-group O-is B-rating.name O-rated B-rating.name O-movies,0.98516326801595,GOOD
+B-movie.name I-movie.name,0.92371351100332,GOOD
+O-who B-movie.name I-movie.name O-ratings O-on O-movies,0.10997965119193,GOOD
+O-find O-me B-movie.name I-movie.name O-news,0.99653237057387,GOOD
+O-who O-else O-could O-have B-movie.subject O-your O-job,0.1299306685834,GOOD
+O-twenty O-one O-point O-two O-was B-movie.name O-out,0.1517069276234,GOOD
+O-find O-some B-movie.genre O-on O-parental O-guidance O-please,0.61360410708215,GOOD
+ ,0.80245351218718,BAD
+O-who O-came O-up B-rating.name O-the O-main O-plot,0.045845356816951,GOOD
+O-what O-is O-the O-standard O-to O-be O-rated B-rating.name,0.99277289534687,GOOD
+O-i O-love B-actor.name I-actor.name,0.99862659669013,GOOD
+ ,0.99032390516521,BAD
+O-show O-me O-the O-movie O-reviews B-movie.name I-movie.name,0.0073583230959163,GOOD
+O-show O-me B-movie.name,0.22677336555773,GOOD
+O-click O-on O-the O-most O-popular O-movie B-movie.name I-movie.name,0.83010348283018,GOOD
+B-country.name O-movie B-movie.name,0.5856662319839,GOOD
+O-what O-is O-the O-history O-behind B-producer.name,0.99992827133293,GOOD
+O-send B-movie.name O-movie,0.99999541079884,GOOD
+B-person.name I-person.name B-movie.name,0.18108135431728,GOOD
+ ,0.99099190511828,BAD
+O-show O-me O-movie O-highlights B-movie.name I-movie.name,0.0073632864815895,GOOD
+ ,0.99908263992532,BAD
+O-need O-to O-rate I-rating.name,0.00090831640073001,GOOD
+O-what O-does O-a B-rating.name I-rating.name O-rating O-mean,0.99990720544151,GOOD
+B-rating.name O-rating O-what O-does O-that B-producer.name,0.46601527169809,GOOD
+B-movie.name I-movie.name,0.99924038726934,GOOD
+O-show O-me O-hollywood B-movie.name,0.18108158787465,GOOD
+O-how O-does O-a O-movie O-receive O-an B-rating.name O-rating,0.99843360286242,GOOD
+ ,0.9499001997579,BAD
+O-did O-you O-have O-fun O-on B-movie.name O-set,0.027678527336963,GOOD
+O-what O-are O-the O-rating B-rating.name O-for O-movies,0.41124850555199,GOOD
+O-sb O-news O-on B-movie.name,0.91894393599566,GOOD
+O-i O-have O-a I-rating.name O-year O-old,0.8272796978453,GOOD
+
+Fatal error: Allowed memory size of 134217728 bytes exhausted (tried to allocate 32 bytes) in /Users/federicogiuggioloni/Projects/websites/sds/php/FstSlu.php on line 50
+ ,0.98956302762196,BAD
+O-show O-me O-the O-movie O-list B-movie.name I-movie.name,0.0073526696094454,GOOD
+
+Fatal error: Allowed memory size of 134217728 bytes exhausted (tried to allocate 32 bytes) in /Users/federicogiuggioloni/Projects/websites/sds/php/FstSlu.php on line 50
+B-movie.subject I-movie.subject,0.99869569871028,GOOD
+ ,0.99599407473398,BAD
+O-i O-want O-to O-learn O-about I-movie.name,0.0039726815040004,GOOD
+O-out B-movie.name,0.99949784528113,GOOD
+B-movie.name,1,GOOD
+B-movie.name,0.36167298251799,GOOD
+O-sort O-by B-movie.language,0.92474251712404,GOOD
+O-where O-is B-movie.language,0.99999546825975,GOOD
+O-what O-is B-director.name I-director.name O-'s O-middle O-name,0.94442052714121,GOOD
+B-movie.name,0.36167298251799,GOOD
+I-movie.gross_revenue B-movie.gross_revenue I-movie.gross_revenue O-what,0.99160683048435,GOOD
+
+Fatal error: Allowed memory size of 134217728 bytes exhausted (tried to allocate 139 bytes) in /Users/federicogiuggioloni/Projects/websites/sds/php/FstSlu.php on line 50
+B-movie.name I-movie.name,0.99451534341339,GOOD
+ ,0.90172371175728,BAD
+O-how O-fun O-is O-it O-to O-produce B-movie.name O-movie,0.085636206502987,GOOD
+O-did O-you O-like B-movie.name I-movie.name O-who O-you O-did,0.70729531542896,GOOD
+O-can O-i O-see O-a O-map O-of B-country.name,0.99993008363144,GOOD
+O-was O-your B-actor.name I-actor.name O-it,0.17720031703848,GOOD
+B-country.name I-actor.nationality O-country O-flags,0.87054334153145,GOOD
+O-need O-more O-info O-that B-producer.name O-to B-country.name,0.12347713367862,GOOD
+O-flags O-of B-movie.name I-movie.name,0.60727824196106,GOOD
+O-best I-movie.name O-in O-the B-movie.name,0.97744609962815,GOOD
+
+Fatal error: Allowed memory size of 134217728 bytes exhausted (tried to allocate 72 bytes) in /Users/federicogiuggioloni/Projects/websites/sds/php/FstSlu.php on line 50
+O-who O-played O-the O-female O-lead O-in B-movie.name,0.62681669746498,GOOD
+
+Fatal error: Allowed memory size of 134217728 bytes exhausted (tried to allocate 124 bytes) in /Users/federicogiuggioloni/Projects/websites/sds/php/FstSlu.php on line 50
+ ,0.48841556618327,BAD
+O-who O-is O-in O-picture B-movie.gross_revenue,0.30526083672912,GOOD
+ ,0.99999996758108,BAD
+O-who O-are B-movie.name O-lead O-actors,1.9125180250434E-8,GOOD
+O-how O-old O-is B-actor.name I-actor.name,0.9996163614737,GOOD
+O-when O-was B-person.name I-person.name O-born,0.99998770546414,GOOD
+O-where O-was B-movie.name I-movie.name O-directed,0.99998867769467,GOOD
+O-where O-was B-movie.name I-movie.name I-movie.name O-shot,0.90583728127361,GOOD
+O-show O-movie B-movie.name,0.95541093569194,GOOD
+ ,0.99578129734736,BAD
+I-character.name O-director,0.0042187026526351,GOOD
+ ,0.99364107629714,BAD
+I-character.name O-directors O-of O-all O-time,0.0042092145020615,GOOD
+ ,0.9999500390467,BAD
+O-please O-show O-me O-famous I-producer.name O-directors,4.9697796483066E-5,GOOD
+ ,1,BAD
+ ,0.99998076931121,BAD
+O-who O-produced O-some O-of B-movie.name O-most O-popular O-movies,5.9684742611238E-6,GOOD
+O-show O-me B-movie.genre O-movie O-directors,0.83702159792397,GOOD
+O-who O-produced B-movie.name I-movie.name I-movie.name I-movie.name,0.9998575960215,GOOD
+ ,0.99989658748006,BAD
+O-who O-'s B-movie.name O-director,9.7402038549607E-5,GOOD
+ ,0.99996811813476,BAD
+O-director I-character.name O-name,2.5160584819762E-5,GOOD
+O-watch B-movie.name O-movie,0.99976663739161,GOOD
+O-see B-movie.name O-movie,0.9999084102868,GOOD
+ ,0.99908121709442,BAD
+O-in O-search B-rating.name O-names O-of O-crew O-members O-please,0.00051588885898553,GOOD
+O-show O-me O-reviews O-and O-info O-for B-movie.name I-movie.name,0.85477959193363,GOOD
+O-what O-'s I-director.name O-'s O-most O-famous O-movie,0.94604414689667,GOOD
+O-looking O-for O-movies O-directed O-by O-actor B-character.name O-one,0.85970996166862,GOOD
+ ,0.56304630734198,BAD
+O-list O-of O-movies O-directed O-by O-director B-movie.gross_revenue,0.35187003047448,GOOD
+O-show O-me O-movies O-that B-director.name O-'t O-gross O-much,0.42017479452555,GOOD
+O-show B-movie.release_date O-years O-films O-by O-7 I-producer.name,0.80775912671222,GOOD
+O-show O-me O-movies O-from O-the B-movie.release_date B-movie.release_date,0.99954304263418,GOOD
+B-award.ceremony I-award.ceremony B-producer.name O-movies,0.9959274193253,GOOD
+O-show B-award.ceremony O-winning O-movies O-by B-producer.name I-producer.name,0.99969026545334,GOOD
+O-list O-movies O-set O-in B-country.name,0.67743924143933,GOOD
+O-show O-me O-the O-movies O-released O-in B-country.name,0.99980734576524,GOOD
+O-show O-me O-the O-movies O-released O-in B-movie.release_region,0.83863622311272,GOOD
+O-what O-top O-films O-have O-come O-out O-of B-country.name,0.99180755923569,GOOD
+O-show O-me O-the O-top O-movies O-from B-country.name,0.75605649101096,GOOD
+O-what O-is O-the O-highest O-rated B-movie.subject O-movie,0.86672731827209,GOOD
+ ,0.99997499660098,BAD
+O-look B-rating.name O-popular O-movies,1.544963771579E-5,GOOD
+ ,0.88587574376161,BAD
+O-search O-for O-foreign I-movie.language O-films,0.042711862702953,GOOD
+O-what O-is B-person.name I-person.name O-famous O-for,0.99371511382068,GOOD
+ ,0.51061977807691,BAD
+O-is O-this O-a B-movie.genre,0.48888399829354,GOOD
+O-hope O-that O-the O-movie O-is O-in B-movie.language,0.53486706417097,GOOD
+O-is O-this O-movie O-in B-movie.language,0.99998946429635,GOOD
+O-do O-they O-speak B-director.nationality O-in O-the O-movie,0.74707531883209,GOOD
+O-is O-this O-movie O-filmed O-in B-country.name,0.99998728779598,GOOD
+O-show O-all B-movie.name I-movie.name I-movie.name I-movie.name O-movies,0.54540928736182,GOOD
+O-all O-of B-movie.name I-movie.name I-movie.name O-movies,0.96422291430393,GOOD
+O-find O-information O-about B-country.name O-movies,0.99574348194235,GOOD
+O-what O-does O-the B-producer.name O-logo O-look O-like,0.99999856058702,GOOD
+O-show O-me O-pictures O-of B-director.name I-director.name,0.99974260733045,GOOD
+O-photos O-of B-director.name I-director.name,0.5223777338227,GOOD
+O-i O-want O-to O-see O-images O-of B-person.name I-person.name,0.99910981427036,GOOD
+O-show O-me O-pictures O-of B-director.name I-director.name,0.99999004636983,GOOD
+ ,0.9995188212575,BAD
+O-what O-are O-popular I-rating.name O-producers,0.00047987673239851,GOOD
+ ,0.99980596654873,BAD
+O-can O-you O-give O-me B-movie.name O-producer,0.00010593402616625,GOOD
+O-what O-rating O-is O-the O-movie B-movie.name,0.99879476060658,GOOD
+O-what O-is B-movie.name I-movie.name O-rated,0.99999862574717,GOOD
+O-i O-need O-to O-know O-the O-rating O-of B-movie.name,0.99998586858301,GOOD
+O-what O-is O-kids O-by B-producer.name B-person.name O-rated,0.19139782919094,GOOD
+O-what O-rating O-did B-movie.name I-movie.name I-movie.name O-receive,0.75049353381227,GOOD
+O-what O-rating O-did B-movie.name I-movie.name O-receive,0.99787207276841,GOOD
+O-rating O-for B-movie.name I-movie.name I-movie.name I-movie.name I-movie.name,0.99901873231308,GOOD
+O-what O-rating O-is B-movie.name I-movie.name,0.99365750796774,GOOD
+O-what O-rating O-did B-movie.name I-movie.name O-movie O-get,0.9998638068913,GOOD
+O-what O-is O-the O-rating O-for B-movie.name I-movie.name,0.99951621020038,GOOD
+O-rating O-for B-movie.name I-movie.name I-movie.name,0.99976405295123,GOOD
+O-what O-was O-gross O-revenue O-for B-movie.name I-movie.name,0.99987087251454,GOOD
+O-how O-much O-has B-movie.name I-movie.name I-movie.name O-in,0.51746273533142,GOOD
+O-find O-the O-revenue O-for B-movie.name I-movie.name,0.99997055305722,GOOD
+
+Fatal error: Allowed memory size of 134217728 bytes exhausted (tried to allocate 72 bytes) in /Users/federicogiuggioloni/Projects/websites/sds/php/FstSlu.php on line 50
+ ,0.99324327080194,BAD
+O-what O-is O-the O-most B-movie.language O-movie O-made,0.0017777981776092,GOOD
+O-reviews O-for B-movie.name I-movie.name,0.99999649022611,GOOD
+O-find O-reviews O-for B-movie.name I-movie.name,0.9999696451618,GOOD
+O-what O-are O-reviews O-for B-movie.name I-movie.name,0.99998500498294,GOOD
+O-reviews O-for B-movie.name I-movie.name,0.99999905126339,GOOD
+O-reviews O-for B-movie.name I-movie.name,0.99999905126339,GOOD
+O-reviews O-for B-movie.name I-movie.name,0.99999905126339,GOOD
+ ,0.99971058084636,BAD
+O-reviews B-rating.name O-movie,0.00015764112627783,GOOD
+O-reviews O-for B-movie.name I-movie.name,0.99947275055276,GOOD
+O-how O-long O-is B-movie.name I-movie.name I-movie.name,0.97822416372004,GOOD
+O-synopsis O-for B-movie.name I-movie.name I-movie.name,0.9995047268135,GOOD
+O-summary O-of B-movie.name I-movie.name I-movie.name,0.99892748376312,GOOD
+B-movie.name I-movie.name O-movie O-shortcut,0.99999155912675,GOOD
+B-movie.name I-movie.name O-beatiful O-shortcut,0.92553390408671,GOOD
+O-trailer O-for B-movie.name I-movie.name I-movie.name I-movie.name I-movie.name,0.90877563407416,GOOD
+O-show B-movie.name I-movie.name O-movies O-with O-trailers,0.99945200497795,GOOD
+O-how O-many B-director.name O-films O-were O-filmed O-in B-movie.location,0.53345274435051,GOOD

@@ -53,19 +53,19 @@ $uc_out  = $UC->predict($utterance, true, 3);
 foreach($slu_out as $res)
 {
     $results = $SR->getConcepts($utterance, $res[0]);
-    $output .= $res[0]." ,".$res[1].",GOOD\n";
-    break;
-    #if(empty($results))
-    #{
-    #    // Save into "BAD" SLU examples
-    #    $output .= " ".",".$res[1].",BAD\n";
-    #}
-    #else
-    #{
-    #    // Save into "GOOD" SLU examples
-    #    $output .= $res[0].",".$res[1].",GOOD\n";
-    #    break;
-    #}
+    #$output .= $res[0]." ,".$res[1].",GOOD\n";
+    #break;
+    if(empty($results))
+    {
+        // Save into "BAD" SLU examples
+        $output .= " ".",".$res[1].",BAD\n";
+    }
+    else
+    {
+        // Save into "GOOD" SLU examples
+        $output .= $res[0].",".$res[1].",GOOD\n";
+        break;
+    }
 }
 
 $results = $SR->getConcepts($utterance, $slu_tags);

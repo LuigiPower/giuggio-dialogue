@@ -47,13 +47,13 @@ else {
 
 $output = "";
 
-$slu_out = $SLU->runSlu($utterance, true, 3);
-$uc_out  = $UC->predict($utterance, true, 3);
+$slu_out = $SLU->runSlu($utterance, true, 1);
+$uc_out  = $UC->predict($utterance, true, 1);
 
 foreach($slu_out as $res)
 {
     $results = $SR->getConcepts($utterance, $res[0]);
-    $output .= $res[0]." ,".$res[1].",GOOD\n";
+    $output .= $utterance.",".$res[0].",".$res[1].",";
     break;
     #if(empty($results))
     #{
@@ -72,6 +72,11 @@ $results = $SR->getConcepts($utterance, $slu_tags);
 $uc_class = $uc_out[0][0];
 $uc_conf  = $uc_out[0][1];
 
+foreach($uc_out as $res)
+{
+    $output .= $res[0].",".$res[1]."\n";
+    break;
+}
 
 
 //print_r($slu_out);

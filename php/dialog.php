@@ -69,10 +69,20 @@ if(!isset($_POST["dialog_state"]) || $state["current"] == DialogManager::$start)
     $state["confirmedFields"] = array();
     $state["askedField"] = null;
     $state["current"] = DialogManager::$start;
+
+    // Just used for numeric queries,
+    // specifies operand for the query
+    // (operand based queries have higher
+    // priority over standard queries)
+    $state["operand"] = null;
+
+    // Used to output result count
+    // as a response instead of reading
+    // out everything
+    $state["countResults"] = false;
 }
 
 $dialog = new DialogManager($state);
-
 
 //----------------------------------------------------------------------
 // Run SLU
@@ -110,12 +120,25 @@ $th_slu_reject = 0;
 /**
  * thresholds with fstprintstrings fix
  */
-$th_slu_accept = 0.87;
+$th_slu_accept = 0.89;
 //$th_uc_accept = 0.93;
 $th_uc_accept = 0.90;
-$th_uc_reject = 0.20;
+$th_uc_reject = 0.30;
 $th_slu_reject = 0.75;
 /****************************************/
+
+$th_intent_specific = array(
+    "release_date" => 0.93,
+    "budget" => 0.87,
+    "country" => 0.83,
+    "movie" => 0.97,
+    "person" => 0.9,
+    "actor" => 0.86,
+    "producer" => 0.85,
+    "genre" => 0.57,
+    "director" => 0.75
+);
+
 /**
  * thresholds with fstprintstrings fix
  * AND --nshortest set to nbest * 10
@@ -155,7 +178,7 @@ foreach($slu_out as $res)
         debugPrint($slu_result);
     }
 
-    if(!empty($results) && $res[1] < $th_slu_accept)
+    if(!empty($results) && $res[1] < $th_slu_accept && $dialog->isIn(DialogManager::$start))
             //&& $res[1] > $th_slu_reject)
     {
         $probableFields[] = $results;
@@ -171,6 +194,11 @@ foreach($uc_out as $uc_res)
 {
     if($uc_res[1] >= $th_uc_accept)
     {
+        if(isset($th_intent_specific[$uc_res[0]]) && $uc_res[1] < $th_intent_specific[$uc_res[0]])
+        {
+            continue;
+        }
+
         $uc_found = true;
         $uc_class = $uc_res[0];
         $uc_conf = $uc_res[1];
@@ -198,7 +226,7 @@ $response = array(
 $response['debug_uc'] = $uc_out;
 $response['debug_slu'] = $slu_out;
 
-if (!$uc_found)
+if (!$uc_found && !$dialog->isIn(DialogManager::$ask_intent))
 {
     if($uc_conf >= $th_uc_reject)
     {
@@ -206,7 +234,7 @@ if (!$uc_found)
     }
     else
     {
-
+        // Nothing, question will be without prompts
     }
 }
 
@@ -241,7 +269,7 @@ if($dialog->isReadyToSend())
     //------------------------------------------------------------------
     // Convert SLU results to SQL Query
     //------------------------------------------------------------------
-    $query = $QC->slu2sql($dialog->getFields(), $dialog->getIntent());
+    $query = $QC->slu2sql($dialog->getFields(), $dialog->getIntent(), $dialog->getOperand(), $dialog->isCountRequest());
     //------------------------------------------------------------------
     // Query DB
     //------------------------------------------------------------------
