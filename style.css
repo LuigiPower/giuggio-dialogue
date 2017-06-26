@@ -5,4 +5,24 @@
     background-position: 50% 50%;
 }
 
+.bubble-text {
 
+}
+
+.user-bubble {
+    background-color: cyan;
+}
+
+.toolbar-text {
+    color: white;
+}
+
+speech-dialogstate {
+    position: fixed;
+    right: 8px;
+    bottom: 8px;
+    min-width: 512px;
+    max-width: 512px;
+    font-size: 8pt;
+    overflow: hidden;
+}

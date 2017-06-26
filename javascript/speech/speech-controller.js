@@ -29,7 +29,7 @@
 
         $scope.tts_listener = {
             onstart: function() {
-                if($scope.dialog_state.current !== "start"
+                if(speech.dialog_state.current !== "start"
                         && $scope.preemptive
                         && !$scope.disable_followup)
                 {
@@ -37,7 +37,7 @@
                 }
             },
             onend: function() {
-                if($scope.dialog_state.current !== "start"
+                if(speech.dialog_state.current !== "start"
                         && !$scope.preemptive
                         && !$scope.disable_followup)
                 {
@@ -62,16 +62,21 @@
             speech.startTTS(text);
         };
 
+        $scope.getSpeechStack = function() {
+            return speech.speechStack;
+        }
+
         $scope.send = function() {
             $scope.stopTTS();
             console.log("Sending state:");
-            console.log($scope.dialog_state);
+            console.log(speech.dialog_state);
+            speech.pushMessage($scope.target_text, true);
             ajax.send($scope.target_text,
-                    $scope.dialog_state,
+                    speech.dialog_state,
                     function(data) {
                         console.log(data);
                         $scope.startTTS(data.data.result.response);
-                        $scope.dialog_state = data.data.result.state;
+                        speech.dialog_state = data.data.result.state;
 
                         $scope.movies = data.data.result.db_result;
                     }, function(error) {

@@ -7,6 +7,9 @@
 
         var context = this;
 
+        this.speechStack = [];
+        this.dialog_state = undefined;
+
         context.recognizing = false;
         context.TTS = new SpeechSynthesisUtterance();
         context.ASR = new webkitSpeechRecognition();
@@ -49,7 +52,13 @@
             context.ASR.start();
         };
 
+        this.pushMessage = function(message, byuser)
+        {
+            context.speechStack.splice(0, 0, { message: message, byuser: byuser });
+        }
+
         this.startTTS = function(text) {
+            context.pushMessage(text, false);
             var voices = window.speechSynthesis.getVoices();
             context.TTS.lang = 'en-GB';
             context.TTS.text =  text;

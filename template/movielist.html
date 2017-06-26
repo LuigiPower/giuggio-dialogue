@@ -1,10 +1,18 @@
 <div layout="column">
     <div layout="column" layout-margin>
 
-        <md-card layout-margin>
+        <md-card layout-margin ng-show="movies.length > 0">
             <md-card-title>
                 <md-card-title-text>
                     <span class="md-headline">Results:</span>
+                </md-card-title-text>
+            </md-card-title>
+        </md-card>
+
+        <md-card layout-margin ng-show="movies.length == 0">
+            <md-card-title>
+                <md-card-title-text>
+                    <span class="md-headline">No results</span>
                 </md-card-title-text>
             </md-card-title>
         </md-card>

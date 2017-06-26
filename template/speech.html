@@ -1,19 +1,42 @@
-<div layout="column" layout-margin>
-    <h2> Chat dialogue debugging thing:</h2>
-    <md-input-container>
-        <label>Text to send</label>
-        <input type="text" ng-model="target_text"/>
-    </md-input-container>
+<div layout="row" layout-margin>
+    <div layout="column" flex="40">
+        <div layout="row">
+            <md-input-container flex>
+                <label>Write here or press the Start button</label>
+                <input type="text" ng-model="target_text"/>
+            </md-input-container>
 
-    <div layout="row">
-        <md-button ng-click="startASR()">Start ASR</md-button>
-        <md-button ng-click="send()">Send</md-button>
+            <md-button ng-click="send()">
+                Send
+            </md-button>
+
+            <md-button ng-click="startASR()">
+                Start
+            </md-button>
+        </div>
+
+        <md-input-container>
+            <label>Assistant response</label>
+            <input type="text" disabled ng-model="answer"/>
+        </md-input-container>
+
+        <span class="md-caption">Older messages</span>
+
+        <div layout="row" ng-show="getSpeechStack().length > 0" ng-repeat="message in getSpeechStack() track by $index">
+            <speech-bubble message="message" flex></speech-bubble>
+        </div>
+
+        <md-card ng-show="getSpeechStack().length == 0">
+            <md-card-title>
+                <md-card-title-text>
+                    <span class="md-headline">No messages yet</span>
+                </md-card-title-text>
+            </md-card-title>
+        </md-card>
+
     </div>
 
-    <md-input-container ng-disabled="true">
-        <label>ASR Result</label>
-        <input type="text" ng-model="answer"/>
-    </md-input-container>
-
-    <lus-movielist movies="movies"></lus-movielist>
+    <div flex="60">
+        <lus-movielist movies="movies"></lus-movielist>
+    </div>
 </div>

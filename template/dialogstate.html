@@ -1,0 +1,23 @@
+<md-card>
+    <md-toolbar>
+        <div class="md-toolbar-tools">
+            <span class="md-caption toolbar-text">
+                Current dialog state
+            </h1>
+            <span flex></span>
+        </div>
+    </md-toolbar>
+    <md-card-content layout="column" layout-align="start start">
+        <p>Next step: {{getVar("current")}}</p>
+
+        <p>Intent: {{getVar("intent")}}</p>
+        <p>Fields: <span ng-repeat="field in getVar('fields')">{{field}}</span></p>
+
+        <p>Asked Field: {{getVar("askedField")}}</p>
+        <p>Operand: {{getVar("operand")}}</p>
+        <p>Count Results: {{getVar("countResults")}}</p>
+
+        <p>Probable Fields: <span ng-repeat="field in getVar('probableFields')">{{field}}</span></p>
+        <p>Probable Intents: <span ng-repeat="intent in getVar('probableIntents')">{{intent}}</span></p>
+    </md-card-content>
+</md-card>

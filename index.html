@@ -19,9 +19,20 @@
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     </head>
     <body ng-app="giuggio-dialogue">
+        <md-toolbar>
+            <div class="md-toolbar-tools">
+                <h1 class="toolbar-text">
+                    Spoken Dialogue System by Federico Giuggioloni
+                </h1>
+                <span flex></span>
+            </div>
+        </md-toolbar>
+
         <md-content layout="column">
             <giuggio-speech></giuggio-speech>
+
         </md-content>
+        <speech-dialogstate></speech-dialogstate>
 
 
         <!-- Angular Material requires Angular.js Libraries -->
@@ -52,5 +63,13 @@
         <script type="text/javascript" src="javascript/movielist/service/movielist.js"></script>
         <script type="text/javascript" src="javascript/movielist/controller/movielist.js"></script>
         <script type="text/javascript" src="javascript/movielist/directive/movielist.js"></script>
+
+        <script type="text/javascript" src="javascript/bubble/service/bubble.js"></script>
+        <script type="text/javascript" src="javascript/bubble/controller/bubble.js"></script>
+        <script type="text/javascript" src="javascript/bubble/directive/bubble.js"></script>
+
+        <script type="text/javascript" src="javascript/dialogstate/service/dialogstate.js"></script>
+        <script type="text/javascript" src="javascript/dialogstate/controller/dialogstate.js"></script>
+        <script type="text/javascript" src="javascript/dialogstate/directive/dialogstate.js"></script>
     </body>
 </html>
