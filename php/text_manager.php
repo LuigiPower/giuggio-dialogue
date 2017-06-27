@@ -19,7 +19,7 @@ class TextManager
         "sure",
         "yep",
         "correct",
-        "that is correct",
+        "that's correct",
         "right",
         "that one",
         "absolutely",
@@ -32,23 +32,39 @@ class TextManager
         "nay",
         "nada",
         "that is wrong",
+        "that's wrong",
+        "it's wrong",
+        "it is wrong",
         "wrong",
         "not at all",
         "not that",
         "negative"
     );
 
+    public static $correct = array(
+        "it's correct",
+        "it is correct",
+        "correct",
+        "that's correct",
+        "it is fine",
+        "it's fine"
+    );
+
     public static $ignore = array(
         "ignore",
         "remove",
         "mistake",
+        "a mistake",
         "no ignore",
         "no remove",
         "yes remove",
         "yes ignore",
         "yes it is a mistake",
+        "yes it's a mistake",
         "no it is a mistake",
-        "it is a mistake"
+        "no it's a mistake",
+        "it is a mistake",
+        "it's a mistake",
     );
 
     public static $greater = array(

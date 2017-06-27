@@ -207,6 +207,12 @@ class DialogManager
     {
         debugEcho("Filling with state $this->current");
 
+        if($this->fullmatch($utterance, "i want to ask a new question"))
+        {
+            $this->clearAndStore();
+            return;
+        }
+
         if($this->current == DialogManager::$start)
         {
             if($this->ditchedDialog !== null)
@@ -234,7 +240,7 @@ class DialogManager
 
             foreach(TextManager::$greater as $gt)
             {
-                if($this->match($utterance, $gt))
+                if($this->fullmatch($utterance, $gt))
                 {
                     $this->operand = ">";
                 }
@@ -242,7 +248,7 @@ class DialogManager
 
             foreach(TextManager::$lesser as $lt)
             {
-                if($this->match($utterance, $lt))
+                if($this->fullmatch($utterance, $lt))
                 {
                     $this->operand = "<";
                 }
@@ -311,7 +317,20 @@ class DialogManager
             if($this->askedField['concept_fixed']
                 && !$this->askedField['confirmed'])
             {
-                $this->askedField['value'] = $utterance;
+                $correct = false;
+                foreach(TextManager::$correct as $cor)
+                {
+                    if($this->startswith($utterance, $cor))
+                    {
+                        $correct = true;
+                    }
+                }
+
+                if(!$correct)
+                {
+                    $this->askedField['value'] = $utterance;
+                }
+
                 $this->askedField['confirmed'] = true;
             }
 
@@ -331,7 +350,7 @@ class DialogManager
 
                 foreach(TextManager::$negative as $neg)
                 {
-                    if($this->match($utterance, $neg))
+                    if($this->fullmatch($utterance, $neg))
                     {
                         debugEcho("$utterance matches with $neg");
                         $this->askedField['negated'] = true;
@@ -427,43 +446,69 @@ class DialogManager
         if($this->current == DialogManager::$ask_slu || $force_slu)
         {
             $this->fillField($utterance, "the movie ", "movie.name");
-            $this->fillField($utterance, "the director ", "director.name");
-            $this->fillField($utterance, "the actor ", "actor");
-            $this->fillField($utterance, "the genre ", "genres");
-            $this->fillField($utterance, "the country ", "movie.location"); //probable actor too...
-            $this->fillField($utterance, "the year ", "movie.release_date");
-            $this->fillField($utterance, "the release date ", "movie.release_date");
-            $this->fillField($utterance, "the date ", "movie.release_date");
-            $this->fillField($utterance, "the language ", "movie.language");
-            $this->fillField($utterance, "in ", "movie.language", " language");
-            $this->fillField($utterance, "", "movie.language", " language");
-            $this->fillField($utterance, "in the ", "movie.language", " language");
-            $this->fillField($utterance, "^in ", "movie.language", "");
-            $this->fillField($utterance, "long ", "movie", " minutes");
-            $this->fillField($utterance, "the duration ", "movie.duration", " minutes");
-            //$this->fillField($utterance, "in color ", "color"); doesn't need full regex, just match
-            $this->fillField($utterance, "with a budget of ", "movie.budget", " dollars");
-            $this->fillField($utterance, "the budget of ", "movie.budget", " dollars");
             $this->fillField($utterance, "the budget for ", "movie.name");
+
+            $this->fillField($utterance, "the director ", "director.name");
+
+            $this->fillField($utterance, "the actor ", "actor");
+            $this->fillField($utterance, "starring ", "actor");
+            $this->fillField($utterance, "the actors ", "actor");
+
+            $this->fillFieldSingle($utterance, "the genre ", "genres");
+            $this->fillFieldSingle($utterance, "about ", "movie.subject");
+            $this->fillField($utterance, "the genres ", "movie.genre");
+
+            $this->fillFieldSingle($utterance, "the country ", "movie.location"); //probable actor too...
+
+            $this->fillFieldSingle($utterance, "the year ", "movie.release_date");
+            $this->fillFieldSingle($utterance, "the release date ", "movie.release_date");
+            $this->fillFieldSingle($utterance, "the date ", "movie.release_date");
+
+            $this->fillFieldSingle($utterance, "the language ", "movie.language");
+            $this->fillFieldSingle($utterance, "in ", "movie.language", " language");
+            $this->fillFieldSingle($utterance, "", "movie.language", " language");
+            $this->fillFieldSingle($utterance, "in the ", "movie.language", " language");
+            $this->fillFieldSingle($utterance, "^in ", "movie.language", "");
+
+            $this->fillField($utterance, "long ", "movie.duration", " minutes");
+            $this->fillField($utterance, "the duration ", "movie.duration", " minutes");
+
+            //$this->fillField($utterance, "in color ", "color"); doesn't need full regex, just match
+
+            $this->fillField($utterance, "with a budget of ", "movie.budget", " dollars");
+            $this->fillFieldSingle($utterance, "with a budget of ", "movie.budget", "");
+            $this->fillField($utterance, "the budget of ", "movie.budget", " dollars");
+            $this->fillFieldSingle($utterance, "the budget of ", "movie.budget", "");
+
             $this->fillField($utterance, "the keyword ", "movie.keywords");
+            $this->fillField($utterance, "the keywords ", "movie.keywords");
+
             $this->fillField($utterance, "the revenue ", "movie.gross_revenue", " dollars");
             $this->fillField($utterance, "earned ", "movie.gross_revenue", " dollars");
             $this->fillField($utterance, "earned ", "movie.gross_revenue");
+
             $this->fillField($utterance, "the score ", "movie.star_rating");
             //$this->fillField($utterance, "", "movie.star_rating", "stars");
+
             $this->fillField($utterance, "", "movie.likes", " likes");
 
-            $this->fillField($utterance, "starring ", "actor");
-            $this->fillField($utterance, "the actors ", "actor");
-            $this->fillField($utterance, "the genres ", "movie.genre");
-            $this->fillField($utterance, "the keywords ", "movie.keywords");
             //TODO more fillin options
         }
+    }
+
+    function fullmatch($utterance, $text)
+    {
+        return $this->startswith($utterance, $text) || $this->endswith($utterance, $text) || strpos($utterance, " $text ") !== false;
     }
 
     function match($utterance, $text)
     {
         return strpos($utterance, $text) !== false;
+    }
+
+    function endswith($utterance, $text)
+    {
+        return (strlen($utterance) - strlen($text)) === strpos($utterance, $text);
     }
 
     function startswith($utterance, $text)
@@ -475,13 +520,43 @@ class DialogManager
     {
         //if(isset($this->fields[$field])) return; // TODO is this a good idea?
 
-        $regex = "/$prefix(?<match>([a-zA-Z1-9]+ ?)+)$suffix/m";
+        $regex = "/$prefix(?<match>([\$a-zA-Z0-9]+ ?)+)$suffix/m";
         debugEcho("Trying regex on [$utterance]:\n$regex");
         $matches = array();
         if(preg_match($regex, $utterance, $matches))
         {
             debugEcho("$utterance matches!");
-            $this->setField($field, $matches["match"]);
+            if(Slu2DB::$numeric_map[Slu2DB::$concept_map[$field]])
+            {
+                $this->setField($field, $this->cleannumber(trim($matches["match"])));
+            }
+            else
+            {
+                $this->setField($field, trim($matches["match"]));
+            }
+            return true;
+        }
+        return false;
+    }
+
+    function fillFieldSingle($utterance, $prefix, $field, $suffix = "")
+    {
+        //if(isset($this->fields[$field])) return; // TODO is this a good idea?
+
+        $regex = "/$prefix(?<match>([\$a-zA-Z0-9]+ ?))$suffix/m";
+        debugEcho("Trying regex on [$utterance]:\n$regex");
+        $matches = array();
+        if(preg_match($regex, $utterance, $matches))
+        {
+            debugEcho("$utterance matches!");
+            if(Slu2DB::$numeric_map[Slu2DB::$concept_map[$field]])
+            {
+                $this->setField($field, $this->cleannumber(trim($matches["match"])));
+            }
+            else
+            {
+                $this->setField($field, trim($matches["match"]));
+            }
             return true;
         }
         return false;
@@ -546,9 +621,17 @@ class DialogManager
             {
                 $data .= "titled $value";
             }
-            else if($this->match($concept, "actor.name"))
+            else if($this->match($concept, "actor.name") || $this->match($concept, "actor"))
             {
                 $data .= "starring $value";
+            }
+            else if($this->match($concept, "movie.subject"))
+            {
+                $data .= "about $value";
+            }
+            else if($this->match($concept, "director.name"))
+            {
+                $data .= "directed by $value";
             }
             else if($this->match($concept, "movie.release_date"))
             {
@@ -599,6 +682,7 @@ class DialogManager
             {
                 $data .= ", ";
             }
+            $i++;
         }
         return $data;
     }
@@ -614,14 +698,22 @@ class DialogManager
                 if(empty($this->fields))
                 {
                     $question .= "What are you looking for?";
+                    if($this->hasNoIdea())
+                    {
+                        $this->current = DialogManager::$start;
+                    }
+                    else
+                    {
+                        $this->current = DialogManager::$ask_intent;
+                    }
                 }
                 else
                 {
                     $question .= "What do you want to know about movies ";
                     $question .= $this->fieldDictToString($this->fields);
                     $question .= "?";
+                    $this->current = DialogManager::$ask_intent;
                 }
-                $this->current = DialogManager::$ask_intent;
             }
             else
             {
@@ -661,6 +753,11 @@ class DialogManager
             }
             else if($this->askedField == null)
             {
+                if($this->isIn(DialogManager::$confirm_slu))
+                {
+                    $question .= "Ok, let's move on. ";
+                }
+
                 $question .= "I am not sure about something. ";
                 foreach($this->probableFields as $field=>$value)
                 {
@@ -686,7 +783,7 @@ class DialogManager
                 {
                     if($this->askedField['concept_fixed'])
                     {
-                        $question .= "It seems I got it wrong then. Can you tell me the correct ".$this->sanitize($this->askedField['key'])."? Or is it a mistake?";
+                        $question .= "It seems I got it wrong then. Can you tell me the correct ".$this->sanitize($this->askedField['key'])."? Or is it correct as it is?";
                     }
                     else
                     {
@@ -725,6 +822,11 @@ class DialogManager
             }
         }
         return $data;
+    }
+
+    function cleannumber($number)
+    {
+        return str_replace("$", "", $number);
     }
 
     function sanitize($concept)
@@ -824,7 +926,8 @@ class DialogManager
                 else
                 {
                     $data = "the $sanitizedIntent of a movie $txt is ".$result[0][$mappedIntent];
-                    if($this->match($sanitizedIntent, "budget"))
+                    if($this->match($sanitizedIntent, "budget")
+                        || $this->match($sanitizedIntent, "revenue"))
                     {
                         $data .= "$";
                     }
@@ -856,6 +959,12 @@ class DialogManager
 
         $this->current = DialogManager::$start;
         return $answer;
+    }
+
+    function hasNoIdea()
+    {
+        return $this->intent === null && empty($this->fields)
+            && empty($this->probableIntents) && empty($this->probableFields);
     }
 
     function isIntentReady()

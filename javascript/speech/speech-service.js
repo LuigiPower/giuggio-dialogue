@@ -55,6 +55,10 @@
         this.pushMessage = function(message, byuser)
         {
             context.speechStack.splice(0, 0, { message: message, byuser: byuser });
+            if(context.speechStack.length > 15)
+            {
+                context.speechStack.pop();
+            }
         }
 
         this.startTTS = function(text) {

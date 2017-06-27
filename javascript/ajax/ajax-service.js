@@ -102,9 +102,9 @@
             }
         };
 
-        this.send = function(text, state, success, failure) {
+        this.send = function(text, state, asr_confidence, success, failure) {
             console.log("Sending request " + text);
-            context.request(context.script, context.POST, { utterance: text, dialog_state: JSON.stringify(state) }, success, failure);
+            context.request(context.script, context.POST, { utterance: text, dialog_state: JSON.stringify(state), asr_confidence: asr_confidence }, success, failure);
         };
 
         this.scrape = function(url, success, failure) {

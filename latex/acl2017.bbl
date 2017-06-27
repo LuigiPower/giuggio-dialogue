@@ -1,0 +1,16 @@
+\begin{thebibliography}{}
+\expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
+
+\bibitem[{Gorman(OpenFST)}]{openfst}
+Kyle Gorman. OpenFST.
+\newblock Openfst library.
+\newblock http://www.openfst.org/twiki/bin/view/FST/WebHome.
+\newblock Visited 21/04/2017.
+
+\bibitem[{Gorman(OpenGRM)}]{opengrm}
+Kyle Gorman. OpenGRM.
+\newblock Opengrm libraries.
+\newblock http://www.opengrm.org/.
+\newblock Visited 21/04/2017.
+
+\end{thebibliography}

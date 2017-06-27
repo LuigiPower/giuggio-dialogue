@@ -143,6 +143,23 @@ $th_intent_specific = array(
     "director" => 0.75
 );
 
+
+if($asr_confidence < 1)
+{
+    $th_intent_specific = array(
+        "release_date" => 0.8835,
+        "budget" => 0.8265,
+        "country" => 0.7885,
+        "movie" => 0.9215,
+        "person" => 0.855,
+        "actor" => 0.817,
+        "producer" => 0.8075,
+        "genre" => 0.5415,
+        "director" => 0.7125
+    );
+}
+
+
 /**
  * thresholds with fstprintstrings fix
  * AND --nshortest set to nbest * 10
@@ -176,13 +193,13 @@ foreach($slu_out as $res)
     if(!empty($results) && $slu_tags == null)
     {
         $slu_tags = $res[0];
-        $slu_conf = $res[1];
+        $slu_conf = $res[1] * $asr_confidence;
         $slu_result = $results;
         debugEcho("Slu result");
         debugPrint($slu_result);
     }
 
-    if(!empty($results) && $res[1] < $th_slu_accept && $dialog->isIn(DialogManager::$start))
+    if(!empty($results) && $res[1] * $asr_confidence < $th_slu_accept && $dialog->isIn(DialogManager::$start))
             //&& $res[1] > $th_slu_reject)
     {
         $probableFields[] = $results;
@@ -196,16 +213,16 @@ $uc_class = "";
 $uc_conf = $uc_out[0][1];
 foreach($uc_out as $uc_res)
 {
-    if($uc_res[1] >= $th_uc_accept)
+    if($uc_res[1] * $asr_confidence >= $th_uc_accept)
     {
-        if(isset($th_intent_specific[$uc_res[0]]) && $uc_res[1] < $th_intent_specific[$uc_res[0]])
+        if(isset($th_intent_specific[$uc_res[0]]) && $uc_res[1] * $asr_confidence < $th_intent_specific[$uc_res[0]])
         {
             continue;
         }
 
         $uc_found = true;
         $uc_class = $uc_res[0];
-        $uc_conf = $uc_res[1];
+        $uc_conf = $uc_res[1] * $asr_confidence;
         debugEcho("Found $uc_conf > $th_uc_accept and ".$dialog->isIn(DialogManager::$start));
         if($dialog->isIn(DialogManager::$start))
         {

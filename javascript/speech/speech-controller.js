@@ -7,6 +7,7 @@
         $scope.target_text = "";
         $scope.preemptive = false;
         $scope.disable_followup = false;
+        $scope.asr_confidence = 1;
 
         $scope.asr_listener = {
             onstart: function() {
@@ -22,6 +23,7 @@
                 $scope.asr_results  = ev.results;
                 console.log($scope.asr_results);
                 $scope.target_text = $scope.asr_results[0][0].transcript;
+                $scope.asr_confidence = $scope.asr_results[0][0].confidence;
                 $scope.$apply();
                 $scope.send();
             }
@@ -66,13 +68,20 @@
             return speech.speechStack;
         }
 
+        $scope.sendButton = function() {
+            $scope.asr_confidence = 1;
+            $scope.send();
+        };
+
         $scope.send = function() {
             $scope.stopTTS();
             console.log("Sending state:");
             console.log(speech.dialog_state);
             speech.pushMessage($scope.target_text, true);
+            //speech.pushMessage("...", false);
             ajax.send($scope.target_text,
                     speech.dialog_state,
+                    $scope.asr_confidence,
                     function(data) {
                         console.log(data);
                         $scope.startTTS(data.data.result.response);
@@ -83,5 +92,7 @@
                         console.log(error);
                     });
         }
+
+        $scope.startTTS("Hello and welcome to the movie database, how can I help you?");
     }]);
 })();
